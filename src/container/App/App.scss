@@ -1,0 +1,17 @@
+@use 'reset.scss';
+
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.row {
+    display: flex;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}

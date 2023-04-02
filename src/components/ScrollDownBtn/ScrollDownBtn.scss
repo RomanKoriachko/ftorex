@@ -1,0 +1,40 @@
+.scroll-down-btn {
+    max-width: 185px;
+    text-align: center;
+    cursor: pointer;
+    .scroll-btn-border {
+        margin: 0 auto;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px solid white;
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .scroll-btn-arr {
+        width: 96px;
+        height: 96px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url(../../assets/scroll-down-arr.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.3s all;
+        &:hover {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    > p {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: white;
+    }
+}

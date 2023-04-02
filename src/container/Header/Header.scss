@@ -1,0 +1,46 @@
+.quotation {
+    background-color: #121212;
+    height: 45px;
+}
+.header-row {
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 0px 14px 0px;
+}
+.header-menu {
+    margin-left: 43px;
+    gap: 32px;
+}
+.header-btns {
+    > button {
+        padding: 16px 24px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+            opacity: 0.7;
+        }
+        .btn-content-row {
+            gap: 8px;
+            align-items: center;
+        }
+        .btn-arrow {
+            height: 20px;
+            width: 20px;
+            background-image: url(../../assets/button-arr.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .submit-btn {
+        background-color: #f1275b;
+        margin-right: 16px;
+    }
+    .call-btn {
+        background-color: #5b5b5b;
+    }
+}
