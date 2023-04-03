@@ -1,0 +1,71 @@
+.service-page {
+    .preview-section {
+        padding-top: 40px;
+        margin-bottom: 140px;
+        .preview-bg {
+            background-image: url(../../../public/images/service-page-preview.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 490px;
+            position: relative;
+        }
+        .service-header {
+            font-family: 'Roboto';
+            font-weight: 800;
+            font-size: 80px;
+            line-height: 57px;
+            letter-spacing: -0.06em;
+            text-transform: uppercase;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .scroll-btn {
+            position: absolute;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            .scroll-btn-border {
+                border-color: #e7e9ed;
+            }
+            .scroll-down-btn > p {
+                color: #bcbfc3;
+            }
+        }
+    }
+    .supplies-section {
+        .supplies-header {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #595959;
+            text-align: center;
+            margin: 0px 310px 40px;
+        }
+        .paragraph-row {
+            gap: 24px;
+            margin-bottom: 60px;
+            > img {
+                height: 300px;
+            }
+        }
+        .item-header {
+            color: #f1275b;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+        .item-text {
+            color: #121212;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            margin-bottom: 32px;
+        }
+    }
+}
