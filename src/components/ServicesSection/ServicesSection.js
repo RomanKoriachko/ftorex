@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ServicesSection.scss'
 
 const ServicesSection = () => {
-    console.log((window.innerWidth - 1330) / 2)
-    const width = (window.innerWidth - 1330) / 2 + 1300
+    const [width, setWidth] = useState((window.innerWidth - 1330) / 2 + 1300)
+
+    window.addEventListener('resize', function () {
+        setWidth((window.innerWidth - 1330) / 2 + 1300)
+    })
 
     return (
         <section className="services-section">
