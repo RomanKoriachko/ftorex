@@ -3,10 +3,10 @@ import Header from '../../container/Header/Header'
 import Footer from '../../container/Footer/Footer'
 import { Outlet } from 'react-router-dom'
 
-const LayoutComponent = () => {
+const LayoutComponent = ({ submitRef }) => {
     return (
         <>
-            <Header />
+            <Header submitRef={submitRef} />
             <Outlet />
             <Footer />
         </>

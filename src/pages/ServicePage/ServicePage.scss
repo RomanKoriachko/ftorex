@@ -1,42 +1,6 @@
-@import '../../style';
-
 .service-page {
-    .preview-section {
-        padding-top: 40px;
-        margin-bottom: 140px;
-        .preview-bg {
-            background-image: url(../../../public/images/service-page-preview.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 490px;
-            position: relative;
-        }
-        .service-header {
-            font-family: 'Roboto';
-            font-weight: 800;
-            font-size: 80px;
-            line-height: 57px;
-            letter-spacing: -0.06em;
-            text-transform: uppercase;
-            color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .scroll-btn {
-            position: absolute;
-            bottom: -100px;
-            left: 50%;
-            transform: translateX(-50%);
-            .scroll-btn-border {
-                border-color: #e7e9ed;
-            }
-            .scroll-down-btn > p {
-                color: #bcbfc3;
-            }
-        }
+    .preview-bg {
+        background-image: url(../../../public/images/service-page-preview.png);
     }
     .supplies-section {
         .supplies-header {
@@ -68,77 +32,6 @@
             font-size: 16px;
             line-height: 32px;
             margin-bottom: 32px;
-        }
-    }
-    .message-section {
-        background-image: url(../../../public/images/message-bg.png);
-        background-repeat: no-repeat;
-        background-position: 0% -27%;
-        background-size: cover;
-        .message-header {
-            font-family: 'Anton';
-            font-weight: 400;
-            font-size: 42px;
-            line-height: 60px;
-            color: #121212;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .message-form {
-            text-align: center;
-            margin: 0 auto;
-            max-width: 1082px;
-            .input-row {
-                justify-content: center;
-                gap: 27px;
-                margin-bottom: 27px;
-            }
-            .message-input {
-                height: 62px;
-                width: 100%;
-                background: #fbfbfb;
-                border: 1px solid #f2f4f6;
-                border-radius: 5px;
-                padding: 19px 18px;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 25px;
-                color: #777b83;
-                &::placeholder {
-                    color: #777b83;
-                    font-family: 'Plus Jakarta Sans';
-                    font-weight: 400;
-                    font-size: 15px;
-                    line-height: 25px;
-                }
-            }
-            .message-textarea {
-                width: 100%;
-                height: 225px;
-                padding: 20px 27px;
-                background: #fbfbfb;
-                border: 1px solid #f2f4f6;
-                border-radius: 5px;
-                resize: none;
-                color: #777b83;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 25px;
-                margin-bottom: 31px;
-                &::placeholder {
-                    color: #777b83;
-                    font-family: 'Plus Jakarta Sans';
-                    font-weight: 400;
-                    font-size: 15px;
-                    line-height: 25px;
-                }
-            }
-            .message-btn {
-                @include buttonWithArrow();
-                background: #f1275b;
-                text-transform: uppercase;
-                margin-bottom: 158px;
-            }
         }
     }
 }

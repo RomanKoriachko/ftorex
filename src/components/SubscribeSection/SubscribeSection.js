@@ -1,9 +1,9 @@
 import React from 'react'
 import './SubscribeSection.scss'
 
-const SubscribeSection = () => {
+const SubscribeSection = ({ submitRef }) => {
     return (
-        <section className="subscribe-section">
+        <section className="subscribe-section" ref={submitRef}>
             <div className="container">
                 <div className="row subscribe-row">
                     <p className="subscribe-header">

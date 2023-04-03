@@ -9,7 +9,7 @@ import MapSection from '../../components/MapSection/MapSection'
 import ArticlesSection from '../../components/ArticlesSection/ArticlesSection'
 import SubscribeSection from '../../components/SubscribeSection/SubscribeSection'
 
-const Main = () => {
+const Main = ({ submitRef }) => {
     return (
         <main className="main">
             <IntroduceSection />
@@ -19,7 +19,7 @@ const Main = () => {
             <AboutUsSection />
             <MapSection />
             <ArticlesSection />
-            <SubscribeSection />
+            <SubscribeSection submitRef={submitRef} />
         </main>
     )
 }

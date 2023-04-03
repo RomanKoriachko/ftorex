@@ -1,20 +1,12 @@
 import React from 'react'
-import ScrollDownBtn from '../../components/ScrollDownBtn/ScrollDownBtn'
 import './ServicePage.scss'
+import PageHeader from '../../components/PageHeader/PageHeader'
+import MessageForm from '../../components/MessageForm/MessageForm'
 
 const ServicePage = () => {
     return (
         <div className="service-page">
-            <section className="preview-section">
-                <div className="container">
-                    <div className="preview-bg">
-                        <p className="service-header">Service</p>
-                        <div className="scroll-btn">
-                            <ScrollDownBtn />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <PageHeader name={'Service'} />
             <section className="supplies-section">
                 <div className="container">
                     <p className="supplies-header">
@@ -144,56 +136,7 @@ const ServicePage = () => {
                     </div>
                 </div>
             </section>
-            <section className="message-section">
-                <p className="message-header">Send us a Message​</p>
-                <form
-                    className="message-form"
-                    action="https://formsubmit.co/mazaxaka.tyt@gmail.com"
-                    method="POST"
-                >
-                    <div className="row input-row">
-                        <input
-                            className="message-input"
-                            type="text"
-                            name="Name"
-                            placeholder="Enter your name .."
-                        />
-                        <input
-                            className="message-input"
-                            placeholder="*Enter your mail .."
-                            name="Email"
-                            type="email"
-                            required
-                        />
-                    </div>
-                    <div className="row input-row">
-                        <input
-                            className="message-input"
-                            name="Adress"
-                            type="text"
-                            placeholder="Enter Adress .."
-                        />
-                        <input
-                            className="message-input"
-                            placeholder="Enter Subject .."
-                            name="Subject"
-                            type="text"
-                        />
-                    </div>
-                    <textarea
-                        className="message-textarea"
-                        name="Message"
-                        placeholder="*Enter you massage .."
-                        required
-                    ></textarea>
-                    <button className="message-btn" type="submit">
-                        <div className="row btn-content-row">
-                            <p>send a letter</p>
-                            <div className="btn-arrow"></div>
-                        </div>
-                    </button>
-                </form>
-            </section>
+            <MessageForm />
         </div>
     )
 }

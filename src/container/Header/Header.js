@@ -1,8 +1,11 @@
 import React from 'react'
 import './Header.scss'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({ submitRef }) => {
+    const scrollDownBtnClick = () => {
+        submitRef.current?.scrollIntoView({ behavior: 'smooth' })
+    }
     return (
         <header className="header">
             <div className="quotation"></div>
@@ -58,18 +61,25 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="header-btns">
-                        <button className="submit-btn">
-                            <div className="row btn-content-row">
-                                <p>SUBMIT</p>
-                                <div className="btn-arrow"></div>
-                            </div>
-                        </button>
-                        <button className="call-btn">
-                            <div className="row btn-content-row">
-                                <p>CALL NOW</p>
-                                <div className="btn-arrow"></div>
-                            </div>
-                        </button>
+                        <Link to="/">
+                            <button
+                                className="submit-btn"
+                                onClick={() => scrollDownBtnClick()}
+                            >
+                                <div className="row btn-content-row">
+                                    <p>SUBMIT</p>
+                                    <div className="btn-arrow"></div>
+                                </div>
+                            </button>
+                        </Link>
+                        <Link to="/contacts">
+                            <button className="call-btn">
+                                <div className="row btn-content-row">
+                                    <p>CALL NOW</p>
+                                    <div className="btn-arrow"></div>
+                                </div>
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

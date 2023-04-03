@@ -11,12 +11,14 @@ const Footer = () => {
                         <p className="big-header">
                             DISCUSSION NOW TO COLLABORATE
                         </p>
-                        <button className="footer-btn">
-                            <div className="row btn-content-row">
-                                <p>Write to us</p>
-                                <div className="btn-arrow"></div>
-                            </div>
-                        </button>
+                        <Link to="/contacts">
+                            <button className="footer-btn">
+                                <div className="row btn-content-row">
+                                    <p>Write to us</p>
+                                    <div className="btn-arrow"></div>
+                                </div>
+                            </button>
+                        </Link>
                     </div>
                     <div className="footer-item-text">
                         <p className="footer-column-header">Company</p>

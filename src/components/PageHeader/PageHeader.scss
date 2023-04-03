@@ -1,0 +1,36 @@
+.preview-section {
+    padding-top: 40px;
+    margin-bottom: 140px;
+    .preview-bg {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 490px;
+        position: relative;
+    }
+    .preview-header {
+        font-family: 'Roboto';
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 57px;
+        letter-spacing: -0.06em;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .scroll-btn {
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        .scroll-btn-border {
+            border-color: #e7e9ed;
+        }
+        .scroll-down-btn > p {
+            color: #bcbfc3;
+        }
+    }
+}
