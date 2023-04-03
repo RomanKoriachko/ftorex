@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './IntroduceSection.scss'
 import ScrollDownBtn from '../ScrollDownBtn/ScrollDownBtn'
 
 const IntroduceSection = () => {
+    const ref = useRef(null)
+    const scrollDownBtnClick = () => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
         <section className="introduce-section">
             <div className="container introduce-wrapper">
@@ -17,10 +22,14 @@ const IntroduceSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="scroll-btn">
+                <div
+                    className="scroll-btn"
+                    onClick={() => scrollDownBtnClick()}
+                >
                     <ScrollDownBtn />
                 </div>
             </div>
+            <div ref={ref}></div>
         </section>
     )
 }
