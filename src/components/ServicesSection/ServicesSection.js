@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './ServicesSection.scss'
+import { useAppDispatch, useAppSelector } from '../../redux/hooks'
+import { setWidth } from '../../redux/widthReducer'
 
 const ServicesSection = () => {
-    const [width, setWidth] = useState((window.innerWidth - 1330) / 2 + 1300)
+    const widthState = useAppSelector((state) => state.widthState)
+    const dispatch = useAppDispatch()
 
     window.addEventListener('resize', function () {
-        setWidth((window.innerWidth - 1330) / 2 + 1300)
+        dispatch(setWidth((window.innerWidth - 1330) / 2 + 1300))
     })
 
     return (
@@ -13,7 +16,7 @@ const ServicesSection = () => {
             <div
                 className="services-container"
                 style={{
-                    width: width,
+                    width: widthState,
                 }}
             >
                 <div className="services-row">
