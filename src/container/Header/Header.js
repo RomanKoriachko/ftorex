@@ -12,11 +12,13 @@ const Header = ({ submitRef }) => {
             <div className="container">
                 <div className="row header-row">
                     <div className="row">
-                        <img
-                            className="header-logo"
-                            src="images/logo.png"
-                            alt=""
-                        />
+                        <Link to="/">
+                            <img
+                                className="header-logo"
+                                src="images/logo.png"
+                                alt=""
+                            />
+                        </Link>
                         <div className="header-menu row">
                             <NavLink
                                 to="/"

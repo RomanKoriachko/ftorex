@@ -1,5 +1,6 @@
 import React from 'react'
 import './ArticlesSection.scss'
+import { Link } from 'react-router-dom'
 
 const ArticlesSection = () => {
     return (
@@ -13,12 +14,14 @@ const ArticlesSection = () => {
                         </p>
                     </div>
                     <div>
-                        <button className="articles-btn">
-                            <div className="row btn-content-row">
-                                <p>more Articles</p>
-                                <div className="btn-arrow"></div>
-                            </div>
-                        </button>
+                        <Link to="/articles">
+                            <button className="articles-btn">
+                                <div className="row btn-content-row">
+                                    <p>more Articles</p>
+                                    <div className="btn-arrow"></div>
+                                </div>
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="row articles-items-row">
