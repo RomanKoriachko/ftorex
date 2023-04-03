@@ -1,4 +1,5 @@
 import React from 'react'
+import AnimatedNumbers from 'react-animated-numbers'
 import './IndicatorsSection.scss'
 
 const IndicatorsSection = () => {
@@ -23,25 +24,121 @@ const IndicatorsSection = () => {
                     <div>
                         <div className="row indicators-numbers">
                             <div className="indicators-numbers-item">
-                                <p className="big-text">138+</p>
+                                <p className="big-text">
+                                    <div className="row">
+                                        <AnimatedNumbers
+                                            animateToNumber={138}
+                                            configs={[
+                                                {
+                                                    mass: 1,
+                                                    tension: 220,
+                                                    friction: 100,
+                                                },
+                                                {
+                                                    mass: 1,
+                                                    tension: 180,
+                                                    friction: 130,
+                                                },
+                                                {
+                                                    mass: 1,
+                                                    tension: 280,
+                                                    friction: 90,
+                                                },
+                                            ]}
+                                        />
+                                        <p>+</p>
+                                    </div>
+                                </p>
                                 <p className="small-text">
                                     Clients all over the world
                                 </p>
                             </div>
                             <div className="indicators-numbers-item">
-                                <p className="big-text">8+</p>
+                                <p className="big-text">
+                                    <div className="row">
+                                        <AnimatedNumbers
+                                            animateToNumber={8}
+                                            configs={[
+                                                {
+                                                    mass: 1,
+                                                    tension: 220,
+                                                    friction: 100,
+                                                },
+                                                {
+                                                    mass: 1,
+                                                    tension: 180,
+                                                    friction: 130,
+                                                },
+                                                {
+                                                    mass: 1,
+                                                    tension: 280,
+                                                    friction: 90,
+                                                },
+                                            ]}
+                                        />
+                                        <p>+</p>
+                                    </div>
+                                </p>
                                 <p className="small-text">Years Experience</p>
                             </div>
                         </div>
                         <div className="row indicators-numbers">
                             <div className="indicators-numbers-item">
-                                <p className="big-text">12+</p>
+                                <p className="big-text">
+                                    <div className="row">
+                                        <AnimatedNumbers
+                                            animateToNumber={12}
+                                            configs={[
+                                                {
+                                                    mass: 1,
+                                                    tension: 220,
+                                                    friction: 100,
+                                                },
+                                                {
+                                                    mass: 1,
+                                                    tension: 180,
+                                                    friction: 130,
+                                                },
+                                                {
+                                                    mass: 1,
+                                                    tension: 280,
+                                                    friction: 90,
+                                                },
+                                            ]}
+                                        />
+                                        <p>+</p>
+                                    </div>
+                                </p>
                                 <p className="small-text">
                                     Countries we work with
                                 </p>
                             </div>
                             <div className="indicators-numbers-item">
-                                <p className="big-text">6+</p>
+                                <p className="big-text">
+                                    <div className="row">
+                                        <AnimatedNumbers
+                                            animateToNumber={6}
+                                            configs={[
+                                                {
+                                                    mass: 1,
+                                                    tension: 220,
+                                                    friction: 100,
+                                                },
+                                                {
+                                                    mass: 1,
+                                                    tension: 180,
+                                                    friction: 130,
+                                                },
+                                                {
+                                                    mass: 1,
+                                                    tension: 280,
+                                                    friction: 90,
+                                                },
+                                            ]}
+                                        />
+                                        <p>+</p>
+                                    </div>
+                                </p>
                                 <p className="small-text">
                                     Million tons of coal supplies per year
                                 </p>

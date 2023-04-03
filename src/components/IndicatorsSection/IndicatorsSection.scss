@@ -24,6 +24,11 @@
     .indicators-numbers-item {
         width: 200px;
     }
+    .animated-container {
+        > div {
+            width: 33px;
+        }
+    }
     .big-text {
         font-family: 'Roboto';
         font-weight: 800;
