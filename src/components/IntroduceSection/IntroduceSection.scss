@@ -1,0 +1,38 @@
+@import '../../style';
+
+.introduce-section {
+    background-image: url(../../assets/introduce-section-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .introduce-wrapper {
+        position: relative;
+    }
+    .introduce-text-wrapper {
+        padding-top: 216px;
+        padding-bottom: 338px;
+    }
+    .introduce-content {
+        background-color: #c74869;
+        color: white;
+        max-width: 890px;
+        padding: 32px;
+        > p:nth-child(1) {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 800;
+            font-size: 80px;
+            line-height: 110%;
+            text-transform: uppercase;
+            letter-spacing: -0.04em;
+            margin-bottom: 16px;
+        }
+        > p:nth-child(2) {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+    .scroll-btn {
+        position: absolute;
+        bottom: 42px;
+    }
+}

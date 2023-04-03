@@ -1,0 +1,43 @@
+.indicators-section {
+    padding-bottom: 80px;
+    .indicators-small-header {
+        margin-bottom: 24px;
+    }
+    .indicators-header-row {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-bottom: 72px;
+    }
+    .big-header {
+        margin-right: 50px;
+    }
+    .indicators-content-row {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        gap: 55px;
+    }
+    .indicators-numbers {
+        gap: 24px;
+        justify-content: center;
+    }
+    .indicators-numbers-item {
+        width: 200px;
+    }
+    .big-text {
+        font-family: 'Roboto';
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 150%;
+        letter-spacing: -0.06em;
+        color: #121212;
+    }
+    .small-text {
+        font-family: 'Plus Jakarta Sans';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #595959;
+        margin-right: 80px;
+    }
+}

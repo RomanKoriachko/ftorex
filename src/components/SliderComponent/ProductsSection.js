@@ -1,10 +1,10 @@
 import React from 'react'
-import './SliderComponent.scss'
+import './ProductsSection.scss'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
 
-const SliderComponent = () => {
+const ProductsSection = () => {
     const settings = {
         dots: false,
         infinite: false,
@@ -15,9 +15,9 @@ const SliderComponent = () => {
     return (
         <section className="products-section">
             <div className="container">
-                <p className="section-name">Our Products</p>
-                <p className="products-header">We can offer</p>
-                <p className="products-subtitle">
+                <p className="section-name small-header">Our Products</p>
+                <p className="products-header big-header">We can offer</p>
+                <p className="products-subtitle subtitle">
                     Ftorex is a global coal industry company designed to
                     establish and develop a Coal Business, Engineering & General
                     Purpose
@@ -162,4 +162,4 @@ const SliderComponent = () => {
     )
 }
 
-export default SliderComponent
+export default ProductsSection
