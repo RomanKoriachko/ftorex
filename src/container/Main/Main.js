@@ -7,6 +7,7 @@ import ServicesSection from '../../components/ServicesSection/ServicesSection'
 import AboutUsSection from '../../components/AboutUsSection/AboutUsSection'
 import MapSection from '../../components/MapSection/MapSection'
 import ArticlesSection from '../../components/ArticlesSection/ArticlesSection'
+import SubscribeSection from '../../components/SubscribeSection/SubscribeSection'
 
 const Main = () => {
     return (
@@ -18,6 +19,7 @@ const Main = () => {
             <AboutUsSection />
             <MapSection />
             <ArticlesSection />
+            <SubscribeSection />
         </main>
     )
 }

@@ -1,0 +1,57 @@
+@import '../../style';
+
+.footer {
+    background: #121212;
+    color: white;
+    padding-top: 81px;
+    padding-bottom: 35px;
+    .footer-row {
+        gap: 40px;
+    }
+    .footer-item-header {
+        width: 45%;
+        .big-header {
+            margin-bottom: 32px;
+        }
+    }
+    .footer-item-text {
+        min-width: 150px;
+        max-width: 160px;
+        .footer-column-header {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            margin-bottom: 16px;
+        }
+        .footer-column-item {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            margin-bottom: 16px;
+        }
+        .footer-contacts-item-1 {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .footer-contacts-item-2 {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            margin-bottom: 16px;
+        }
+    }
+    .big-header {
+        color: white;
+    }
+    .footer-btn {
+        @include buttonWithArrow();
+        background: #f1275b;
+    }
+    .copyright {
+        text-align: center;
+        margin-top: 73px;
+    }
+}
