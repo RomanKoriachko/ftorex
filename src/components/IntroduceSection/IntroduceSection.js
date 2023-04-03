@@ -8,9 +8,16 @@ const IntroduceSection = () => {
         ref.current?.scrollIntoView({ behavior: 'smooth' })
     }
 
+    const windowHeight = window.innerHeight - 122
+
     return (
         <section className="introduce-section">
-            <div className="container introduce-wrapper">
+            <div
+                className="container introduce-wrapper"
+                style={{
+                    height: windowHeight,
+                }}
+            >
                 <div className="introduce-text-wrapper">
                     <div className="introduce-content">
                         <p>Step to a profitable business with us.</p>

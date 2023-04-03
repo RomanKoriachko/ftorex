@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './PageHeader.scss'
 import ScrollDownBtn from '../ScrollDownBtn/ScrollDownBtn'
 
@@ -7,21 +7,36 @@ const PageHeader = ({ name }) => {
     const scrollDownBtnClick = () => {
         ref.current?.scrollIntoView({ behavior: 'smooth' })
     }
+    const windowHeight = window.innerHeight - 122
+    const bgHeight = windowHeight - 160
+
     return (
-        <section className="preview-section">
-            <div className="container">
-                <div className="preview-bg">
-                    <p className="preview-header">{name}</p>
+        <>
+            <section
+                className={`preview-section`}
+                style={{
+                    height: windowHeight,
+                }}
+            >
+                <div className="container">
                     <div
-                        className="scroll-btn"
-                        onClick={() => scrollDownBtnClick()}
+                        className="preview-bg"
+                        style={{
+                            height: bgHeight,
+                        }}
                     >
-                        <ScrollDownBtn />
+                        <p className="preview-header">{name}</p>
+                        <div
+                            className="scroll-btn"
+                            onClick={() => scrollDownBtnClick()}
+                        >
+                            <ScrollDownBtn />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <div ref={ref}></div>
-        </section>
+        </>
     )
 }
 

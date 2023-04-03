@@ -3,6 +3,7 @@ import './ProductsSection.scss'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
+import { Link } from 'react-router-dom'
 
 const ProductsSection = () => {
     const settings = {
@@ -35,12 +36,14 @@ const ProductsSection = () => {
                                 the supplier...{' '}
                             </p>
                             <div>
-                                <button className="info-btn">
-                                    <div className="row btn-content-row">
-                                        <p>View info</p>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
+                                <Link to="/products">
+                                    <button className="info-btn">
+                                        <div className="row btn-content-row">
+                                            <p>View info</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -53,12 +56,14 @@ const ProductsSection = () => {
                                 promised: Leveraging state...{' '}
                             </p>
                             <div>
-                                <button className="info-btn">
-                                    <div className="row btn-content-row">
-                                        <p>View info</p>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
+                                <Link to="/products">
+                                    <button className="info-btn">
+                                        <div className="row btn-content-row">
+                                            <p>View info</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -71,12 +76,14 @@ const ProductsSection = () => {
                                 space...{' '}
                             </p>
                             <div>
-                                <button className="info-btn">
-                                    <div className="row btn-content-row">
-                                        <p>View info</p>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
+                                <Link to="/products">
+                                    <button className="info-btn">
+                                        <div className="row btn-content-row">
+                                            <p>View info</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -89,12 +96,14 @@ const ProductsSection = () => {
                                 strategy, marketing, organization...{' '}
                             </p>
                             <div>
-                                <button className="info-btn">
-                                    <div className="row btn-content-row">
-                                        <p>View info</p>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
+                                <Link to="/products">
+                                    <button className="info-btn">
+                                        <div className="row btn-content-row">
+                                            <p>View info</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -107,12 +116,14 @@ const ProductsSection = () => {
                                 strategy, marketing, organization...{' '}
                             </p>
                             <div>
-                                <button className="info-btn">
-                                    <div className="row btn-content-row">
-                                        <p>View info</p>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
+                                <Link to="/products">
+                                    <button className="info-btn">
+                                        <div className="row btn-content-row">
+                                            <p>View info</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -125,12 +136,14 @@ const ProductsSection = () => {
                                 strategy, marketing, organization...{' '}
                             </p>
                             <div>
-                                <button className="info-btn">
-                                    <div className="row btn-content-row">
-                                        <p>View info</p>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
+                                <Link to="/products">
+                                    <button className="info-btn">
+                                        <div className="row btn-content-row">
+                                            <p>View info</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -143,22 +156,26 @@ const ProductsSection = () => {
                                 strategy, marketing, organization...{' '}
                             </p>
                             <div>
-                                <button className="info-btn">
-                                    <div className="row btn-content-row">
-                                        <p>View info</p>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
+                                <Link to="/products">
+                                    <button className="info-btn">
+                                        <div className="row btn-content-row">
+                                            <p>View info</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
                 </Slider>
-                <button className="products-btn">
-                    <div className="row btn-content-row">
-                        <p>more products</p>
-                        <div className="btn-arrow"></div>
-                    </div>
-                </button>
+                <Link to="/products">
+                    <button className="products-btn">
+                        <div className="row btn-content-row">
+                            <p>more products</p>
+                            <div className="btn-arrow"></div>
+                        </div>
+                    </button>
+                </Link>
             </div>
         </section>
     )

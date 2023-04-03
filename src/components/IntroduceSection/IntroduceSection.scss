@@ -6,10 +6,12 @@
     background-size: cover;
     .introduce-wrapper {
         position: relative;
+        min-height: 600px;
     }
     .introduce-text-wrapper {
-        padding-top: 216px;
-        padding-bottom: 338px;
+        position: absolute;
+        top: 35%;
+        transform: translateY(-35%);
     }
     .introduce-content {
         background-color: #c74869;

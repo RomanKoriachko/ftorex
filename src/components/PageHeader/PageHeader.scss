@@ -1,11 +1,11 @@
 .preview-section {
     padding-top: 40px;
-    margin-bottom: 140px;
+    max-height: 690px;
     .preview-bg {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 490px;
+        max-height: 490px;
         position: relative;
     }
     .preview-header {
@@ -33,4 +33,7 @@
             color: #bcbfc3;
         }
     }
+}
+.add-margin {
+    margin-bottom: 140px;
 }
