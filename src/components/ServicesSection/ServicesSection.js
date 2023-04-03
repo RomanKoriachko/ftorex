@@ -2,6 +2,7 @@ import React from 'react'
 import './ServicesSection.scss'
 import { useAppDispatch, useAppSelector } from '../../redux/hooks'
 import { setWidth } from '../../redux/widthReducer'
+import { Link } from 'react-router-dom'
 
 const ServicesSection = () => {
     const widthState = useAppSelector((state) => state.widthState)
@@ -23,12 +24,14 @@ const ServicesSection = () => {
                     <div>
                         <p className="small-header">Our Services</p>
                         <p className="big-header">what services we provide</p>
-                        <button className="sevices-btn">
-                            <div className="row btn-content-row">
-                                <p>View info</p>
-                                <div className="btn-arrow"></div>
-                            </div>
-                        </button>
+                        <Link to="/service">
+                            <button className="sevices-btn">
+                                <div className="row btn-content-row">
+                                    <p>View info</p>
+                                    <div className="btn-arrow"></div>
+                                </div>
+                            </button>
+                        </Link>
                     </div>
                     <div className="services-items">
                         <div>Coal supplies</div>
