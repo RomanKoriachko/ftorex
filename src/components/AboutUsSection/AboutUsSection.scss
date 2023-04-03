@@ -1,0 +1,32 @@
+.about-section {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 130px;
+    background-image: url(../../../public/images/about-us-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% -25%;
+    .small-header {
+        margin-bottom: 24px;
+    }
+    .big-header {
+        margin-bottom: 24px;
+    }
+    .subtitle {
+        margin: 0px 325px 66px;
+    }
+    .about-text-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #121212;
+        text-align: left;
+        gap: 23px;
+        margin: 0px 120px;
+        .about-text-paragraph {
+            margin-bottom: 30px;
+        }
+    }
+}
