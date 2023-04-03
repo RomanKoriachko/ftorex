@@ -1,0 +1,42 @@
+@import '../../style';
+
+.articles-section {
+    padding: 80px 0px;
+    .small-header {
+        margin-bottom: 24px;
+    }
+    .articles-row {
+        justify-content: space-between;
+        margin-bottom: 72px;
+        .articles-header {
+            width: 60%;
+        }
+    }
+    .articles-btn {
+        @include buttonWithArrow();
+        color: #5b5b5b;
+        background-color: transparent;
+        border: 1px solid #5b5b5b;
+        text-transform: uppercase;
+        .btn-arrow {
+            background-image: url(../../assets/button-arr-gray.svg);
+        }
+    }
+    .articles-items-row {
+        gap: 24px;
+        .article-item {
+            > img {
+                margin-bottom: 24px;
+            }
+            > p {
+                font-family: 'Roboto';
+                font-weight: 800;
+                font-size: 23px;
+                line-height: 120%;
+                letter-spacing: -0.06em;
+                text-transform: uppercase;
+                color: #121212;
+            }
+        }
+    }
+}

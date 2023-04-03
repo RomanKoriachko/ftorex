@@ -7,14 +7,15 @@
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s all;
-    &:hover {
-        opacity: 0.7;
+    &:hover .btn-arrow {
+        transform: translateX(35%);
     }
     .btn-content-row {
         gap: 8px;
         align-items: center;
     }
     .btn-arrow {
+        transition: 0.3s all;
         height: 20px;
         width: 20px;
         background-image: url(./assets/button-arr.svg);
