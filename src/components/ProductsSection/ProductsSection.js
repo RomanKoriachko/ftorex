@@ -7,10 +7,12 @@ import Slider from 'react-slick'
 const ProductsSection = () => {
     const settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         arrows: false,
         slidesToShow: 4,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
     }
     return (
         <section className="products-section">
