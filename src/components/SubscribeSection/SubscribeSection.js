@@ -12,15 +12,21 @@ const SubscribeSection = () => {
                     </p>
                     <div>
                         <div className="row input-email-row">
-                            <input
-                                className="email-input"
-                                id="email"
-                                type="email"
-                                placeholder="Enter your email"
-                            />
-                            <button className="email-btn" id="email">
-                                Submit
-                            </button>
+                            <form
+                                action="https://formsubmit.co/mazaxaka.tyt@gmail.com"
+                                method="POST"
+                            >
+                                <input
+                                    className="email-input"
+                                    placeholder="Enter your email"
+                                    type="email"
+                                    name="email"
+                                    required
+                                />
+                                <button className="email-btn" type="submit">
+                                    Submit
+                                </button>
+                            </form>
                         </div>
                         <p className="input-annotation">
                             We promise not to spam you
