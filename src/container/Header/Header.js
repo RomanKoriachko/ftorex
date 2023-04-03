@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.scss'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -14,11 +15,46 @@ const Header = () => {
                             alt=""
                         />
                         <div className="header-menu row">
-                            <div>Home</div>
-                            <div>Service</div>
-                            <div>Products</div>
-                            <div>Articles</div>
-                            <div>Contact Us</div>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    isActive ? 'active' : 'notActive'
+                                }
+                            >
+                                Home
+                            </NavLink>
+                            <NavLink
+                                to="/service"
+                                className={({ isActive }) =>
+                                    isActive ? 'active' : 'notActive'
+                                }
+                            >
+                                Service
+                            </NavLink>
+                            <NavLink
+                                to="/products"
+                                className={({ isActive }) =>
+                                    isActive ? 'active' : 'notActive'
+                                }
+                            >
+                                Products
+                            </NavLink>
+                            <NavLink
+                                to="/articles"
+                                className={({ isActive }) =>
+                                    isActive ? 'active' : 'notActive'
+                                }
+                            >
+                                Articles
+                            </NavLink>
+                            <NavLink
+                                to="/contacts"
+                                className={({ isActive }) =>
+                                    isActive ? 'active' : 'notActive'
+                                }
+                            >
+                                Contact Us
+                            </NavLink>
                         </div>
                     </div>
                     <div className="header-btns">

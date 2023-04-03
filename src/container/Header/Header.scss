@@ -12,6 +12,14 @@
 .header-menu {
     margin-left: 43px;
     gap: 32px;
+    > a {
+        text-decoration: none;
+        color: #121212;
+        font-weight: 400;
+    }
+    .active {
+        font-weight: 700;
+    }
 }
 .header-btns {
     > button {
