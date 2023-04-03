@@ -1,6 +1,7 @@
 import React from 'react'
 import './Main.scss'
 import ScrollDownBtn from '../../components/ScrollDownBtn/ScrollDownBtn'
+import SliderComponent from '../../components/SliderComponent/SliderComponent'
 
 const Main = () => {
     return (
@@ -24,6 +25,7 @@ const Main = () => {
                     </div>
                 </div>
             </section>
+            <SliderComponent />
         </main>
     )
 }

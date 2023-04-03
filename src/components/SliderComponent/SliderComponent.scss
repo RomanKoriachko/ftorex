@@ -1,0 +1,88 @@
+@import '../../style';
+
+.products-section {
+    padding: 80px 0px;
+    text-align: center;
+    .section-name {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: #f1275b;
+        margin-bottom: 24px;
+    }
+    .products-header {
+        font-family: 'Roboto';
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 120%;
+        letter-spacing: -0.06em;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+    .products-subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #595959;
+        margin-bottom: 60px;
+        padding: 0px 295px;
+    }
+    .product-item {
+        padding-right: 24px;
+        min-width: 306px;
+        .product-box {
+            background-color: white;
+            border: 1px solid #ededed;
+            padding: 32px 16px;
+            height: 286px;
+            min-width: 306px;
+            text-align: left;
+            .long-header {
+                font-size: 28px !important;
+            }
+            > p:nth-child(1) {
+                font-family: 'Roboto';
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 120%;
+                letter-spacing: -0.06em;
+                text-transform: uppercase;
+                color: #121212;
+                margin-bottom: 16px;
+            }
+            > p:nth-child(2) {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #595959;
+                margin-bottom: 48px;
+            }
+        }
+        .info-btn {
+            @include buttonWithArrow();
+            color: #121212;
+            padding: 0px;
+            background-color: transparent;
+            .btn-arrow {
+                background-image: url(../../assets/button-arr-red.svg);
+            }
+            p {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+            }
+        }
+    }
+    .products-btn {
+        @include buttonWithArrow();
+        color: #5b5b5b;
+        background-color: transparent;
+        border: 1px solid #5b5b5b;
+        text-transform: uppercase;
+        margin-top: 40px;
+        .btn-arrow {
+            background-image: url(../../assets/button-arr-gray.svg);
+        }
+    }
+}
