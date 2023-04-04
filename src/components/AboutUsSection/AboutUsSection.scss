@@ -30,3 +30,36 @@
         }
     }
 }
+
+/* Desktop */
+@media (max-width: 1200px) {
+    .about-section {
+        .subtitle {
+            margin: 0px 200px 66px;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .about-section {
+        .subtitle {
+            margin: 0px 0px 32px;
+        }
+        .about-text-wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .about-section {
+        .about-text-wrapper {
+            grid-template-columns: 1fr;
+        }
+        .about-text-wrapper {
+            margin: 0px;
+        }
+    }
+}
