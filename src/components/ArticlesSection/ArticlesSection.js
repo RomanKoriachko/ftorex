@@ -13,7 +13,7 @@ const ArticlesSection = () => {
                             Interesting information about our field
                         </p>
                     </div>
-                    <div>
+                    <div className="more-articles-btn">
                         <Link to="/articles">
                             <button className="articles-btn">
                                 <div className="row btn-content-row">
