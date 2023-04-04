@@ -20,7 +20,9 @@ const IndicatorsSection = () => {
                     </p>
                 </div>
                 <div className="indicators-content-row">
-                    <img src="images/indicators-section-img.png" alt="" />
+                    <div className="indicators-img">
+                        <img src="images/indicators-section-img.png" alt="" />
+                    </div>
                     <div>
                         <div className="row indicators-numbers">
                             <div className="indicators-numbers-item">

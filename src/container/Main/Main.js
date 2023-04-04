@@ -14,7 +14,7 @@ const Main = ({ submitRef }) => {
         <main className="main">
             <IntroduceSection />
             <ProductsSection />
-            {/* <IndicatorsSection /> */}
+            <IndicatorsSection />
             {/* <ServicesSection /> */}
             {/* <AboutUsSection /> */}
             {/* <MapSection /> */}

@@ -16,6 +16,11 @@
         grid-template-columns: 2fr 1fr;
         align-items: center;
         gap: 55px;
+        .indicators-img {
+            > img {
+                width: 100%;
+            }
+        }
     }
     .indicators-numbers {
         gap: 24px;
@@ -44,5 +49,65 @@
         line-height: 150%;
         color: #595959;
         margin-right: 80px;
+    }
+}
+
+/* Desctop */
+@media (max-width: 1200px) {
+    .indicators-section {
+        .indicators-header-row {
+            grid-template-columns: 1.5fr 1fr;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .indicators-section {
+        .indicators-header-row {
+            grid-template-columns: 1fr;
+            margin-bottom: 32px;
+        }
+        .indicators-small-header {
+            text-align: center;
+        }
+        .indicators-content-row {
+            grid-template-columns: 1fr;
+            .indicators-img {
+                margin: 0px -16px;
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .indicators-section {
+        padding-top: 8px;
+        padding-bottom: 50px;
+        .big-header {
+            margin-right: 0px;
+        }
+        .indicators-header-row {
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .indicators-content-row {
+            gap: 35px;
+            .indicators-img {
+                height: 360px;
+                > img {
+                    height: 100%;
+                    // width: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+        .indicators-numbers-item {
+            width: 50%;
+        }
+        .small-text {
+            margin-right: 0;
+        }
     }
 }
