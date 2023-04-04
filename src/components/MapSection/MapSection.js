@@ -24,11 +24,13 @@ const MapSection = () => {
                             <p className="big-header">map</p>
                         </div>
                         <p className="subtitle">
-                            For athletes, high altitude produces two
-                            contradictory effects on performance. For explosive
-                            events (sprints up to 400 metres, long jump, triple
-                            jump) the reduction in atmospheric pressure means
-                            there is less resistance fro
+                            Welcome to Deposit Map section! Here, you can
+                            explore all the deposits of our planet. Every
+                            deposit is marked, making it easier for you to find
+                            the resources you need. Whether you're a researcher,
+                            a miner, or an investor, this map is a valuable tool
+                            for anyone interested in understanding the Earth's
+                            resources. Start exploring today!
                         </p>
                         <button className="map-btn" onClick={() => showMap()}>
                             <div className="row btn-content-row">

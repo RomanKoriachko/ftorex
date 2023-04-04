@@ -5,6 +5,7 @@
     color: white;
     .subscribe-row {
         justify-content: space-between;
+        gap: 32px;
     }
     .subscribe-header {
         font-family: 'Anton';
@@ -13,9 +14,6 @@
         line-height: 120%;
         text-transform: uppercase;
         width: 50%;
-    }
-    .input-email-row {
-        margin-bottom: 16px;
     }
     .email-input {
         height: 48px;
@@ -49,8 +47,52 @@
         }
     }
     .input-annotation {
+        margin-top: 16px;
         font-weight: 400;
         font-size: 14px;
         line-height: 150%;
+    }
+}
+
+// Tablet
+@media (max-width: 992px) {
+    .subscribe-section {
+        .subscribe-row {
+            flex-direction: column;
+        }
+        .subscribe-header {
+            width: 100%;
+        }
+        .input-email-row {
+            justify-content: center;
+        }
+    }
+}
+
+// Mobile
+@media (max-width: 576px) {
+    .subscribe-section {
+        padding: 35px 0px;
+        .subscribe-row {
+            gap: 16px;
+        }
+        .subscribe-header {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+        }
+        .input-email-row {
+            flex-direction: column;
+            input {
+                width: 100%;
+            }
+            .input-annotation {
+                margin-top: 8px;
+                margin-bottom: 16px;
+            }
+            button {
+                width: 100%;
+            }
+        }
     }
 }

@@ -11,26 +11,28 @@ const SubscribeSection = ({ submitRef }) => {
                         only up-to-date quotes
                     </p>
                     <div>
-                        <div className="row input-email-row">
-                            <form
-                                action="https://formsubmit.co/mazaxaka.tyt@gmail.com"
-                                method="POST"
-                            >
-                                <input
-                                    className="email-input"
-                                    placeholder="Enter your email"
-                                    type="email"
-                                    name="email"
-                                    required
-                                />
+                        <form
+                            action="https://formsubmit.co/mazaxaka.tyt@gmail.com"
+                            method="POST"
+                        >
+                            <div className="row input-email-row">
+                                <div>
+                                    <input
+                                        className="email-input"
+                                        placeholder="Enter your email"
+                                        type="email"
+                                        name="email"
+                                        required
+                                    />
+                                    <p className="input-annotation">
+                                        We promise not to spam you
+                                    </p>
+                                </div>
                                 <button className="email-btn" type="submit">
                                     Submit
                                 </button>
-                            </form>
-                        </div>
-                        <p className="input-annotation">
-                            We promise not to spam you
-                        </p>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
