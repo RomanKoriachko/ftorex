@@ -44,52 +44,57 @@ const Footer = ({ messageRef }) => {
                             </div>
                         </button>
                     </div>
-                    <div className="footer-item-text">
-                        <p className="footer-column-header">Company</p>
-                        <p className="footer-column-item">
-                            <Link to="/">Home</Link>
-                        </p>
-                        <p className="footer-column-item">
-                            <Link to="/products">Products</Link>
-                        </p>
-                        <p className="footer-column-item">
-                            <Link to="/service">Service</Link>
-                        </p>
-                        <p className="footer-column-item">
-                            <Link to="/articles">Articles</Link>
-                        </p>
-                        <p className="footer-column-item">
-                            <Link to="/contacts">Contact Us</Link>
-                        </p>
-                    </div>
-                    <div className="footer-item-text">
-                        <p className="footer-column-header">Service</p>
-                        <p className="footer-column-item">Coal supplies</p>
-                        <p className="footer-column-item">
-                            Fertilizer supplies
-                        </p>
-                        <p className="footer-column-item">Ocean freight</p>
-                        <p className="footer-column-item">Customs Clearance</p>
-                        <p className="footer-column-item">Consulting</p>
-                    </div>
-                    <div className="footer-item-text">
-                        <p className="footer-column-header">Social Media</p>
-                        <p className="footer-column-item">Facebook</p>
-                        <p className="footer-column-item">Linkedin</p>
-                    </div>
-                    <div className="footer-item-text">
-                        <p className="footer-column-header">Contact</p>
-                        <p className="footer-contacts-item-1">+52 9473 8374</p>
-                        <p className="footer-contacts-item-1">
-                            sales@ftorex.ae
-                        </p>
-                        <p className="footer-contacts-item-2">
-                            3233 W Dallas St, Houston TX 77019
-                        </p>
-                        <p className="footer-contacts-item-2">
-                            M05-0190 Unique Adventure Business Centre,  Building
-                            PR1005, Port Saeed, Dubai, UAE
-                        </p>
+                    <div className="row footer-links-row">
+                        <div className="footer-item-text">
+                            <p className="footer-column-header">Company</p>
+                            <p className="footer-column-item">
+                                <Link to="/">Home</Link>
+                            </p>
+                            <p className="footer-column-item">
+                                <Link to="/products">Products</Link>
+                            </p>
+                            <p className="footer-column-item">
+                                <Link to="/service">Service</Link>
+                            </p>
+                            <p className="footer-column-item">
+                                <Link to="/articles">Articles</Link>
+                            </p>
+                            <p className="footer-column-item">
+                                <Link to="/contacts">Contact Us</Link>
+                            </p>
+                        </div>
+                        <div className="footer-item-text">
+                            <p className="footer-column-header">Service</p>
+                            <p className="footer-column-item">Coal supplies</p>
+                            <p className="footer-column-item">
+                                Fertilizer supplies
+                            </p>
+                            <p className="footer-column-item">Ocean freight</p>
+                            <p className="footer-column-item">
+                                Customs Clearance
+                            </p>
+                            <p className="footer-column-item">Consulting</p>
+                        </div>
+                        <div className="footer-item-text">
+                            <p className="footer-column-header">Social Media</p>
+                            <p className="footer-column-item">Linkedin</p>
+                        </div>
+                        <div className="footer-item-text">
+                            <p className="footer-column-header">Contact</p>
+                            <p className="footer-contacts-item-1">
+                                +52 9473 8374
+                            </p>
+                            <p className="footer-contacts-item-1">
+                                sales@ftorex.ae
+                            </p>
+                            <p className="footer-contacts-item-2">
+                                3233 W Dallas St, Houston TX 77019
+                            </p>
+                            <p className="footer-contacts-item-2">
+                                M05-0190 Unique Adventure Business Centre, 
+                                Building PR1005, Port Saeed, Dubai, UAE
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <p className="copyright">
