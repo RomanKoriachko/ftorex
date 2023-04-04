@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = (window.innerWidth - 1330) / 2 + 1300
+const initialState = 'auto'
 
 export const widthReducer = createSlice({
     name: 'width',

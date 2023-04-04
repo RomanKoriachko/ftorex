@@ -8,7 +8,7 @@ const LayoutComponent = ({ submitRef, messageRef }) => {
         <>
             <Header submitRef={submitRef} />
             <Outlet />
-            <Footer messageRef={messageRef} />
+            {/* <Footer messageRef={messageRef} /> */}
         </>
     )
 }

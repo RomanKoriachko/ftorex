@@ -1,31 +1,13 @@
 import React from 'react'
 import './ServicesSection.scss'
-import { useAppDispatch, useAppSelector } from '../../redux/hooks'
-import { setWidth } from '../../redux/widthReducer'
 import { Link } from 'react-router-dom'
 
 const ServicesSection = () => {
-    const widthState = useAppSelector((state) => state.widthState)
-    const dispatch = useAppDispatch()
-
-    window.addEventListener('resize', function () {
-        if (window.innerWidth >= 1320) {
-            dispatch(setWidth((window.innerWidth - 1330) / 2 + 1300))
-        } else {
-            dispatch(setWidth('auto'))
-        }
-    })
-
     return (
         <section className="services-section">
-            <div className="container tablet-container">
-                <div
-                    className="services-container"
-                    style={{
-                        width: widthState,
-                    }}
-                >
-                    <div className="services-row">
+            <div className="container services-container">
+                <div className="services-row">
+                    <div className="container-tablet">
                         <div className="services-header-container">
                             <p className="small-header">Our Services</p>
                             <p className="big-header">
@@ -40,14 +22,14 @@ const ServicesSection = () => {
                                 </button>
                             </Link>
                         </div>
-                        <div className="services-items">
-                            <div>Coal supplies</div>
-                            <div>Fertilizer supplies </div>
-                            <div>Ocean freight</div>
-                            <div>Logistic Solutions</div>
-                            <div>Customs Clearance</div>
-                            <div>Consulting</div>
-                        </div>
+                    </div>
+                    <div className="services-items">
+                        <div>Coal supplies</div>
+                        <div>Fertilizer supplies </div>
+                        <div>Ocean freight</div>
+                        <div>Logistic Solutions</div>
+                        <div>Customs Clearance</div>
+                        <div>Consulting</div>
                     </div>
                 </div>
             </div>

@@ -3,10 +3,8 @@
 .services-section {
     background: #ffffff;
     border: 1px solid #000000;
-    .services-container {
-        margin-right: 0;
-        margin-left: auto;
-    }
+    position: relative;
+    height: 493px;
     .services-row {
         display: grid;
         grid-template-columns: 1.2fr 2fr;
@@ -38,9 +36,17 @@
         font-size: 18px;
         line-height: 150%;
         color: #f1275b;
+        position: absolute;
+        top: 0px;
+        left: 45%;
+        width: 55%;
+        > div:nth-child(1) {
+            border-top: none;
+        }
         > div {
             padding: 27px 38px;
-            border: 1px solid #000000;
+            border-top: 1px solid #000000;
+            border-left: 1px solid #000000;
             &:hover {
                 background: #5b5b5b;
                 color: white;
@@ -52,33 +58,27 @@
     }
 }
 
-@media (max-width: 1320px) {
-    .services-section {
-        .tablet-container {
-            max-width: 1332px;
-            padding-right: 0;
-            padding-left: 0;
-        }
-    }
-}
-
-// Desktop
-@media (max-width: 1320px) {
-    .services-section {
-        .services-header-container {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-    }
-}
-
 /* Tablet */
 @media (max-width: 992px) {
     .services-section {
+        height: auto;
+        .services-container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .container-tablet {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
         .services-row {
             grid-template-columns: 1fr;
         }
         .services-items {
+            position: static;
+            width: 100%;
+            > div:nth-child(1) {
+                border-top: 1px solid #000000;
+            }
             > div {
                 border-left: none;
                 border-right: none;

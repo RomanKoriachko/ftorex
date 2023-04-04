@@ -17,9 +17,9 @@ const Main = ({ submitRef }) => {
             <IndicatorsSection />
             <ServicesSection />
             <AboutUsSection />
-            <MapSection />
-            <ArticlesSection />
-            <SubscribeSection submitRef={submitRef} />
+            {/* <MapSection /> */}
+            {/* <ArticlesSection /> */}
+            {/* <SubscribeSection submitRef={submitRef} /> */}
         </main>
     )
 }
