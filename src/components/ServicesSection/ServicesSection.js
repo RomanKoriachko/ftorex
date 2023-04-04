@@ -9,37 +9,45 @@ const ServicesSection = () => {
     const dispatch = useAppDispatch()
 
     window.addEventListener('resize', function () {
-        dispatch(setWidth((window.innerWidth - 1330) / 2 + 1300))
+        if (window.innerWidth >= 1320) {
+            dispatch(setWidth((window.innerWidth - 1330) / 2 + 1300))
+        } else {
+            dispatch(setWidth('auto'))
+        }
     })
 
     return (
         <section className="services-section">
-            <div
-                className="services-container"
-                style={{
-                    width: widthState,
-                }}
-            >
-                <div className="services-row">
-                    <div>
-                        <p className="small-header">Our Services</p>
-                        <p className="big-header">what services we provide</p>
-                        <Link to="/service">
-                            <button className="sevices-btn">
-                                <div className="row btn-content-row">
-                                    <p>View info</p>
-                                    <div className="btn-arrow"></div>
-                                </div>
-                            </button>
-                        </Link>
-                    </div>
-                    <div className="services-items">
-                        <div>Coal supplies</div>
-                        <div>Fertilizer supplies </div>
-                        <div>Ocean freight</div>
-                        <div>Logistic Solutions</div>
-                        <div>Customs Clearance</div>
-                        <div>Consulting</div>
+            <div className="container tablet-container">
+                <div
+                    className="services-container"
+                    style={{
+                        width: widthState,
+                    }}
+                >
+                    <div className="services-row">
+                        <div className="services-header-container">
+                            <p className="small-header">Our Services</p>
+                            <p className="big-header">
+                                what services we provide
+                            </p>
+                            <Link to="/service">
+                                <button className="sevices-btn">
+                                    <div className="row btn-content-row">
+                                        <p>View info</p>
+                                        <div className="btn-arrow"></div>
+                                    </div>
+                                </button>
+                            </Link>
+                        </div>
+                        <div className="services-items">
+                            <div>Coal supplies</div>
+                            <div>Fertilizer supplies </div>
+                            <div>Ocean freight</div>
+                            <div>Logistic Solutions</div>
+                            <div>Customs Clearance</div>
+                            <div>Consulting</div>
+                        </div>
                     </div>
                 </div>
             </div>

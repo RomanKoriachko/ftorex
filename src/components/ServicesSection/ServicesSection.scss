@@ -47,4 +47,52 @@
             }
         }
     }
+    .tablet-container {
+        max-width: auto;
+    }
+}
+
+@media (max-width: 1320px) {
+    .services-section {
+        .tablet-container {
+            max-width: 1332px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+// Desktop
+@media (max-width: 1320px) {
+    .services-section {
+        .services-header-container {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .services-section {
+        .services-row {
+            grid-template-columns: 1fr;
+        }
+        .services-items {
+            > div {
+                border-left: none;
+                border-right: none;
+            }
+        }
+        .big-header {
+            margin-bottom: 16px;
+        }
+        .sevices-btn {
+            margin-bottom: 28px;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
 }
