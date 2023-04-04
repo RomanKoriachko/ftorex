@@ -13,13 +13,13 @@ const Main = ({ submitRef }) => {
     return (
         <main className="main">
             <IntroduceSection />
-            {/* <ProductsSection />
-            <IndicatorsSection />
-            <ServicesSection />
-            <AboutUsSection />
-            <MapSection />
-            <ArticlesSection />
-            <SubscribeSection submitRef={submitRef} /> */}
+            <ProductsSection />
+            {/* <IndicatorsSection /> */}
+            {/* <ServicesSection /> */}
+            {/* <AboutUsSection /> */}
+            {/* <MapSection /> */}
+            {/* <ArticlesSection /> */}
+            {/* <SubscribeSection submitRef={submitRef} /> */}
         </main>
     )
 }
