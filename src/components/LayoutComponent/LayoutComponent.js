@@ -7,8 +7,8 @@ const LayoutComponent = ({ submitRef, messageRef }) => {
     return (
         <>
             <Header submitRef={submitRef} />
-            <Outlet />
-            <Footer messageRef={messageRef} />
+            {/* <Outlet />
+            <Footer messageRef={messageRef} /> */}
         </>
     )
 }

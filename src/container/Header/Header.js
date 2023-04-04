@@ -19,9 +19,92 @@ const Header = ({ submitRef }) => {
         document.body.style.overflow = ''
     }
 
+    // burger-menu
+    const [burgerState, setBurgerState] = useState('hide-burger')
+
+    const showBurger = () => {
+        setBurgerState('show-burger')
+        document.body.style.overflow = 'hidden'
+    }
+    const closeBurger = () => {
+        setBurgerState('hide-burger')
+        document.body.style.overflow = ''
+    }
+
     return (
-        <header className="header">
+        <header id="header" className="header">
             <div className="quotation"></div>
+            <div className={`burger-menu ${burgerState}`}>
+                <div
+                    className="close-burger-img"
+                    onClick={() => closeBurger()}
+                ></div>
+                <div className="burger-menu-items">
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'notActive'
+                        }
+                        onClick={() => closeBurger()}
+                    >
+                        Home
+                    </NavLink>
+                    <NavLink
+                        to="/service"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'notActive'
+                        }
+                        onClick={() => closeBurger()}
+                    >
+                        Service
+                    </NavLink>
+                    <NavLink
+                        to="/products"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'notActive'
+                        }
+                        onClick={() => closeBurger()}
+                    >
+                        Products
+                    </NavLink>
+                    <NavLink
+                        to="/articles"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'notActive'
+                        }
+                        onClick={() => closeBurger()}
+                    >
+                        Articles
+                    </NavLink>
+                    <NavLink
+                        to="/contacts"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'notActive'
+                        }
+                        onClick={() => closeBurger()}
+                    >
+                        Contact Us
+                    </NavLink>
+                </div>
+                <button className="submit-btn" onClick={() => submitBtn()}>
+                    <div className="row btn-content-row">
+                        <p>SUBMIT</p>
+                        <div className="btn-arrow"></div>
+                    </div>
+                </button>
+                <Link
+                    to="/contacts"
+                    className="contacts-btn"
+                    onClick={() => closeBurger()}
+                >
+                    <button className="call-btn">
+                        <div className="row btn-content-row">
+                            <p>CALL NOW</p>
+                            <div className="btn-arrow"></div>
+                        </div>
+                    </button>
+                </Link>
+            </div>
             <div
                 className={`subscribe-bg ${subscribeState}`}
                 onClick={() => closeSubmitForm()}
@@ -31,7 +114,7 @@ const Header = ({ submitRef }) => {
             </div>
             <div className="container">
                 <div className="row header-row">
-                    <div className="row">
+                    <div className="row logo-and-links">
                         <Link to="/">
                             <img
                                 className="header-logo"
@@ -101,6 +184,10 @@ const Header = ({ submitRef }) => {
                             </button>
                         </Link>
                     </div>
+                    <div
+                        className="burger-menu-btn"
+                        onClick={() => showBurger()}
+                    ></div>
                 </div>
             </div>
         </header>
