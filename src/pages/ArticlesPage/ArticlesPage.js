@@ -45,9 +45,6 @@ const ArticlesPage = () => {
         setCurrentArr(filtredArr3)
     }
 
-    console.log(currentArr)
-    console.log(filtredArr3)
-
     const onPrevClick = () => {
         if (currentArr[0].id >= 19) {
             onSecondPageClick()
