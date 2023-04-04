@@ -3,7 +3,7 @@ import './ContactUsPage.scss'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import MessageForm from '../../components/MessageForm/MessageForm'
 
-const ContactUsPage = () => {
+const ContactUsPage = ({ messageRef }) => {
     return (
         <div className="contacts-page">
             <PageHeader name={'Contact Us'} />
@@ -58,7 +58,7 @@ const ContactUsPage = () => {
                     </div>
                 </div>
             </section>
-            <MessageForm />
+            <MessageForm messageRef={messageRef} />
         </div>
     )
 }

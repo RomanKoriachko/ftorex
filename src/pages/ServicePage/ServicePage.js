@@ -3,7 +3,7 @@ import './ServicePage.scss'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import MessageForm from '../../components/MessageForm/MessageForm'
 
-const ServicePage = () => {
+const ServicePage = ({ messageRef }) => {
     return (
         <div className="service-page">
             <PageHeader name={'Service'} />
@@ -136,7 +136,7 @@ const ServicePage = () => {
                     </div>
                 </div>
             </section>
-            <MessageForm />
+            <MessageForm messageRef={messageRef} />
         </div>
     )
 }

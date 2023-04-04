@@ -1,9 +1,9 @@
 import React from 'react'
 import './MessageForm.scss'
 
-const MessageForm = () => {
+const MessageForm = ({ messageRef }) => {
     return (
-        <section className="message-section">
+        <section className="message-section" ref={messageRef}>
             <p className="message-header">Send us a Message​</p>
             <form
                 className="message-form"

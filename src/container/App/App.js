@@ -10,18 +10,30 @@ import { useRef } from 'react'
 
 function App() {
     const submitRef = useRef(null)
+    const messageRef = useRef(null)
     return (
         <div className="App">
             <Routes>
                 <Route
                     path="/"
-                    element={<LayoutComponent submitRef={submitRef} />}
+                    element={
+                        <LayoutComponent
+                            submitRef={submitRef}
+                            messageRef={messageRef}
+                        />
+                    }
                 >
                     <Route index element={<Main submitRef={submitRef} />} />
-                    <Route path="service" element={<ServicePage />} />
+                    <Route
+                        path="service"
+                        element={<ServicePage messageRef={messageRef} />}
+                    />
                     <Route path="products" element={<ProductsPage />} />
                     <Route path="articles" element={<ArticlesPage />} />
-                    <Route path="contacts" element={<ContactUsPage />} />
+                    <Route
+                        path="contacts"
+                        element={<ContactUsPage messageRef={messageRef} />}
+                    />
                 </Route>
             </Routes>
         </div>

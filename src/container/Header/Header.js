@@ -1,14 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.scss'
+import SubscribeSection from '../../components/SubscribeSection/SubscribeSection'
 import { Link, NavLink } from 'react-router-dom'
 
 const Header = ({ submitRef }) => {
-    const scrollDownBtnClick = () => {
-        submitRef.current?.scrollIntoView({ behavior: 'smooth' })
+    const [subscribeState, setSubscribeState] = useState('hide')
+
+    const submitBtn = () => {
+        if (submitRef.current) {
+            submitRef.current?.scrollIntoView({ behavior: 'smooth' })
+        } else {
+            setSubscribeState('show')
+            document.body.style.overflow = 'hidden'
+        }
     }
+    const closeSubmitForm = () => {
+        setSubscribeState('hide')
+        document.body.style.overflow = ''
+    }
+
     return (
         <header className="header">
             <div className="quotation"></div>
+            <div
+                className={`subscribe-bg ${subscribeState}`}
+                onClick={() => closeSubmitForm()}
+            ></div>
+            <div className={`${subscribeState}`}>
+                <SubscribeSection />
+            </div>
             <div className="container">
                 <div className="row header-row">
                     <div className="row">
@@ -63,17 +83,15 @@ const Header = ({ submitRef }) => {
                         </div>
                     </div>
                     <div className="header-btns">
-                        <Link to="/">
-                            <button
-                                className="submit-btn"
-                                onClick={() => scrollDownBtnClick()}
-                            >
-                                <div className="row btn-content-row">
-                                    <p>SUBMIT</p>
-                                    <div className="btn-arrow"></div>
-                                </div>
-                            </button>
-                        </Link>
+                        <button
+                            className="submit-btn"
+                            onClick={() => submitBtn()}
+                        >
+                            <div className="row btn-content-row">
+                                <p>SUBMIT</p>
+                                <div className="btn-arrow"></div>
+                            </div>
+                        </button>
                         <Link to="/contacts">
                             <button className="call-btn">
                                 <div className="row btn-content-row">

@@ -1,24 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Footer.scss'
+import MessageForm from '../../components/MessageForm/MessageForm'
 import { Link } from 'react-router-dom'
 
-const Footer = () => {
+const Footer = ({ messageRef }) => {
+    const [messageState, setMessageState] = useState('hide')
+
+    const writeToUsBtn = () => {
+        if (messageRef.current) {
+            messageRef.current?.scrollIntoView({ behavior: 'smooth' })
+        } else {
+            setMessageState('show')
+            document.body.style.overflow = 'hidden'
+        }
+    }
+    const closeWriteToUsForm = () => {
+        setMessageState('hide')
+        document.body.style.overflow = ''
+    }
+
     return (
         <footer className="footer">
+            <div
+                className={`subscribe-bg ${messageState}`}
+                onClick={() => closeWriteToUsForm()}
+            ></div>
+            <div className={`container ${messageState}`}>
+                <MessageForm />
+            </div>
             <div className="container">
                 <div className="row footer-row">
                     <div className="footer-item-header">
                         <p className="big-header">
                             DISCUSSION NOW TO COLLABORATE
                         </p>
-                        <Link to="/contacts">
-                            <button className="footer-btn">
-                                <div className="row btn-content-row">
-                                    <p>Write to us</p>
-                                    <div className="btn-arrow"></div>
-                                </div>
-                            </button>
-                        </Link>
+                        <button
+                            className="footer-btn"
+                            onClick={() => writeToUsBtn()}
+                        >
+                            <div className="row btn-content-row">
+                                <p>Write to us</p>
+                                <div className="btn-arrow"></div>
+                            </div>
+                        </button>
                     </div>
                     <div className="footer-item-text">
                         <p className="footer-column-header">Company</p>
