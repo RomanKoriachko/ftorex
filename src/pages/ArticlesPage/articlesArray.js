@@ -8,25 +8,25 @@ let articlesArray = [
     {
         id: 2,
         preview: 'images/article-preview-1.png',
-        tag: 'Education build',
+        tag: 'education build',
         name: 'How To Improve Product Roadmaps',
     },
     {
         id: 3,
         preview: 'images/article-preview-1.png',
-        tag: 'Charity',
+        tag: 'apps',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
         id: 4,
         preview: 'images/article-preview-2.png',
-        tag: 'Charity',
+        tag: 'charity',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
         id: 5,
         preview: 'images/article-preview-1.png',
-        tag: 'Charity',
+        tag: 'apps',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
@@ -38,7 +38,7 @@ let articlesArray = [
     {
         id: 7,
         preview: 'images/article-preview-1.png',
-        tag: 'Charity',
+        tag: 'charity',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
@@ -50,37 +50,37 @@ let articlesArray = [
     {
         id: 9,
         preview: 'images/article-preview-1.png',
-        tag: 'Charity',
+        tag: 'landing',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
         id: 10,
         preview: 'images/article-preview-2.png',
-        tag: 'book',
+        tag: 'website',
         name: 'Don’t Underestimate The Software Administration UX',
     },
     {
         id: 11,
         preview: 'images/article-preview-2.png',
-        tag: 'Education build',
+        tag: 'education build',
         name: 'How To Improve Product Roadmaps',
     },
     {
         id: 12,
         preview: 'images/article-preview-2.png',
-        tag: 'Charity',
+        tag: 'apps',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
         id: 13,
         preview: 'images/article-preview-2.png',
-        tag: 'Charity',
+        tag: 'landing',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
         id: 14,
         preview: 'images/article-preview-1.png',
-        tag: 'Charity',
+        tag: 'website',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
@@ -92,7 +92,7 @@ let articlesArray = [
     {
         id: 16,
         preview: 'images/article-preview-2.png',
-        tag: 'Charity',
+        tag: 'design',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
@@ -104,7 +104,7 @@ let articlesArray = [
     {
         id: 18,
         preview: 'images/article-preview-2.png',
-        tag: 'Charity',
+        tag: 'apps',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
@@ -116,37 +116,37 @@ let articlesArray = [
     {
         id: 20,
         preview: 'images/article-preview-3.png',
-        tag: 'Education build',
+        tag: 'education build',
         name: 'How To Improve Product Roadmaps',
     },
     {
         id: 21,
         preview: 'images/article-preview-3.png',
-        tag: 'Charity',
+        tag: 'landing',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
         id: 22,
         preview: 'images/article-preview-2.png',
-        tag: 'Charity',
+        tag: 'design',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
         id: 23,
         preview: 'images/article-preview-1.png',
-        tag: 'Charity',
+        tag: 'charity',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
         id: 24,
         preview: 'images/article-preview-2.png',
-        tag: 'data',
+        tag: 'landing',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
         id: 25,
         preview: 'images/article-preview-3.png',
-        tag: 'Charity',
+        tag: 'charity',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
     {
@@ -158,7 +158,7 @@ let articlesArray = [
     {
         id: 27,
         preview: 'images/article-preview-3.png',
-        tag: 'Charity',
+        tag: 'design',
         name: 'Definitive Guide to Make a Daily More Productive Working Flow. ',
     },
 ]
