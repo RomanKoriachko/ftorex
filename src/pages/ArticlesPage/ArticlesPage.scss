@@ -1,0 +1,103 @@
+.articles-page {
+    .preview-bg {
+        background-image: url(../../../public/images/articles-bg.png);
+    }
+    .tags-row {
+        gap: 10px;
+        margin-bottom: 50px;
+        > p {
+            margin-right: 26px;
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .tag-btn {
+            padding: 2px 26px;
+            background: #ffffff;
+            border: 1px solid #f2f4f6;
+            border-radius: 100px;
+            color: rgba(18, 18, 18, 0.4);
+            font-family: 'Roboto';
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .active {
+            background-color: #f1275b;
+            color: #ffffff;
+        }
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px 24px;
+    }
+    .article-item {
+        .article-preview {
+            width: 100%;
+            height: 257px;
+            > img {
+                width: 100%;
+            }
+        }
+        .article-tag {
+            color: white;
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 13px;
+            text-transform: uppercase;
+            margin-top: 38px;
+            margin-bottom: 26px;
+            padding: 5px 13px;
+            background-color: #f1275b;
+            width: fit-content;
+        }
+        .article-name {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 35px;
+        }
+    }
+    .pages {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        text-align: center;
+        > div {
+            gap: 7px;
+            justify-content: center;
+        }
+        .prev-page {
+            background-image: url(../../assets/long-arrow-left.svg);
+        }
+        .next-page {
+            background-image: url(../../assets/long-arrow-right.svg);
+        }
+        .page {
+            height: 49px;
+            width: 49px;
+            border: 1px solid #f2f4f6;
+            background-color: #ffffff;
+            color: #7a8085;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Jost';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .active-page {
+            background: #5b5b5b;
+            color: white;
+        }
+    }
+    .message-section {
+        background-position: 0% 0%;
+    }
+}

@@ -9,7 +9,7 @@ const ProductsSection = () => {
     const settings = {
         dots: false,
         infinite: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         arrows: false,
         slidesToShow: 4,
