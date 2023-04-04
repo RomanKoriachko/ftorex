@@ -20,12 +20,12 @@ const IntroduceSection = () => {
             >
                 <div className="introduce-text-wrapper">
                     <div className="introduce-content">
-                        <p>Step to a profitable business with us.</p>
+                        <p>Achieve a profitable business with us</p>
                         <p>
-                            FTOREX company moves and focuses on industrial
-                            meaning. aiming to produce coal for the needs of
-                            countries around the world FTOREX always produces
-                            tens of thousands of coal every day to prepare
+                            We are proffesional team, specialized in providing
+                            procurement and supply of minerals, materials,
+                            equipment and specialized services for all kinds of
+                            manufacturing and commercial companies worldwide
                         </p>
                     </div>
                 </div>

@@ -24,7 +24,7 @@
             font-size: 80px;
             line-height: 110%;
             text-transform: uppercase;
-            letter-spacing: -0.04em;
+            letter-spacing: -0.06em;
             margin-bottom: 16px;
         }
         > p:nth-child(2) {
@@ -36,5 +36,39 @@
     .scroll-btn {
         position: absolute;
         bottom: 42px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .introduce-section {
+        .introduce-text-wrapper {
+            position: static;
+            width: 100%;
+            transform: translateY(0%);
+            .introduce-content {
+                transform: translateY(50px);
+                padding-right: 100px;
+                > p:nth-child(1) {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .introduce-section {
+        .introduce-text-wrapper {
+            .introduce-content {
+                padding: 35px 32px;
+            }
+        }
+        .scroll-btn {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+        }
     }
 }

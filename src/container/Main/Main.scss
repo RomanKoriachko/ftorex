@@ -25,3 +25,23 @@
     line-height: 150%;
     color: #595959;
 }
+
+/* Tablet */
+@media (max-width: 992px) {
+    // .small-header {
+    //     font-size: 18px;
+    //     line-height: 150%;
+    // }
+    // .big-header {
+    //     font-size: 55px;
+    //     line-height: 150%;
+    // }
+    // .subtitle {
+    //     font-size: 18px;
+    //     line-height: 150%;
+    // }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+}
