@@ -5,8 +5,10 @@ const MapSection = () => {
     const [showMapState, setShowMapState] = useState('')
 
     const showMap = () => {
-        if (showMapState === '') {
+        if (showMapState === '' && window.innerWidth > 992) {
             setShowMapState('active')
+        } else if (showMapState === '' && window.innerWidth <= 992) {
+            setShowMapState('tablet-active')
         } else {
             setShowMapState('')
         }
@@ -17,8 +19,10 @@ const MapSection = () => {
             <div className={`map-wrapper ${showMapState}`}>
                 <div className="map-content">
                     <div className="map-text">
-                        <p className="big-header">Deposit</p>
-                        <p className="big-header">map</p>
+                        <div className="tablet-row">
+                            <p className="big-header">Deposit</p>
+                            <p className="big-header">map</p>
+                        </div>
                         <p className="subtitle">
                             For athletes, high altitude produces two
                             contradictory effects on performance. For explosive

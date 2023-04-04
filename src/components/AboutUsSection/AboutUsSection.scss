@@ -55,6 +55,8 @@
 /* Mobile */
 @media (max-width: 576px) {
     .about-section {
+        background-image: none;
+        padding-bottom: 60px;
         .about-text-wrapper {
             grid-template-columns: 1fr;
         }

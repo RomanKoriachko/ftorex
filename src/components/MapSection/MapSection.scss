@@ -16,7 +16,10 @@
             width: 530px;
             top: 140px;
             right: 70px;
-            > p {
+            .big-header {
+                color: white;
+            }
+            .subtitle {
                 color: white;
             }
             .big-header:nth-child(2) {
@@ -28,6 +31,7 @@
             .map-btn {
                 @include buttonWithArrow();
                 background: #121212;
+                text-transform: uppercase;
             }
         }
     }
@@ -51,4 +55,74 @@
             transition: 2s all;
         }
     }
+    .map-wrapper.tablet-active {
+        transition: 1s all;
+        .map-content {
+            transition: 2s all;
+            height: 0px;
+            padding: 0px;
+            opacity: 0;
+            .map-text {
+                transition: 1s all;
+                height: 0px;
+                padding: 0px;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        .map-overlap {
+            height: 200%;
+            transform: translateY(-35%);
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .map-section {
+        .map-content {
+            height: auto;
+            .map-text {
+                width: 400px;
+            }
+        }
+        .map-overlap {
+            min-height: 400px;
+            filter: grayscale(0%);
+        }
+    }
+}
+@media (max-width: 1020px) {
+    .map-section {
+        .map-content {
+            .map-text {
+                right: 0px;
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .map-section {
+        .map-wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.8fr 1.2fr;
+            transition: 1s all;
+        }
+        .tablet-row {
+            display: flex;
+            gap: 10px;
+        }
+        .map-content {
+            .map-text {
+                position: static;
+                width: auto;
+                padding: 35px 16px;
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
 }
