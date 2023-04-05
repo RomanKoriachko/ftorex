@@ -3,7 +3,6 @@ import './ArticlesPage.scss'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import articlesArray from './articlesArray'
 import MessageForm from '../../components/MessageForm/MessageForm'
-import { Link } from 'react-router-dom'
 import ArticleItem from '../../components/ArticleItem/ArticleItem'
 
 const ArticlesPage = ({ messageRef }) => {
