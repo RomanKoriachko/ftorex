@@ -26,20 +26,22 @@ const ProductsPage = () => {
                                         Coking coal
                                     </p>
                                     <p className="tab-content-text">
-                                        Our specialists search for the goods and
-                                        suppliers you need all over the world.
-                                        Verification of the creditworthiness of
-                                        the supplier, product quality control,
-                                        control of timely shipments,
-                                        export/import documentation. With
-                                        business connections in Southeast Asia,
-                                        Europe, North/South America and the
-                                        Middle East, FTOREX offers you the best
-                                        service at competitive prices. Tell us
-                                        the name of the product, and we will do
-                                        all the work for you and deliver your
-                                        goods to the specified address on time
-                                        and on the best terms.
+                                        Coking coal is a type of coal that is
+                                        used in the production of steel. Also
+                                        known as metallurgical coal, it is a
+                                        high-quality coal that is valued for its
+                                        ability to form a hard and strong coke
+                                        when heated in the absence of air.
+                                        Coking coal is typically low in sulfur
+                                        and ash content, which makes it a
+                                        desirable raw material for steel
+                                        manufacturers. Due to its importance in
+                                        the steel-making process, coking coal is
+                                        a vital commodity in the global economy.
+                                        As demand for steel continues to grow,
+                                        particularly in developing countries,
+                                        the demand for coking coal is also
+                                        expected to increase.
                                     </p>
                                     <img
                                         src="images/products-img-1.png"
@@ -79,20 +81,20 @@ const ProductsPage = () => {
                                         Thermal coal
                                     </p>
                                     <p className="tab-content-text">
-                                        Our specialists search for the goods and
-                                        suppliers you need all over the world.
-                                        Verification of the creditworthiness of
-                                        the supplier, product quality control,
-                                        control of timely shipments,
-                                        export/import documentation. With
-                                        business connections in Southeast Asia,
-                                        Europe, North/South America and the
-                                        Middle East, FTOREX offers you the best
-                                        service at competitive prices. Tell us
-                                        the name of the product, and we will do
-                                        all the work for you and deliver your
-                                        goods to the specified address on time
-                                        and on the best terms.
+                                        Thermal coal is a type of coal that is
+                                        primarily used for generating
+                                        electricity. It is a combustible black
+                                        or brownish-black sedimentary rock that
+                                        is mined from the earth's crust. Thermal
+                                        coal is widely used in power plants as a
+                                        fuel for producing steam that drives
+                                        turbines, which in turn generate
+                                        electricity. One of the primary
+                                        advantages of thermal coal is that it is
+                                        abundant and relatively cheap compared
+                                        to other fossil fuels.Thermal coal is
+                                        the most abundant and widely traded type
+                                        of coal.
                                     </p>
                                     <img
                                         src="images/products-img-1.png"
@@ -132,20 +134,22 @@ const ProductsPage = () => {
                                         Anthracite
                                     </p>
                                     <p className="tab-content-text">
-                                        Our specialists search for the goods and
-                                        suppliers you need all over the world.
-                                        Verification of the creditworthiness of
-                                        the supplier, product quality control,
-                                        control of timely shipments,
-                                        export/import documentation. With
-                                        business connections in Southeast Asia,
-                                        Europe, North/South America and the
-                                        Middle East, FTOREX offers you the best
-                                        service at competitive prices. Tell us
-                                        the name of the product, and we will do
-                                        all the work for you and deliver your
-                                        goods to the specified address on time
-                                        and on the best terms.
+                                        Anthracite is a type of coal that is
+                                        known for its high carbon content, low
+                                        impurities, and superior heating
+                                        properties. Anthracite coal is the
+                                        highest grade of coal, with a carbon
+                                        content ranging from 86% to 98%. Due to
+                                        its low impurity levels, it burns
+                                        cleaner than other types of coal,
+                                        producing fewer emissions. Anthracite is
+                                        used mainly for heating homes and other
+                                        buildings, as well as in the production
+                                        of steel and other industrial processes
+                                        that require high temperatures. It is
+                                        also used in water filtration systems,
+                                        as its high carbon content makes it an
+                                        effective adsorbent for impurities.
                                     </p>
                                     <img
                                         src="images/products-img-1.png"
@@ -185,20 +189,21 @@ const ProductsPage = () => {
                                         PCI Coal
                                     </p>
                                     <p className="tab-content-text">
-                                        Our specialists search for the goods and
-                                        suppliers you need all over the world.
-                                        Verification of the creditworthiness of
-                                        the supplier, product quality control,
-                                        control of timely shipments,
-                                        export/import documentation. With
-                                        business connections in Southeast Asia,
-                                        Europe, North/South America and the
-                                        Middle East, FTOREX offers you the best
-                                        service at competitive prices. Tell us
-                                        the name of the product, and we will do
-                                        all the work for you and deliver your
-                                        goods to the specified address on time
-                                        and on the best terms.
+                                        PCI (Pulverized Coal Injection) coal is
+                                        a type of coal used in steelmaking that
+                                        has been pulverized into a fine powder
+                                        and injected into a blast furnace along
+                                        with hot air to create a combustion
+                                        reaction. This process helps to reduce
+                                        the amount of coke required for the
+                                        steelmaking process, resulting in lower
+                                        costs and reduced environmental impact.
+                                        PCI coal is typically lower in volatile
+                                        matter and higher in carbon content than
+                                        traditional thermal coal, which makes it
+                                        more suitable for use in the steelmaking
+                                        process. It is also generally less
+                                        expensive than coking coal.
                                     </p>
                                     <img
                                         src="images/products-img-1.png"
@@ -238,20 +243,19 @@ const ProductsPage = () => {
                                         Oil & gas equipment
                                     </p>
                                     <p className="tab-content-text">
-                                        Our specialists search for the goods and
-                                        suppliers you need all over the world.
-                                        Verification of the creditworthiness of
-                                        the supplier, product quality control,
-                                        control of timely shipments,
-                                        export/import documentation. With
-                                        business connections in Southeast Asia,
-                                        Europe, North/South America and the
-                                        Middle East, FTOREX offers you the best
-                                        service at competitive prices. Tell us
-                                        the name of the product, and we will do
-                                        all the work for you and deliver your
-                                        goods to the specified address on time
-                                        and on the best terms.
+                                        Oil and gas equipment refers to the
+                                        tools, machinery, and devices used in
+                                        the exploration, extraction, production,
+                                        refining, and distribution of oil and
+                                        gas. Each piece of equipment serves a
+                                        specific purpose and is designed to
+                                        handle the unique challenges of the oil
+                                        and gas industry, such as extreme
+                                        temperatures, high pressures, and
+                                        corrosive substances. The development of
+                                        new technology and equipment has allowed
+                                        for more efficient and cost-effective
+                                        methods of exploration and production.
                                     </p>
                                     <img
                                         src="images/products-img-1.png"
@@ -291,20 +295,20 @@ const ProductsPage = () => {
                                         Fertilizer
                                     </p>
                                     <p className="tab-content-text">
-                                        Our specialists search for the goods and
-                                        suppliers you need all over the world.
-                                        Verification of the creditworthiness of
-                                        the supplier, product quality control,
-                                        control of timely shipments,
-                                        export/import documentation. With
-                                        business connections in Southeast Asia,
-                                        Europe, North/South America and the
-                                        Middle East, FTOREX offers you the best
-                                        service at competitive prices. Tell us
-                                        the name of the product, and we will do
-                                        all the work for you and deliver your
-                                        goods to the specified address on time
-                                        and on the best terms.
+                                        Fertilizers are chemical compounds that
+                                        are used to enrich soil and enhance
+                                        plant growth. They provide essential
+                                        nutrients such as nitrogen, phosphorus,
+                                        and potassium that are required for
+                                        plant growth and development.
+                                        Fertilizers can be either organic or
+                                        inorganic. Inorganic fertilizers, also
+                                        known as chemical fertilizers, are
+                                        manufactured by chemical processes using
+                                        minerals such as nitrogen, phosphorus,
+                                        and potassium. Fertilizers are widely
+                                        used in agriculture to improve crop
+                                        yields and increase productivity.
                                     </p>
                                     <img
                                         src="images/products-img-1.png"
@@ -344,20 +348,18 @@ const ProductsPage = () => {
                                         Mining equipment
                                     </p>
                                     <p className="tab-content-text">
-                                        Our specialists search for the goods and
-                                        suppliers you need all over the world.
-                                        Verification of the creditworthiness of
-                                        the supplier, product quality control,
-                                        control of timely shipments,
-                                        export/import documentation. With
-                                        business connections in Southeast Asia,
-                                        Europe, North/South America and the
-                                        Middle East, FTOREX offers you the best
-                                        service at competitive prices. Tell us
-                                        the name of the product, and we will do
-                                        all the work for you and deliver your
-                                        goods to the specified address on time
-                                        and on the best terms.
+                                        Mining equipment refers to various types
+                                        of machinery used in the extraction of
+                                        minerals, metals, and other geological
+                                        materials from the earth's surface or
+                                        subsurface. The mining equipment
+                                        industry has been rapidly developing
+                                        over the years, driven by increased
+                                        demand for minerals and metals.
+                                        Advancements in technology have led to
+                                        the creation of more efficient and
+                                        productive mining equipment that can
+                                        extract resources from deep underground.
                                     </p>
                                     <img
                                         src="images/products-img-1.png"
