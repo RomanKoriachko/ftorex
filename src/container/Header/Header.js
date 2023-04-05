@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Header.scss'
 import SubscribeSection from '../../components/SubscribeSection/SubscribeSection'
 import { Link, NavLink } from 'react-router-dom'
+import { Animated } from 'react-animated-css'
 
 const Header = ({ submitRef }) => {
     const [subscribeState, setSubscribeState] = useState('hide')
@@ -113,7 +114,13 @@ const Header = ({ submitRef }) => {
                     onClick={() => closeSubmitForm()}
                 ></div>
                 <div className={`${subscribeState}`}>
-                    <SubscribeSection />
+                    <Animated
+                        animationIn="fadeIn"
+                        isVisible={true}
+                        animationInDuration={300}
+                    >
+                        <SubscribeSection />
+                    </Animated>
                 </div>
                 <div className="container">
                     <div className="row header-row">

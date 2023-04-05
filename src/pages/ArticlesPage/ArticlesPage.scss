@@ -60,6 +60,11 @@
         margin-top: 40px;
         margin-bottom: 60px;
         text-align: center;
+        position: relative;
+        .anchor {
+            position: absolute;
+            top: -150px;
+        }
         > div {
             gap: 7px;
             justify-content: center;

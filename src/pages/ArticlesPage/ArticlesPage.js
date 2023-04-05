@@ -390,6 +390,7 @@ const ArticlesPage = ({ messageRef }) => {
                           ))}
                 </div>
                 <div className="pages">
+                    <div className="anchor" ref={messageRef}></div>
                     <div className="row">
                         <button
                             className="page prev-page"
@@ -420,7 +421,7 @@ const ArticlesPage = ({ messageRef }) => {
                     </div>
                 </div>
             </div>
-            <MessageForm messageRef={messageRef} />
+            <MessageForm />
         </div>
     )
 }

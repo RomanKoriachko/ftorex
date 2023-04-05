@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Footer.scss'
 import MessageForm from '../../components/MessageForm/MessageForm'
 import { Link } from 'react-router-dom'
+import { Animated } from 'react-animated-css'
 
 const Footer = ({ messageRef }) => {
     const [messageState, setMessageState] = useState('hide')
@@ -26,7 +27,13 @@ const Footer = ({ messageRef }) => {
                 onClick={() => closeWriteToUsForm()}
             ></div>
             <div className={`container ${messageState}`}>
-                <MessageForm />
+                <Animated
+                    animationIn="fadeIn"
+                    isVisible={true}
+                    animationInDuration={300}
+                >
+                    <MessageForm />
+                </Animated>
             </div>
             <div className="container">
                 <div className="row footer-row">

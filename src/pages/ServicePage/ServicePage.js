@@ -201,7 +201,7 @@ const ServicePage = ({ messageRef }) => {
                         >
                             <div className="paragraph-text">
                                 <p className="item-header">Consulting</p>
-                                <p className="item-text">
+                                <p className="item-text" ref={messageRef}>
                                     We provide consulting services to help our
                                     clients make informed decisions related to
                                     their businesses. Our consulting services
@@ -230,7 +230,7 @@ const ServicePage = ({ messageRef }) => {
                     </div>
                 </div>
             </section>
-            <MessageForm messageRef={messageRef} />
+            <MessageForm />
         </div>
     )
 }

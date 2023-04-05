@@ -13,7 +13,7 @@ const ContactUsPage = ({ messageRef }) => {
                     <div className="row contacts-row">
                         <div className="contact-item contact-item-1">
                             <Animated
-                                animationIn="fadeIn"
+                                animationIn="fadeInLeft"
                                 isVisible={true}
                                 animationInDuration={2000}
                             >
@@ -33,7 +33,7 @@ const ContactUsPage = ({ messageRef }) => {
                         </div>
                         <div className="contact-item contact-item-2">
                             <Animated
-                                animationIn="fadeIn"
+                                animationIn="fadeInUp"
                                 isVisible={true}
                                 animationInDuration={2000}
                             >
@@ -55,7 +55,7 @@ const ContactUsPage = ({ messageRef }) => {
                         </div>
                         <div className="contact-item contact-item-3">
                             <Animated
-                                animationIn="fadeIn"
+                                animationIn="fadeInRight"
                                 isVisible={true}
                                 animationInDuration={2000}
                             >
@@ -67,7 +67,10 @@ const ContactUsPage = ({ messageRef }) => {
                                     <p className="contact-item-text">
                                         Sales department: sales@ftorex.ae
                                     </p>
-                                    <p className="contact-item-text">
+                                    <p
+                                        className="contact-item-text"
+                                        ref={messageRef}
+                                    >
                                         Main office: office@ftorex.ae 
                                     </p>
                                 </div>
@@ -76,7 +79,7 @@ const ContactUsPage = ({ messageRef }) => {
                     </div>
                 </div>
             </section>
-            <MessageForm messageRef={messageRef} />
+            <MessageForm />
         </div>
     )
 }

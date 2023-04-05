@@ -15,29 +15,18 @@ const IndicatorsSection = () => {
                     <p className="small-header indicators-small-header">
                         Why Choose Us
                     </p>
-                </AnimationOnScroll>
-                <div className="indicators-header-row">
-                    <AnimationOnScroll
-                        animateIn="animate__backInUp"
-                        duration={1.5}
-                        animateOnce={true}
-                    >
+
+                    <div className="indicators-header-row">
                         <p className="big-header">
                             We established a coal mining business for you
                         </p>
-                    </AnimationOnScroll>
-                    <AnimationOnScroll
-                        animateIn="animate__backInUp"
-                        duration={1.5}
-                        animateOnce={true}
-                    >
                         <p className="subtitle">
                             FTOREX is a global coal industry company designed to
                             establish and develop a Coal Business, Engineering &
                             General Purpose
                         </p>
-                    </AnimationOnScroll>
-                </div>
+                    </div>
+                </AnimationOnScroll>
                 <div className="indicators-content-row">
                     <AnimationOnScroll
                         animateIn="animate__fadeInUp"
