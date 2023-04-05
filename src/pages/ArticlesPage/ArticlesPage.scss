@@ -2,15 +2,27 @@
     .preview-bg {
         background-image: url(../../../public/images/articles-bg.png);
     }
+    .header {
+        flex-shrink: 0;
+        margin-right: 26px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        background-color: #f9f9f9;
+    }
+    .mobile-header {
+        display: none;
+    }
     .tags-row {
         gap: 10px;
         margin-bottom: 50px;
-        > p {
-            margin-right: 26px;
-            font-family: 'Poppins';
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 30px;
+        overflow-x: auto;
+        .tags-buttons {
+            min-width: 903px;
+            > button {
+                margin-right: 10px;
+            }
         }
         .tag-btn {
             padding: 2px 26px;
@@ -37,9 +49,8 @@
     }
     .article-item {
         .article-preview {
-            width: 100%;
-            height: 257px;
             > img {
+                object-fit: cover;
                 width: 100%;
             }
         }
@@ -103,4 +114,53 @@
     .message-section {
         background-position: 0% 0%;
     }
+}
+
+/* Laptop */
+@media (max-width: 1130px) {
+    .articles-page {
+        .tags-row {
+            flex-direction: column;
+            align-items: start;
+            gap: 22px;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .articles-page {
+        .mobile-header {
+            display: block;
+            margin-bottom: 24px;
+        }
+        .desktop-header {
+            display: none;
+        }
+        .tags-row {
+            padding-bottom: 15px;
+        }
+        .wrapper {
+            grid-template-columns: 1fr 1fr;
+            .article-item {
+                .article-tag {
+                    margin-top: 36px;
+                    margin-bottom: 26px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .articles-page {
+        .wrapper {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
 }

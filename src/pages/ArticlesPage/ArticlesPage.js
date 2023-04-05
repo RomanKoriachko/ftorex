@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './ArticlesPage.scss'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import articlesArray from './articlesArray'
 import MessageForm from '../../components/MessageForm/MessageForm'
 
-const ArticlesPage = () => {
+const ArticlesPage = ({ messageRef }) => {
     // Tags
 
     const [tagState, setTagState] = useState({
@@ -183,6 +183,13 @@ const ArticlesPage = () => {
             ...tag8Arr,
         ]
     }
+    // Scroll to top after change page
+
+    const ref = useRef(null)
+
+    const scrollToTop = () => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' })
+    }
 
     // pages of articles
     let filtredArr1 = summaryArr.filter((element, index) => index < 9)
@@ -205,6 +212,7 @@ const ArticlesPage = () => {
             page2: '',
             page3: '',
         }))
+        scrollToTop()
     }
     const onSecondPageClick = () => {
         setActivePage(() => ({
@@ -212,6 +220,7 @@ const ArticlesPage = () => {
             page2: 'active-page',
             page3: '',
         }))
+        scrollToTop()
     }
     const onThirdPageClick = () => {
         setActivePage(() => ({
@@ -219,6 +228,7 @@ const ArticlesPage = () => {
             page2: '',
             page3: 'active-page',
         }))
+        scrollToTop()
     }
 
     const onPrevClick = () => {
@@ -229,9 +239,12 @@ const ArticlesPage = () => {
         }
     }
     const onNextClick = () => {
-        if (activePage.page1 === 'active-page') {
+        if (activePage.page1 === 'active-page' && filtredArr2.length > 0) {
             onSecondPageClick()
-        } else if (activePage.page2 === 'active-page') {
+        } else if (
+            activePage.page2 === 'active-page' &&
+            filtredArr3.length > 0
+        ) {
             onThirdPageClick()
         }
     }
@@ -258,64 +271,67 @@ const ArticlesPage = () => {
         <div className="articles-page">
             <PageHeader name={'articles'} />
             <div className="container">
-                <div className="row tags-row">
-                    <p>Popular Topics</p>
-                    <button
-                        className={`tag-btn ${tagState.tag1}`}
-                        value={1}
-                        onClick={(e) => onTagClick(e, 'value')}
-                    >
-                        landing
-                    </button>
-                    <button
-                        className={`tag-btn ${tagState.tag2}`}
-                        value={2}
-                        onClick={(e) => onTagClick(e, 'value')}
-                    >
-                        Charity
-                    </button>
-                    <button
-                        className={`tag-btn ${tagState.tag3}`}
-                        value={3}
-                        onClick={(e) => onTagClick(e, 'value')}
-                    >
-                        apps
-                    </button>
-                    <button
-                        className={`tag-btn ${tagState.tag4}`}
-                        value={4}
-                        onClick={(e) => onTagClick(e, 'value')}
-                    >
-                        Education build
-                    </button>
-                    <button
-                        className={`tag-btn ${tagState.tag5}`}
-                        value={5}
-                        onClick={(e) => onTagClick(e, 'value')}
-                    >
-                        data
-                    </button>
-                    <button
-                        className={`tag-btn ${tagState.tag6}`}
-                        value={6}
-                        onClick={(e) => onTagClick(e, 'value')}
-                    >
-                        book
-                    </button>
-                    <button
-                        className={`tag-btn ${tagState.tag7}`}
-                        value={7}
-                        onClick={(e) => onTagClick(e, 'value')}
-                    >
-                        Design
-                    </button>
-                    <button
-                        className={`tag-btn ${tagState.tag8}`}
-                        value={8}
-                        onClick={(e) => onTagClick(e, 'value')}
-                    >
-                        website
-                    </button>
+                <p className="header mobile-header">Popular Topics</p>
+                <div className="row tags-row" ref={ref}>
+                    <p className="header desktop-header">Popular Topics</p>
+                    <div className="tags-buttons">
+                        <button
+                            className={`tag-btn ${tagState.tag1}`}
+                            value={1}
+                            onClick={(e) => onTagClick(e, 'value')}
+                        >
+                            landing
+                        </button>
+                        <button
+                            className={`tag-btn ${tagState.tag2}`}
+                            value={2}
+                            onClick={(e) => onTagClick(e, 'value')}
+                        >
+                            Charity
+                        </button>
+                        <button
+                            className={`tag-btn ${tagState.tag3}`}
+                            value={3}
+                            onClick={(e) => onTagClick(e, 'value')}
+                        >
+                            apps
+                        </button>
+                        <button
+                            className={`tag-btn ${tagState.tag4}`}
+                            value={4}
+                            onClick={(e) => onTagClick(e, 'value')}
+                        >
+                            Education build
+                        </button>
+                        <button
+                            className={`tag-btn ${tagState.tag5}`}
+                            value={5}
+                            onClick={(e) => onTagClick(e, 'value')}
+                        >
+                            data
+                        </button>
+                        <button
+                            className={`tag-btn ${tagState.tag6}`}
+                            value={6}
+                            onClick={(e) => onTagClick(e, 'value')}
+                        >
+                            book
+                        </button>
+                        <button
+                            className={`tag-btn ${tagState.tag7}`}
+                            value={7}
+                            onClick={(e) => onTagClick(e, 'value')}
+                        >
+                            Design
+                        </button>
+                        <button
+                            className={`tag-btn ${tagState.tag8}`}
+                            value={8}
+                            onClick={(e) => onTagClick(e, 'value')}
+                        >
+                            website
+                        </button>
+                    </div>
                 </div>
                 <div className="wrapper">
                     {activePage.page1 === 'active-page'
@@ -379,7 +395,7 @@ const ArticlesPage = () => {
                     </div>
                 </div>
             </div>
-            <MessageForm />
+            <MessageForm messageRef={messageRef} />
         </div>
     )
 }

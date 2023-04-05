@@ -1,10 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
-import widthReducer from './widthReducer'
 
 export const store = configureStore({
-    reducer: {
-        widthState: widthReducer,
-    },
+    reducer: {},
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

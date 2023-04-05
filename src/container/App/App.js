@@ -29,7 +29,10 @@ function App() {
                         element={<ServicePage messageRef={messageRef} />}
                     />
                     <Route path="products" element={<ProductsPage />} />
-                    <Route path="articles" element={<ArticlesPage />} />
+                    <Route
+                        path="articles"
+                        element={<ArticlesPage messageRef={messageRef} />}
+                    />
                     <Route
                         path="contacts"
                         element={<ContactUsPage messageRef={messageRef} />}
