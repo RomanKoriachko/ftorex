@@ -8,7 +8,7 @@ const PageHeader = ({ name }) => {
         ref.current?.scrollIntoView({ behavior: 'smooth' })
     }
     const windowHeight = window.innerHeight - 122
-    const bgHeight = windowHeight - 160
+    const bgHeight = windowHeight - 180
 
     return (
         <>

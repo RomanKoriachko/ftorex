@@ -18,10 +18,7 @@ const ContactUsPage = ({ messageRef }) => {
                                     +1 (786) 707-06-06
                                 </p>
                                 <p className="contact-item-text">
-                                    +86(305) 776-0048
-                                </p>
-                                <p className="contact-item-text">
-                                    +9 (967) 388-48-88
+                                    +7 (967) 388-48-88
                                 </p>
                             </div>
                         </div>
