@@ -19,9 +19,15 @@
         margin: 0 auto;
         max-width: 1082px;
         .input-row {
-            justify-content: center;
+            justify-content: space-between;
             gap: 27px;
             margin-bottom: 27px;
+            .input-item-row {
+                width: 100%;
+                > input:nth-child(1) {
+                    margin-bottom: 27px;
+                }
+            }
         }
         .message-input {
             height: 62px;
@@ -70,4 +76,34 @@
             margin-bottom: 158px;
         }
     }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .message-section {
+        .message-header {
+            margin-bottom: 32px;
+        }
+        .message-form {
+            padding-left: 16px;
+            padding-right: 16px;
+            .input-row {
+                flex-direction: column;
+                gap: 32px;
+                margin-bottom: 32px;
+                .input-item-row {
+                    > input:nth-child(1) {
+                        margin-bottom: 32px;
+                    }
+                }
+            }
+            .message-btn {
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
 }

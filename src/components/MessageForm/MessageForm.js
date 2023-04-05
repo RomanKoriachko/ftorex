@@ -11,34 +11,37 @@ const MessageForm = ({ messageRef }) => {
                 method="POST"
             >
                 <div className="row input-row">
-                    <input
-                        className="message-input"
-                        type="text"
-                        name="Name"
-                        placeholder="Enter your name .."
-                    />
-                    <input
-                        className="message-input"
-                        placeholder="*Enter your mail .."
-                        name="Email"
-                        type="email"
-                        required
-                    />
+                    <div className="input-item-row">
+                        <input
+                            className="message-input"
+                            type="text"
+                            name="Name"
+                            placeholder="Enter your name .."
+                        />
+                        <input
+                            className="message-input"
+                            name="Adress"
+                            type="text"
+                            placeholder="Enter Adress .."
+                        />
+                    </div>
+                    <div className="input-item-row">
+                        <input
+                            className="message-input"
+                            placeholder="*Enter your mail .."
+                            name="Email"
+                            type="email"
+                            required
+                        />
+                        <input
+                            className="message-input"
+                            placeholder="Enter Subject .."
+                            name="Subject"
+                            type="text"
+                        />
+                    </div>
                 </div>
-                <div className="row input-row">
-                    <input
-                        className="message-input"
-                        name="Adress"
-                        type="text"
-                        placeholder="Enter Adress .."
-                    />
-                    <input
-                        className="message-input"
-                        placeholder="Enter Subject .."
-                        name="Subject"
-                        type="text"
-                    />
-                </div>
+
                 <textarea
                     className="message-textarea"
                     name="Message"

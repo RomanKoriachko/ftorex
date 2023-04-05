@@ -37,3 +37,20 @@
 .add-margin {
     margin-bottom: 140px;
 }
+
+@media (max-width: 350px) {
+    .preview-section {
+        .preview-header {
+            font-size: 64px;
+        }
+    }
+}
+
+// Mobile
+@media (max-width: 576px) {
+    .preview-section {
+        .scroll-btn {
+            bottom: -83px;
+        }
+    }
+}

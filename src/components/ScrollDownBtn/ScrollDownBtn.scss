@@ -40,3 +40,12 @@
         color: white;
     }
 }
+
+// Mobile
+@media (max-width: 576px) {
+    .scroll-down-btn {
+        > p {
+            display: none;
+        }
+    }
+}

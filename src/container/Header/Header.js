@@ -9,9 +9,11 @@ const Header = ({ submitRef }) => {
     const submitBtn = () => {
         if (submitRef.current) {
             submitRef.current?.scrollIntoView({ behavior: 'smooth' })
+            closeBurger()
         } else {
             setSubscribeState('show')
             document.body.style.overflow = 'hidden'
+            closeBurger()
         }
     }
     const closeSubmitForm = () => {
