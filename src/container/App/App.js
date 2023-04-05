@@ -7,6 +7,7 @@ import ArticlesPage from '../../pages/ArticlesPage/ArticlesPage'
 import ContactUsPage from '../../pages/ContactUsPage/ContactUsPage'
 import LayoutComponent from '../../components/LayoutComponent/LayoutComponent'
 import { useRef } from 'react'
+import SingleArticlePage from '../../pages/SingleArticlePage/SingleArticlePage'
 
 function App() {
     const submitRef = useRef(null)
@@ -36,6 +37,10 @@ function App() {
                     <Route
                         path="contacts"
                         element={<ContactUsPage messageRef={messageRef} />}
+                    />
+                    <Route
+                        path="articles/:articleId"
+                        element={<SingleArticlePage />}
                     />
                 </Route>
             </Routes>

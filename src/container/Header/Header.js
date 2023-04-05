@@ -120,7 +120,7 @@ const Header = ({ submitRef }) => {
                         <Link to="/">
                             <img
                                 className="header-logo"
-                                src="images/logo.png"
+                                src="/images/logo.png"
                                 alt=""
                             />
                         </Link>

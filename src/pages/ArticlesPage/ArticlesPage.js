@@ -3,6 +3,8 @@ import './ArticlesPage.scss'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import articlesArray from './articlesArray'
 import MessageForm from '../../components/MessageForm/MessageForm'
+import { Link } from 'react-router-dom'
+import ArticleItem from '../../components/ArticleItem/ArticleItem'
 
 const ArticlesPage = ({ messageRef }) => {
     // Tags
@@ -337,30 +339,33 @@ const ArticlesPage = ({ messageRef }) => {
                     {activePage.page1 === 'active-page'
                         ? filtredArr1.map(({ id, preview, tag, name }) => (
                               <div key={id} className="article-item">
-                                  <div className="article-preview">
-                                      <img src={preview} alt="" />
-                                  </div>
-                                  <div className="article-tag">{tag}</div>
-                                  <div className="article-name">{name}</div>
+                                  <ArticleItem
+                                      id={id}
+                                      preview={preview}
+                                      tag={tag}
+                                      name={name}
+                                  />
                               </div>
                           ))
                         : activePage.page2 === 'active-page'
                         ? filtredArr2.map(({ id, preview, tag, name }) => (
                               <div key={id} className="article-item">
-                                  <div className="article-preview">
-                                      <img src={preview} alt="" />
-                                  </div>
-                                  <div className="article-tag">{tag}</div>
-                                  <div className="article-name">{name}</div>
+                                  <ArticleItem
+                                      id={id}
+                                      preview={preview}
+                                      tag={tag}
+                                      name={name}
+                                  />
                               </div>
                           ))
                         : filtredArr3.map(({ id, preview, tag, name }) => (
                               <div key={id} className="article-item">
-                                  <div className="article-preview">
-                                      <img src={preview} alt="" />
-                                  </div>
-                                  <div className="article-tag">{tag}</div>
-                                  <div className="article-name">{name}</div>
+                                  <ArticleItem
+                                      id={id}
+                                      preview={preview}
+                                      tag={tag}
+                                      name={name}
+                                  />
                               </div>
                           ))}
                 </div>

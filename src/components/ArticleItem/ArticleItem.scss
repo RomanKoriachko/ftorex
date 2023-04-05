@@ -1,0 +1,36 @@
+> a {
+    text-decoration: none;
+    color: #0c0c0c;
+}
+.article-preview {
+    > img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+.article-tag {
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    margin-top: 38px;
+    margin-bottom: 26px;
+    padding: 5px 13px;
+    background-color: #f1275b;
+    width: fit-content;
+}
+.article-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .article-tag {
+        margin-top: 36px;
+        margin-bottom: 26px;
+    }
+}
