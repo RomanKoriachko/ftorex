@@ -40,16 +40,22 @@
         top: 0px;
         left: 45%;
         width: 55%;
-        > div:nth-child(1) {
-            border-top: none;
+        > a {
+            text-decoration: none;
+            color: #f1275b;
+            > div {
+                padding: 27px 38px;
+                border-top: 1px solid #000000;
+                border-left: 1px solid #000000;
+                &:hover {
+                    background: #5b5b5b;
+                    color: white;
+                }
+            }
         }
-        > div {
-            padding: 27px 38px;
-            border-top: 1px solid #000000;
-            border-left: 1px solid #000000;
-            &:hover {
-                background: #5b5b5b;
-                color: white;
+        > a:nth-child(1) {
+            > div {
+                border-top: none;
             }
         }
     }

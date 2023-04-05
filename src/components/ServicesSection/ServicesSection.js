@@ -24,12 +24,24 @@ const ServicesSection = () => {
                         </div>
                     </div>
                     <div className="services-items">
-                        <div>Coal supplies</div>
-                        <div>Fertilizer supplies </div>
-                        <div>Ocean freight</div>
-                        <div>Logistic Solutions</div>
-                        <div>Customs Clearance</div>
-                        <div>Consulting</div>
+                        <Link to="/service">
+                            <div>Coal supplies</div>
+                        </Link>
+                        <Link to="/service">
+                            <div>Fertilizer supplies </div>
+                        </Link>
+                        <Link to="/service">
+                            <div>Ocean freight</div>
+                        </Link>
+                        <Link to="/service">
+                            <div>Logistic Solutions</div>
+                        </Link>
+                        <Link to="/service">
+                            <div>Customs Clearance</div>
+                        </Link>
+                        <Link to="/service">
+                            <div>Consulting</div>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -82,7 +82,7 @@ const Footer = ({ messageRef }) => {
                         <div className="footer-item-text">
                             <p className="footer-column-header">Contact</p>
                             <p className="footer-contacts-item-1">
-                                +52 9473 8374
+                                +1 (786) 707-06-06
                             </p>
                             <p className="footer-contacts-item-1">
                                 sales@ftorex.ae

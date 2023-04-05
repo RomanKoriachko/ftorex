@@ -71,7 +71,10 @@
 }
 .header {
     background-color: white;
-    position: relative;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
     .hide {
         display: none;
     }
@@ -97,6 +100,7 @@
         transform: translate(-50%, -50%);
     }
 }
+
 .header-row {
     align-items: center;
     justify-content: space-between;
@@ -136,6 +140,10 @@
     width: 24px;
     height: 24px;
     display: none;
+}
+.header-overlay {
+    height: 122px;
+    width: 100%;
 }
 
 /* Laptop */
