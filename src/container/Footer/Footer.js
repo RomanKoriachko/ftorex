@@ -65,19 +65,29 @@ const Footer = ({ messageRef }) => {
                         </div>
                         <div className="footer-item-text">
                             <p className="footer-column-header">Service</p>
-                            <p className="footer-column-item">Coal supplies</p>
                             <p className="footer-column-item">
-                                Fertilizer supplies
+                                <Link to="/service">Coal supplies</Link>
                             </p>
-                            <p className="footer-column-item">Ocean freight</p>
                             <p className="footer-column-item">
-                                Customs Clearance
+                                <Link to="/service">Fertilizer supplies</Link>
                             </p>
-                            <p className="footer-column-item">Consulting</p>
+                            <p className="footer-column-item">
+                                <Link to="/service">Ocean freight</Link>
+                            </p>
+                            <p className="footer-column-item">
+                                <Link to="/service">Customs Clearance</Link>
+                            </p>
+                            <p className="footer-column-item">
+                                <Link to="/service">Consulting</Link>
+                            </p>
                         </div>
                         <div className="footer-item-text">
                             <p className="footer-column-header">Social Media</p>
-                            <p className="footer-column-item">Linkedin</p>
+                            <p className="footer-column-item">
+                                <a href="https://www.linkedin.com/in/ftorex-tm-3339b7239/">
+                                    Linkedin
+                                </a>
+                            </p>
                         </div>
                         <div className="footer-item-text">
                             <p className="footer-column-header">Contact</p>

@@ -1,14 +1,16 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import './IntroduceSection.scss'
 import ScrollDownBtn from '../ScrollDownBtn/ScrollDownBtn'
+import { Animated } from 'react-animated-css'
 
 const IntroduceSection = () => {
-    const ref = useRef(null)
-    const scrollDownBtnClick = () => {
-        ref.current?.scrollIntoView({ behavior: 'smooth' })
-    }
-
     const windowHeight = window.innerHeight - 122
+    const scrollDownBtnClick = () => {
+        window.scrollTo({
+            top: windowHeight,
+            behavior: 'smooth',
+        })
+    }
 
     return (
         <section className="introduce-section">
@@ -18,17 +20,24 @@ const IntroduceSection = () => {
                     height: windowHeight,
                 }}
             >
-                <div className="introduce-text-wrapper">
-                    <div className="introduce-content">
-                        <p>Achieve a profitable business with us</p>
-                        <p>
-                            We are proffesional team, specialized in providing
-                            procurement and supply of minerals, materials,
-                            equipment and specialized services for all kinds of
-                            manufacturing and commercial companies worldwide
-                        </p>
+                <Animated
+                    animationIn="fadeIn"
+                    isVisible={true}
+                    animationInDuration={2000}
+                >
+                    <div className="introduce-text-wrapper">
+                        <div className="introduce-content">
+                            <p>Achieve a profitable business with us</p>
+                            <p>
+                                We are proffesional team, specialized in
+                                providing procurement and supply of minerals,
+                                materials, equipment and specialized services
+                                for all kinds of manufacturing and commercial
+                                companies worldwide
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </Animated>
                 <div
                     className="scroll-btn"
                     onClick={() => scrollDownBtnClick()}
@@ -36,7 +45,6 @@ const IntroduceSection = () => {
                     <ScrollDownBtn />
                 </div>
             </div>
-            <div ref={ref}></div>
         </section>
     )
 }

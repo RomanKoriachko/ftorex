@@ -14,8 +14,13 @@
         .paragraph-row {
             gap: 24px;
             margin-bottom: 60px;
-            > img {
+            .paragraph-img-wrapper {
+                min-width: 500px;
+            }
+            .paragraph-img {
                 height: 300px;
+                width: 100%;
+                object-fit: cover;
             }
         }
         .item-header {
@@ -69,6 +74,9 @@
             }
             .paragraph-row {
                 margin-bottom: 44px;
+                .paragraph-img-wrapper {
+                    min-width: auto;
+                }
                 > img {
                     width: 100%;
                     object-fit: cover;

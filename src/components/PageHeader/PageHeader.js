@@ -1,14 +1,27 @@
 import React, { useRef } from 'react'
 import './PageHeader.scss'
 import ScrollDownBtn from '../ScrollDownBtn/ScrollDownBtn'
+import { Animated } from 'react-animated-css'
 
 const PageHeader = ({ name }) => {
     const ref = useRef(null)
-    const scrollDownBtnClick = () => {
-        ref.current?.scrollIntoView({ behavior: 'smooth' })
-    }
+
     const windowHeight = window.innerHeight - 122
     const bgHeight = windowHeight - 180
+
+    const scrollDownBtnClick = () => {
+        if (windowHeight <= 690) {
+            window.scrollTo({
+                top: windowHeight - 122,
+                behavior: 'smooth',
+            })
+        } else {
+            window.scrollTo({
+                top: 670,
+                behavior: 'smooth',
+            })
+        }
+    }
 
     return (
         <>
@@ -19,23 +32,29 @@ const PageHeader = ({ name }) => {
                 }}
             >
                 <div className="container">
-                    <div
-                        className="preview-bg"
-                        style={{
-                            height: bgHeight,
-                        }}
+                    <Animated
+                        animationIn="fadeIn"
+                        isVisible={true}
+                        animationInDuration={2000}
                     >
-                        <p className="preview-header">{name}</p>
                         <div
-                            className="scroll-btn"
-                            onClick={() => scrollDownBtnClick()}
+                            className="preview-bg"
+                            style={{
+                                height: bgHeight,
+                            }}
                         >
-                            <ScrollDownBtn />
+                            <p className="preview-header">{name}</p>
+                            <div
+                                className="scroll-btn"
+                                onClick={() => scrollDownBtnClick()}
+                            >
+                                <ScrollDownBtn />
+                            </div>
                         </div>
-                    </div>
+                    </Animated>
                 </div>
             </section>
-            <div ref={ref}></div>
+            <div className="ref" ref={ref}></div>
         </>
     )
 }

@@ -1,6 +1,7 @@
 .preview-section {
     padding-top: 40px;
     max-height: 690px;
+    position: relative;
     .preview-bg {
         background-repeat: no-repeat;
         background-position: center;
@@ -37,6 +38,10 @@
 }
 .add-margin {
     margin-bottom: 140px;
+}
+.ref {
+    position: absolute;
+    bottom: 244px;
 }
 
 @media (max-width: 350px) {

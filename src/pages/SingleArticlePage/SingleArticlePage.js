@@ -4,14 +4,28 @@ import { useParams } from 'react-router-dom'
 import articlesArray from '../ArticlesPage/articlesArray'
 import ScrollDownBtn from '../../components/ScrollDownBtn/ScrollDownBtn'
 import ArticleItem from '../../components/ArticleItem/ArticleItem'
+import { Animated } from 'react-animated-css'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const SingleArticlePage = () => {
     const ref = useRef(null)
-    const scrollDownBtnClick = () => {
-        ref.current?.scrollIntoView({ behavior: 'smooth' })
-    }
+
     const windowHeight = window.innerHeight - 122
     const bgHeight = windowHeight - 180
+
+    const scrollDownBtnClick = () => {
+        if (windowHeight <= 690) {
+            window.scrollTo({
+                top: windowHeight - 122,
+                behavior: 'smooth',
+            })
+        } else {
+            window.scrollTo({
+                top: 670,
+                behavior: 'smooth',
+            })
+        }
+    }
 
     const { articleId } = useParams()
     const curretArticle = articlesArray.filter(
@@ -112,27 +126,41 @@ const SingleArticlePage = () => {
                     }}
                 >
                     <div className="container">
-                        <div
-                            className="preview-bg"
-                            style={{
-                                height: bgHeight,
-                                backgroundImage: `url(/${curretArticle[0].preview})`,
-                            }}
+                        <Animated
+                            animationIn="fadeIn"
+                            isVisible={true}
+                            animationInDuration={2000}
                         >
-                            <p className="preview-header">ARTICLE</p>
                             <div
-                                className="scroll-btn"
-                                onClick={() => scrollDownBtnClick()}
+                                className="preview-bg"
+                                style={{
+                                    height: bgHeight,
+                                    backgroundImage: `url(/${curretArticle[0].preview})`,
+                                }}
                             >
-                                <ScrollDownBtn />
+                                <p className="preview-header">ARTICLE</p>
+                                <div
+                                    className="scroll-btn"
+                                    onClick={() => scrollDownBtnClick()}
+                                >
+                                    <ScrollDownBtn />
+                                </div>
                             </div>
-                        </div>
+                        </Animated>
                     </div>
                 </section>
             </div>
             <section className="article-content-section" ref={ref}>
                 <div className="container">
-                    <p className="article-header">{curretArticle[0].name}</p>
+                    <Animated
+                        animationIn="fadeInUp"
+                        isVisible={true}
+                        animationInDuration={1500}
+                    >
+                        <p className="article-header">
+                            {curretArticle[0].name}
+                        </p>
+                    </Animated>
                     <div className="article-tag">{curretArticle[0].tag}</div>
                     <p className="article-paragraph-1">
                         <span>Quick summary :</span> The way you present your
@@ -167,49 +195,70 @@ const SingleArticlePage = () => {
                             that it adds some kind of value to their lives.
                         </p>
                     </div>
-                    <p className="subtitle">Surprise Your Visitors :</p>
-                    <p className="article-paragraph-2">
-                        Another great way to attract attention is by surprising
-                        visitors. Offer them something they did not expect; make
-                        them pause and think to make sense of what they see. We
-                        like to be surrounded by the familiar, and things that
-                        don’t fit our expectations automatically draw our
-                        attention.
-                    </p>
-                    <p className="article-paragraph-3">
-                        Nike presents its new running shoes in the shape of
-                        wings, with the promise of a “Super-natural ride.” The
-                        arrangement of these multi-colored shoes and the fade in
-                        the middle almost force people to take a second look.
-                        The visual is not only appealing, but attracts attention
-                        because people are not sure whether they are looking at
-                        wings or shoes or both.One such example is the brand
-                        Evian. How could boring water possibly attract
-                        attention? Quite simple, actually. Come up with a
-                        product-related slogan, such as “Live young,” and then
-                        translate that slogan into a visual campaign using some
-                        great humor. A couple of years back, Evian’s funny
-                        campaign videos went viral — proof that its unique
-                        approach works.
-                    </p>
+                    <AnimationOnScroll
+                        animateIn="animate__fadeInUp"
+                        duration={1.5}
+                        animateOnce={true}
+                    >
+                        <p className="subtitle">Surprise Your Visitors :</p>
+                        <p className="article-paragraph-2">
+                            Another great way to attract attention is by
+                            surprising visitors. Offer them something they did
+                            not expect; make them pause and think to make sense
+                            of what they see. We like to be surrounded by the
+                            familiar, and things that don’t fit our expectations
+                            automatically draw our attention.
+                        </p>
+                        <p className="article-paragraph-3">
+                            Nike presents its new running shoes in the shape of
+                            wings, with the promise of a “Super-natural ride.”
+                            The arrangement of these multi-colored shoes and the
+                            fade in the middle almost force people to take a
+                            second look. The visual is not only appealing, but
+                            attracts attention because people are not sure
+                            whether they are looking at wings or shoes or
+                            both.One such example is the brand Evian. How could
+                            boring water possibly attract attention? Quite
+                            simple, actually. Come up with a product-related
+                            slogan, such as “Live young,” and then translate
+                            that slogan into a visual campaign using some great
+                            humor. A couple of years back, Evian’s funny
+                            campaign videos went viral — proof that its unique
+                            approach works.
+                        </p>
+                    </AnimationOnScroll>
                     <div className="images-wrapper row">
-                        <div>
-                            <img
-                                src={`/${curretArticle[0].articleImg1}`}
-                                alt=""
-                            ></img>
-                        </div>
-                        <div>
-                            <img
-                                src={`/${curretArticle[0].articleImg2}`}
-                                alt=""
-                            ></img>
-                        </div>
+                        <AnimationOnScroll
+                            animateIn="animate__fadeInUp"
+                            duration={1.5}
+                            animateOnce={true}
+                        >
+                            <div>
+                                <img
+                                    src={`/${curretArticle[0].articleImg1}`}
+                                    alt=""
+                                ></img>
+                            </div>
+                        </AnimationOnScroll>
+                        <AnimationOnScroll
+                            animateIn="animate__fadeInUp"
+                            duration={1.5}
+                            animateOnce={true}
+                        >
+                            <div>
+                                <img
+                                    src={`/${curretArticle[0].articleImg2}`}
+                                    alt=""
+                                ></img>
+                            </div>
+                        </AnimationOnScroll>
                     </div>
-                    <p className="header tablet-header">Tagged with:</p>
+                    <p className="recent-post-header tablet-header">
+                        Tagged with:
+                    </p>
                     <div className="tags">
                         <div className="row tags-row" ref={ref}>
-                            <p className="header desktop-header">
+                            <p className="recent-post-header desktop-header">
                                 Tagged with:
                             </p>
                             <div className={`tag-item ${tag1}`}>landing</div>
@@ -226,18 +275,24 @@ const SingleArticlePage = () => {
                     </div>
                     <div className="lines"></div>
                     <div className="recent-post">
-                        <p className="header">Recent Post:</p>
+                        <p className="recent-post-header">Recent Post:</p>
                         <div className="wrapper">
                             {articlesArray
                                 .filter((element, index) => index > 23)
                                 .map(({ id, preview, tag, name }) => (
                                     <div key={id} className="recent-post-item">
-                                        <ArticleItem
-                                            id={id}
-                                            preview={preview}
-                                            tag={tag}
-                                            name={name}
-                                        />
+                                        <AnimationOnScroll
+                                            animateIn="animate__fadeInUp"
+                                            duration={1.5}
+                                            animateOnce={true}
+                                        >
+                                            <ArticleItem
+                                                id={id}
+                                                preview={preview}
+                                                tag={tag}
+                                                name={name}
+                                            />
+                                        </AnimationOnScroll>
                                     </div>
                                 ))}
                         </div>

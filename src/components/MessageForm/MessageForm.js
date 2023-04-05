@@ -41,7 +41,6 @@ const MessageForm = ({ messageRef }) => {
                         />
                     </div>
                 </div>
-
                 <textarea
                     className="message-textarea"
                     name="Message"

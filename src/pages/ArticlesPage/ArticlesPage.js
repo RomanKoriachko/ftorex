@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './ArticlesPage.scss'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import articlesArray from './articlesArray'
 import MessageForm from '../../components/MessageForm/MessageForm'
 import ArticleItem from '../../components/ArticleItem/ArticleItem'
+import { Animated } from 'react-animated-css'
 
 const ArticlesPage = ({ messageRef }) => {
     // Tags
@@ -186,11 +187,11 @@ const ArticlesPage = ({ messageRef }) => {
     }
     // Scroll to top after change page
 
-    const ref = useRef(null)
+    // const ref = useRef(null)
 
-    const scrollToTop = () => {
-        ref.current?.scrollIntoView({ behavior: 'smooth' })
-    }
+    // const scrollToTop = () => {
+    //     ref.current?.scrollIntoView({ behavior: 'smooth' })
+    // }
 
     // pages of articles
     let filtredArr1 = summaryArr.filter((element, index) => index < 9)
@@ -213,7 +214,7 @@ const ArticlesPage = ({ messageRef }) => {
             page2: '',
             page3: '',
         }))
-        scrollToTop()
+        // scrollToTop()
     }
     const onSecondPageClick = () => {
         setActivePage(() => ({
@@ -221,7 +222,7 @@ const ArticlesPage = ({ messageRef }) => {
             page2: 'active-page',
             page3: '',
         }))
-        scrollToTop()
+        // scrollToTop()
     }
     const onThirdPageClick = () => {
         setActivePage(() => ({
@@ -229,7 +230,7 @@ const ArticlesPage = ({ messageRef }) => {
             page2: '',
             page3: 'active-page',
         }))
-        scrollToTop()
+        // scrollToTop()
     }
 
     const onPrevClick = () => {
@@ -272,9 +273,11 @@ const ArticlesPage = ({ messageRef }) => {
         <div className="articles-page">
             <PageHeader name={'articles'} />
             <div className="container">
-                <p className="header mobile-header">Popular Topics</p>
-                <div className="row tags-row" ref={ref}>
-                    <p className="header desktop-header">Popular Topics</p>
+                <p className="articles-header mobile-header">Popular Topics</p>
+                <div className="row tags-row">
+                    <p className="articles-header desktop-header">
+                        Popular Topics
+                    </p>
                     <div className="tags-buttons">
                         <button
                             className={`tag-btn ${tagState.tag1}`}
@@ -338,33 +341,51 @@ const ArticlesPage = ({ messageRef }) => {
                     {activePage.page1 === 'active-page'
                         ? filtredArr1.map(({ id, preview, tag, name }) => (
                               <div key={id} className="article-item">
-                                  <ArticleItem
-                                      id={id}
-                                      preview={preview}
-                                      tag={tag}
-                                      name={name}
-                                  />
+                                  <Animated
+                                      animationIn="fadeIn"
+                                      isVisible={true}
+                                      animationInDuration={1500}
+                                  >
+                                      <ArticleItem
+                                          id={id}
+                                          preview={preview}
+                                          tag={tag}
+                                          name={name}
+                                      />
+                                  </Animated>
                               </div>
                           ))
                         : activePage.page2 === 'active-page'
                         ? filtredArr2.map(({ id, preview, tag, name }) => (
                               <div key={id} className="article-item">
-                                  <ArticleItem
-                                      id={id}
-                                      preview={preview}
-                                      tag={tag}
-                                      name={name}
-                                  />
+                                  <Animated
+                                      animationIn="fadeIn"
+                                      isVisible={true}
+                                      animationInDuration={1500}
+                                  >
+                                      <ArticleItem
+                                          id={id}
+                                          preview={preview}
+                                          tag={tag}
+                                          name={name}
+                                      />
+                                  </Animated>
                               </div>
                           ))
                         : filtredArr3.map(({ id, preview, tag, name }) => (
                               <div key={id} className="article-item">
-                                  <ArticleItem
-                                      id={id}
-                                      preview={preview}
-                                      tag={tag}
-                                      name={name}
-                                  />
+                                  <Animated
+                                      animationIn="fadeIn"
+                                      isVisible={true}
+                                      animationInDuration={1500}
+                                  >
+                                      <ArticleItem
+                                          id={id}
+                                          preview={preview}
+                                          tag={tag}
+                                          name={name}
+                                      />
+                                  </Animated>
                               </div>
                           ))}
                 </div>

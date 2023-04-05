@@ -63,7 +63,7 @@
                 object-fit: contain;
             }
         }
-        .header {
+        .recent-post-header {
             font-family: 'Roboto';
             font-weight: 800;
             font-size: 24px;
@@ -105,7 +105,7 @@
             margin-bottom: 20px;
         }
         .recent-post {
-            .header {
+            .recent-post-header {
                 margin-bottom: 40px;
             }
             .wrapper {
@@ -115,7 +115,7 @@
                 margin-bottom: 100px;
             }
             .recent-post-item {
-                > a {
+                a {
                     text-decoration: none;
                     color: #121212;
                 }

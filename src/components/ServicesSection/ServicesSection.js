@@ -1,6 +1,7 @@
 import React from 'react'
 import './ServicesSection.scss'
 import { Link } from 'react-router-dom'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const ServicesSection = () => {
     return (
@@ -8,20 +9,26 @@ const ServicesSection = () => {
             <div className="container services-container">
                 <div className="services-row">
                     <div className="container-tablet">
-                        <div className="services-header-container">
-                            <p className="small-header">Our Services</p>
-                            <p className="big-header">
-                                what services we provide
-                            </p>
-                            <Link to="/service">
-                                <button className="sevices-btn">
-                                    <div className="row btn-content-row">
-                                        <p>View info</p>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
-                            </Link>
-                        </div>
+                        <AnimationOnScroll
+                            animateIn="animate__backInLeft"
+                            duration={1.5}
+                            animateOnce={true}
+                        >
+                            <div className="services-header-container">
+                                <p className="small-header">Our Services</p>
+                                <p className="big-header">
+                                    what services we provide
+                                </p>
+                                <Link to="/service">
+                                    <button className="sevices-btn">
+                                        <div className="row btn-content-row">
+                                            <p>View info</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </Link>
+                            </div>
+                        </AnimationOnScroll>
                     </div>
                     <div className="services-items">
                         <Link to="/service">

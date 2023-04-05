@@ -2,7 +2,7 @@
     .preview-bg {
         background-image: url(../../../public/images/articles-bg.png);
     }
-    .header {
+    .articles-header {
         flex-shrink: 0;
         margin-right: 26px;
         font-family: 'Poppins';
@@ -13,6 +13,9 @@
     }
     .mobile-header {
         display: none;
+    }
+    .desktop-header {
+        display: block;
     }
     .tags-row {
         gap: 10px;
@@ -48,7 +51,7 @@
         gap: 40px 24px;
     }
     .article-item {
-        > a {
+        a {
             text-decoration: none;
             color: #0c0c0c;
         }

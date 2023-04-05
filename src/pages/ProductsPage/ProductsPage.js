@@ -2,6 +2,8 @@ import React from 'react'
 import './ProductsPage.scss'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
+import { Animated } from 'react-animated-css'
 
 const ProductsPage = () => {
     return (
@@ -10,15 +12,21 @@ const ProductsPage = () => {
             <div className="container">
                 <Tabs>
                     <div className="row tabs-row">
-                        <TabList>
-                            <Tab>Coking coal</Tab>
-                            <Tab>Thermal coal</Tab>
-                            <Tab>Anthracite</Tab>
-                            <Tab>PCI Coal</Tab>
-                            <Tab>Oil & gas equipment</Tab>
-                            <Tab>Fertilizer</Tab>
-                            <Tab>Mining equipment</Tab>
-                        </TabList>
+                        <Animated
+                            animationIn="fadeInLeft"
+                            isVisible={true}
+                            animationInDuration={1500}
+                        >
+                            <TabList>
+                                <Tab>Coking coal</Tab>
+                                <Tab>Thermal coal</Tab>
+                                <Tab>Anthracite</Tab>
+                                <Tab>PCI Coal</Tab>
+                                <Tab>Oil & gas equipment</Tab>
+                                <Tab>Fertilizer</Tab>
+                                <Tab>Mining equipment</Tab>
+                            </TabList>
+                        </Animated>
                         <div className="tab-container">
                             <TabPanel>
                                 <div>
@@ -43,30 +51,48 @@ const ProductsPage = () => {
                                         the demand for coking coal is also
                                         expected to increase.
                                     </p>
-                                    <img
-                                        src="images/products-img-1.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-1.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         INAGLI COKING COAL (GRADE "Kzh")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         DENI DEEP COKING COAL (GRADE "K4")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <AnimationOnScroll
+                                        animateIn="animate__fadeInUp"
+                                        duration={1.5}
+                                        animateOnce={true}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </AnimationOnScroll>
                                     <button className="download-btn">
                                         <div className="row btn-content-row">
                                             <p>download document</p>
@@ -96,30 +122,48 @@ const ProductsPage = () => {
                                         the most abundant and widely traded type
                                         of coal.
                                     </p>
-                                    <img
-                                        src="images/products-img-1.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-1.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         INAGLI COKING COAL (GRADE "Kzh")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         DENI DEEP COKING COAL (GRADE "K4")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <AnimationOnScroll
+                                        animateIn="animate__fadeInUp"
+                                        duration={1.5}
+                                        animateOnce={true}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </AnimationOnScroll>
                                     <button className="download-btn">
                                         <div className="row btn-content-row">
                                             <p>download document</p>
@@ -151,30 +195,48 @@ const ProductsPage = () => {
                                         as its high carbon content makes it an
                                         effective adsorbent for impurities.
                                     </p>
-                                    <img
-                                        src="images/products-img-1.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-1.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         INAGLI COKING COAL (GRADE "Kzh")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         DENI DEEP COKING COAL (GRADE "K4")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <AnimationOnScroll
+                                        animateIn="animate__fadeInUp"
+                                        duration={1.5}
+                                        animateOnce={true}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </AnimationOnScroll>
                                     <button className="download-btn">
                                         <div className="row btn-content-row">
                                             <p>download document</p>
@@ -205,30 +267,48 @@ const ProductsPage = () => {
                                         process. It is also generally less
                                         expensive than coking coal.
                                     </p>
-                                    <img
-                                        src="images/products-img-1.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-1.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         INAGLI COKING COAL (GRADE "Kzh")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         DENI DEEP COKING COAL (GRADE "K4")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <AnimationOnScroll
+                                        animateIn="animate__fadeInUp"
+                                        duration={1.5}
+                                        animateOnce={true}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </AnimationOnScroll>
                                     <button className="download-btn">
                                         <div className="row btn-content-row">
                                             <p>download document</p>
@@ -257,30 +337,48 @@ const ProductsPage = () => {
                                         for more efficient and cost-effective
                                         methods of exploration and production.
                                     </p>
-                                    <img
-                                        src="images/products-img-1.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-1.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         INAGLI COKING COAL (GRADE "Kzh")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         DENI DEEP COKING COAL (GRADE "K4")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <AnimationOnScroll
+                                        animateIn="animate__fadeInUp"
+                                        duration={1.5}
+                                        animateOnce={true}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </AnimationOnScroll>
                                     <button className="download-btn">
                                         <div className="row btn-content-row">
                                             <p>download document</p>
@@ -310,30 +408,48 @@ const ProductsPage = () => {
                                         used in agriculture to improve crop
                                         yields and increase productivity.
                                     </p>
-                                    <img
-                                        src="images/products-img-1.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-1.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         INAGLI COKING COAL (GRADE "Kzh")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         DENI DEEP COKING COAL (GRADE "K4")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <AnimationOnScroll
+                                        animateIn="animate__fadeInUp"
+                                        duration={1.5}
+                                        animateOnce={true}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </AnimationOnScroll>
                                     <button className="download-btn">
                                         <div className="row btn-content-row">
                                             <p>download document</p>
@@ -361,30 +477,48 @@ const ProductsPage = () => {
                                         productive mining equipment that can
                                         extract resources from deep underground.
                                     </p>
-                                    <img
-                                        src="images/products-img-1.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-1.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         INAGLI COKING COAL (GRADE "Kzh")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <Animated
+                                        animationIn="fadeInUp"
+                                        isVisible={true}
+                                        animationInDuration={1500}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </Animated>
                                     <p className="tab-content-header">
                                         DENI DEEP COKING COAL (GRADE "K4")
                                     </p>
                                     <p className="tab-content-subtitle">
                                         contract characteristics:
                                     </p>
-                                    <img
-                                        src="images/products-img-2.png"
-                                        alt=""
-                                    />
+                                    <AnimationOnScroll
+                                        animateIn="animate__fadeInUp"
+                                        duration={1.5}
+                                        animateOnce={true}
+                                    >
+                                        <img
+                                            src="images/products-img-2.png"
+                                            alt=""
+                                        />
+                                    </AnimationOnScroll>
                                     <button className="download-btn">
                                         <div className="row btn-content-row">
                                             <p>download document</p>

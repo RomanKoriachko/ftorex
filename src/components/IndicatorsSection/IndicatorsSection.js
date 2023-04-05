@@ -1,28 +1,56 @@
 import React from 'react'
 import AnimatedNumbers from 'react-animated-numbers'
 import './IndicatorsSection.scss'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const IndicatorsSection = () => {
     return (
         <section className="indicators-section">
             <div className="container">
-                <p className="small-header indicators-small-header">
-                    Why Choose Us
-                </p>
+                <AnimationOnScroll
+                    animateIn="animate__backInUp"
+                    duration={1.5}
+                    animateOnce={true}
+                >
+                    <p className="small-header indicators-small-header">
+                        Why Choose Us
+                    </p>
+                </AnimationOnScroll>
                 <div className="indicators-header-row">
-                    <p className="big-header">
-                        We established a coal mining business for you
-                    </p>
-                    <p className="subtitle">
-                        FTOREX is a global coal industry company designed to
-                        establish and develop a Coal Business, Engineering &
-                        General Purpose
-                    </p>
+                    <AnimationOnScroll
+                        animateIn="animate__backInUp"
+                        duration={1.5}
+                        animateOnce={true}
+                    >
+                        <p className="big-header">
+                            We established a coal mining business for you
+                        </p>
+                    </AnimationOnScroll>
+                    <AnimationOnScroll
+                        animateIn="animate__backInUp"
+                        duration={1.5}
+                        animateOnce={true}
+                    >
+                        <p className="subtitle">
+                            FTOREX is a global coal industry company designed to
+                            establish and develop a Coal Business, Engineering &
+                            General Purpose
+                        </p>
+                    </AnimationOnScroll>
                 </div>
                 <div className="indicators-content-row">
-                    <div className="indicators-img">
-                        <img src="images/indicators-section-img.png" alt="" />
-                    </div>
+                    <AnimationOnScroll
+                        animateIn="animate__fadeInUp"
+                        duration={1.5}
+                        animateOnce={true}
+                    >
+                        <div className="indicators-img">
+                            <img
+                                src="images/indicators-section-img.png"
+                                alt=""
+                            />
+                        </div>
+                    </AnimationOnScroll>
                     <div>
                         <div className="row indicators-numbers">
                             <div className="indicators-numbers-item">
