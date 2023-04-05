@@ -7,7 +7,7 @@ const ArticleItem = ({ id, preview, tag, name }) => {
         <>
             <Link to={`/articles/${id}`}>
                 <div className="article-preview">
-                    <img src={preview} alt="" />
+                    <img src={`/${preview}`} alt="" />
                 </div>
             </Link>
             <div className="article-tag">{tag}</div>

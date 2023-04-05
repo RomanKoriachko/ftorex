@@ -3,6 +3,7 @@ import './SingleArticlePage.scss'
 import { useParams } from 'react-router-dom'
 import articlesArray from '../ArticlesPage/articlesArray'
 import ScrollDownBtn from '../../components/ScrollDownBtn/ScrollDownBtn'
+import ArticleItem from '../../components/ArticleItem/ArticleItem'
 
 const SingleArticlePage = () => {
     const ref = useRef(null)
@@ -224,6 +225,23 @@ const SingleArticlePage = () => {
                         </div>
                     </div>
                     <div className="lines"></div>
+                    <div className="recent-post">
+                        <p className="header">Recent Post:</p>
+                        <div className="wrapper">
+                            {articlesArray
+                                .filter((element, index) => index > 23)
+                                .map(({ id, preview, tag, name }) => (
+                                    <div key={id} className="recent-post-item">
+                                        <ArticleItem
+                                            id={id}
+                                            preview={preview}
+                                            tag={tag}
+                                            name={name}
+                                        />
+                                    </div>
+                                ))}
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

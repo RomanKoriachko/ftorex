@@ -102,7 +102,40 @@
             border-top: 1px solid #eceff4;
             border-bottom: 1px solid #eceff4;
             height: 39px;
-            margin-bottom: 90px;
+            margin-bottom: 20px;
+        }
+        .recent-post {
+            .header {
+                margin-bottom: 40px;
+            }
+            .wrapper {
+                display: grid;
+                grid-template-columns: (repeat(3, 1fr));
+                gap: 30px;
+                margin-bottom: 100px;
+            }
+            .recent-post-item {
+                > a {
+                    text-decoration: none;
+                    color: #121212;
+                }
+                .article-tag {
+                    margin-top: 38px;
+                    margin-bottom: 27px;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 11px;
+                    line-height: 13px;
+                    padding: 5px 13px;
+                }
+                .article-name {
+                    font-family: 'Roboto';
+                    font-weight: 800;
+                    font-size: 24px;
+                    line-height: 35px;
+                    letter-spacing: -0.06em;
+                }
+            }
         }
     }
 }
@@ -126,6 +159,23 @@
     }
 }
 
+/* Tablet */
+@media (max-width: 992px) {
+    .single-article-page {
+        .article-content-section {
+            .recent-post {
+                .wrapper {
+                    grid-template-columns: 1fr;
+                    justify-items: center;
+                    .recent-post-item {
+                        max-width: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* Mobile */
 @media (max-width: 576px) {
     .single-article-page {
@@ -144,6 +194,14 @@
             .images-wrapper {
                 flex-direction: column;
                 gap: 32px;
+            }
+            .recent-post {
+                .wrapper {
+                    .article-tag {
+                        margin-top: 38px;
+                        margin-bottom: 26px;
+                    }
+                }
             }
         }
     }
