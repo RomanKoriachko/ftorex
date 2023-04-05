@@ -22,13 +22,14 @@
         transform: translate(-50%, -50%);
     }
     .message-section {
+        padding: 20px;
         z-index: 5000;
         position: fixed;
         background-color: #f9f9f9;
         width: 50%;
-        top: 50%;
+        top: 62%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -55%);
         .message-form {
             .message-btn {
                 margin-bottom: 40px;
@@ -117,6 +118,8 @@
             width: 80%;
             height: 90%;
             overflow-y: auto;
+            top: 62%;
+            transform: translate(-50%, -50%);
         }
     }
 }

@@ -94,10 +94,29 @@
     .subscribe-section {
         z-index: 10;
         position: fixed;
-        width: 100%;
+        width: 600px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        padding: 40px 43px;
+        .subscribe-row {
+            flex-direction: column;
+        }
+        .subscribe-header {
+            width: 84%;
+        }
+    }
+    .close-popup-btn {
+        display: block;
+        background-image: url(../../assets/close-button-img.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 10;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 16px;
+        right: 20px;
     }
 }
 
@@ -161,6 +180,33 @@
     .header-menu {
         gap: 21px;
     }
+    .header {
+        .subscribe-section {
+            width: 320px;
+            padding: 56px 0px;
+            .subscribe-header {
+                width: 100%;
+            }
+            .subscribe-row {
+                gap: 24px;
+            }
+            .input-email-row {
+                flex-direction: column;
+                .email-input {
+                    width: 100%;
+                    margin-right: 0;
+                }
+                .email-btn {
+                    width: 100%;
+                    margin-top: -20px;
+                }
+                .input-annotation {
+                    transform: translateY(300%);
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 /* Mobile */
@@ -170,5 +216,22 @@
     }
     .burger-menu-btn {
         display: block;
+    }
+    .header {
+        .subscribe-section {
+            .subscribe-header {
+                font-family: 'Anton';
+                font-weight: 400;
+                font-size: 32px;
+            }
+            .input-email-row {
+                .email-btn {
+                    margin-top: -25px;
+                }
+                .input-annotation {
+                    transform: translateY(350%);
+                }
+            }
+        }
     }
 }

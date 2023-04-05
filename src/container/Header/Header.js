@@ -119,7 +119,7 @@ const Header = ({ submitRef }) => {
                         isVisible={true}
                         animationInDuration={300}
                     >
-                        <SubscribeSection />
+                        <SubscribeSection closeSubmitForm={closeSubmitForm} />
                     </Animated>
                 </div>
                 <div className="container">

@@ -1,9 +1,13 @@
 import React from 'react'
 import './SubscribeSection.scss'
 
-const SubscribeSection = ({ submitRef }) => {
+const SubscribeSection = ({ submitRef, closeSubmitForm }) => {
     return (
         <section className="subscribe-section" ref={submitRef}>
+            <div
+                className="close-popup-btn"
+                onClick={() => closeSubmitForm()}
+            ></div>
             <div className="container">
                 <div className="row subscribe-row">
                     <p className="subscribe-header">
