@@ -23,12 +23,17 @@
         }
     }
     .articles-items-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 24px;
         .article-item {
-            > img {
+            img {
                 margin-bottom: 24px;
+                width: 100%;
+                height: 320px;
+                object-fit: cover;
             }
-            > p {
+            > a {
                 font-family: 'Roboto';
                 font-weight: 800;
                 font-size: 23px;
@@ -36,6 +41,7 @@
                 letter-spacing: -0.06em;
                 text-transform: uppercase;
                 color: #121212;
+                text-decoration: none;
             }
         }
     }

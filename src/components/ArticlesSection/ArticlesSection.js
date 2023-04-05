@@ -1,6 +1,7 @@
 import React from 'react'
 import './ArticlesSection.scss'
 import { Link } from 'react-router-dom'
+import articleArr from '../../pages/ArticlesPage/articlesArray'
 
 const ArticlesSection = () => {
     return (
@@ -24,27 +25,17 @@ const ArticlesSection = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="row articles-items-row">
-                    <div className="article-item">
-                        <img src="images/article-1.png" alt="" />
-                        <p>how to start working in the industry means</p>
-                    </div>
-                    <div className="article-item">
-                        <img src="images/article-2.png" alt="" />
-                        <p>
-                            Get to know the tools that are often used for work
-                        </p>
-                    </div>
-                    <div className="article-item">
-                        <img src="images/article-3.png" alt="" />
-                        <p>tips to start a career in the meaning industry</p>
-                    </div>
-                    <div className="article-item">
-                        <img src="images/article-4.png" alt="" />
-                        <p>
-                            Get to know the tools that are often used for work
-                        </p>
-                    </div>
+                <div className="articles-items-row">
+                    {articleArr
+                        .filter((element, index) => index < 4)
+                        .map(({ id, preview, name }) => (
+                            <div key={id} className="article-item">
+                                <Link to={`/articles/${id}`}>
+                                    <img src={`/${preview}`} alt="" />
+                                    <p>{name}</p>
+                                </Link>
+                            </div>
+                        ))}
                 </div>
             </div>
         </section>
