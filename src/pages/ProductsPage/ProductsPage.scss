@@ -7,6 +7,9 @@
     .tabs-row {
         align-items: flex-start;
     }
+    .tabs-tablet {
+        display: none;
+    }
     .react-tabs__tab-list {
         min-width: 300px;
         border-right: 1px solid #eceff4;
@@ -70,6 +73,99 @@
             .btn-arrow {
                 background-image: url(../../assets/button-arr-gray.svg);
                 transform: rotate(90deg);
+            }
+        }
+    }
+    .tab-content-img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .tab-content-table {
+        width: 100%;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1200px) {
+    .products-page {
+        .react-tabs__tab-list {
+            min-width: 200px;
+        }
+        .tab-container {
+            margin: 0px 20px;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .products-page {
+        .tabs-tablet {
+            display: block;
+            overflow-x: scroll;
+            margin-bottom: 20px;
+        }
+        .tabs-desktop {
+            display: none;
+        }
+        .tabs-row {
+            flex-direction: column;
+        }
+        .react-tabs__tab-list {
+            display: flex;
+            gap: 24px;
+            border-right: none;
+            min-width: 940px;
+        }
+        .tab-container {
+            margin: 0px 0px;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .products-page {
+        .tab-container {
+            .tab-content-header {
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: -0.04em;
+                margin-top: 32px;
+                margin-bottom: 12px;
+            }
+            .tab-content-header:nth-child(1) {
+                margin-bottom: 24px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 30px;
+            }
+            .download-button-wrapper {
+                text-align: center;
+                .download-btn {
+                    margin-top: 32px;
+                    margin-bottom: 72px;
+                }
+            }
+        }
+        .tab-content-img {
+            width: 100%;
+            min-height: 340px;
+        }
+        .tab-content-table {
+            min-height: auto;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .products-page {
+        .preview-section {
+            .preview-header {
+                font-size: 60px;
             }
         }
     }

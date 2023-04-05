@@ -10,21 +10,34 @@ const ProductsPage = () => {
             <PageHeader name={'Products'} />
             <div className="container">
                 <Tabs>
+                    <div className="tabs-tablet">
+                        <TabList>
+                            <Tab>Coking coal</Tab>
+                            <Tab>Thermal coal</Tab>
+                            <Tab>Anthracite</Tab>
+                            <Tab>PCI Coal</Tab>
+                            <Tab>Oil & gas equipment</Tab>
+                            <Tab>Fertilizer</Tab>
+                            <Tab>Mining equipment</Tab>
+                        </TabList>
+                    </div>
                     <div className="row tabs-row">
                         <Animated
                             animationIn="fadeInLeft"
                             isVisible={true}
                             animationInDuration={1500}
                         >
-                            <TabList>
-                                <Tab>Coking coal</Tab>
-                                <Tab>Thermal coal</Tab>
-                                <Tab>Anthracite</Tab>
-                                <Tab>PCI Coal</Tab>
-                                <Tab>Oil & gas equipment</Tab>
-                                <Tab>Fertilizer</Tab>
-                                <Tab>Mining equipment</Tab>
-                            </TabList>
+                            <div className="tabs-desktop">
+                                <TabList>
+                                    <Tab>Coking coal</Tab>
+                                    <Tab>Thermal coal</Tab>
+                                    <Tab>Anthracite</Tab>
+                                    <Tab>PCI Coal</Tab>
+                                    <Tab>Oil & gas equipment</Tab>
+                                    <Tab>Fertilizer</Tab>
+                                    <Tab>Mining equipment</Tab>
+                                </TabList>
+                            </div>
                         </Animated>
                         <div className="tab-container">
                             <TabPanel>
@@ -58,6 +71,7 @@ const ProductsPage = () => {
                                             increase.
                                         </p>
                                         <img
+                                            className="tab-content-img"
                                             src="images/products-img-1.png"
                                             alt=""
                                         />
@@ -68,6 +82,7 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
@@ -78,15 +93,18 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
-                                        <button className="download-btn">
-                                            <div className="row btn-content-row">
-                                                <p>download document</p>
-                                                <div className="btn-arrow"></div>
-                                            </div>
-                                        </button>
+                                        <div className="download-button-wrapper">
+                                            <button className="download-btn">
+                                                <div className="row btn-content-row">
+                                                    <p>download document</p>
+                                                    <div className="btn-arrow"></div>
+                                                </div>
+                                            </button>
+                                        </div>
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -119,6 +137,7 @@ const ProductsPage = () => {
                                             coal.
                                         </p>
                                         <img
+                                            className="tab-content-img"
                                             src="images/products-img-1.png"
                                             alt=""
                                         />
@@ -129,6 +148,7 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
@@ -139,15 +159,18 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
-                                        <button className="download-btn">
-                                            <div className="row btn-content-row">
-                                                <p>download document</p>
-                                                <div className="btn-arrow"></div>
-                                            </div>
-                                        </button>
+                                        <div className="download-button-wrapper">
+                                            <button className="download-btn">
+                                                <div className="row btn-content-row">
+                                                    <p>download document</p>
+                                                    <div className="btn-arrow"></div>
+                                                </div>
+                                            </button>
+                                        </div>
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -182,6 +205,7 @@ const ProductsPage = () => {
                                             impurities.
                                         </p>
                                         <img
+                                            className="tab-content-img"
                                             src="images/products-img-1.png"
                                             alt=""
                                         />
@@ -192,6 +216,7 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
@@ -202,15 +227,18 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
-                                        <button className="download-btn">
-                                            <div className="row btn-content-row">
-                                                <p>download document</p>
-                                                <div className="btn-arrow"></div>
-                                            </div>
-                                        </button>
+                                        <div className="download-button-wrapper">
+                                            <button className="download-btn">
+                                                <div className="row btn-content-row">
+                                                    <p>download document</p>
+                                                    <div className="btn-arrow"></div>
+                                                </div>
+                                            </button>
+                                        </div>
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -245,6 +273,7 @@ const ProductsPage = () => {
                                             coal.
                                         </p>
                                         <img
+                                            className="tab-content-img"
                                             src="images/products-img-1.png"
                                             alt=""
                                         />
@@ -255,6 +284,7 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
@@ -265,15 +295,18 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
-                                        <button className="download-btn">
-                                            <div className="row btn-content-row">
-                                                <p>download document</p>
-                                                <div className="btn-arrow"></div>
-                                            </div>
-                                        </button>
+                                        <div className="download-button-wrapper">
+                                            <button className="download-btn">
+                                                <div className="row btn-content-row">
+                                                    <p>download document</p>
+                                                    <div className="btn-arrow"></div>
+                                                </div>
+                                            </button>
+                                        </div>
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -305,6 +338,7 @@ const ProductsPage = () => {
                                             of exploration and production.
                                         </p>
                                         <img
+                                            className="tab-content-img"
                                             src="images/products-img-1.png"
                                             alt=""
                                         />
@@ -315,6 +349,7 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
@@ -325,15 +360,18 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
-                                        <button className="download-btn">
-                                            <div className="row btn-content-row">
-                                                <p>download document</p>
-                                                <div className="btn-arrow"></div>
-                                            </div>
-                                        </button>
+                                        <div className="download-button-wrapper">
+                                            <button className="download-btn">
+                                                <div className="row btn-content-row">
+                                                    <p>download document</p>
+                                                    <div className="btn-arrow"></div>
+                                                </div>
+                                            </button>
+                                        </div>
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -366,6 +404,7 @@ const ProductsPage = () => {
                                             and increase productivity.
                                         </p>
                                         <img
+                                            className="tab-content-img"
                                             src="images/products-img-1.png"
                                             alt=""
                                         />
@@ -376,6 +415,7 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
@@ -386,15 +426,18 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
-                                        <button className="download-btn">
-                                            <div className="row btn-content-row">
-                                                <p>download document</p>
-                                                <div className="btn-arrow"></div>
-                                            </div>
-                                        </button>
+                                        <div className="download-button-wrapper">
+                                            <button className="download-btn">
+                                                <div className="row btn-content-row">
+                                                    <p>download document</p>
+                                                    <div className="btn-arrow"></div>
+                                                </div>
+                                            </button>
+                                        </div>
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -424,6 +467,7 @@ const ProductsPage = () => {
                                             resources from deep underground.
                                         </p>
                                         <img
+                                            className="tab-content-img"
                                             src="images/products-img-1.png"
                                             alt=""
                                         />
@@ -434,6 +478,7 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
@@ -444,15 +489,18 @@ const ProductsPage = () => {
                                             contract characteristics:
                                         </p>
                                         <img
+                                            className="tab-content-table"
                                             src="images/products-img-2.png"
                                             alt=""
                                         />
-                                        <button className="download-btn">
-                                            <div className="row btn-content-row">
-                                                <p>download document</p>
-                                                <div className="btn-arrow"></div>
-                                            </div>
-                                        </button>
+                                        <div className="download-button-wrapper">
+                                            <button className="download-btn">
+                                                <div className="row btn-content-row">
+                                                    <p>download document</p>
+                                                    <div className="btn-arrow"></div>
+                                                </div>
+                                            </button>
+                                        </div>
                                     </div>
                                 </Animated>
                             </TabPanel>
