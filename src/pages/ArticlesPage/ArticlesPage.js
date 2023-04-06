@@ -5,6 +5,12 @@ import articlesArray from "./articlesArray"
 import MessageForm from "../../components/MessageForm/MessageForm"
 import ArticleItem from "../../components/ArticleItem/ArticleItem"
 import { Animated } from "react-animated-css"
+import { useAppSelector, useAppDispatch } from "../../redux/hooks"
+import {
+    onFirstPage,
+    onSecondPage,
+    onThirdPage,
+} from "../../redux/pagesReducer"
 
 const ArticlesPage = ({ messageRef }) => {
     // Tags
@@ -255,7 +261,6 @@ const ArticlesPage = ({ messageRef }) => {
         ]
     }
 
-    console.log(summaryArr)
     const table = {}
     const resArr = summaryArr.filter(({ id }) => !table[id] && (table[id] = 1))
 
@@ -274,12 +279,19 @@ const ArticlesPage = ({ messageRef }) => {
         page3: "",
     })
 
+    const pageState = useAppSelector((state) => state.pageState)
+    const dispatch = useAppDispatch()
+
+    console.log(pageState)
+    console.log(tagState)
+
     const onFirstPageClick = () => {
         setActivePage(() => ({
             page1: "active-page",
             page2: "",
             page3: "",
         }))
+        dispatch(onFirstPage())
         // scrollToTop()
     }
     const onSecondPageClick = () => {
@@ -288,6 +300,7 @@ const ArticlesPage = ({ messageRef }) => {
             page2: "active-page",
             page3: "",
         }))
+        dispatch(onSecondPage())
         // scrollToTop()
     }
     const onThirdPageClick = () => {
@@ -296,24 +309,25 @@ const ArticlesPage = ({ messageRef }) => {
             page2: "",
             page3: "active-page",
         }))
+        dispatch(onThirdPage())
         // scrollToTop()
     }
 
     const onPrevClick = () => {
-        if (activePage.page3 === "active-page") {
-            onSecondPageClick()
-        } else if (activePage.page2 === "active-page") {
-            onFirstPageClick()
+        if (pageState.page3 === "active-page") {
+            dispatch(onSecondPage())
+        } else if (pageState.page2 === "active-page") {
+            dispatch(onFirstPage())
         }
     }
     const onNextClick = () => {
-        if (activePage.page1 === "active-page" && filtredArr2.length > 0) {
-            onSecondPageClick()
+        if (pageState.page1 === "active-page" && filtredArr2.length > 0) {
+            dispatch(onSecondPage())
         } else if (
-            activePage.page2 === "active-page" &&
+            pageState.page2 === "active-page" &&
             filtredArr3.length > 0
         ) {
-            onThirdPageClick()
+            dispatch(onThirdPage())
         }
     }
 
@@ -324,14 +338,14 @@ const ArticlesPage = ({ messageRef }) => {
 
     if (filtredArr2.length === 0) {
         disable2Page = "hide"
-        if (activePage.page2 === "active-page") {
-            onFirstPageClick()
+        if (pageState.page2 === "active-page") {
+            dispatch(onFirstPage())
         }
     }
     if (filtredArr3.length === 0) {
         disable3Page = "hide"
-        if (activePage.page3 === "active-page") {
-            onSecondPageClick()
+        if (pageState.page3 === "active-page") {
+            dispatch(onSecondPage())
         }
     }
 
@@ -421,7 +435,7 @@ const ArticlesPage = ({ messageRef }) => {
                     <div className="no-matches">No matches</div>
                 ) : (
                     <div className="wrapper">
-                        {activePage.page1 === "active-page"
+                        {pageState.page1 === "active-page"
                             ? filtredArr1.map(({ id, preview, tag, name }) => (
                                   <div key={id} className="article-item">
                                       <Animated
@@ -438,7 +452,7 @@ const ArticlesPage = ({ messageRef }) => {
                                       </Animated>
                                   </div>
                               ))
-                            : activePage.page2 === "active-page"
+                            : pageState.page2 === "active-page"
                             ? filtredArr2.map(({ id, preview, tag, name }) => (
                                   <div key={id} className="article-item">
                                       <Animated
@@ -481,19 +495,19 @@ const ArticlesPage = ({ messageRef }) => {
                             onClick={() => onPrevClick()}
                         ></button>
                         <button
-                            className={`page ${activePage.page1}`}
+                            className={`page ${pageState.page1}`}
                             onClick={() => onFirstPageClick()}
                         >
                             1
                         </button>
                         <button
-                            className={`page ${activePage.page2} ${disable2Page}`}
+                            className={`page ${pageState.page2} ${disable2Page}`}
                             onClick={() => onSecondPageClick()}
                         >
                             2
                         </button>
                         <button
-                            className={`page ${activePage.page3} ${disable3Page}`}
+                            className={`page ${pageState.page3} ${disable3Page}`}
                             onClick={() => onThirdPageClick()}
                         >
                             3
