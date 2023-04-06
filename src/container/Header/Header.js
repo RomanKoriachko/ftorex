@@ -114,21 +114,12 @@ const Header = ({ submitRef }) => {
                             <div className="btn-arrow"></div>
                         </div>
                     </button>
-                    <Link
-                        to="/contacts"
-                        className="contacts-btn"
-                        onClick={() => closeBurger()}
-                    >
-                        <button
-                            className="call-btn"
-                            onClick={() => callbackBtn()}
-                        >
-                            <div className="row btn-content-row">
-                                <p>CALL NOW</p>
-                                <div className="btn-arrow"></div>
-                            </div>
-                        </button>
-                    </Link>
+                    <button className="call-btn" onClick={() => callbackBtn()}>
+                        <div className="row btn-content-row">
+                            <p>CALL NOW</p>
+                            <div className="btn-arrow"></div>
+                        </div>
+                    </button>
                 </div>
                 <div
                     className={`subscribe-bg ${subscribeState} ${callbackFormState}`}
@@ -252,17 +243,15 @@ const Header = ({ submitRef }) => {
                                     <div className="btn-arrow"></div>
                                 </div>
                             </button>
-                            <Link to="/contacts">
-                                <button
-                                    className="call-btn"
-                                    onClick={() => callbackBtn()}
-                                >
-                                    <div className="row btn-content-row">
-                                        <p>CALL NOW</p>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
-                            </Link>
+                            <button
+                                className="call-btn"
+                                onClick={() => callbackBtn()}
+                            >
+                                <div className="row btn-content-row">
+                                    <p>CALL NOW</p>
+                                    <div className="btn-arrow"></div>
+                                </div>
+                            </button>
                         </div>
                         <div
                             className="burger-menu-btn"

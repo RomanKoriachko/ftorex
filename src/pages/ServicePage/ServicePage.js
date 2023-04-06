@@ -55,7 +55,7 @@ const ServicePage = ({ messageRef }) => {
                     <div className="row paragraph-row">
                         <AnimationOnScroll
                             animateIn="animate__fadeInLeft"
-                            duration={1.5}
+                            duration={1}
                             animateOnce={true}
                         >
                             <div className="paragraph-text">
@@ -78,7 +78,7 @@ const ServicePage = ({ messageRef }) => {
                         </AnimationOnScroll>
                         <AnimationOnScroll
                             animateIn="animate__fadeInRight"
-                            duration={1.5}
+                            duration={1}
                             animateOnce={true}
                         >
                             <div className="paragraph-img-wrapper">
@@ -93,7 +93,7 @@ const ServicePage = ({ messageRef }) => {
                     <div className="row paragraph-row">
                         <AnimationOnScroll
                             animateIn="animate__fadeInLeft"
-                            duration={1.5}
+                            duration={1}
                             animateOnce={true}
                         >
                             <div className="paragraph-img-wrapper">
@@ -106,7 +106,7 @@ const ServicePage = ({ messageRef }) => {
                         </AnimationOnScroll>
                         <AnimationOnScroll
                             animateIn="animate__fadeInRight"
-                            duration={1.5}
+                            duration={1}
                             animateOnce={true}
                         >
                             <div className="paragraph-text">
@@ -129,7 +129,7 @@ const ServicePage = ({ messageRef }) => {
                     <div className="row paragraph-row">
                         <AnimationOnScroll
                             animateIn="animate__fadeInLeft"
-                            duration={1.5}
+                            duration={1}
                             animateOnce={true}
                         >
                             <div className="paragraph-text">
@@ -147,7 +147,7 @@ const ServicePage = ({ messageRef }) => {
                         </AnimationOnScroll>
                         <AnimationOnScroll
                             animateIn="animate__fadeInRight"
-                            duration={1.5}
+                            duration={1}
                             animateOnce={true}
                         >
                             <div className="paragraph-img-wrapper">
@@ -162,7 +162,7 @@ const ServicePage = ({ messageRef }) => {
                     <div className="row paragraph-row">
                         <AnimationOnScroll
                             animateIn="animate__fadeInLeft"
-                            duration={1.5}
+                            duration={1}
                             animateOnce={true}
                         >
                             <div className="paragraph-img-wrapper">
@@ -175,7 +175,7 @@ const ServicePage = ({ messageRef }) => {
                         </AnimationOnScroll>
                         <AnimationOnScroll
                             animateIn="animate__fadeInRight"
-                            duration={1.5}
+                            duration={1}
                             animateOnce={true}
                         >
                             <div className="paragraph-text">
@@ -196,7 +196,7 @@ const ServicePage = ({ messageRef }) => {
                     <div className="row paragraph-row">
                         <AnimationOnScroll
                             animateIn="animate__fadeInLeft"
-                            duration={1.5}
+                            duration={1}
                             animateOnce={true}
                         >
                             <div className="paragraph-text">
@@ -216,7 +216,7 @@ const ServicePage = ({ messageRef }) => {
                         </AnimationOnScroll>
                         <AnimationOnScroll
                             animateIn="animate__fadeInRight"
-                            duration={1.5}
+                            duration={1}
                             animateOnce={true}
                         >
                             <div className="paragraph-img-wrapper">

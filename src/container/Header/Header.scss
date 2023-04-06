@@ -51,15 +51,12 @@
             justify-content: center;
         }
     }
-    .contacts-btn {
-        margin-left: 0;
-        > button {
-            @include buttonWithArrow();
-            background-color: #5b5b5b;
-            width: 100%;
-            .btn-content-row {
-                justify-content: center;
-            }
+    .call-btn {
+        @include buttonWithArrow();
+        background-color: #5b5b5b;
+        width: 100%;
+        .btn-content-row {
+            justify-content: center;
         }
     }
 }
@@ -198,11 +195,6 @@
     }
 }
 .header-btns {
-    > a {
-        > button {
-            @include buttonWithArrow();
-        }
-    }
     > button {
         @include buttonWithArrow();
     }
