@@ -50,7 +50,8 @@
             line-height: 30px;
             letter-spacing: -0.06em;
             color: #121212;
-            margin-bottom: 45px;
+            margin-top: 50px;
+            margin-bottom: 30px;
         }
         .article-paragraph-2 {
             margin-bottom: 30px;
@@ -73,7 +74,7 @@
             line-height: 30px;
             letter-spacing: -0.06em;
             color: #121212;
-            margin-right: 50px;
+            min-width: 145px;
             background-color: #f9f9f9;
         }
         .tablet-header {
@@ -82,9 +83,13 @@
         .tags {
             margin-bottom: 60px;
             overflow-x: auto;
+            .header-and-tags-row {
+                gap: 50px;
+            }
             .tags-row {
                 align-items: center;
                 gap: 10px;
+                flex-wrap: wrap;
             }
             .tag-item {
                 background: #f2f4f6;
@@ -155,7 +160,7 @@
                 display: none;
             }
             .tags-row {
-                min-width: 950px;
+                min-width: 1300px;
                 margin-bottom: 20px;
             }
         }

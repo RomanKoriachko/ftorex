@@ -18,6 +18,7 @@ const ArticlesPage = ({ messageRef }) => {
         tag6: '',
         tag7: '',
         tag8: '',
+        tag9: '',
     })
 
     const onTagClick = (e) => {
@@ -125,6 +126,19 @@ const ArticlesPage = ({ messageRef }) => {
                 }))
             }
         }
+        if (Number(e.target.value) === 9) {
+            if (tagState.tag9 === '') {
+                setTagState((prevState) => ({
+                    ...prevState,
+                    tag9: 'active',
+                }))
+            } else {
+                setTagState((prevState) => ({
+                    ...prevState,
+                    tag9: '',
+                }))
+            }
+        }
     }
 
     let summaryArr = []
@@ -136,31 +150,46 @@ const ArticlesPage = ({ messageRef }) => {
     let tag6Arr = []
     let tag7Arr = []
     let tag8Arr = []
+    let tag9Arr = []
     if (tagState.tag1 === 'active') {
-        tag1Arr = articlesArray.filter((element) => element.tag === 'landing')
-    }
-    if (tagState.tag2 === 'active') {
-        tag2Arr = articlesArray.filter((element) => element.tag === 'charity')
-    }
-    if (tagState.tag3 === 'active') {
-        tag3Arr = articlesArray.filter((element) => element.tag === 'apps')
-    }
-    if (tagState.tag4 === 'active') {
-        tag4Arr = articlesArray.filter(
-            (element) => element.tag === 'education build'
+        tag1Arr = articlesArray.filter(
+            (element) => element.tag === 'world coal'
         )
     }
+    if (tagState.tag2 === 'active') {
+        tag2Arr = articlesArray.filter(
+            (element) => element.tag === 'statistics'
+        )
+    }
+    if (tagState.tag3 === 'active') {
+        tag3Arr = articlesArray.filter((element) => element.tag === 'crisis')
+    }
+    if (tagState.tag4 === 'active') {
+        tag4Arr = articlesArray.filter((element) => element.tag === 'reserves')
+    }
     if (tagState.tag5 === 'active') {
-        tag5Arr = articlesArray.filter((element) => element.tag === 'data')
+        tag5Arr = articlesArray.filter(
+            (element) => element.tag === 'energy crisis'
+        )
+        console.log(tag5Arr)
     }
     if (tagState.tag6 === 'active') {
-        tag6Arr = articlesArray.filter((element) => element.tag === 'book')
+        tag6Arr = articlesArray.filter(
+            (element) => element.tag === 'top countries'
+        )
     }
     if (tagState.tag7 === 'active') {
-        tag7Arr = articlesArray.filter((element) => element.tag === 'design')
+        tag7Arr = articlesArray.filter(
+            (element) => element.tag === 'export of coal'
+        )
     }
     if (tagState.tag8 === 'active') {
-        tag8Arr = articlesArray.filter((element) => element.tag === 'website')
+        tag8Arr = articlesArray.filter(
+            (element) => element.tag === 'us coal market'
+        )
+    }
+    if (tagState.tag9 === 'active') {
+        tag9Arr = articlesArray.filter((element) => element.tag === 'analysis')
     }
     if (
         tag1Arr.length === 0 &&
@@ -170,7 +199,17 @@ const ArticlesPage = ({ messageRef }) => {
         tag5Arr.length === 0 &&
         tag6Arr.length === 0 &&
         tag7Arr.length === 0 &&
-        tag8Arr.length === 0
+        tag8Arr.length === 0 &&
+        tag9Arr.length === 0 &&
+        tagState.tag1 === '' &&
+        tagState.tag2 === '' &&
+        tagState.tag3 === '' &&
+        tagState.tag4 === '' &&
+        tagState.tag5 === '' &&
+        tagState.tag6 === '' &&
+        tagState.tag7 === '' &&
+        tagState.tag8 === '' &&
+        tagState.tag9 === ''
     ) {
         summaryArr = articlesArray
     } else {
@@ -183,8 +222,13 @@ const ArticlesPage = ({ messageRef }) => {
             ...tag6Arr,
             ...tag7Arr,
             ...tag8Arr,
+            ...tag9Arr,
         ]
     }
+
+    console.log(summaryArr)
+
+    // console.log(summaryArr)
     // Scroll to top after change page
 
     // const ref = useRef(null)
@@ -284,111 +328,122 @@ const ArticlesPage = ({ messageRef }) => {
                             value={1}
                             onClick={(e) => onTagClick(e, 'value')}
                         >
-                            landing
+                            world coal
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag2}`}
                             value={2}
                             onClick={(e) => onTagClick(e, 'value')}
                         >
-                            Charity
+                            statistics
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag3}`}
                             value={3}
                             onClick={(e) => onTagClick(e, 'value')}
                         >
-                            apps
+                            crisis
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag4}`}
                             value={4}
                             onClick={(e) => onTagClick(e, 'value')}
                         >
-                            Education build
+                            reserves
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag5}`}
                             value={5}
                             onClick={(e) => onTagClick(e, 'value')}
                         >
-                            data
+                            energy crisis
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag6}`}
                             value={6}
                             onClick={(e) => onTagClick(e, 'value')}
                         >
-                            book
+                            top countries
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag7}`}
                             value={7}
                             onClick={(e) => onTagClick(e, 'value')}
                         >
-                            Design
+                            export of coal
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag8}`}
                             value={8}
                             onClick={(e) => onTagClick(e, 'value')}
                         >
-                            website
+                            us coal market
+                        </button>
+                        <button
+                            className={`tag-btn ${tagState.tag9}`}
+                            value={9}
+                            onClick={(e) => onTagClick(e, 'value')}
+                        >
+                            analysis
                         </button>
                     </div>
                 </div>
-                <div className="wrapper">
-                    {activePage.page1 === 'active-page'
-                        ? filtredArr1.map(({ id, preview, tag, name }) => (
-                              <div key={id} className="article-item">
-                                  <Animated
-                                      animationIn="fadeIn"
-                                      isVisible={true}
-                                      animationInDuration={1500}
-                                  >
-                                      <ArticleItem
-                                          id={id}
-                                          preview={preview}
-                                          tag={tag}
-                                          name={name}
-                                      />
-                                  </Animated>
-                              </div>
-                          ))
-                        : activePage.page2 === 'active-page'
-                        ? filtredArr2.map(({ id, preview, tag, name }) => (
-                              <div key={id} className="article-item">
-                                  <Animated
-                                      animationIn="fadeIn"
-                                      isVisible={true}
-                                      animationInDuration={1500}
-                                  >
-                                      <ArticleItem
-                                          id={id}
-                                          preview={preview}
-                                          tag={tag}
-                                          name={name}
-                                      />
-                                  </Animated>
-                              </div>
-                          ))
-                        : filtredArr3.map(({ id, preview, tag, name }) => (
-                              <div key={id} className="article-item">
-                                  <Animated
-                                      animationIn="fadeIn"
-                                      isVisible={true}
-                                      animationInDuration={1500}
-                                  >
-                                      <ArticleItem
-                                          id={id}
-                                          preview={preview}
-                                          tag={tag}
-                                          name={name}
-                                      />
-                                  </Animated>
-                              </div>
-                          ))}
-                </div>
+                {summaryArr.length < 1 ? (
+                    <div className="no-matches">No matches</div>
+                ) : (
+                    <div className="wrapper">
+                        {activePage.page1 === 'active-page'
+                            ? filtredArr1.map(({ id, preview, tag, name }) => (
+                                  <div key={id} className="article-item">
+                                      <Animated
+                                          animationIn="fadeIn"
+                                          isVisible={true}
+                                          animationInDuration={1500}
+                                      >
+                                          <ArticleItem
+                                              id={id}
+                                              preview={preview}
+                                              tag={tag}
+                                              name={name}
+                                          />
+                                      </Animated>
+                                  </div>
+                              ))
+                            : activePage.page2 === 'active-page'
+                            ? filtredArr2.map(({ id, preview, tag, name }) => (
+                                  <div key={id} className="article-item">
+                                      <Animated
+                                          animationIn="fadeIn"
+                                          isVisible={true}
+                                          animationInDuration={1500}
+                                      >
+                                          <ArticleItem
+                                              id={id}
+                                              preview={preview}
+                                              tag={tag}
+                                              name={name}
+                                          />
+                                      </Animated>
+                                  </div>
+                              ))
+                            : filtredArr3.map(({ id, preview, tag, name }) => (
+                                  <div key={id} className="article-item">
+                                      <Animated
+                                          animationIn="fadeIn"
+                                          isVisible={true}
+                                          animationInDuration={1500}
+                                      >
+                                          <ArticleItem
+                                              id={id}
+                                              preview={preview}
+                                              tag={tag}
+                                              name={name}
+                                          />
+                                      </Animated>
+                                  </div>
+                              ))}
+                    </div>
+                )}
                 <div className="pages">
                     <div className="anchor" ref={messageRef}></div>
                     <div className="row">

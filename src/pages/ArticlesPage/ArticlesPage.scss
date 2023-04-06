@@ -20,11 +20,12 @@
     .tags-row {
         gap: 10px;
         margin-bottom: 50px;
-        overflow-x: auto;
+        align-items: center;
         .tags-buttons {
             min-width: 906px;
             > button {
                 margin-right: 10px;
+                margin-bottom: 10px;
             }
         }
         .tag-btn {
@@ -49,6 +50,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px 24px;
+    }
+    .no-matches {
+        text-align: center;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 52px;
     }
     .article-item {
         a {
@@ -107,10 +115,22 @@
 /* Laptop */
 @media (max-width: 1130px) {
     .articles-page {
+        .mobile-header {
+            display: block;
+            margin-bottom: 24px;
+        }
+        .desktop-header {
+            display: none;
+        }
         .tags-row {
             flex-direction: column;
             align-items: start;
+            overflow-x: auto;
             gap: 22px;
+            padding-bottom: 15px;
+            .tags-buttons {
+                min-width: 1250px;
+            }
         }
     }
 }
@@ -122,16 +142,7 @@
             grid-template-columns: 1fr;
             gap: 24px;
         }
-        .mobile-header {
-            display: block;
-            margin-bottom: 24px;
-        }
-        .desktop-header {
-            display: none;
-        }
-        .tags-row {
-            padding-bottom: 15px;
-        }
+
         .wrapper {
             grid-template-columns: 1fr 1fr;
             .article-item {

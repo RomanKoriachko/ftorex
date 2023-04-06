@@ -42,7 +42,8 @@ const SingleArticlePage = () => {
     let tag6 = ''
     let tag7 = ''
     let tag8 = ''
-    if (curretArticle[0].tag.includes('landing')) {
+    let tag9 = ''
+    if (curretArticle[0].tag.includes('world coal')) {
         tag1 = 'active'
         tag2 = ''
         tag3 = ''
@@ -51,7 +52,8 @@ const SingleArticlePage = () => {
         tag6 = ''
         tag7 = ''
         tag8 = ''
-    } else if (curretArticle[0].tag.includes('charity')) {
+        tag9 = ''
+    } else if (curretArticle[0].tag.includes('statistics')) {
         tag1 = ''
         tag2 = 'active'
         tag3 = ''
@@ -60,7 +62,8 @@ const SingleArticlePage = () => {
         tag6 = ''
         tag7 = ''
         tag8 = ''
-    } else if (curretArticle[0].tag.includes('apps')) {
+        tag9 = ''
+    } else if (curretArticle[0].tag.includes('crisis')) {
         tag1 = ''
         tag2 = ''
         tag3 = 'active'
@@ -69,7 +72,8 @@ const SingleArticlePage = () => {
         tag6 = ''
         tag7 = ''
         tag8 = ''
-    } else if (curretArticle[0].tag.includes('education')) {
+        tag9 = ''
+    } else if (curretArticle[0].tag.includes('reserves')) {
         tag1 = ''
         tag2 = ''
         tag3 = ''
@@ -78,7 +82,8 @@ const SingleArticlePage = () => {
         tag6 = ''
         tag7 = ''
         tag8 = ''
-    } else if (curretArticle[0].tag.includes('data')) {
+        tag9 = ''
+    } else if (curretArticle[0].tag.includes('energy crisis')) {
         tag1 = ''
         tag2 = ''
         tag3 = ''
@@ -87,7 +92,8 @@ const SingleArticlePage = () => {
         tag6 = ''
         tag7 = ''
         tag8 = ''
-    } else if (curretArticle[0].tag.includes('book')) {
+        tag9 = ''
+    } else if (curretArticle[0].tag.includes('top countries')) {
         tag1 = ''
         tag2 = ''
         tag3 = ''
@@ -96,7 +102,8 @@ const SingleArticlePage = () => {
         tag6 = 'active'
         tag7 = ''
         tag8 = ''
-    } else if (curretArticle[0].tag.includes('design')) {
+        tag9 = ''
+    } else if (curretArticle[0].tag.includes('export of coal')) {
         tag1 = ''
         tag2 = ''
         tag3 = ''
@@ -105,7 +112,8 @@ const SingleArticlePage = () => {
         tag6 = ''
         tag7 = 'active'
         tag8 = ''
-    } else if (curretArticle[0].tag.includes('website')) {
+        tag9 = ''
+    } else if (curretArticle[0].tag.includes('us coal market')) {
         tag1 = ''
         tag2 = ''
         tag3 = ''
@@ -114,6 +122,17 @@ const SingleArticlePage = () => {
         tag6 = ''
         tag7 = ''
         tag8 = 'active'
+        tag9 = ''
+    } else if (curretArticle[0].tag.includes('analysis')) {
+        tag1 = ''
+        tag2 = ''
+        tag3 = ''
+        tag4 = ''
+        tag5 = ''
+        tag6 = ''
+        tag7 = ''
+        tag8 = ''
+        tag9 = 'active'
     }
 
     return (
@@ -154,35 +173,114 @@ const SingleArticlePage = () => {
             </div>
             <section className="article-content-section" ref={ref}>
                 <div className="container">
-                    <div className="article-tag">{curretArticle[0].tag}</div>
-                    <div className="border-left-paragraph">
-                        {curretArticle[0]?.paragraph1}
-                    </div>
-                    <p className="article-paragraph">
-                        {curretArticle[0]?.paragraph2}
-                    </p>
-                    <p className="article-paragraph">
-                        {curretArticle[0]?.paragraph3}
-                    </p>
-                    <p className="article-paragraph">
-                        {curretArticle[0]?.paragraph4}
-                    </p>
-                    <p className="article-paragraph">
-                        {curretArticle[0]?.paragraph5}
-                    </p>
-                    <p className="article-paragraph">
-                        {curretArticle[0]?.paragraph6}
-                    </p>
-                    <p className="article-paragraph">
-                        {curretArticle[0]?.paragraph7}
-                    </p>
-                    <p className="article-paragraph">
-                        {curretArticle[0]?.paragraph8}
-                    </p>
-                    <p className="article-paragraph">
-                        {curretArticle[0]?.paragraph9}
-                    </p>
-                    {/* <div className="images-wrapper row">
+                    <Animated
+                        animationIn="fadeInUp"
+                        isVisible={true}
+                        animationInDuration={2000}
+                    >
+                        <div className="article-tag">
+                            {curretArticle[0].tag}
+                        </div>
+                        <div className="border-left-paragraph">
+                            {curretArticle[0]?.paragraph1}
+                        </div>
+                        {curretArticle[0].subtitle2 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle2}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph2}
+                        </p>
+                        {curretArticle[0].subtitle3 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle3}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph3}
+                        </p>
+                        {curretArticle[0].subtitle4 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle4}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph4}
+                        </p>
+                        {curretArticle[0].subtitle5 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle5}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph5}
+                        </p>
+                        {curretArticle[0].subtitle6 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle6}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph6}
+                        </p>
+                        {curretArticle[0].subtitle7 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle7}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph7}
+                        </p>
+                        {curretArticle[0].subtitle8 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle8}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph8}
+                        </p>
+                        {curretArticle[0].subtitle9 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle9}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph9}
+                        </p>
+                        {curretArticle[0].subtitle10 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle10}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph10}
+                        </p>
+                        {curretArticle[0].subtitle11 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle11}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph11}
+                        </p>
+                        {curretArticle[0].subtitle12 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle12}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph12}
+                        </p>
+                        {curretArticle[0].subtitle13 ? (
+                            <p className="subtitle">
+                                {curretArticle[0].subtitle13}
+                            </p>
+                        ) : undefined}
+                        <p className="article-paragraph">
+                            {curretArticle[0]?.paragraph13}
+                        </p>
+                        {/* <div className="images-wrapper row">
                         <AnimationOnScroll
                             animateIn="animate__fadeInUp"
                             duration={1.5}
@@ -208,24 +306,42 @@ const SingleArticlePage = () => {
                             </div>
                         </AnimationOnScroll>
                     </div> */}
+                    </Animated>
                     <p className="recent-post-header tablet-header">
                         Tagged with:
                     </p>
                     <div className="tags">
-                        <div className="row tags-row" ref={ref}>
+                        <div className="row header-and-tags-row" ref={ref}>
                             <p className="recent-post-header desktop-header">
                                 Tagged with:
                             </p>
-                            <div className={`tag-item ${tag1}`}>landing</div>
-                            <div className={`tag-item ${tag2}`}>charity</div>
-                            <div className={`tag-item ${tag3}`}>apps</div>
-                            <div className={`tag-item ${tag4}`}>
-                                education build
+                            <div className="row tags-row">
+                                <div className={`tag-item ${tag1}`}>
+                                    world coal
+                                </div>
+                                <div className={`tag-item ${tag2}`}>
+                                    statistics
+                                </div>
+                                <div className={`tag-item ${tag3}`}>crisis</div>
+                                <div className={`tag-item ${tag4}`}>
+                                    reserves
+                                </div>
+                                <div className={`tag-item ${tag5}`}>
+                                    energy crisis
+                                </div>
+                                <div className={`tag-item ${tag6}`}>
+                                    top countries
+                                </div>
+                                <div className={`tag-item ${tag7}`}>
+                                    export of coal
+                                </div>
+                                <div className={`tag-item ${tag8}`}>
+                                    us coal market
+                                </div>
+                                <div className={`tag-item ${tag9}`}>
+                                    analysis
+                                </div>
                             </div>
-                            <div className={`tag-item ${tag5}`}>data</div>
-                            <div className={`tag-item ${tag6}`}>book</div>
-                            <div className={`tag-item ${tag7}`}>design</div>
-                            <div className={`tag-item ${tag8}`}>website</div>
                         </div>
                     </div>
                     <div className="lines"></div>
