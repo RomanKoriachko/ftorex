@@ -273,40 +273,16 @@ const ArticlesPage = ({ messageRef }) => {
         (element, index) => index >= 18 && index < 27
     )
 
-    const [activePage, setActivePage] = useState({
-        page1: "active-page",
-        page2: "",
-        page3: "",
-    })
-
     const pageState = useAppSelector((state) => state.pageState)
     const dispatch = useAppDispatch()
 
-    // console.log(pageState)
-    // console.log(tagState)
-
     const onFirstPageClick = () => {
-        setActivePage(() => ({
-            page1: "active-page",
-            page2: "",
-            page3: "",
-        }))
         dispatch(onFirstPage())
     }
     const onSecondPageClick = () => {
-        setActivePage(() => ({
-            page1: "",
-            page2: "active-page",
-            page3: "",
-        }))
         dispatch(onSecondPage())
     }
     const onThirdPageClick = () => {
-        setActivePage(() => ({
-            page1: "",
-            page2: "",
-            page3: "active-page",
-        }))
         dispatch(onThirdPage())
     }
 

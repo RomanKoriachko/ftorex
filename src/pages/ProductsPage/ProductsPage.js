@@ -76,25 +76,30 @@ const ProductsPage = () => {
                                             alt=""
                                         />
                                         <p className="tab-content-header">
-                                            INAGLI COKING COAL (GRADE "Kzh")
+                                            Coking (Metallurgical) Coal
                                         </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
-                                        </p>
-                                        <img
-                                            className="tab-content-table"
-                                            src="images/products-table-img.png"
-                                            alt=""
-                                        />
+                                        <div className="row product-images-row">
+                                            <div className="image-wrapper">
+                                                <img
+                                                    className="tab-content-table"
+                                                    src="images/products-coking-img-1.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="image-wrapper">
+                                                <img
+                                                    className="tab-content-table"
+                                                    src="images/products-coking-img-2.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
                                         <p className="tab-content-header">
-                                            DENI DEEP COKING COAL (GRADE "K4")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
+                                            General rank parameters
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-table-img.png"
+                                            src="images/products-coking-img-3.jpg"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
@@ -142,25 +147,19 @@ const ProductsPage = () => {
                                             alt=""
                                         />
                                         <p className="tab-content-header">
-                                            INAGLI COKING COAL (GRADE "Kzh")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
+                                            Thermal Coal
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-table-img.png"
+                                            src="images/products-thermal-img-1.jpg"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
-                                            DENI DEEP COKING COAL (GRADE "K4")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
+                                            General rank parameters
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-table-img.png"
+                                            src="images/products-coking-img-3.jpg"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
@@ -210,25 +209,11 @@ const ProductsPage = () => {
                                             alt=""
                                         />
                                         <p className="tab-content-header">
-                                            INAGLI COKING COAL (GRADE "Kzh")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
+                                            General rank parameters
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-table-img.png"
-                                            alt=""
-                                        />
-                                        <p className="tab-content-header">
-                                            DENI DEEP COKING COAL (GRADE "K4")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
-                                        </p>
-                                        <img
-                                            className="tab-content-table"
-                                            src="images/products-table-img.png"
+                                            src="images/products-coking-img-3.jpg"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
@@ -278,25 +263,11 @@ const ProductsPage = () => {
                                             alt=""
                                         />
                                         <p className="tab-content-header">
-                                            INAGLI COKING COAL (GRADE "Kzh")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
+                                            General rank parameters
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-table-img.png"
-                                            alt=""
-                                        />
-                                        <p className="tab-content-header">
-                                            DENI DEEP COKING COAL (GRADE "K4")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
-                                        </p>
-                                        <img
-                                            className="tab-content-table"
-                                            src="images/products-table-img.png"
+                                            src="images/products-coking-img-3.jpg"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
