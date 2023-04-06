@@ -15,7 +15,6 @@ const IndicatorsSection = () => {
                     <p className="small-header indicators-small-header">
                         Why Choose Us
                     </p>
-
                     <div className="indicators-header-row">
                         <p className="big-header">
                             We established a coal mining business for you
@@ -35,7 +34,7 @@ const IndicatorsSection = () => {
                     >
                         <div className="indicators-img">
                             <img
-                                src="images/indicators-section-img.png"
+                                src="images/indicators-section-img.jpg"
                                 alt=""
                             />
                         </div>

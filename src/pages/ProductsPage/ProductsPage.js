@@ -72,7 +72,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-img"
-                                            src="images/products-img-1.png"
+                                            src="images/products-img-1.jpg"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -83,7 +83,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -94,7 +94,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
@@ -138,7 +138,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-img"
-                                            src="images/products-img-1.png"
+                                            src="images/products-img-2.jpg"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -149,7 +149,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -160,7 +160,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
@@ -206,7 +206,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-img"
-                                            src="images/products-img-1.png"
+                                            src="images/products-img-3.jpg"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -217,7 +217,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -228,7 +228,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
@@ -274,7 +274,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-img"
-                                            src="images/products-img-1.png"
+                                            src="images/products-img-4.jpg"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -285,7 +285,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -296,7 +296,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
@@ -339,7 +339,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-img"
-                                            src="images/products-img-1.png"
+                                            src="images/products-img-5.jpg"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -350,7 +350,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -361,7 +361,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
@@ -405,7 +405,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-img"
-                                            src="images/products-img-1.png"
+                                            src="images/products-img-6.jpg"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -416,7 +416,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -427,7 +427,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
@@ -468,7 +468,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-img"
-                                            src="images/products-img-1.png"
+                                            src="images/products-img-7.jpg"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -479,7 +479,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
@@ -490,7 +490,7 @@ const ProductsPage = () => {
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-img-2.png"
+                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">

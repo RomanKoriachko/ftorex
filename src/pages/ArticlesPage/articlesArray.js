@@ -1,9 +1,27 @@
 let articlesArray = [
     {
         id: 1,
-        preview: 'images/article-preview-1.png',
+        preview: 'images/article-preview-1.jpg',
         tag: 'book',
-        name: 'Don’t Underestimate The Software Administration UX',
+        name: 'Leading countries in coal mining',
+        paragraph1:
+            'Coal has been a major source of energy for many countries for decades, with its importance in the global energy mix only increasing over time. While coal production has been declining in some regions, there are still several countries that lead in coal mining. Here are some of the leading countries in coal mining:',
+        paragraph2:
+            "China is the world's largest producer and consumer of coal. In 2020, China produced over 3.8 billion tonnes of coal, accounting for 47% of the world's total coal production. The country's coal industry is mainly centered in the Inner Mongolia, Shanxi, and Shaanxi provinces. The Chinese government has set targets to reduce the country's coal consumption and to promote the use of clean coal technologies.",
+        paragraph3:
+            "India is the world's second-largest producer of coal, with an estimated production of over 700 million tonnes in 2020. The country's coal industry is mainly centered in the Jharkhand, Chhattisgarh, and Odisha states. The Indian government has set targets to increase the use of renewable energy sources while still maintaining the importance of coal in the country's energy mix.",
+        paragraph4:
+            "United States The United States is the third-largest producer of coal, with an estimated production of over 535 million tonnes in 2020. The country's coal industry is mainly centered in the Powder River Basin in Wyoming and Montana, as well as the Appalachian region. The US government has implemented policies to reduce the environmental impact of coal mining and to promote the use of clean coal technologies.",
+        paragraph5:
+            "Australia is the world's largest exporter of coal, with an estimated production of over 480 million tonnes in 2020. The country's coal industry is mainly centered in the Queensland and New South Wales states. The Australian government has implemented policies to reduce the country's carbon emissions while still maintaining the importance of coal in its economy.",
+        paragraph6:
+            "Russia is the world's fifth-largest producer of coal, with an estimated production of over 432 million tonnes in 2020. The country's coal industry is mainly centered in the Kuzbass region in Siberia. The Russian government has implemented policies to promote the use of clean coal technologies and to reduce the environmental impact of coal mining.",
+        paragraph7:
+            "Indonesia is the world's sixth-largest producer of coal, with an estimated production of over 300 million tonnes in 2020. The country's coal industry is mainly centered in the Kalimantan and Sumatra regions. The Indonesian government has implemented policies to reduce the country's carbon emissions and to promote the use of renewable energy sources.",
+        paragraph8:
+            "South Africa is the seventh-largest producer of coal, with an estimated production of over 250 million tonnes in 2020. The country's coal industry is mainly centered in the Mpumalanga province. The South African government has implemented policies to promote the use of clean coal technologies.",
+        paragraph9:
+            'These countries, along with others, play a significant role in the global coal market, both as producers and consumers. While coal remains an important source of energy for many, there is a growing push towards cleaner energy sources and the use of clean coal technologies to reduce the environmental impact of coal mining and use.',
         articleImg1: 'images/article-img-1.png',
         articleImg2: 'images/article-img-2.png',
     },

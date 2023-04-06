@@ -30,6 +30,9 @@
         top: 62%;
         left: 50%;
         transform: translate(-50%, -55%);
+        .close-btn {
+            display: block;
+        }
         .message-form {
             .message-btn {
                 margin-bottom: 40px;

@@ -1,9 +1,12 @@
 .service-page {
     overflow: hidden;
     .preview-bg {
-        background-image: url(../../../public/images/service-page-preview.png);
+        background-image: url(../../../public/images/service-page-preview.jpg);
     }
     .supplies-section {
+        .mobile-animation {
+            display: none;
+        }
         .supplies-header {
             font-weight: 400;
             font-size: 18px;
@@ -70,6 +73,12 @@
 @media (max-width: 576px) {
     .service-page {
         .supplies-section {
+            .desktop-animation {
+                display: none;
+            }
+            .mobile-animation {
+                display: flex;
+            }
             .supplies-header {
                 margin: 0px 0px 24px;
             }

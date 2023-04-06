@@ -138,7 +138,9 @@ const SingleArticlePage = () => {
                                     backgroundImage: `url(/${curretArticle[0].preview})`,
                                 }}
                             >
-                                <p className="preview-header">ARTICLE</p>
+                                <p className="preview-header">
+                                    {curretArticle[0].name}
+                                </p>
                                 <div
                                     className="scroll-btn"
                                     onClick={() => scrollDownBtnClick()}
@@ -152,82 +154,35 @@ const SingleArticlePage = () => {
             </div>
             <section className="article-content-section" ref={ref}>
                 <div className="container">
-                    <Animated
-                        animationIn="fadeInUp"
-                        isVisible={true}
-                        animationInDuration={1500}
-                    >
-                        <p className="article-header">
-                            {curretArticle[0].name}
-                        </p>
-                    </Animated>
                     <div className="article-tag">{curretArticle[0].tag}</div>
-                    <p className="article-paragraph-1">
-                        <span>Quick summary :</span> The way you present your
-                        product or service is essential to its success — or at
-                        least it could be if you know how to do it right. The
-                        first impression you make on people is crucial. When
-                        selling a product, you want that first impression to be
-                        as positive and remarkable as possible. If you have
-                        managed to draw them in, you will need to introduce the
-                        product within a few seconds.
-                    </p>
                     <div className="border-left-paragraph">
-                        <p>
-                            The way you present your product or service is
-                            essential to its success — or at least it could be
-                            if you know how to do it right. On the Web, like
-                            anywhere else, the first impression you make on
-                            people is crucial. When selling a product, you want
-                            that first impression to be as positive and
-                            remarkable as possible.
-                        </p>
-                        <p>
-                            Once people visit your website, make sure to attract
-                            their attention. If you have managed to draw them
-                            in, you will need to introduce the product within a
-                            few seconds. According to last year’s Google
-                            Analytics benchmarking report, bounce rates in the
-                            US were as high as 42.5%. If people don’t understand
-                            what you are offering them or how it works, they
-                            will lose interest quickly. Show them that your
-                            product is just what they want, that it’s useful and
-                            that it adds some kind of value to their lives.
-                        </p>
+                        {curretArticle[0]?.paragraph1}
                     </div>
-                    <AnimationOnScroll
-                        animateIn="animate__fadeInUp"
-                        duration={1.5}
-                        animateOnce={true}
-                    >
-                        <p className="subtitle">Surprise Your Visitors :</p>
-                        <p className="article-paragraph-2">
-                            Another great way to attract attention is by
-                            surprising visitors. Offer them something they did
-                            not expect; make them pause and think to make sense
-                            of what they see. We like to be surrounded by the
-                            familiar, and things that don’t fit our expectations
-                            automatically draw our attention.
-                        </p>
-                        <p className="article-paragraph-3">
-                            Nike presents its new running shoes in the shape of
-                            wings, with the promise of a “Super-natural ride.”
-                            The arrangement of these multi-colored shoes and the
-                            fade in the middle almost force people to take a
-                            second look. The visual is not only appealing, but
-                            attracts attention because people are not sure
-                            whether they are looking at wings or shoes or
-                            both.One such example is the brand Evian. How could
-                            boring water possibly attract attention? Quite
-                            simple, actually. Come up with a product-related
-                            slogan, such as “Live young,” and then translate
-                            that slogan into a visual campaign using some great
-                            humor. A couple of years back, Evian’s funny
-                            campaign videos went viral — proof that its unique
-                            approach works.
-                        </p>
-                    </AnimationOnScroll>
-                    <div className="images-wrapper row">
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph2}
+                    </p>
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph3}
+                    </p>
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph4}
+                    </p>
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph5}
+                    </p>
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph6}
+                    </p>
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph7}
+                    </p>
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph8}
+                    </p>
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph9}
+                    </p>
+                    {/* <div className="images-wrapper row">
                         <AnimationOnScroll
                             animateIn="animate__fadeInUp"
                             duration={1.5}
@@ -252,7 +207,7 @@ const SingleArticlePage = () => {
                                 ></img>
                             </div>
                         </AnimationOnScroll>
-                    </div>
+                    </div> */}
                     <p className="recent-post-header tablet-header">
                         Tagged with:
                     </p>

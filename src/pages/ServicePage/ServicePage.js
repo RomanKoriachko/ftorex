@@ -21,11 +21,12 @@ const ServicePage = ({ messageRef }) => {
                             animationIn="fadeInLeft"
                             isVisible={true}
                             animationInDuration={1500}
+                            className="desktop-animation"
                         >
                             <div className="paragraph-img-wrapper">
                                 <img
                                     className="paragraph-img"
-                                    src="images/supplies-img-1.png"
+                                    src="images/supplies-img-1.jpg"
                                     alt=""
                                 />
                             </div>
@@ -34,6 +35,7 @@ const ServicePage = ({ messageRef }) => {
                             animationIn="fadeInRight"
                             isVisible={true}
                             animationInDuration={1500}
+                            className="desktop-animation"
                         >
                             <div className="paragraph-text">
                                 <p className="item-header">Coal supplies</p>
@@ -51,6 +53,42 @@ const ServicePage = ({ messageRef }) => {
                                 </p>
                             </div>
                         </Animated>
+                        <AnimationOnScroll
+                            animateIn="animate__fadeInLeft"
+                            duration={1}
+                            animateOnce={true}
+                            className="mobile-animation"
+                        >
+                            <div className="paragraph-img-wrapper">
+                                <img
+                                    className="paragraph-img"
+                                    src="images/supplies-img-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                        </AnimationOnScroll>
+                        <AnimationOnScroll
+                            animateIn="animate__fadeInRight"
+                            duration={1}
+                            animateOnce={true}
+                            className="mobile-animation"
+                        >
+                            <div className="paragraph-text">
+                                <p className="item-header">Coal supplies</p>
+                                <p className="item-text">
+                                    Our company offers coal supplies for various
+                                    industries that require this fossil fuel as
+                                    an energy source. We provide both thermal
+                                    and coking coal of different grades and
+                                    specifications to meet the needs of our
+                                    clients. We ensure the quality of the coal
+                                    we supply, and we source it from reliable
+                                    and trusted suppliers. We also offer
+                                    flexible delivery options and competitive
+                                    pricing.
+                                </p>
+                            </div>
+                        </AnimationOnScroll>
                     </div>
                     <div className="row paragraph-row">
                         <AnimationOnScroll
@@ -84,7 +122,7 @@ const ServicePage = ({ messageRef }) => {
                             <div className="paragraph-img-wrapper">
                                 <img
                                     className="paragraph-img"
-                                    src="images/supplies-img-2.png"
+                                    src="images/supplies-img-2.jpg"
                                     alt=""
                                 />
                             </div>
@@ -99,7 +137,7 @@ const ServicePage = ({ messageRef }) => {
                             <div className="paragraph-img-wrapper">
                                 <img
                                     className="paragraph-img"
-                                    src="images/supplies-img-3.png"
+                                    src="images/supplies-img-3.jpg"
                                     alt=""
                                 />
                             </div>
@@ -153,7 +191,7 @@ const ServicePage = ({ messageRef }) => {
                             <div className="paragraph-img-wrapper">
                                 <img
                                     className="paragraph-img"
-                                    src="images/supplies-img-4.png"
+                                    src="images/supplies-img-4.jpg"
                                     alt=""
                                 />
                             </div>
@@ -168,7 +206,7 @@ const ServicePage = ({ messageRef }) => {
                             <div className="paragraph-img-wrapper">
                                 <img
                                     className="paragraph-img"
-                                    src="images/supplies-img-5.png"
+                                    src="images/supplies-img-5.jpg"
                                     alt=""
                                 />
                             </div>
@@ -222,7 +260,7 @@ const ServicePage = ({ messageRef }) => {
                             <div className="paragraph-img-wrapper">
                                 <img
                                     className="paragraph-img"
-                                    src="images/supplies-img-6.png"
+                                    src="images/supplies-img-6.jpg"
                                     alt=""
                                 />
                             </div>
