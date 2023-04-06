@@ -43,96 +43,37 @@ const SingleArticlePage = () => {
     let tag7 = ''
     let tag8 = ''
     let tag9 = ''
-    if (curretArticle[0].tag.includes('world coal')) {
-        tag1 = 'active'
-        tag2 = ''
-        tag3 = ''
-        tag4 = ''
-        tag5 = ''
-        tag6 = ''
-        tag7 = ''
-        tag8 = ''
-        tag9 = ''
-    } else if (curretArticle[0].tag.includes('statistics')) {
-        tag1 = ''
-        tag2 = 'active'
-        tag3 = ''
-        tag4 = ''
-        tag5 = ''
-        tag6 = ''
-        tag7 = ''
-        tag8 = ''
-        tag9 = ''
-    } else if (curretArticle[0].tag.includes('crisis')) {
-        tag1 = ''
-        tag2 = ''
-        tag3 = 'active'
-        tag4 = ''
-        tag5 = ''
-        tag6 = ''
-        tag7 = ''
-        tag8 = ''
-        tag9 = ''
-    } else if (curretArticle[0].tag.includes('reserves')) {
-        tag1 = ''
-        tag2 = ''
-        tag3 = ''
-        tag4 = 'active'
-        tag5 = ''
-        tag6 = ''
-        tag7 = ''
-        tag8 = ''
-        tag9 = ''
-    } else if (curretArticle[0].tag.includes('energy crisis')) {
-        tag1 = ''
-        tag2 = ''
-        tag3 = ''
-        tag4 = ''
-        tag5 = 'active'
-        tag6 = ''
-        tag7 = ''
-        tag8 = ''
-        tag9 = ''
-    } else if (curretArticle[0].tag.includes('top countries')) {
-        tag1 = ''
-        tag2 = ''
-        tag3 = ''
-        tag4 = ''
-        tag5 = ''
-        tag6 = 'active'
-        tag7 = ''
-        tag8 = ''
-        tag9 = ''
-    } else if (curretArticle[0].tag.includes('export of coal')) {
-        tag1 = ''
-        tag2 = ''
-        tag3 = ''
-        tag4 = ''
-        tag5 = ''
-        tag6 = ''
-        tag7 = 'active'
-        tag8 = ''
-        tag9 = ''
-    } else if (curretArticle[0].tag.includes('us coal market')) {
-        tag1 = ''
-        tag2 = ''
-        tag3 = ''
-        tag4 = ''
-        tag5 = ''
-        tag6 = ''
-        tag7 = ''
-        tag8 = 'active'
-        tag9 = ''
-    } else if (curretArticle[0].tag.includes('analysis')) {
-        tag1 = ''
-        tag2 = ''
-        tag3 = ''
-        tag4 = ''
-        tag5 = ''
-        tag6 = ''
-        tag7 = ''
-        tag8 = ''
-        tag9 = 'active'
+
+    const tagsArr = curretArticle[0].tag.split(', ')
+
+    for (let i = 0; i < tagsArr.length; i++) {
+        if (tagsArr[i] === 'world coal') {
+            tag1 = 'active'
+        }
+        if (tagsArr[i] === 'statistics') {
+            tag2 = 'active'
+        }
+        if (tagsArr[i] === 'crisis') {
+            tag3 = 'active'
+        }
+        if (tagsArr[i] === 'reserves') {
+            tag4 = 'active'
+        }
+        if (tagsArr[i] === 'energy crisis') {
+            tag5 = 'active'
+        }
+        if (tagsArr[i] === 'top countries') {
+            tag6 = 'active'
+        }
+        if (tagsArr[i] === 'export of coal') {
+            tag7 = 'active'
+        }
+        if (tagsArr[i] === 'us coal market') {
+            tag8 = 'active'
+        }
+        if (tagsArr[i] === 'analysis') {
+            tag9 = 'active'
+        }
     }
 
     return (

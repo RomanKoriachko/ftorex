@@ -2,7 +2,7 @@ let articlesArray = [
     {
         id: 1,
         preview: 'images/article-preview-1.jpg',
-        tag: 'reserves',
+        tag: 'reserves, energy crisis',
         name: 'Leading countries in coal mining',
         paragraph1:
             'Coal has been a major source of energy for many countries for decades, with its importance in the global energy mix only increasing over time. While coal production has been declining in some regions, there are still several countries that lead in coal mining. Here are some of the leading countries in coal mining:',

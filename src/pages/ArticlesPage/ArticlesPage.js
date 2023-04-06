@@ -152,44 +152,50 @@ const ArticlesPage = ({ messageRef }) => {
     let tag8Arr = []
     let tag9Arr = []
     if (tagState.tag1 === 'active') {
-        tag1Arr = articlesArray.filter(
-            (element) => element.tag === 'world coal'
+        tag1Arr = articlesArray.filter((element) =>
+            element.tag.includes('world coal')
         )
     }
     if (tagState.tag2 === 'active') {
-        tag2Arr = articlesArray.filter(
-            (element) => element.tag === 'statistics'
+        tag2Arr = articlesArray.filter((element) =>
+            element.tag.includes('statistics')
         )
     }
     if (tagState.tag3 === 'active') {
-        tag3Arr = articlesArray.filter((element) => element.tag === 'crisis')
+        tag3Arr = articlesArray.filter((element) =>
+            element.tag.includes('crisis')
+        )
     }
     if (tagState.tag4 === 'active') {
-        tag4Arr = articlesArray.filter((element) => element.tag === 'reserves')
+        tag4Arr = articlesArray.filter((element) =>
+            element.tag.includes('reserves')
+        )
     }
     if (tagState.tag5 === 'active') {
-        tag5Arr = articlesArray.filter(
-            (element) => element.tag === 'energy crisis'
+        tag5Arr = articlesArray.filter((element) =>
+            element.tag.includes('energy crisis')
         )
         console.log(tag5Arr)
     }
     if (tagState.tag6 === 'active') {
-        tag6Arr = articlesArray.filter(
-            (element) => element.tag === 'top countries'
+        tag6Arr = articlesArray.filter((element) =>
+            element.tag.includes('top countries')
         )
     }
     if (tagState.tag7 === 'active') {
-        tag7Arr = articlesArray.filter(
-            (element) => element.tag === 'export of coal'
+        tag7Arr = articlesArray.filter((element) =>
+            element.tag.includes('export of coal')
         )
     }
     if (tagState.tag8 === 'active') {
-        tag8Arr = articlesArray.filter(
-            (element) => element.tag === 'us coal market'
+        tag8Arr = articlesArray.filter((element) =>
+            element.tag.includes('us coal market')
         )
     }
     if (tagState.tag9 === 'active') {
-        tag9Arr = articlesArray.filter((element) => element.tag === 'analysis')
+        tag9Arr = articlesArray.filter((element) =>
+            element.tag.includes('analysis')
+        )
     }
     if (
         tag1Arr.length === 0 &&
@@ -227,22 +233,17 @@ const ArticlesPage = ({ messageRef }) => {
     }
 
     console.log(summaryArr)
+    const table = {}
+    const resArr = summaryArr.filter(({ id }) => !table[id] && (table[id] = 1))
 
-    // console.log(summaryArr)
-    // Scroll to top after change page
-
-    // const ref = useRef(null)
-
-    // const scrollToTop = () => {
-    //     ref.current?.scrollIntoView({ behavior: 'smooth' })
-    // }
+    console.log(resArr)
 
     // pages of articles
-    let filtredArr1 = summaryArr.filter((element, index) => index < 9)
-    let filtredArr2 = summaryArr.filter(
+    let filtredArr1 = resArr.filter((element, index) => index < 9)
+    let filtredArr2 = resArr.filter(
         (element, index) => index >= 9 && index < 18
     )
-    let filtredArr3 = summaryArr.filter(
+    let filtredArr3 = resArr.filter(
         (element, index) => index >= 18 && index < 27
     )
 
@@ -388,7 +389,7 @@ const ArticlesPage = ({ messageRef }) => {
                         </button>
                     </div>
                 </div>
-                {summaryArr.length < 1 ? (
+                {resArr.length < 1 ? (
                     <div className="no-matches">No matches</div>
                 ) : (
                     <div className="wrapper">

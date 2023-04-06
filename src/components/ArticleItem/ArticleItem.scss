@@ -9,6 +9,12 @@
         height: 257px;
     }
 }
+.item-tags-row {
+    gap: 5px;
+    margin-top: 38px;
+    margin-bottom: 26px;
+    flex-wrap: wrap;
+}
 .article-tag {
     color: white;
     font-family: 'Roboto';
@@ -16,11 +22,9 @@
     font-size: 11px;
     line-height: 13px;
     text-transform: uppercase;
-    margin-top: 38px;
-    margin-bottom: 26px;
+
     padding: 5px 13px;
     background-color: #f1275b;
-    width: fit-content;
 }
 .article-name {
     font-weight: 600;
