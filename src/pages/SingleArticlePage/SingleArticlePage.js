@@ -1,11 +1,11 @@
-import React, { useRef } from 'react'
-import './SingleArticlePage.scss'
-import { useParams } from 'react-router-dom'
-import articlesArray from '../ArticlesPage/articlesArray'
-import ScrollDownBtn from '../../components/ScrollDownBtn/ScrollDownBtn'
-import ArticleItem from '../../components/ArticleItem/ArticleItem'
-import { Animated } from 'react-animated-css'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+import React, { useRef } from "react"
+import "./SingleArticlePage.scss"
+import { useParams } from "react-router-dom"
+import articlesArray from "../ArticlesPage/articlesArray"
+import ScrollDownBtn from "../../components/ScrollDownBtn/ScrollDownBtn"
+import ArticleItem from "../../components/ArticleItem/ArticleItem"
+import { Animated } from "react-animated-css"
+import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const SingleArticlePage = () => {
     const ref = useRef(null)
@@ -17,12 +17,12 @@ const SingleArticlePage = () => {
         if (windowHeight <= 690) {
             window.scrollTo({
                 top: windowHeight - 122,
-                behavior: 'smooth',
+                behavior: "smooth",
             })
         } else {
             window.scrollTo({
                 top: 670,
-                behavior: 'smooth',
+                behavior: "smooth",
             })
         }
     }
@@ -34,45 +34,49 @@ const SingleArticlePage = () => {
 
     // active tags
 
-    let tag1 = ''
-    let tag2 = ''
-    let tag3 = ''
-    let tag4 = ''
-    let tag5 = ''
-    let tag6 = ''
-    let tag7 = ''
-    let tag8 = ''
-    let tag9 = ''
+    let tag1 = ""
+    let tag2 = ""
+    let tag3 = ""
+    let tag4 = ""
+    let tag5 = ""
+    let tag6 = ""
+    let tag7 = ""
+    let tag8 = ""
+    let tag9 = ""
+    let tag10 = ""
 
-    const tagsArr = curretArticle[0].tag.split(', ')
+    const tagsArr = curretArticle[0].tag.split(", ")
 
     for (let i = 0; i < tagsArr.length; i++) {
-        if (tagsArr[i] === 'world coal') {
-            tag1 = 'active'
+        if (tagsArr[i] === "world coal") {
+            tag1 = "active"
         }
-        if (tagsArr[i] === 'statistics') {
-            tag2 = 'active'
+        if (tagsArr[i] === "statistics") {
+            tag2 = "active"
         }
-        if (tagsArr[i] === 'crisis') {
-            tag3 = 'active'
+        if (tagsArr[i] === "crisis") {
+            tag3 = "active"
         }
-        if (tagsArr[i] === 'reserves') {
-            tag4 = 'active'
+        if (tagsArr[i] === "reserves") {
+            tag4 = "active"
         }
-        if (tagsArr[i] === 'energy crisis') {
-            tag5 = 'active'
+        if (tagsArr[i] === "energy crisis") {
+            tag5 = "active"
         }
-        if (tagsArr[i] === 'top countries') {
-            tag6 = 'active'
+        if (tagsArr[i] === "top countries") {
+            tag6 = "active"
         }
-        if (tagsArr[i] === 'export of coal') {
-            tag7 = 'active'
+        if (tagsArr[i] === "export of coal") {
+            tag7 = "active"
         }
-        if (tagsArr[i] === 'us coal market') {
-            tag8 = 'active'
+        if (tagsArr[i] === "us coal") {
+            tag8 = "active"
         }
-        if (tagsArr[i] === 'analysis') {
-            tag9 = 'active'
+        if (tagsArr[i] === "analysis") {
+            tag9 = "active"
+        }
+        if (tagsArr[i] === "top companies") {
+            tag10 = "active"
         }
     }
 
@@ -277,10 +281,13 @@ const SingleArticlePage = () => {
                                     export of coal
                                 </div>
                                 <div className={`tag-item ${tag8}`}>
-                                    us coal market
+                                    us coal
                                 </div>
                                 <div className={`tag-item ${tag9}`}>
                                     analysis
+                                </div>
+                                <div className={`tag-item ${tag10}`}>
+                                    top companies
                                 </div>
                             </div>
                         </div>

@@ -1,141 +1,155 @@
-import React, { useState } from 'react'
-import './ArticlesPage.scss'
-import PageHeader from '../../components/PageHeader/PageHeader'
-import articlesArray from './articlesArray'
-import MessageForm from '../../components/MessageForm/MessageForm'
-import ArticleItem from '../../components/ArticleItem/ArticleItem'
-import { Animated } from 'react-animated-css'
+import React, { useState } from "react"
+import "./ArticlesPage.scss"
+import PageHeader from "../../components/PageHeader/PageHeader"
+import articlesArray from "./articlesArray"
+import MessageForm from "../../components/MessageForm/MessageForm"
+import ArticleItem from "../../components/ArticleItem/ArticleItem"
+import { Animated } from "react-animated-css"
 
 const ArticlesPage = ({ messageRef }) => {
     // Tags
 
     const [tagState, setTagState] = useState({
-        tag1: '',
-        tag2: '',
-        tag3: '',
-        tag4: '',
-        tag5: '',
-        tag6: '',
-        tag7: '',
-        tag8: '',
-        tag9: '',
+        tag1: "",
+        tag2: "",
+        tag3: "",
+        tag4: "",
+        tag5: "",
+        tag6: "",
+        tag7: "",
+        tag8: "",
+        tag9: "",
+        tag10: "",
     })
 
     const onTagClick = (e) => {
         if (Number(e.target.value) === 1) {
-            if (tagState.tag1 === '') {
+            if (tagState.tag1 === "") {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag1: 'active',
+                    tag1: "active",
                 }))
             } else {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag1: '',
+                    tag1: "",
                 }))
             }
         }
         if (Number(e.target.value) === 2) {
-            if (tagState.tag2 === '') {
+            if (tagState.tag2 === "") {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag2: 'active',
+                    tag2: "active",
                 }))
             } else {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag2: '',
+                    tag2: "",
                 }))
             }
         }
         if (Number(e.target.value) === 3) {
-            if (tagState.tag3 === '') {
+            if (tagState.tag3 === "") {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag3: 'active',
+                    tag3: "active",
                 }))
             } else {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag3: '',
+                    tag3: "",
                 }))
             }
         }
         if (Number(e.target.value) === 4) {
-            if (tagState.tag4 === '') {
+            if (tagState.tag4 === "") {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag4: 'active',
+                    tag4: "active",
                 }))
             } else {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag4: '',
+                    tag4: "",
                 }))
             }
         }
         if (Number(e.target.value) === 5) {
-            if (tagState.tag5 === '') {
+            if (tagState.tag5 === "") {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag5: 'active',
+                    tag5: "active",
                 }))
             } else {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag5: '',
+                    tag5: "",
                 }))
             }
         }
         if (Number(e.target.value) === 6) {
-            if (tagState.tag6 === '') {
+            if (tagState.tag6 === "") {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag6: 'active',
+                    tag6: "active",
                 }))
             } else {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag6: '',
+                    tag6: "",
                 }))
             }
         }
         if (Number(e.target.value) === 7) {
-            if (tagState.tag7 === '') {
+            if (tagState.tag7 === "") {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag7: 'active',
+                    tag7: "active",
                 }))
             } else {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag7: '',
+                    tag7: "",
                 }))
             }
         }
         if (Number(e.target.value) === 8) {
-            if (tagState.tag8 === '') {
+            if (tagState.tag8 === "") {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag8: 'active',
+                    tag8: "active",
                 }))
             } else {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag8: '',
+                    tag8: "",
                 }))
             }
         }
         if (Number(e.target.value) === 9) {
-            if (tagState.tag9 === '') {
+            if (tagState.tag9 === "") {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag9: 'active',
+                    tag9: "active",
                 }))
             } else {
                 setTagState((prevState) => ({
                     ...prevState,
-                    tag9: '',
+                    tag9: "",
+                }))
+            }
+        }
+        if (Number(e.target.value) === 10) {
+            if (tagState.tag10 === "") {
+                setTagState((prevState) => ({
+                    ...prevState,
+                    tag10: "active",
+                }))
+            } else {
+                setTagState((prevState) => ({
+                    ...prevState,
+                    tag10: "",
                 }))
             }
         }
@@ -151,50 +165,56 @@ const ArticlesPage = ({ messageRef }) => {
     let tag7Arr = []
     let tag8Arr = []
     let tag9Arr = []
-    if (tagState.tag1 === 'active') {
+    let tag10Arr = []
+    if (tagState.tag1 === "active") {
         tag1Arr = articlesArray.filter((element) =>
-            element.tag.includes('world coal')
+            element.tag.includes("world coal")
         )
     }
-    if (tagState.tag2 === 'active') {
+    if (tagState.tag2 === "active") {
         tag2Arr = articlesArray.filter((element) =>
-            element.tag.includes('statistics')
+            element.tag.includes("statistics")
         )
     }
-    if (tagState.tag3 === 'active') {
+    if (tagState.tag3 === "active") {
         tag3Arr = articlesArray.filter((element) =>
-            element.tag.includes('crisis')
+            element.tag.includes("crisis")
         )
     }
-    if (tagState.tag4 === 'active') {
+    if (tagState.tag4 === "active") {
         tag4Arr = articlesArray.filter((element) =>
-            element.tag.includes('reserves')
+            element.tag.includes("reserves")
         )
     }
-    if (tagState.tag5 === 'active') {
+    if (tagState.tag5 === "active") {
         tag5Arr = articlesArray.filter((element) =>
-            element.tag.includes('energy crisis')
+            element.tag.includes("energy crisis")
         )
         console.log(tag5Arr)
     }
-    if (tagState.tag6 === 'active') {
+    if (tagState.tag6 === "active") {
         tag6Arr = articlesArray.filter((element) =>
-            element.tag.includes('top countries')
+            element.tag.includes("top countries")
         )
     }
-    if (tagState.tag7 === 'active') {
+    if (tagState.tag7 === "active") {
         tag7Arr = articlesArray.filter((element) =>
-            element.tag.includes('export of coal')
+            element.tag.includes("export of coal")
         )
     }
-    if (tagState.tag8 === 'active') {
+    if (tagState.tag8 === "active") {
         tag8Arr = articlesArray.filter((element) =>
-            element.tag.includes('us coal market')
+            element.tag.includes("us coal")
         )
     }
-    if (tagState.tag9 === 'active') {
+    if (tagState.tag9 === "active") {
         tag9Arr = articlesArray.filter((element) =>
-            element.tag.includes('analysis')
+            element.tag.includes("analysis")
+        )
+    }
+    if (tagState.tag10 === "active") {
+        tag10Arr = articlesArray.filter((element) =>
+            element.tag.includes("top companies")
         )
     }
     if (
@@ -207,15 +227,17 @@ const ArticlesPage = ({ messageRef }) => {
         tag7Arr.length === 0 &&
         tag8Arr.length === 0 &&
         tag9Arr.length === 0 &&
-        tagState.tag1 === '' &&
-        tagState.tag2 === '' &&
-        tagState.tag3 === '' &&
-        tagState.tag4 === '' &&
-        tagState.tag5 === '' &&
-        tagState.tag6 === '' &&
-        tagState.tag7 === '' &&
-        tagState.tag8 === '' &&
-        tagState.tag9 === ''
+        tag10Arr.length === 0 &&
+        tagState.tag1 === "" &&
+        tagState.tag2 === "" &&
+        tagState.tag3 === "" &&
+        tagState.tag4 === "" &&
+        tagState.tag5 === "" &&
+        tagState.tag6 === "" &&
+        tagState.tag7 === "" &&
+        tagState.tag8 === "" &&
+        tagState.tag9 === "" &&
+        tagState.tag10 === ""
     ) {
         summaryArr = articlesArray
     } else {
@@ -229,14 +251,13 @@ const ArticlesPage = ({ messageRef }) => {
             ...tag7Arr,
             ...tag8Arr,
             ...tag9Arr,
+            ...tag10Arr,
         ]
     }
 
     console.log(summaryArr)
     const table = {}
     const resArr = summaryArr.filter(({ id }) => !table[id] && (table[id] = 1))
-
-    console.log(resArr)
 
     // pages of articles
     let filtredArr1 = resArr.filter((element, index) => index < 9)
@@ -248,48 +269,48 @@ const ArticlesPage = ({ messageRef }) => {
     )
 
     const [activePage, setActivePage] = useState({
-        page1: 'active-page',
-        page2: '',
-        page3: '',
+        page1: "active-page",
+        page2: "",
+        page3: "",
     })
 
     const onFirstPageClick = () => {
         setActivePage(() => ({
-            page1: 'active-page',
-            page2: '',
-            page3: '',
+            page1: "active-page",
+            page2: "",
+            page3: "",
         }))
         // scrollToTop()
     }
     const onSecondPageClick = () => {
         setActivePage(() => ({
-            page1: '',
-            page2: 'active-page',
-            page3: '',
+            page1: "",
+            page2: "active-page",
+            page3: "",
         }))
         // scrollToTop()
     }
     const onThirdPageClick = () => {
         setActivePage(() => ({
-            page1: '',
-            page2: '',
-            page3: 'active-page',
+            page1: "",
+            page2: "",
+            page3: "active-page",
         }))
         // scrollToTop()
     }
 
     const onPrevClick = () => {
-        if (activePage.page3 === 'active-page') {
+        if (activePage.page3 === "active-page") {
             onSecondPageClick()
-        } else if (activePage.page2 === 'active-page') {
+        } else if (activePage.page2 === "active-page") {
             onFirstPageClick()
         }
     }
     const onNextClick = () => {
-        if (activePage.page1 === 'active-page' && filtredArr2.length > 0) {
+        if (activePage.page1 === "active-page" && filtredArr2.length > 0) {
             onSecondPageClick()
         } else if (
-            activePage.page2 === 'active-page' &&
+            activePage.page2 === "active-page" &&
             filtredArr3.length > 0
         ) {
             onThirdPageClick()
@@ -298,25 +319,25 @@ const ArticlesPage = ({ messageRef }) => {
 
     // Disable page btns
 
-    let disable2Page = ''
-    let disable3Page = ''
+    let disable2Page = ""
+    let disable3Page = ""
 
     if (filtredArr2.length === 0) {
-        disable2Page = 'hide'
-        if (activePage.page2 === 'active-page') {
+        disable2Page = "hide"
+        if (activePage.page2 === "active-page") {
             onFirstPageClick()
         }
     }
     if (filtredArr3.length === 0) {
-        disable3Page = 'hide'
-        if (activePage.page3 === 'active-page') {
+        disable3Page = "hide"
+        if (activePage.page3 === "active-page") {
             onSecondPageClick()
         }
     }
 
     return (
         <div className="articles-page">
-            <PageHeader name={'articles'} />
+            <PageHeader name={"articles"} />
             <div className="container">
                 <p className="articles-header mobile-header">Popular Topics</p>
                 <div className="row tags-row">
@@ -327,65 +348,72 @@ const ArticlesPage = ({ messageRef }) => {
                         <button
                             className={`tag-btn ${tagState.tag1}`}
                             value={1}
-                            onClick={(e) => onTagClick(e, 'value')}
+                            onClick={(e) => onTagClick(e, "value")}
                         >
                             world coal
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag2}`}
                             value={2}
-                            onClick={(e) => onTagClick(e, 'value')}
+                            onClick={(e) => onTagClick(e, "value")}
                         >
                             statistics
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag3}`}
                             value={3}
-                            onClick={(e) => onTagClick(e, 'value')}
+                            onClick={(e) => onTagClick(e, "value")}
                         >
                             crisis
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag4}`}
                             value={4}
-                            onClick={(e) => onTagClick(e, 'value')}
+                            onClick={(e) => onTagClick(e, "value")}
                         >
                             reserves
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag5}`}
                             value={5}
-                            onClick={(e) => onTagClick(e, 'value')}
+                            onClick={(e) => onTagClick(e, "value")}
                         >
                             energy crisis
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag6}`}
                             value={6}
-                            onClick={(e) => onTagClick(e, 'value')}
+                            onClick={(e) => onTagClick(e, "value")}
                         >
                             top countries
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag7}`}
                             value={7}
-                            onClick={(e) => onTagClick(e, 'value')}
+                            onClick={(e) => onTagClick(e, "value")}
                         >
                             export of coal
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag8}`}
                             value={8}
-                            onClick={(e) => onTagClick(e, 'value')}
+                            onClick={(e) => onTagClick(e, "value")}
                         >
-                            us coal market
+                            us coal
                         </button>
                         <button
                             className={`tag-btn ${tagState.tag9}`}
                             value={9}
-                            onClick={(e) => onTagClick(e, 'value')}
+                            onClick={(e) => onTagClick(e, "value")}
                         >
                             analysis
+                        </button>
+                        <button
+                            className={`tag-btn ${tagState.tag10}`}
+                            value={10}
+                            onClick={(e) => onTagClick(e, "value")}
+                        >
+                            top companies
                         </button>
                     </div>
                 </div>
@@ -393,7 +421,7 @@ const ArticlesPage = ({ messageRef }) => {
                     <div className="no-matches">No matches</div>
                 ) : (
                     <div className="wrapper">
-                        {activePage.page1 === 'active-page'
+                        {activePage.page1 === "active-page"
                             ? filtredArr1.map(({ id, preview, tag, name }) => (
                                   <div key={id} className="article-item">
                                       <Animated
@@ -410,7 +438,7 @@ const ArticlesPage = ({ messageRef }) => {
                                       </Animated>
                                   </div>
                               ))
-                            : activePage.page2 === 'active-page'
+                            : activePage.page2 === "active-page"
                             ? filtredArr2.map(({ id, preview, tag, name }) => (
                                   <div key={id} className="article-item">
                                       <Animated
