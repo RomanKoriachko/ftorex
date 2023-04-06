@@ -1,13 +1,13 @@
-import React from 'react'
-import './ProductsPage.scss'
-import PageHeader from '../../components/PageHeader/PageHeader'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
-import { Animated } from 'react-animated-css'
+import React from "react"
+import "./ProductsPage.scss"
+import PageHeader from "../../components/PageHeader/PageHeader"
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
+import { Animated } from "react-animated-css"
 
 const ProductsPage = () => {
     return (
         <div className="products-page">
-            <PageHeader name={'Products'} />
+            <PageHeader name={"Products"} />
             <div className="container">
                 <Tabs>
                     <div className="tabs-tablet">
@@ -342,28 +342,6 @@ const ProductsPage = () => {
                                             src="images/products-img-5.jpg"
                                             alt=""
                                         />
-                                        <p className="tab-content-header">
-                                            INAGLI COKING COAL (GRADE "Kzh")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
-                                        </p>
-                                        <img
-                                            className="tab-content-table"
-                                            src="images/products-table-img.png"
-                                            alt=""
-                                        />
-                                        <p className="tab-content-header">
-                                            DENI DEEP COKING COAL (GRADE "K4")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
-                                        </p>
-                                        <img
-                                            className="tab-content-table"
-                                            src="images/products-table-img.png"
-                                            alt=""
-                                        />
                                         <div className="download-button-wrapper">
                                             <button className="download-btn">
                                                 <div className="row btn-content-row">
@@ -409,25 +387,19 @@ const ProductsPage = () => {
                                             alt=""
                                         />
                                         <p className="tab-content-header">
-                                            INAGLI COKING COAL (GRADE "Kzh")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
+                                            urea fertilizers
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-table-img.png"
+                                            src="images/products-fertilizer-img-1.jpg"
                                             alt=""
                                         />
                                         <p className="tab-content-header">
-                                            DENI DEEP COKING COAL (GRADE "K4")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
+                                            (mop) fertilizers
                                         </p>
                                         <img
                                             className="tab-content-table"
-                                            src="images/products-table-img.png"
+                                            src="images/products-fertilizer-img-2.jpg"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">
@@ -469,28 +441,6 @@ const ProductsPage = () => {
                                         <img
                                             className="tab-content-img"
                                             src="images/products-img-7.jpg"
-                                            alt=""
-                                        />
-                                        <p className="tab-content-header">
-                                            INAGLI COKING COAL (GRADE "Kzh")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
-                                        </p>
-                                        <img
-                                            className="tab-content-table"
-                                            src="images/products-table-img.png"
-                                            alt=""
-                                        />
-                                        <p className="tab-content-header">
-                                            DENI DEEP COKING COAL (GRADE "K4")
-                                        </p>
-                                        <p className="tab-content-subtitle">
-                                            contract characteristics:
-                                        </p>
-                                        <img
-                                            className="tab-content-table"
-                                            src="images/products-table-img.png"
                                             alt=""
                                         />
                                         <div className="download-button-wrapper">

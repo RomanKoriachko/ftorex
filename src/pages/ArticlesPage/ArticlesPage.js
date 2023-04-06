@@ -282,8 +282,8 @@ const ArticlesPage = ({ messageRef }) => {
     const pageState = useAppSelector((state) => state.pageState)
     const dispatch = useAppDispatch()
 
-    console.log(pageState)
-    console.log(tagState)
+    // console.log(pageState)
+    // console.log(tagState)
 
     const onFirstPageClick = () => {
         setActivePage(() => ({
@@ -292,7 +292,6 @@ const ArticlesPage = ({ messageRef }) => {
             page3: "",
         }))
         dispatch(onFirstPage())
-        // scrollToTop()
     }
     const onSecondPageClick = () => {
         setActivePage(() => ({
@@ -301,7 +300,6 @@ const ArticlesPage = ({ messageRef }) => {
             page3: "",
         }))
         dispatch(onSecondPage())
-        // scrollToTop()
     }
     const onThirdPageClick = () => {
         setActivePage(() => ({
@@ -310,7 +308,6 @@ const ArticlesPage = ({ messageRef }) => {
             page3: "active-page",
         }))
         dispatch(onThirdPage())
-        // scrollToTop()
     }
 
     const onPrevClick = () => {

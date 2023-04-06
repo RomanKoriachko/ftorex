@@ -544,33 +544,24 @@ let articlesArray = [
     {
         id: 18,
         preview: "images/article-preview-2.png",
-        tag: "apps",
-        name: "Definitive Guide to Make a Daily More Productive Working Flow. ",
-        paragraph1: "",
-        subtitle2: "",
-        paragraph2: "",
-        subtitle3: "",
-        paragraph3: "",
-        subtitle4: "",
-        paragraph4: "",
-        subtitle5: "",
-        paragraph5: "",
-        subtitle6: "",
-        paragraph6: "",
-        subtitle7: "",
-        paragraph7: "",
-        subtitle8: "",
-        paragraph8: "",
-        subtitle9: "",
-        paragraph9: "",
-        subtitle10: "",
-        paragraph10: "",
-        subtitle11: "",
-        paragraph11: "",
-        subtitle12: "",
-        paragraph12: "",
-        subtitle13: "",
-        paragraph13: "",
+        tag: "export of coal",
+        name: "Indonesian coal, main buyers",
+        paragraph1:
+            "Indonesia is one of the world's largest exporters of coal, with the majority of its coal being sold to other countries. The demand for Indonesian coal has increased significantly over the past decade, with China, India, and Japan being the primary buyers of Indonesian coal.",
+        paragraph2:
+            "China is the world's largest consumer of coal, and it accounts for around two-thirds of Indonesia's coal exports. Chinese companies are involved in many of the major coal projects in Indonesia, including the development of new mines and the acquisition of existing mining companies. The Chinese demand for coal is driven by the country's growing economy and its need for energy to power its industries.",
+        paragraph3:
+            "India is another significant buyer of Indonesian coal, accounting for around a quarter of the country's coal exports. India has a growing demand for coal due to the country's expanding population and economy, as well as its reliance on coal-fired power plants for electricity generation. Indonesian coal is attractive to Indian buyers due to its low sulfur content and high energy content, making it an ideal fuel for power plants.",
+        paragraph4:
+            "Japan is also a significant buyer of Indonesian coal, accounting for around 10% of the country's coal exports. Japanese companies are involved in several major coal projects in Indonesia, including the development of new mines and the acquisition of existing mining companies. The Japanese demand for coal is driven by the country's need for energy to power its industries and its reliance on coal-fired power plants for electricity generation.",
+        paragraph5:
+            "Aside from China, India, and Japan, other countries that purchase Indonesian coal include South Korea, Taiwan, and Malaysia. South Korea and Taiwan are also reliant on coal-fired power plants for electricity generation, while Malaysia is a net importer of energy and relies on coal to fuel its power plants.",
+        paragraph6:
+            "The demand for Indonesian coal is expected to remain strong in the coming years, as the countries that purchase Indonesian coal continue to rely on coal as a key source of energy. The Indonesian government has also set ambitious targets to increase coal production, which will further increase the country's coal exports.",
+        paragraph7:
+            "However, there are concerns over the environmental impact of coal mining and the burning of coal for energy generation, as coal is a major contributor to greenhouse gas emissions and air pollution. In recent years, there has been a growing shift towards renewable energy sources, and it remains to be seen how this will impact the demand for coal in the long term.",
+        paragraph8:
+            "In conclusion, Indonesia is a major player in the global coal market, with the majority of its coal exports being sold to China, India, and Japan. The demand for Indonesian coal is expected to remain strong in the coming years, driven by the countries' reliance on coal as a key source of energy. However, the environmental impact of coal mining and the burning of coal for energy generation is a concern, and there is a growing shift towards renewable energy sources.",
         articleImg1: "images/article-img-2.png",
         articleImg2: "images/article-img-1.png",
     },

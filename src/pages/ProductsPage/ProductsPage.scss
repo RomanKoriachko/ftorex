@@ -1,4 +1,4 @@
-@import '../../style';
+@import "../../style";
 
 .products-page {
     .preview-bg {
@@ -31,12 +31,13 @@
     .tab-container {
         margin: 0px 110px;
         .tab-content-header {
-            font-family: 'Roboto';
+            font-family: "Roboto";
             font-weight: 800;
             font-size: 26px;
             line-height: 30px;
             margin-top: 40px;
             margin-bottom: 10px;
+            text-transform: uppercase;
         }
         .tab-content-header:nth-child(1) {
             margin-bottom: 33px;
