@@ -118,6 +118,10 @@
         color: white;
         .close-popup-btn {
             cursor: pointer;
+            transition: 0.3s all;
+            &:hover {
+                transform: scale(130%);
+            }
         }
         .callback-row {
             flex-direction: column;
@@ -142,12 +146,18 @@
                 font-size: 16px;
                 line-height: 150%;
                 color: #505050;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
                 &::placeholder {
                     font-family: 'Plus Jakarta Sans';
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 150%;
                     color: #505050;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
                 }
             }
             .number-btn {
@@ -160,6 +170,11 @@
                 font-size: 16px;
                 line-height: 150%;
                 border: none;
+                transition: 0.3s all;
+                cursor: pointer;
+                &:hover {
+                    background: #2b2b2b;
+                }
             }
         }
     }

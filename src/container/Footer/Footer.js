@@ -32,7 +32,7 @@ const Footer = ({ messageRef }) => {
                     isVisible={true}
                     animationInDuration={300}
                 >
-                    <MessageForm />
+                    <MessageForm closeWriteToUsForm={closeWriteToUsForm} />
                 </Animated>
             </div>
             <div className="container">

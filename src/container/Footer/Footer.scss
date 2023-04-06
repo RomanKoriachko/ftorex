@@ -114,12 +114,23 @@
             flex-direction: column;
         }
         .message-section {
-            padding: 24px;
+            padding: 54px 24px;
             width: 80%;
             height: 90%;
             overflow-y: auto;
             top: 62%;
             transform: translate(-50%, -50%);
+            .message-form {
+                .input-row {
+                    gap: 12px;
+                    margin-bottom: 12px;
+                    .input-item-row {
+                        > input:nth-child(1) {
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -150,10 +161,13 @@
             min-width: auto;
         }
         .message-section {
-            padding: 10px 5px;
+            padding: 32px 5px;
             width: 80%;
             height: 80%;
             top: 60%;
+            .message-header {
+                padding: 0px 15px;
+            }
         }
     }
 }

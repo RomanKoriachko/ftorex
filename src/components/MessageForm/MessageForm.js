@@ -1,10 +1,14 @@
 import React from 'react'
 import './MessageForm.scss'
 
-const MessageForm = () => {
+const MessageForm = ({ closeWriteToUsForm }) => {
     return (
         <section className="message-section">
             <p className="message-header">Send us a Message​</p>
+            <div
+                className="close-btn"
+                onClick={() => closeWriteToUsForm()}
+            ></div>
             <form
                 className="message-form"
                 action="https://formsubmit.co/mazaxaka.tyt@gmail.com"
