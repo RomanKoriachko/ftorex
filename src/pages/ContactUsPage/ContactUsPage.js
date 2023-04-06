@@ -3,6 +3,7 @@ import './ContactUsPage.scss'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import MessageForm from '../../components/MessageForm/MessageForm'
 import { Animated } from 'react-animated-css'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const ContactUsPage = ({ messageRef }) => {
     return (
@@ -10,7 +11,7 @@ const ContactUsPage = ({ messageRef }) => {
             <PageHeader name={'Contact Us'} />
             <section className="contacts-section">
                 <div className="container">
-                    <div className="row contacts-row">
+                    <div className="row contacts-row contact-row-desktop">
                         <div className="contact-item contact-item-1">
                             <Animated
                                 animationIn="fadeInLeft"
@@ -75,6 +76,73 @@ const ContactUsPage = ({ messageRef }) => {
                                     </p>
                                 </div>
                             </Animated>
+                        </div>
+                    </div>
+                    <div className="row contacts-row contact-row-mobile">
+                        <div className="contact-item contact-item-1">
+                            <AnimationOnScroll
+                                animateIn="animate__backInUp"
+                                duration={1}
+                                animateOnce={true}
+                            >
+                                <div className="contact-content">
+                                    <div className="contact-img"></div>
+                                    <p className="contact-item-header">
+                                        Call Us
+                                    </p>
+                                    <p className="contact-item-text">
+                                        +1 (786) 707-06-06
+                                    </p>
+                                    <p className="contact-item-text">
+                                        +7 (967) 388-48-88
+                                    </p>
+                                </div>
+                            </AnimationOnScroll>
+                        </div>
+                        <div className="contact-item contact-item-2">
+                            <AnimationOnScroll
+                                animateIn="animate__backInUp"
+                                duration={1}
+                                animateOnce={true}
+                            >
+                                <div className="contact-content">
+                                    <div className="contact-img"></div>
+                                    <p className="contact-item-header">
+                                        We are Here{' '}
+                                    </p>
+                                    <p className="contact-item-text">
+                                        <span>UAE:</span> Building PR1005, Port
+                                        Saeed, Dubai
+                                    </p>
+                                    <p className="contact-item-text">
+                                        <span>USA:</span> 3233 W Dallas St,
+                                        Houston TX 77019
+                                    </p>
+                                </div>
+                            </AnimationOnScroll>
+                        </div>
+                        <div className="contact-item contact-item-3">
+                            <AnimationOnScroll
+                                animateIn="animate__backInUp"
+                                duration={1}
+                                animateOnce={true}
+                            >
+                                <div className="contact-content">
+                                    <div className="contact-img"></div>
+                                    <p className="contact-item-header">
+                                        Write Us Anytime
+                                    </p>
+                                    <p className="contact-item-text">
+                                        Sales department: sales@ftorex.ae
+                                    </p>
+                                    <p
+                                        className="contact-item-text"
+                                        ref={messageRef}
+                                    >
+                                        Main office: office@ftorex.ae 
+                                    </p>
+                                </div>
+                            </AnimationOnScroll>
                         </div>
                     </div>
                 </div>
