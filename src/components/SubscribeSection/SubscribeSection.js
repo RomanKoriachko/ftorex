@@ -1,5 +1,5 @@
-import React from 'react'
-import './SubscribeSection.scss'
+import React from "react"
+import "./SubscribeSection.scss"
 
 const SubscribeSection = ({ submitRef, closeSubmitForm }) => {
     return (
@@ -16,7 +16,7 @@ const SubscribeSection = ({ submitRef, closeSubmitForm }) => {
                     </p>
                     <div>
                         <form
-                            action="https://formsubmit.co/mazaxaka.tyt@gmail.com"
+                            action="https://formsubmit.co/sales@ftorex.ae"
                             method="POST"
                         >
                             <div className="row input-email-row">

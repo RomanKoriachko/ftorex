@@ -297,7 +297,7 @@ const SingleArticlePage = () => {
                         <p className="recent-post-header">Recent Post:</p>
                         <div className="wrapper">
                             {articlesArray
-                                .filter((element, index) => index > 23)
+                                .filter((element, index) => index > 16)
                                 .map(({ id, preview, tag, name }) => (
                                     <div key={id} className="recent-post-item">
                                         <AnimationOnScroll

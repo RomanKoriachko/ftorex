@@ -1,55 +1,55 @@
-import React, { useState } from 'react'
-import './Header.scss'
-import SubscribeSection from '../../components/SubscribeSection/SubscribeSection'
-import { Link, NavLink } from 'react-router-dom'
-import { Animated } from 'react-animated-css'
+import React, { useState } from "react"
+import "./Header.scss"
+import SubscribeSection from "../../components/SubscribeSection/SubscribeSection"
+import { Link, NavLink } from "react-router-dom"
+import { Animated } from "react-animated-css"
 
 const Header = ({ submitRef }) => {
-    const [subscribeState, setSubscribeState] = useState('hide')
+    const [subscribeState, setSubscribeState] = useState("hide")
 
     const submitBtn = () => {
         if (submitRef.current) {
-            submitRef.current?.scrollIntoView({ behavior: 'smooth' })
+            submitRef.current?.scrollIntoView({ behavior: "smooth" })
             closeBurger()
         } else {
-            setSubscribeState('show')
-            document.body.style.overflow = 'hidden'
+            setSubscribeState("show")
+            document.body.style.overflow = "hidden"
             closeBurger()
         }
     }
     const closeSubmitForm = () => {
-        setSubscribeState('hide')
-        document.body.style.overflow = ''
+        setSubscribeState("hide")
+        document.body.style.overflow = ""
     }
 
-    const [callbackFormState, setCallbackFormState] = useState('hide')
+    const [callbackFormState, setCallbackFormState] = useState("hide")
     const callbackBtn = () => {
-        setCallbackFormState('show')
-        document.body.style.overflow = 'hidden'
+        setCallbackFormState("show")
+        document.body.style.overflow = "hidden"
         closeBurger()
     }
     const closeCalbackForm = () => {
-        setCallbackFormState('hide')
-        document.body.style.overflow = ''
+        setCallbackFormState("hide")
+        document.body.style.overflow = ""
     }
 
     const closePopup = () => {
-        setSubscribeState('hide')
-        setCallbackFormState('hide')
+        setSubscribeState("hide")
+        setCallbackFormState("hide")
         closeBurger()
-        document.body.style.overflow = ''
+        document.body.style.overflow = ""
     }
 
     // burger-menu
-    const [burgerState, setBurgerState] = useState('hide-burger')
+    const [burgerState, setBurgerState] = useState("hide-burger")
 
     const showBurger = () => {
-        setBurgerState('show-burger')
-        document.body.style.overflow = 'hidden'
+        setBurgerState("show-burger")
+        document.body.style.overflow = "hidden"
     }
     const closeBurger = () => {
-        setBurgerState('hide-burger')
-        document.body.style.overflow = ''
+        setBurgerState("hide-burger")
+        document.body.style.overflow = ""
     }
 
     return (
@@ -65,7 +65,7 @@ const Header = ({ submitRef }) => {
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
-                                isActive ? 'active' : 'notActive'
+                                isActive ? "active" : "notActive"
                             }
                             onClick={() => closeBurger()}
                         >
@@ -74,7 +74,7 @@ const Header = ({ submitRef }) => {
                         <NavLink
                             to="/products"
                             className={({ isActive }) =>
-                                isActive ? 'active' : 'notActive'
+                                isActive ? "active" : "notActive"
                             }
                             onClick={() => closeBurger()}
                         >
@@ -83,7 +83,7 @@ const Header = ({ submitRef }) => {
                         <NavLink
                             to="/service"
                             className={({ isActive }) =>
-                                isActive ? 'active' : 'notActive'
+                                isActive ? "active" : "notActive"
                             }
                             onClick={() => closeBurger()}
                         >
@@ -92,7 +92,7 @@ const Header = ({ submitRef }) => {
                         <NavLink
                             to="/articles"
                             className={({ isActive }) =>
-                                isActive ? 'active' : 'notActive'
+                                isActive ? "active" : "notActive"
                             }
                             onClick={() => closeBurger()}
                         >
@@ -101,7 +101,7 @@ const Header = ({ submitRef }) => {
                         <NavLink
                             to="/contacts"
                             className={({ isActive }) =>
-                                isActive ? 'active' : 'notActive'
+                                isActive ? "active" : "notActive"
                             }
                             onClick={() => closeBurger()}
                         >
@@ -152,7 +152,7 @@ const Header = ({ submitRef }) => {
                                     </p>
                                     <div>
                                         <form
-                                            action="https://formsubmit.co/mazaxaka.tyt@gmail.com"
+                                            action="https://formsubmit.co/sales@ftorex.ae"
                                             method="POST"
                                         >
                                             <div className="row input-phone-row">
@@ -194,7 +194,7 @@ const Header = ({ submitRef }) => {
                                 <NavLink
                                     to="/"
                                     className={({ isActive }) =>
-                                        isActive ? 'active' : 'notActive'
+                                        isActive ? "active" : "notActive"
                                     }
                                 >
                                     Home
@@ -202,7 +202,7 @@ const Header = ({ submitRef }) => {
                                 <NavLink
                                     to="/products"
                                     className={({ isActive }) =>
-                                        isActive ? 'active' : 'notActive'
+                                        isActive ? "active" : "notActive"
                                     }
                                 >
                                     Products
@@ -210,7 +210,7 @@ const Header = ({ submitRef }) => {
                                 <NavLink
                                     to="/service"
                                     className={({ isActive }) =>
-                                        isActive ? 'active' : 'notActive'
+                                        isActive ? "active" : "notActive"
                                     }
                                 >
                                     Service
@@ -218,7 +218,7 @@ const Header = ({ submitRef }) => {
                                 <NavLink
                                     to="/articles"
                                     className={({ isActive }) =>
-                                        isActive ? 'active' : 'notActive'
+                                        isActive ? "active" : "notActive"
                                     }
                                 >
                                     Articles
@@ -226,7 +226,7 @@ const Header = ({ submitRef }) => {
                                 <NavLink
                                     to="/contacts"
                                     className={({ isActive }) =>
-                                        isActive ? 'active' : 'notActive'
+                                        isActive ? "active" : "notActive"
                                     }
                                 >
                                     Contact Us

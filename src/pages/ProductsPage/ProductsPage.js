@@ -102,14 +102,14 @@ const ProductsPage = () => {
                                             src="images/products-coking-img-3.jpg"
                                             alt=""
                                         />
-                                        <div className="download-button-wrapper">
+                                        {/* <div className="download-button-wrapper">
                                             <button className="download-btn">
                                                 <div className="row btn-content-row">
                                                     <p>download document</p>
                                                     <div className="btn-arrow"></div>
                                                 </div>
                                             </button>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -162,14 +162,14 @@ const ProductsPage = () => {
                                             src="images/products-coking-img-3.jpg"
                                             alt=""
                                         />
-                                        <div className="download-button-wrapper">
+                                        {/* <div className="download-button-wrapper">
                                             <button className="download-btn">
                                                 <div className="row btn-content-row">
                                                     <p>download document</p>
                                                     <div className="btn-arrow"></div>
                                                 </div>
                                             </button>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -216,14 +216,14 @@ const ProductsPage = () => {
                                             src="images/products-coking-img-3.jpg"
                                             alt=""
                                         />
-                                        <div className="download-button-wrapper">
+                                        {/* <div className="download-button-wrapper">
                                             <button className="download-btn">
                                                 <div className="row btn-content-row">
                                                     <p>download document</p>
                                                     <div className="btn-arrow"></div>
                                                 </div>
                                             </button>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -270,14 +270,14 @@ const ProductsPage = () => {
                                             src="images/products-coking-img-3.jpg"
                                             alt=""
                                         />
-                                        <div className="download-button-wrapper">
+                                        {/* <div className="download-button-wrapper">
                                             <button className="download-btn">
                                                 <div className="row btn-content-row">
                                                     <p>download document</p>
                                                     <div className="btn-arrow"></div>
                                                 </div>
                                             </button>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -313,14 +313,14 @@ const ProductsPage = () => {
                                             src="images/products-img-5.jpg"
                                             alt=""
                                         />
-                                        <div className="download-button-wrapper">
+                                        {/* <div className="download-button-wrapper">
                                             <button className="download-btn">
                                                 <div className="row btn-content-row">
                                                     <p>download document</p>
                                                     <div className="btn-arrow"></div>
                                                 </div>
                                             </button>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -373,14 +373,14 @@ const ProductsPage = () => {
                                             src="images/products-fertilizer-img-2.jpg"
                                             alt=""
                                         />
-                                        <div className="download-button-wrapper">
+                                        {/* <div className="download-button-wrapper">
                                             <button className="download-btn">
                                                 <div className="row btn-content-row">
                                                     <p>download document</p>
                                                     <div className="btn-arrow"></div>
                                                 </div>
                                             </button>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </Animated>
                             </TabPanel>
@@ -414,14 +414,14 @@ const ProductsPage = () => {
                                             src="images/products-img-7.jpg"
                                             alt=""
                                         />
-                                        <div className="download-button-wrapper">
+                                        {/* <div className="download-button-wrapper">
                                             <button className="download-btn">
                                                 <div className="row btn-content-row">
                                                     <p>download document</p>
                                                     <div className="btn-arrow"></div>
                                                 </div>
                                             </button>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </Animated>
                             </TabPanel>

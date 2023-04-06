@@ -1,5 +1,5 @@
-import React from 'react'
-import './MessageForm.scss'
+import React from "react"
+import "./MessageForm.scss"
 
 const MessageForm = ({ closeWriteToUsForm }) => {
     return (
@@ -11,7 +11,7 @@ const MessageForm = ({ closeWriteToUsForm }) => {
             ></div>
             <form
                 className="message-form"
-                action="https://formsubmit.co/mazaxaka.tyt@gmail.com"
+                action="https://formsubmit.co/sales@ftorex.ae"
                 method="POST"
             >
                 <div className="row input-row">
