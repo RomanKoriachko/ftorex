@@ -22,6 +22,24 @@ const Header = ({ submitRef }) => {
         document.body.style.overflow = ''
     }
 
+    const [callbackFormState, setCallbackFormState] = useState('hide')
+    const callbackBtn = () => {
+        setCallbackFormState('show')
+        document.body.style.overflow = 'hidden'
+        closeBurger()
+    }
+    const closeCalbackForm = () => {
+        setCallbackFormState('hide')
+        document.body.style.overflow = ''
+    }
+
+    const closePopup = () => {
+        setSubscribeState('hide')
+        setCallbackFormState('hide')
+        closeBurger()
+        document.body.style.overflow = ''
+    }
+
     // burger-menu
     const [burgerState, setBurgerState] = useState('hide-burger')
 
@@ -101,7 +119,10 @@ const Header = ({ submitRef }) => {
                         className="contacts-btn"
                         onClick={() => closeBurger()}
                     >
-                        <button className="call-btn">
+                        <button
+                            className="call-btn"
+                            onClick={() => callbackBtn()}
+                        >
                             <div className="row btn-content-row">
                                 <p>CALL NOW</p>
                                 <div className="btn-arrow"></div>
@@ -110,8 +131,8 @@ const Header = ({ submitRef }) => {
                     </Link>
                 </div>
                 <div
-                    className={`subscribe-bg ${subscribeState}`}
-                    onClick={() => closeSubmitForm()}
+                    className={`subscribe-bg ${subscribeState} ${callbackFormState}`}
+                    onClick={() => closePopup()}
                 ></div>
                 <div className={`${subscribeState}`}>
                     <Animated
@@ -120,6 +141,52 @@ const Header = ({ submitRef }) => {
                         animationInDuration={300}
                     >
                         <SubscribeSection closeSubmitForm={closeSubmitForm} />
+                    </Animated>
+                </div>
+                <div className={`${callbackFormState}`}>
+                    <Animated
+                        animationIn="fadeIn"
+                        isVisible={true}
+                        animationInDuration={300}
+                    >
+                        <section className="callback-section" ref={submitRef}>
+                            <div
+                                className="close-popup-btn"
+                                onClick={() => closeCalbackForm()}
+                            ></div>
+                            <div className="container">
+                                <div className="row callback-row">
+                                    <p className="callback-header">
+                                        We will call you back
+                                    </p>
+                                    <div>
+                                        <form
+                                            action="https://formsubmit.co/mazaxaka.tyt@gmail.com"
+                                            method="POST"
+                                        >
+                                            <div className="row input-phone-row">
+                                                <input
+                                                    className="number-input"
+                                                    placeholder="Enter your phone number"
+                                                    type="text"
+                                                    name="number"
+                                                    required
+                                                />
+                                                <button
+                                                    className="number-btn"
+                                                    type="submit"
+                                                >
+                                                    Send
+                                                </button>
+                                            </div>
+                                            <p className="input-annotation">
+                                                We promise not to spam you
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </Animated>
                 </div>
                 <div className="container">
@@ -186,7 +253,10 @@ const Header = ({ submitRef }) => {
                                 </div>
                             </button>
                             <Link to="/contacts">
-                                <button className="call-btn">
+                                <button
+                                    className="call-btn"
+                                    onClick={() => callbackBtn()}
+                                >
                                     <div className="row btn-content-row">
                                         <p>CALL NOW</p>
                                         <div className="btn-arrow"></div>
