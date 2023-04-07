@@ -8,12 +8,17 @@ import ContactUsPage from "../../pages/ContactUsPage/ContactUsPage"
 import LayoutComponent from "../../components/LayoutComponent/LayoutComponent"
 import { useRef } from "react"
 import SingleArticlePage from "../../pages/SingleArticlePage/SingleArticlePage"
+import { Helmet } from "react-helmet"
 
 function App() {
     const submitRef = useRef(null)
     const messageRef = useRef(null)
     return (
         <div className="App">
+            <Helmet>
+                <title>Ftorex</title>
+                <meta name="description" content="Helmet application" />
+            </Helmet>
             <Routes>
                 <Route
                     path="/"
