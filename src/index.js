@@ -10,7 +10,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
-    <BrowserRouter>
+    <BrowserRouter basename="/harmonious-fox-964210.netlify.app">
         <Provider store={store}>
             <React.StrictMode>
                 <ScrollToTop />
