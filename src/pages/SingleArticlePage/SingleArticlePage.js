@@ -87,7 +87,7 @@ const SingleArticlePage = () => {
                 <title>Article</title>
                 <meta
                     name="description"
-                    content="Achive a profitable business with us"
+                    content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
             </Helmet>
             <div className="container">
