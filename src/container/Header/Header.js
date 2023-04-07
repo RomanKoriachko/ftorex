@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import "./Header.scss"
 import SubscribeSection from "../../components/SubscribeSection/SubscribeSection"
 import { Link, NavLink } from "react-router-dom"
 import { Animated } from "react-animated-css"
-import { useAppSelector, useAppDispatch } from "../../redux/hooks"
-import { fetchData } from "../../redux/getDataReducer"
+// import { useAppSelector, useAppDispatch } from "../../redux/hooks"
+// import { fetchData } from "../../redux/getDataReducer"
 import Marquee from "react-fast-marquee"
 
 const Header = ({ submitRef }) => {
@@ -57,12 +57,12 @@ const Header = ({ submitRef }) => {
 
     // get data from api
 
-    const dataState = useAppSelector((state) => state.dataState)
-    const dispatch = useAppDispatch()
+    // const dataState = useAppSelector((state) => state.dataState)
+    // const dispatch = useAppDispatch()
 
-    useEffect(() => {
-        dispatch(fetchData())
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(fetchData())
+    // }, [dispatch])
 
     // const raw = localStorage.getItem("data")
     // let localData = {}
