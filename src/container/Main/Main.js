@@ -8,14 +8,10 @@ import AboutUsSection from "../../components/AboutUsSection/AboutUsSection"
 import MapSection from "../../components/MapSection/MapSection"
 import ArticlesSection from "../../components/ArticlesSection/ArticlesSection"
 import SubscribeSection from "../../components/SubscribeSection/SubscribeSection"
-import { Helmet } from "react-helmet"
 
 const Main = ({ submitRef }) => {
     return (
         <main className="main">
-            <Helmet>
-                <meta name="description" content="" />
-            </Helmet>
             <IntroduceSection />
             <ProductsSection />
             <IndicatorsSection />
