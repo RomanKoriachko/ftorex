@@ -19,5 +19,6 @@ root.render(
         </Provider>
     </BrowserRouter>
 )
+document.getElementsByTagName("META")[2].content = ""
 
 reportWebVitals()
