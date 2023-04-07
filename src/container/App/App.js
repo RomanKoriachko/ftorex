@@ -1,13 +1,13 @@
-import { Route, Routes } from 'react-router-dom'
-import Main from '../Main/Main'
-import './App.scss'
-import ServicePage from '../../pages/ServicePage/ServicePage'
-import ProductsPage from '../../pages/ProductsPage/ProductsPage'
-import ArticlesPage from '../../pages/ArticlesPage/ArticlesPage'
-import ContactUsPage from '../../pages/ContactUsPage/ContactUsPage'
-import LayoutComponent from '../../components/LayoutComponent/LayoutComponent'
-import { useRef } from 'react'
-import SingleArticlePage from '../../pages/SingleArticlePage/SingleArticlePage'
+import { Route, Routes } from "react-router-dom"
+import Main from "../Main/Main"
+import "./App.scss"
+import ServicePage from "../../pages/ServicePage/ServicePage"
+import ProductsPage from "../../pages/ProductsPage/ProductsPage"
+import ArticlesPage from "../../pages/ArticlesPage/ArticlesPage"
+import ContactUsPage from "../../pages/ContactUsPage/ContactUsPage"
+import LayoutComponent from "../../components/LayoutComponent/LayoutComponent"
+import { useRef } from "react"
+import SingleArticlePage from "../../pages/SingleArticlePage/SingleArticlePage"
 
 function App() {
     const submitRef = useRef(null)
