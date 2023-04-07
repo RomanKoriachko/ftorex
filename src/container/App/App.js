@@ -9,7 +9,7 @@ import LayoutComponent from "../../components/LayoutComponent/LayoutComponent"
 import { useRef } from "react"
 import SingleArticlePage from "../../pages/SingleArticlePage/SingleArticlePage"
 import DocumentMeta from "react-document-meta"
-// import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet"
 
 function App() {
     const submitRef = useRef(null)
@@ -29,10 +29,10 @@ function App() {
     return (
         <div className="App">
             <DocumentMeta {...meta} />
-            {/* <Helmet>
+            <Helmet>
                 <title>Ftorex</title>
                 <meta name="description" content="Helmet application" />
-            </Helmet> */}
+            </Helmet>
             <Routes>
                 <Route
                     path="/"
