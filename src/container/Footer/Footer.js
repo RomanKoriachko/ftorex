@@ -51,7 +51,7 @@ const Footer = ({ messageRef }) => {
                             </div>
                         </button>
                     </div>
-                    <div className="row footer-links-row">
+                    <div className="footer-links-row">
                         <div className="footer-item-text">
                             <p className="footer-column-header">Company</p>
                             <p className="footer-column-item">
@@ -106,8 +106,9 @@ const Footer = ({ messageRef }) => {
                                     US OFFICE:
                                 </p>
                                 <p className="footer-contacts-item-2">
-                                    3233 W Dallas St, Houston TX, USA +1 (786)
-                                    707-0607 sales@ftorex.us
+                                    <p>3233 W Dallas St, Houston TX, USA</p>
+                                    <p>+1 (786) 707-0607</p>
+                                    <p>sales@ftorex.us</p>
                                 </p>
                             </div>
                             <div className="adress-wrapper">
@@ -115,9 +116,13 @@ const Footer = ({ messageRef }) => {
                                     UAE OFFICE:
                                 </p>
                                 <p className="footer-contacts-item-2">
-                                    M05-0190 Unique Adventure Business Centre,
-                                    Building PR1005, Port Saeed, Dubai, UAE +1
-                                    (786) 707-06-06 sales@ftorex.ae
+                                    <p>
+                                        M05-0190 Unique Adventure Business
+                                        Centre, Building PR1005, Port Saeed,
+                                        Dubai, UAE
+                                    </p>
+                                    <p>+1 (786) 707-06-06</p>
+                                    <p>sales@ftorex.ae</p>
                                 </p>
                             </div>
                         </div>
