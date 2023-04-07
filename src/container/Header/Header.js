@@ -5,7 +5,6 @@ import { Link, NavLink } from "react-router-dom"
 import { Animated } from "react-animated-css"
 // import { useAppSelector, useAppDispatch } from "../../redux/hooks"
 // import { fetchData } from "../../redux/getDataReducer"
-import Marquee from "react-fast-marquee"
 
 const Header = ({ submitRef }) => {
     const [subscribeState, setSubscribeState] = useState("hide")
@@ -73,94 +72,6 @@ const Header = ({ submitRef }) => {
     return (
         <>
             <header id="header" className="header">
-                <Marquee className="quotation" gradient={false}>
-                    {/* {dataState.length > 0 ? (
-                        <div className="row">
-                            <p className="quotation-item">
-                                Brent Crude Oil:{" "}
-                                {dataState[0].data.rates.BRENTOIL.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Cocoa:{" "}
-                                {dataState[0].data.rates.COCOA.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Newcastle Coal Futures:{" "}
-                                {dataState[0].data.rates.COAL.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Arabica Coffee:{" "}
-                                {dataState[0].data.rates.COFFEE.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Corn: {dataState[0].data.rates.CORN.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Cotton:{" "}
-                                {dataState[0].data.rates.COTTON.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Crude Palm Oil:{" "}
-                                {dataState[0].data.rates.CPO.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Ethanol:{" "}
-                                {dataState[0].data.rates.ETHANOL.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Lumber:{" "}
-                                {dataState[0].data.rates.LUMBER.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Natural Gas:{" "}
-                                {dataState[0].data.rates.NG.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Rice: {dataState[0].data.rates.RICE.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Rubber:{" "}
-                                {dataState[0].data.rates.RUBBER.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Soybeans:{" "}
-                                {dataState[0].data.rates.SOYBEAN.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Sugar:{" "}
-                                {dataState[0].data.rates.SUGAR.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                WTI Crude Oil:{" "}
-                                {dataState[0].data.rates.WTIOIL.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Wheat:{" "}
-                                {dataState[0].data.rates.WHEAT.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Silver (Troy Ounce):{" "}
-                                {dataState[0].data.rates.XAG.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Gold (Troy Ounce):{" "}
-                                {dataState[0].data.rates.XAU.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Palladium (Troy Ounce):{" "}
-                                {dataState[0].data.rates.XPD.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Platinum (Troy Ounce):{" "}
-                                {dataState[0].data.rates.XPT.toFixed(5)}
-                            </p>
-                            <p className="quotation-item">
-                                Rhodium (Troy Ounce):{" "}
-                                {dataState[0].data.rates.XRH.toFixed(5)}
-                            </p>
-                        </div>
-                    ) : undefined} */}
-                </Marquee>
                 <div className={`burger-menu ${burgerState}`}>
                     <div
                         className="close-burger-img"
