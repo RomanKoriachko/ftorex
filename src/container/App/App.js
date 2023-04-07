@@ -8,30 +8,21 @@ import ContactUsPage from "../../pages/ContactUsPage/ContactUsPage"
 import LayoutComponent from "../../components/LayoutComponent/LayoutComponent"
 import { useRef } from "react"
 import SingleArticlePage from "../../pages/SingleArticlePage/SingleArticlePage"
-import DocumentMeta from "react-document-meta"
 import { Helmet } from "react-helmet"
 
 function App() {
     const submitRef = useRef(null)
     const messageRef = useRef(null)
 
-    const meta = {
-        title: "Ftorex",
-        description: "I am a description, and I can create multiple tags",
-        meta: {
-            charset: "utf-8",
-            name: {
-                keywords: "react,meta,document,html,tags",
-            },
-        },
-    }
-
     return (
         <div className="App">
-            <DocumentMeta {...meta} />
             <Helmet>
                 <title>Ftorex</title>
-                <meta name="description" content="Helmet application" />
+                <meta
+                    name="description"
+                    content="Achive a profitable business with us"
+                />
+                <meta name="keywords" content="business, coal, coal mining" />
             </Helmet>
             <Routes>
                 <Route

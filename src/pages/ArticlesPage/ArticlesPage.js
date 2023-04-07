@@ -23,6 +23,7 @@ import {
     setTag8,
     setTag9,
 } from "../../redux/tagsReducer"
+import { Helmet } from "react-helmet"
 
 const ArticlesPage = ({ messageRef }) => {
     // Tags
@@ -265,6 +266,13 @@ const ArticlesPage = ({ messageRef }) => {
 
     return (
         <div className="articles-page">
+            <Helmet>
+                <title>Articles</title>
+                <meta
+                    name="description"
+                    content="Achive a profitable business with us"
+                />
+            </Helmet>
             <PageHeader name={"articles"} />
             <div className="container">
                 <p className="articles-header mobile-header">Popular Topics</p>

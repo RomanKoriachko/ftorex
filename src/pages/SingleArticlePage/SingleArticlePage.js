@@ -6,6 +6,7 @@ import ScrollDownBtn from "../../components/ScrollDownBtn/ScrollDownBtn"
 import ArticleItem from "../../components/ArticleItem/ArticleItem"
 import { Animated } from "react-animated-css"
 import { AnimationOnScroll } from "react-animation-on-scroll"
+import { Helmet } from "react-helmet"
 
 const SingleArticlePage = () => {
     const ref = useRef(null)
@@ -82,6 +83,13 @@ const SingleArticlePage = () => {
 
     return (
         <div className="single-article-page">
+            <Helmet>
+                <title>Article</title>
+                <meta
+                    name="description"
+                    content="Achive a profitable business with us"
+                />
+            </Helmet>
             <div className="container">
                 <section
                     className={`preview-section`}

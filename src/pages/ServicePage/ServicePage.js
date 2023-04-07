@@ -1,14 +1,22 @@
-import React from 'react'
-import './ServicePage.scss'
-import PageHeader from '../../components/PageHeader/PageHeader'
-import MessageForm from '../../components/MessageForm/MessageForm'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
-import { Animated } from 'react-animated-css'
+import React from "react"
+import "./ServicePage.scss"
+import PageHeader from "../../components/PageHeader/PageHeader"
+import MessageForm from "../../components/MessageForm/MessageForm"
+import { AnimationOnScroll } from "react-animation-on-scroll"
+import { Animated } from "react-animated-css"
+import { Helmet } from "react-helmet"
 
 const ServicePage = ({ messageRef }) => {
     return (
         <div className="service-page">
-            <PageHeader name={'Service'} />
+            <Helmet>
+                <title>Service</title>
+                <meta
+                    name="description"
+                    content="Achive a profitable business with us"
+                />
+            </Helmet>
+            <PageHeader name={"Service"} />
             <section className="supplies-section">
                 <div className="container">
                     <p className="supplies-header">

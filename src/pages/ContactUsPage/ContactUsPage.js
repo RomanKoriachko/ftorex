@@ -1,14 +1,22 @@
-import React from 'react'
-import './ContactUsPage.scss'
-import PageHeader from '../../components/PageHeader/PageHeader'
-import MessageForm from '../../components/MessageForm/MessageForm'
-import { Animated } from 'react-animated-css'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+import React from "react"
+import "./ContactUsPage.scss"
+import PageHeader from "../../components/PageHeader/PageHeader"
+import MessageForm from "../../components/MessageForm/MessageForm"
+import { Animated } from "react-animated-css"
+import { AnimationOnScroll } from "react-animation-on-scroll"
+import { Helmet } from "react-helmet"
 
 const ContactUsPage = ({ messageRef }) => {
     return (
         <div className="contacts-page">
-            <PageHeader name={'Contact Us'} />
+            <Helmet>
+                <title>Contact Us</title>
+                <meta
+                    name="description"
+                    content="Achive a profitable business with us"
+                />
+            </Helmet>
+            <PageHeader name={"Contact Us"} />
             <section className="contacts-section">
                 <div className="container">
                     <div className="row contacts-row contact-row-desktop">
@@ -41,7 +49,7 @@ const ContactUsPage = ({ messageRef }) => {
                                 <div className="contact-content">
                                     <div className="contact-img"></div>
                                     <p className="contact-item-header">
-                                        We are Here{' '}
+                                        We are Here{" "}
                                     </p>
                                     <p className="contact-item-text">
                                         <span>UAE:</span> Building PR1005, Port
@@ -108,7 +116,7 @@ const ContactUsPage = ({ messageRef }) => {
                                 <div className="contact-content">
                                     <div className="contact-img"></div>
                                     <p className="contact-item-header">
-                                        We are Here{' '}
+                                        We are Here{" "}
                                     </p>
                                     <p className="contact-item-text">
                                         <span>UAE:</span> Building PR1005, Port

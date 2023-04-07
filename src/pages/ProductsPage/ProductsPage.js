@@ -3,10 +3,18 @@ import "./ProductsPage.scss"
 import PageHeader from "../../components/PageHeader/PageHeader"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import { Animated } from "react-animated-css"
+import { Helmet } from "react-helmet"
 
 const ProductsPage = () => {
     return (
         <div className="products-page">
+            <Helmet>
+                <title>Products</title>
+                <meta
+                    name="description"
+                    content="Achive a profitable business with us"
+                />
+            </Helmet>
             <PageHeader name={"Products"} />
             <div className="container">
                 <Tabs>
