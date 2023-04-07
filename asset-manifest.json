@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/ftorex/static/css/main.1bf8c8c8.css",
+    "main.js": "/ftorex/static/js/main.0b931e36.js",
+    "static/js/787.f6fc305e.chunk.js": "/ftorex/static/js/787.f6fc305e.chunk.js",
+    "static/media/service-page-preview.jpg": "/ftorex/static/media/service-page-preview.7a8898aa96f29cd83a00.jpg",
+    "static/media/introduce-section-bg.jpg": "/ftorex/static/media/introduce-section-bg.220285651125ceddead0.jpg",
+    "static/media/articles-bg.jpg": "/ftorex/static/media/articles-bg.b9570247d0aef7119ebb.jpg",
+    "static/media/contacts-bg.jpg": "/ftorex/static/media/contacts-bg.5f5b94cb06650b120a95.jpg",
+    "static/media/products-bg.jpg": "/ftorex/static/media/products-bg.b9b50b806f7792bced9c.jpg",
+    "static/media/about-us-bg.png": "/ftorex/static/media/about-us-bg.70c6ea71d2719b029bf2.png",
+    "static/media/message-bg.png": "/ftorex/static/media/message-bg.ee5f72ebe7307c1f74b5.png",
+    "static/media/contacts-phone.svg": "/ftorex/static/media/contacts-phone.ee1a82d691d873af82ea.svg",
+    "static/media/slick.svg": "/ftorex/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ftorex/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ftorex/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ftorex/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ftorex/index.html",
+    "static/media/scroll-down-arr.svg": "/ftorex/static/media/scroll-down-arr.79ede2b8285890818d74.svg",
+    "static/media/long-arrow-left.svg": "/ftorex/static/media/long-arrow-left.a896467e85b1f333c9bd.svg",
+    "static/media/long-arrow-right.svg": "/ftorex/static/media/long-arrow-right.5df3e6047e3ccf685957.svg",
+    "static/media/contacts-mail.svg": "/ftorex/static/media/contacts-mail.b290424087586cab08b1.svg",
+    "static/media/contacts-mark.svg": "/ftorex/static/media/contacts-mark.c0ceabe093012198e8d7.svg",
+    "static/media/burger-menu-img.svg": "/ftorex/static/media/burger-menu-img.eb37840ca59aa775efa5.svg",
+    "static/media/close-burger-img.svg": "/ftorex/static/media/close-burger-img.dd287d17518452871104.svg",
+    "static/media/close-button-img.svg": "/ftorex/static/media/close-button-img.dd287d17518452871104.svg",
+    "static/media/button-arr-gray.svg": "/ftorex/static/media/button-arr-gray.1f05ca869d248ee1e078.svg",
+    "static/media/button-arr-red.svg": "/ftorex/static/media/button-arr-red.d62827cf56c0645a6dc1.svg",
+    "static/media/button-arr.svg": "/ftorex/static/media/button-arr.4ffd70e8dca550af2a2c.svg",
+    "main.1bf8c8c8.css.map": "/ftorex/static/css/main.1bf8c8c8.css.map",
+    "main.0b931e36.js.map": "/ftorex/static/js/main.0b931e36.js.map",
+    "787.f6fc305e.chunk.js.map": "/ftorex/static/js/787.f6fc305e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bf8c8c8.css",
+    "static/js/main.0b931e36.js"
+  ]
+}
