@@ -1,10 +1,10 @@
-import React from 'react'
-import './ProductsSection.scss'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import Slider from 'react-slick'
-import { Link } from 'react-router-dom'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+import React from "react"
+import "./ProductsSection.scss"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick"
+import { Link } from "react-router-dom"
+import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const ProductsSection = () => {
     const settings = {
@@ -172,9 +172,9 @@ const ProductsSection = () => {
                         <div className="product-box">
                             <p>fertilizer</p>
                             <p>
-                                Our management consulting services focus on our
-                                clients' most critical issues and opportunities:
-                                strategy, marketing, organization...{' '}
+                                Fertilizers are chemical compounds that are used
+                                to enrich soil and enhance plant growth. They
+                                provide essential nutrients such...{" "}
                             </p>
                             <div>
                                 <Link to="/products">
@@ -192,9 +192,9 @@ const ProductsSection = () => {
                         <div className="product-box">
                             <p className="long-header">oil & gas equipment</p>
                             <p>
-                                Our management consulting services focus on our
-                                clients' most critical issues and opportunities:
-                                strategy, marketing, organization...{' '}
+                                Oil and gas equipment refers to the tools,
+                                machinery, and devices used in the exploration,
+                                extraction, production, refining...{" "}
                             </p>
                             <div>
                                 <Link to="/products">
@@ -212,9 +212,9 @@ const ProductsSection = () => {
                         <div className="product-box">
                             <p>mining equipment</p>
                             <p>
-                                Our management consulting services focus on our
-                                clients' most critical issues and opportunities:
-                                strategy, marketing, organization...{' '}
+                                Mining equipment refers to various types of
+                                machinery used in the extraction of minerals,
+                                metals, and other geological materials...{" "}
                             </p>
                             <div>
                                 <Link to="/products">

@@ -6,6 +6,7 @@
     }
     .tabs-row {
         align-items: flex-start;
+        margin-bottom: 120px;
     }
     .tabs-tablet {
         display: none;
@@ -121,6 +122,7 @@
         }
         .tabs-row {
             flex-direction: column;
+            margin-bottom: 50px;
         }
         .react-tabs__tab-list {
             display: flex;
