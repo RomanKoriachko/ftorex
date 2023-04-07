@@ -21,6 +21,4 @@ export const getDataReducer = createSlice({
     },
 })
 
-export const {} = getDataReducer.actions
-
 export default getDataReducer.reducer

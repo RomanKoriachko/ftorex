@@ -62,18 +62,13 @@ const Header = ({ submitRef }) => {
 
     useEffect(() => {
         dispatch(fetchData())
-        // localStorage.setItem("data", JSON.stringify(dataState[0].data.rates))
-    }, [])
+    }, [dispatch])
 
-    // if (dataState) {
-    //     localStorage.setItem("data", JSON.stringify(dataState[0].data.rates))
+    // const raw = localStorage.getItem("data")
+    // let localData = {}
+    // if (raw) {
+    //     localData = JSON.parse(raw)
     // }
-
-    const raw = localStorage.getItem("data")
-    let localData = {}
-    if (raw) {
-        localData = JSON.parse(raw)
-    }
 
     return (
         <>
