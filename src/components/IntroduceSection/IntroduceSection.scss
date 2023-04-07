@@ -1,4 +1,4 @@
-@import '../../style';
+@import "../../style";
 
 .introduce-section {
     background-image: url(../../assets/introduce-section-bg.jpg);
@@ -19,7 +19,7 @@
         max-width: 890px;
         padding: 32px;
         > p:nth-child(1) {
-            font-family: 'Roboto', sans-serif;
+            font-family: "Roboto", sans-serif;
             font-weight: 800;
             font-size: 80px;
             line-height: 110%;
@@ -36,6 +36,8 @@
     .scroll-btn {
         position: absolute;
         bottom: 42px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
