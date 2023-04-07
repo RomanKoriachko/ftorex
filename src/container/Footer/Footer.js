@@ -101,29 +101,35 @@ const Footer = ({ messageRef }) => {
                             <p className="footer-contacts-item-1">
                                 +1 (786) 707-06-06
                             </p>
-                            <div className="adress-wrapper">
-                                <p className="footer-contacts-item-2">
-                                    US OFFICE:
-                                </p>
-                                <p className="footer-contacts-item-2">
-                                    <p>3233 W Dallas St, Houston TX, USA</p>
-                                    <p>+1 (786) 707-0607</p>
-                                    <p>sales@ftorex.us</p>
-                                </p>
-                            </div>
-                            <div className="adress-wrapper">
-                                <p className="footer-contacts-item-2">
-                                    UAE OFFICE:
-                                </p>
-                                <p className="footer-contacts-item-2">
-                                    <p>
-                                        M05-0190 Unique Adventure Business
-                                        Centre, Building PR1005, Port Saeed,
-                                        Dubai, UAE
+                            <div className="adress-wrapper row">
+                                <div className="flag us-flag"></div>
+                                <div>
+                                    <p className="footer-contacts-item-2">
+                                        US OFFICE:
                                     </p>
-                                    <p>+1 (786) 707-06-06</p>
-                                    <p>sales@ftorex.ae</p>
-                                </p>
+                                    <p className="footer-contacts-item-2">
+                                        <p>3233 W Dallas St, Houston TX, USA</p>
+                                        <p>+1 (786) 707-0607</p>
+                                        <p>sales@ftorex.us</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="adress-wrapper row">
+                                <div className="flag uae-flag"></div>
+                                <div>
+                                    <p className="footer-contacts-item-2">
+                                        UAE OFFICE:
+                                    </p>
+                                    <p className="footer-contacts-item-2">
+                                        <p>
+                                            M05-0190 Unique Adventure Business
+                                            Centre, Building PR1005, Port Saeed,
+                                            Dubai, UAE
+                                        </p>
+                                        <p>+1 (786) 707-06-06</p>
+                                        <p>sales@ftorex.ae</p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
