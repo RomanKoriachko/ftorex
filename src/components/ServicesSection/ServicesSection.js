@@ -1,7 +1,7 @@
-import React from 'react'
-import './ServicesSection.scss'
-import { Link } from 'react-router-dom'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+import React from "react"
+import "./ServicesSection.scss"
+import { Link } from "react-router-dom"
+import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const ServicesSection = () => {
     return (
@@ -15,7 +15,6 @@ const ServicesSection = () => {
                             animateOnce={true}
                         >
                             <div className="services-header-container">
-                                <p className="small-header">Our Services</p>
                                 <p className="big-header">
                                     what services we provide
                                 </p>

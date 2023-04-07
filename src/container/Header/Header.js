@@ -74,7 +74,7 @@ const Header = ({ submitRef }) => {
         <>
             <header id="header" className="header">
                 <Marquee className="quotation" gradient={false}>
-                    {dataState.length > 0 ? (
+                    {/* {dataState.length > 0 ? (
                         <div className="row">
                             <p className="quotation-item">
                                 Brent Crude Oil:{" "}
@@ -159,7 +159,7 @@ const Header = ({ submitRef }) => {
                                 {dataState[0].data.rates.XRH.toFixed(5)}
                             </p>
                         </div>
-                    ) : undefined}
+                    ) : undefined} */}
                 </Marquee>
                 <div className={`burger-menu ${burgerState}`}>
                     <div

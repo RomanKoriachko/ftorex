@@ -1,6 +1,6 @@
-import React from 'react'
-import './AboutUsSection.scss'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+import React from "react"
+import "./AboutUsSection.scss"
+import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const AboutUsSection = () => {
     return (
@@ -11,12 +11,11 @@ const AboutUsSection = () => {
                     duration={1.5}
                     animateOnce={true}
                 >
-                    <p className="small-header">About Us</p>
                     <p className="big-header">our team's experience</p>
                     <p className="subtitle">
                         Our company specializes in the supply of coking coal to
                         customers worldwide, with a focus on Southeast Asia and
-                        the Middle East regions.{' '}
+                        the Middle East regions.{" "}
                     </p>
                 </AnimationOnScroll>
                 <div className="about-text-wrapper">

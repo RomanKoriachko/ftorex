@@ -1,7 +1,7 @@
-import React from 'react'
-import AnimatedNumbers from 'react-animated-numbers'
-import './IndicatorsSection.scss'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+import React from "react"
+import AnimatedNumbers from "react-animated-numbers"
+import "./IndicatorsSection.scss"
+import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const IndicatorsSection = () => {
     return (
@@ -12,9 +12,6 @@ const IndicatorsSection = () => {
                     duration={1.5}
                     animateOnce={true}
                 >
-                    <p className="small-header indicators-small-header">
-                        Why Choose Us
-                    </p>
                     <div className="indicators-header-row">
                         <p className="big-header">
                             We established a coal mining business for you

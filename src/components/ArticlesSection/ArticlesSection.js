@@ -1,20 +1,13 @@
-import React from 'react'
-import './ArticlesSection.scss'
-import { Link } from 'react-router-dom'
-import articleArr from '../../pages/ArticlesPage/articlesArray'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+import React from "react"
+import "./ArticlesSection.scss"
+import { Link } from "react-router-dom"
+import articleArr from "../../pages/ArticlesPage/articlesArray"
+import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const ArticlesSection = () => {
     return (
         <section className="articles-section">
             <div className="container">
-                <AnimationOnScroll
-                    animateIn="animate__backInUp"
-                    duration={1.5}
-                    animateOnce={true}
-                >
-                    <p className="small-header">Articles</p>
-                </AnimationOnScroll>
                 <div className="row articles-row">
                     <div className="articles-header">
                         <AnimationOnScroll

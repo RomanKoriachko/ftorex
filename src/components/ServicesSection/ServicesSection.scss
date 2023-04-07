@@ -1,4 +1,4 @@
-@import '../../style';
+@import "../../style";
 
 .services-section {
     background: #ffffff;
@@ -14,6 +14,7 @@
         margin-bottom: 24px;
     }
     .big-header {
+        margin-top: 86px;
         margin-bottom: 48px;
     }
     .sevices-btn {
@@ -31,7 +32,7 @@
         }
     }
     .services-items {
-        font-family: 'Plus Jakarta Sans';
+        font-family: "Plus Jakarta Sans";
         font-weight: 500;
         font-size: 18px;
         line-height: 150%;
@@ -82,15 +83,20 @@
         .services-items {
             position: static;
             width: 100%;
-            > div:nth-child(1) {
-                border-top: 1px solid #000000;
+            > a:nth-child(1) {
+                > div {
+                    border-top: 1px solid #000000;
+                }
             }
-            > div {
-                border-left: none;
-                border-right: none;
+            > a {
+                > div {
+                    border-left: none;
+                    border-right: none;
+                }
             }
         }
         .big-header {
+            margin-top: 48px;
             margin-bottom: 16px;
         }
         .sevices-btn {

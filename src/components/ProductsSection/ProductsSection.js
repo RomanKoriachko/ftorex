@@ -61,13 +61,6 @@ const ProductsSection = () => {
                     duration={1.5}
                     animateOnce={true}
                 >
-                    <p className="section-name small-header">Our Products</p>
-                </AnimationOnScroll>
-                <AnimationOnScroll
-                    animateIn="animate__backInUp"
-                    duration={1.5}
-                    animateOnce={true}
-                >
                     <p className="products-header big-header">
                         What We can offer
                     </p>

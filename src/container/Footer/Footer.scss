@@ -1,4 +1,4 @@
-@import '../../style';
+@import "../../style";
 
 .footer {
     background: #121212;
@@ -77,11 +77,13 @@
             text-transform: uppercase;
             margin-bottom: 16px;
         }
+        .adress-wrapper {
+            margin-bottom: 16px;
+        }
         .footer-contacts-item-2 {
             font-weight: 400;
             font-size: 12px;
             line-height: 150%;
-            margin-bottom: 16px;
         }
     }
     .big-header {

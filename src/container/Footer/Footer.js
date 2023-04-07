@@ -1,23 +1,23 @@
-import React, { useState } from 'react'
-import './Footer.scss'
-import MessageForm from '../../components/MessageForm/MessageForm'
-import { Link } from 'react-router-dom'
-import { Animated } from 'react-animated-css'
+import React, { useState } from "react"
+import "./Footer.scss"
+import MessageForm from "../../components/MessageForm/MessageForm"
+import { Link } from "react-router-dom"
+import { Animated } from "react-animated-css"
 
 const Footer = ({ messageRef }) => {
-    const [messageState, setMessageState] = useState('hide')
+    const [messageState, setMessageState] = useState("hide")
 
     const writeToUsBtn = () => {
         if (messageRef.current) {
-            messageRef.current?.scrollIntoView({ behavior: 'smooth' })
+            messageRef.current?.scrollIntoView({ behavior: "smooth" })
         } else {
-            setMessageState('show')
-            document.body.style.overflow = 'hidden'
+            setMessageState("show")
+            document.body.style.overflow = "hidden"
         }
     }
     const closeWriteToUsForm = () => {
-        setMessageState('hide')
-        document.body.style.overflow = ''
+        setMessageState("hide")
+        document.body.style.overflow = ""
     }
 
     return (
@@ -101,16 +101,25 @@ const Footer = ({ messageRef }) => {
                             <p className="footer-contacts-item-1">
                                 +1 (786) 707-06-06
                             </p>
-                            <p className="footer-contacts-item-1">
-                                sales@ftorex.ae
-                            </p>
-                            <p className="footer-contacts-item-2">
-                                3233 W Dallas St, Houston TX 77019
-                            </p>
-                            <p className="footer-contacts-item-2">
-                                M05-0190 Unique Adventure Business Centre, 
-                                Building PR1005, Port Saeed, Dubai, UAE
-                            </p>
+                            <div className="adress-wrapper">
+                                <p className="footer-contacts-item-2">
+                                    US OFFICE:
+                                </p>
+                                <p className="footer-contacts-item-2">
+                                    3233 W Dallas St, Houston TX, USA +1 (786)
+                                    707-0607 sales@ftorex.us
+                                </p>
+                            </div>
+                            <div className="adress-wrapper">
+                                <p className="footer-contacts-item-2">
+                                    UAE OFFICE:
+                                </p>
+                                <p className="footer-contacts-item-2">
+                                    M05-0190 Unique Adventure Business Centre,
+                                    Building PR1005, Port Saeed, Dubai, UAE +1
+                                    (786) 707-06-06 sales@ftorex.ae
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
