@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import "./ArticlesPage.scss"
 import PageHeader from "../../components/PageHeader/PageHeader"
 import articlesArray from "./articlesArray"
@@ -11,152 +11,94 @@ import {
     onSecondPage,
     onThirdPage,
 } from "../../redux/pagesReducer"
+import {
+    setTag1,
+    setTag10,
+    setTag2,
+    setTag3,
+    setTag4,
+    setTag5,
+    setTag6,
+    setTag7,
+    setTag8,
+    setTag9,
+} from "../../redux/tagsReducer"
 
 const ArticlesPage = ({ messageRef }) => {
     // Tags
 
-    const [tagState, setTagState] = useState({
-        tag1: "",
-        tag2: "",
-        tag3: "",
-        tag4: "",
-        tag5: "",
-        tag6: "",
-        tag7: "",
-        tag8: "",
-        tag9: "",
-        tag10: "",
-    })
+    const tagState = useAppSelector((state) => state.tagsState)
+    const dispatch = useAppDispatch()
 
     const onTagClick = (e) => {
         if (Number(e.target.value) === 1) {
             if (tagState.tag1 === "") {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag1: "active",
-                }))
+                dispatch(setTag1("active"))
             } else {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag1: "",
-                }))
+                dispatch(setTag1(""))
             }
         }
         if (Number(e.target.value) === 2) {
             if (tagState.tag2 === "") {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag2: "active",
-                }))
+                dispatch(setTag2("active"))
             } else {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag2: "",
-                }))
+                dispatch(setTag2(""))
             }
         }
         if (Number(e.target.value) === 3) {
             if (tagState.tag3 === "") {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag3: "active",
-                }))
+                dispatch(setTag3("active"))
             } else {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag3: "",
-                }))
+                dispatch(setTag2(""))
             }
         }
         if (Number(e.target.value) === 4) {
             if (tagState.tag4 === "") {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag4: "active",
-                }))
+                dispatch(setTag4("active"))
             } else {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag4: "",
-                }))
+                dispatch(setTag4(""))
             }
         }
         if (Number(e.target.value) === 5) {
             if (tagState.tag5 === "") {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag5: "active",
-                }))
+                dispatch(setTag5("active"))
             } else {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag5: "",
-                }))
+                dispatch(setTag5(""))
             }
         }
         if (Number(e.target.value) === 6) {
             if (tagState.tag6 === "") {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag6: "active",
-                }))
+                dispatch(setTag6("active"))
             } else {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag6: "",
-                }))
+                dispatch(setTag6(""))
             }
         }
         if (Number(e.target.value) === 7) {
             if (tagState.tag7 === "") {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag7: "active",
-                }))
+                dispatch(setTag7("active"))
             } else {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag7: "",
-                }))
+                dispatch(setTag7(""))
             }
         }
         if (Number(e.target.value) === 8) {
             if (tagState.tag8 === "") {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag8: "active",
-                }))
+                dispatch(setTag8("active"))
             } else {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag8: "",
-                }))
+                dispatch(setTag8(""))
             }
         }
         if (Number(e.target.value) === 9) {
             if (tagState.tag9 === "") {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag9: "active",
-                }))
+                dispatch(setTag9("active"))
             } else {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag9: "",
-                }))
+                dispatch(setTag9("active"))
             }
         }
         if (Number(e.target.value) === 10) {
             if (tagState.tag10 === "") {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag10: "active",
-                }))
+                dispatch(setTag10("active"))
             } else {
-                setTagState((prevState) => ({
-                    ...prevState,
-                    tag10: "",
-                }))
+                dispatch(setTag10(""))
             }
         }
     }
@@ -172,6 +114,7 @@ const ArticlesPage = ({ messageRef }) => {
     let tag8Arr = []
     let tag9Arr = []
     let tag10Arr = []
+
     if (tagState.tag1 === "active") {
         tag1Arr = articlesArray.filter((element) =>
             element.tag.includes("world coal")
@@ -196,7 +139,6 @@ const ArticlesPage = ({ messageRef }) => {
         tag5Arr = articlesArray.filter((element) =>
             element.tag.includes("energy crisis")
         )
-        console.log(tag5Arr)
     }
     if (tagState.tag6 === "active") {
         tag6Arr = articlesArray.filter((element) =>
@@ -274,7 +216,6 @@ const ArticlesPage = ({ messageRef }) => {
     )
 
     const pageState = useAppSelector((state) => state.pageState)
-    const dispatch = useAppDispatch()
 
     const onFirstPageClick = () => {
         dispatch(onFirstPage())
