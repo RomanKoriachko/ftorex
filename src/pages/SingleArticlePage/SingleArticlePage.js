@@ -102,6 +102,7 @@ const SingleArticlePage = () => {
                                     backgroundImage: `url(/${curretArticle[0].preview})`,
                                 }}
                             >
+                                <div className="bg-filter"></div>
                                 <p className="preview-header">
                                     {curretArticle[0].name}
                                 </p>
