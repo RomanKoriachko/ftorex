@@ -110,6 +110,11 @@ const ProductsPage = () => {
                                             src="images/products-coking-img-3.jpg"
                                             alt=""
                                         />
+                                        <div className="download-button-wrapper">
+                                            <a href="/files//FTOREX.pdf">
+                                                download document
+                                            </a>
+                                        </div>
                                         {/* <div className="download-button-wrapper">
                                             <button className="download-btn">
                                                 <div className="row btn-content-row">
