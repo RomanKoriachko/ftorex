@@ -1,6 +1,7 @@
 {
     "name": "ftorex-app",
     "version": "0.1.0",
+    "homepage": "http://www.ftorex.ae",
     "private": true,
     "dependencies": {
         "@reduxjs/toolkit": "^1.9.3",

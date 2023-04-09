@@ -22,6 +22,10 @@ function App() {
                     name="description"
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
+                <meta
+                    property="og:description"
+                    content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
+                />
                 <meta name="keywords" content="business, coal, coal mining" />
             </Helmet>
             <Routes>
