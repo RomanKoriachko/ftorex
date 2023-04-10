@@ -1,14 +1,14 @@
-import React from 'react'
-import './IntroduceSection.scss'
-import ScrollDownBtn from '../ScrollDownBtn/ScrollDownBtn'
-import { Animated } from 'react-animated-css'
+import React from "react"
+import "./IntroduceSection.scss"
+// import ScrollDownBtn from "../ScrollDownBtn/ScrollDownBtn"
+import { Animated } from "react-animated-css"
 
 const IntroduceSection = () => {
     const windowHeight = window.innerHeight - 122
     const scrollDownBtnClick = () => {
         window.scrollTo({
             top: windowHeight,
-            behavior: 'smooth',
+            behavior: "smooth",
         })
     }
 
@@ -42,7 +42,7 @@ const IntroduceSection = () => {
                     className="scroll-btn"
                     onClick={() => scrollDownBtnClick()}
                 >
-                    <ScrollDownBtn />
+                    {/* <ScrollDownBtn /> */}
                 </div>
             </div>
         </section>

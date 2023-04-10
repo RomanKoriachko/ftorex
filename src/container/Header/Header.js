@@ -61,7 +61,7 @@ const Header = ({ submitRef }) => {
     const dispatch = useAppDispatch()
 
     useEffect(() => {
-        dispatch(fetchData())
+        // dispatch(fetchData())
     }, [dispatch])
 
     return (

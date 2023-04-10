@@ -6,7 +6,7 @@ import Slider from "react-slick"
 import { Link } from "react-router-dom"
 import { AnimationOnScroll } from "react-animation-on-scroll"
 
-const ProductsSection = () => {
+const ProductsSection = ({ ref1 }) => {
     const settings = {
         dots: false,
         infinite: true,
@@ -53,6 +53,7 @@ const ProductsSection = () => {
             },
         ],
     }
+
     return (
         <section className="products-section">
             <div className="container">
