@@ -87,7 +87,7 @@ const ProductsSection = ({ ref1 }) => {
                                 that is valued for...
                             </p>
                             <div>
-                                <Link to="/products">
+                                <Link to="/products/coking_coal">
                                     <button className="info-btn">
                                         <div className="row btn-content-row">
                                             <p>View info</p>
@@ -108,7 +108,7 @@ const ProductsSection = ({ ref1 }) => {
                                 sedimentary...
                             </p>
                             <div>
-                                <Link to="/products">
+                                <Link to="/products/thermal_coal">
                                     <button className="info-btn">
                                         <div className="row btn-content-row">
                                             <p>View info</p>
@@ -128,7 +128,7 @@ const ProductsSection = ({ ref1 }) => {
                                 superior heating properties. Anthracite coal...
                             </p>
                             <div>
-                                <Link to="/products">
+                                <Link to="/products/anthracite">
                                     <button className="info-btn">
                                         <div className="row btn-content-row">
                                             <p>View info</p>
@@ -149,7 +149,7 @@ const ProductsSection = ({ ref1 }) => {
                                 a blast...
                             </p>
                             <div>
-                                <Link to="/products">
+                                <Link to="/products/pci_coal">
                                     <button className="info-btn">
                                         <div className="row btn-content-row">
                                             <p>View info</p>
@@ -169,7 +169,7 @@ const ProductsSection = ({ ref1 }) => {
                                 provide essential nutrients such...{" "}
                             </p>
                             <div>
-                                <Link to="/products">
+                                <Link to="/products/fertilizers">
                                     <button className="info-btn">
                                         <div className="row btn-content-row">
                                             <p>View info</p>
@@ -189,7 +189,7 @@ const ProductsSection = ({ ref1 }) => {
                                 extraction, production, refining...{" "}
                             </p>
                             <div>
-                                <Link to="/products">
+                                <Link to="/products/oil_and_gas_equipment">
                                     <button className="info-btn">
                                         <div className="row btn-content-row">
                                             <p>View info</p>
@@ -209,7 +209,7 @@ const ProductsSection = ({ ref1 }) => {
                                 metals, and other geological materials...{" "}
                             </p>
                             <div>
-                                <Link to="/products">
+                                <Link to="/products/mining_equipment">
                                     <button className="info-btn">
                                         <div className="row btn-content-row">
                                             <p>View info</p>
