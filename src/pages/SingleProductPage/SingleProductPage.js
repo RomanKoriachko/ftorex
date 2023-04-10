@@ -1,14 +1,12 @@
 import React from "react"
 import "./SingleProductPage.scss"
-import { useParams } from "react-router-dom"
 
 const SingleProductPage = () => {
-    const { productName } = useParams()
     return (
         <div>
-            SingleProductPage {productName}
-            <div>
-                {/* <Tabs>
+            SingleProductPage
+            {/* <div>
+                <Tabs>
                     <div className="tabs-tablet">
                         <TabList>
                             <Tab>Coking coal</Tab>
@@ -431,8 +429,8 @@ const SingleProductPage = () => {
                             </TabPanel>
                         </div>
                     </div>
-                </Tabs> */}
-            </div>
+                </Tabs>
+            </div> */}
         </div>
     )
 }

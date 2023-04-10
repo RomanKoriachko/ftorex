@@ -5,40 +5,41 @@ import { Link, NavLink } from "react-router-dom"
 import { Animated } from "react-animated-css"
 import { useAppSelector, useAppDispatch } from "../../redux/hooks"
 import { fetchData } from "../../redux/getDataReducer"
+import {
+    openCallbackForm,
+    closeCallbackForm,
+} from "../../redux/callbackFormReducer"
 import Marquee from "react-fast-marquee"
 
 const Header = ({ submitRef }) => {
     const [subscribeState, setSubscribeState] = useState("hide")
 
     const submitBtn = () => {
-        if (submitRef.current) {
-            submitRef.current?.scrollIntoView({ behavior: "smooth" })
-            closeBurger()
-        } else {
-            setSubscribeState("show")
-            document.body.style.overflow = "hidden"
-            closeBurger()
-        }
+        setSubscribeState("show")
+        document.body.style.overflow = "hidden"
+        closeBurger()
     }
     const closeSubmitForm = () => {
         setSubscribeState("hide")
         document.body.style.overflow = ""
     }
 
-    const [callbackFormState, setCallbackFormState] = useState("hide")
+    const callbackFormState = useAppSelector((state) => state.callbackFormState)
+    const dispatch = useAppDispatch()
+
     const callbackBtn = () => {
-        setCallbackFormState("show")
+        dispatch(openCallbackForm())
         document.body.style.overflow = "hidden"
         closeBurger()
     }
     const closeCalbackForm = () => {
-        setCallbackFormState("hide")
+        dispatch(closeCallbackForm())
         document.body.style.overflow = ""
     }
 
     const closePopup = () => {
         setSubscribeState("hide")
-        setCallbackFormState("hide")
+        dispatch(closeCallbackForm())
         closeBurger()
         document.body.style.overflow = ""
     }
@@ -58,7 +59,6 @@ const Header = ({ submitRef }) => {
     // get data from api
 
     const dataState = useAppSelector((state) => state.dataState)
-    const dispatch = useAppDispatch()
 
     useEffect(() => {
         // dispatch(fetchData())

@@ -1,9 +1,8 @@
-import React from 'react'
-import './ArticleItem.scss'
-import { Link } from 'react-router-dom'
+import React from "react"
+import "./ArticleItem.scss"
+import { Link } from "react-router-dom"
 
 const ArticleItem = ({ id, preview, tag, name }) => {
-    // console.log(tag)
     return (
         <>
             <Link to={`/articles/${id}`}>
@@ -12,7 +11,7 @@ const ArticleItem = ({ id, preview, tag, name }) => {
                 </div>
             </Link>
             <div className="row item-tags-row">
-                {tag.split(',').map((el, i) => (
+                {tag.split(",").map((el, i) => (
                     <div key={i} className="article-tag">
                         {el}
                     </div>

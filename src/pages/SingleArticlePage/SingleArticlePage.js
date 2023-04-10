@@ -46,7 +46,7 @@ const SingleArticlePage = () => {
     let tag9 = ""
     let tag10 = ""
 
-    const tagsArr = curretArticle[0].tag.split(", ")
+    const tagsArr = curretArticle[0].tag?.split(", ")
 
     for (let i = 0; i < tagsArr.length; i++) {
         if (tagsArr[i] === "world coal") {

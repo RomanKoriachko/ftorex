@@ -9,7 +9,13 @@ import LayoutComponent from "../../components/LayoutComponent/LayoutComponent"
 import { useRef } from "react"
 import SingleArticlePage from "../../pages/SingleArticlePage/SingleArticlePage"
 import { Helmet } from "react-helmet"
-import SingleProductPage from "../../pages/SingleProductPage/SingleProductPage"
+import CokingCoalPage from "../../pages/SingleProductPage/CokingCoalPage/CokingCoalPage"
+import ThermalCoalPage from "../../pages/SingleProductPage/ThermalCoalPage/ThermalCoalPage"
+import AnthracitePage from "../../pages/SingleProductPage/AnthracitePage/AnthracitePage"
+import PciCoalPage from "../../pages/SingleProductPage/PciCoalPage/PciCoalPage"
+import OilAndGasPage from "../../pages/SingleProductPage/OilAndGasPage/OilAndGasPage"
+import MiningEquipment from "../../pages/SingleProductPage/MiningEquipmentPage/MiningEquipmentPage"
+import FertilizersPage from "../../pages/SingleProductPage/FertilizersPage/FertilizersPage"
 
 function App() {
     const submitRef = useRef(null)
@@ -46,8 +52,29 @@ function App() {
                     />
                     <Route path="products" element={<ProductsPage />} />
                     <Route
-                        path="products/:productName"
-                        element={<SingleProductPage />}
+                        path="products/coking_coal"
+                        element={<CokingCoalPage />}
+                    />
+                    <Route
+                        path="products/thermal_coal"
+                        element={<ThermalCoalPage />}
+                    />
+                    <Route
+                        path="products/anthracite"
+                        element={<AnthracitePage />}
+                    />
+                    <Route path="products/pci_coal" element={<PciCoalPage />} />
+                    <Route
+                        path="products/oil_and_gas_equipment"
+                        element={<OilAndGasPage />}
+                    />
+                    <Route
+                        path="products/mining_equipment"
+                        element={<MiningEquipment />}
+                    />
+                    <Route
+                        path="products/fertilizers"
+                        element={<FertilizersPage />}
                     />
                     <Route
                         path="articles"

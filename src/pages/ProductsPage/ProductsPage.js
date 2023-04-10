@@ -3,8 +3,17 @@ import "./ProductsPage.scss"
 import PageHeader from "../../components/PageHeader/PageHeader"
 import { Helmet } from "react-helmet"
 import MessageForm from "../../components/MessageForm/MessageForm"
+import { Link } from "react-router-dom"
+import { useAppDispatch } from "../../redux/hooks"
+import { openCallbackForm } from "redux/callbackFormReducer"
 
 const ProductsPage = () => {
+    const dispatch = useAppDispatch()
+
+    const openForm = () => {
+        dispatch(openCallbackForm())
+    }
+
     return (
         <div className="products-page">
             <Helmet>
@@ -33,12 +42,14 @@ const ProductsPage = () => {
                                     coal that is valued for...
                                 </p>
                                 <div>
-                                    <button className="info-btn">
-                                        <div className="row btn-content-row">
-                                            <p>View info</p>
-                                            <div className="btn-arrow"></div>
-                                        </div>
-                                    </button>
+                                    <Link to={`/products/coking_coal`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -52,12 +63,14 @@ const ProductsPage = () => {
                                     sedimentary...
                                 </p>
                                 <div>
-                                    <button className="info-btn">
-                                        <div className="row btn-content-row">
-                                            <p>View info</p>
-                                            <div className="btn-arrow"></div>
-                                        </div>
-                                    </button>
+                                    <Link to={`/products/thermal_coal`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -71,12 +84,14 @@ const ProductsPage = () => {
                                     coal...
                                 </p>
                                 <div>
-                                    <button className="info-btn">
-                                        <div className="row btn-content-row">
-                                            <p>View info</p>
-                                            <div className="btn-arrow"></div>
-                                        </div>
-                                    </button>
+                                    <Link to={`/products/anthracite`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -90,12 +105,14 @@ const ProductsPage = () => {
                                     injected into a blast...
                                 </p>
                                 <div>
-                                    <button className="info-btn">
-                                        <div className="row btn-content-row">
-                                            <p>View info</p>
-                                            <div className="btn-arrow"></div>
-                                        </div>
-                                    </button>
+                                    <Link to={`/products/pci_coal`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -109,12 +126,14 @@ const ProductsPage = () => {
                                     such...{" "}
                                 </p>
                                 <div>
-                                    <button className="info-btn">
-                                        <div className="row btn-content-row">
-                                            <p>View info</p>
-                                            <div className="btn-arrow"></div>
-                                        </div>
-                                    </button>
+                                    <Link to={`/products/fertilizers`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -130,12 +149,16 @@ const ProductsPage = () => {
                                     refining...{" "}
                                 </p>
                                 <div>
-                                    <button className="info-btn">
-                                        <div className="row btn-content-row">
-                                            <p>View info</p>
-                                            <div className="btn-arrow"></div>
-                                        </div>
-                                    </button>
+                                    <Link
+                                        to={`/products/oil_and_gas_equipment`}
+                                    >
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -149,12 +172,14 @@ const ProductsPage = () => {
                                     materials...{" "}
                                 </p>
                                 <div>
-                                    <button className="info-btn">
-                                        <div className="row btn-content-row">
-                                            <p>View info</p>
-                                            <div className="btn-arrow"></div>
-                                        </div>
-                                    </button>
+                                    <Link to={`/products/mining_equipment`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +190,10 @@ const ProductsPage = () => {
                                     cooperation option
                                 </p>
                                 <div>
-                                    <button className="contact-btn">
+                                    <button
+                                        className="contact-btn"
+                                        onClick={() => openForm()}
+                                    >
                                         <div className="row btn-content-row">
                                             <p>CALL NOW</p>
                                             <div className="btn-arrow"></div>
