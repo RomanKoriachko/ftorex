@@ -7,35 +7,32 @@ const IndicatorsSection = () => {
     return (
         <section className="indicators-section">
             <div className="container">
-                <AnimationOnScroll
+                {/* <AnimationOnScroll
                     animateIn="animate__backInUp"
                     duration={1.5}
                     animateOnce={true}
-                >
-                    <div className="indicators-header-row">
-                        <p className="big-header">
-                            We established a coal mining business for you
-                        </p>
-                        <p className="subtitle">
-                            FTOREX is a global coal industry company designed to
-                            establish and develop a Coal Business, Engineering &
-                            General Purpose
-                        </p>
-                    </div>
-                </AnimationOnScroll>
+                > */}
+                <div className="indicators-header-row">
+                    <p className="big-header">
+                        We established a coal mining business for you
+                    </p>
+                    <p className="subtitle">
+                        FTOREX is a global coal industry company designed to
+                        establish and develop a Coal Business, Engineering &
+                        General Purpose
+                    </p>
+                </div>
+                {/* </AnimationOnScroll> */}
                 <div className="indicators-content-row">
-                    <AnimationOnScroll
+                    {/* <AnimationOnScroll
                         animateIn="animate__fadeInUp"
                         duration={1.5}
                         animateOnce={true}
-                    >
-                        <div className="indicators-img">
-                            <img
-                                src="images/indicators-section-img.jpg"
-                                alt=""
-                            />
-                        </div>
-                    </AnimationOnScroll>
+                    > */}
+                    <div className="indicators-img">
+                        <img src="images/products-img-2.jpg" alt="" />
+                    </div>
+                    {/* </AnimationOnScroll> */}
                     <div>
                         <div className="row indicators-numbers">
                             <div className="indicators-numbers-item">

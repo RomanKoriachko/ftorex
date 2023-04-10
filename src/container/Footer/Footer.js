@@ -94,6 +94,14 @@ const Footer = ({ messageRef }) => {
                                 <a href="https://www.linkedin.com/in/ftorex-tm-3339b7239/">
                                     Linkedin
                                 </a>
+                                <a href="https://www.linkedin.com/in/ftorex-tm-3339b7239/">
+                                    <button className="submit-btn">
+                                        <div className="row btn-content-row">
+                                            <p>THE press about us</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </a>
                             </p>
                         </div>
                         <div className="footer-item-text">

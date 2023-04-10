@@ -57,27 +57,25 @@ const ProductsSection = ({ ref1 }) => {
     return (
         <section className="products-section">
             <div className="container">
-                <AnimationOnScroll
+                {/* <AnimationOnScroll
                     animateIn="animate__backInUp"
                     duration={1.5}
                     animateOnce={true}
-                >
-                    <p className="products-header big-header">
-                        What We can offer
-                    </p>
-                </AnimationOnScroll>
-                <AnimationOnScroll
+                > */}
+                <p className="products-header big-header">What We can offer</p>
+                {/* </AnimationOnScroll> */}
+                {/* <AnimationOnScroll
                     animateIn="animate__backInUp"
                     duration={1.5}
                     animateOnce={true}
-                >
-                    <p className="products-subtitle subtitle">
-                        Our company offers a comprehensive range of services
-                        including coal and fertilizer supplies, logistics
-                        solutions, customs clearance, ocean freight, and
-                        consulting to meet the diverse needs of our customers.
-                    </p>
-                </AnimationOnScroll>
+                > */}
+                <p className="products-subtitle subtitle">
+                    Our company offers a comprehensive range of services
+                    including coal and fertilizer supplies, logistics solutions,
+                    customs clearance, ocean freight, and consulting to meet the
+                    diverse needs of our customers.
+                </p>
+                {/* </AnimationOnScroll> */}
                 <Slider {...settings}>
                     <div className="product-item">
                         <div className="product-box">

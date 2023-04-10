@@ -20,24 +20,23 @@ const IntroduceSection = () => {
                     height: windowHeight,
                 }}
             >
-                <Animated
+                {/* <Animated
                     animationIn="fadeIn"
                     isVisible={true}
                     animationInDuration={2000}
-                >
-                    <div className="introduce-text-wrapper">
-                        <div className="introduce-content">
-                            <p>Achieve a profitable business with us</p>
-                            <p>
-                                We are proffesional team, specialized in
-                                providing procurement and supply of minerals,
-                                materials, equipment and specialized services
-                                for all kinds of manufacturing and commercial
-                                companies worldwide
-                            </p>
-                        </div>
+                > */}
+                <div className="introduce-text-wrapper">
+                    <div className="introduce-content">
+                        <p>Achieve a profitable business with us</p>
+                        <p>
+                            We are proffesional team, specialized in providing
+                            procurement and supply of minerals, materials,
+                            equipment and specialized services for all kinds of
+                            manufacturing and commercial companies worldwide
+                        </p>
                     </div>
-                </Animated>
+                </div>
+                {/* </Animated> */}
                 <div
                     className="scroll-btn"
                     onClick={() => scrollDownBtnClick()}
