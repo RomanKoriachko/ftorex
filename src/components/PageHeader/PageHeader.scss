@@ -1,22 +1,36 @@
 .preview-section {
     padding-top: 40px;
-    max-height: 690px;
     position: relative;
-    .preview-bg {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        max-height: 490px;
-        position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .bg-filter {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.3;
     }
     .preview-header {
-        font-family: 'Roboto';
-        font-weight: 800;
-        font-size: 80px;
-        line-height: 90px;
+        > p:nth-child(1) {
+            font-family: "Roboto";
+            font-weight: 800;
+            font-size: 80px;
+            line-height: 90px;
+            letter-spacing: -0.06em;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        > p:nth-child(2) {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            margin: 0 auto;
+            width: 70%;
+        }
         text-align: center;
-        letter-spacing: -0.06em;
-        text-transform: uppercase;
         color: white;
         position: absolute;
         top: 50%;
@@ -25,8 +39,8 @@
     }
     .scroll-btn {
         position: absolute;
-        bottom: -100px;
-        left: 50%;
+        bottom: 30px;
+        right: 50px;
         transform: translateX(-50%);
         .scroll-btn-border {
             border-color: #e7e9ed;
@@ -44,10 +58,10 @@
     bottom: 244px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 1200px) {
     .preview-section {
         .preview-header {
-            font-size: 64px;
+            width: 100%;
         }
     }
 }
@@ -55,8 +69,38 @@
 // Mobile
 @media (max-width: 576px) {
     .preview-section {
+        .preview-header {
+            padding: 0px 16px;
+            > p:nth-child(2) {
+                width: 100%;
+            }
+        }
         .scroll-btn {
-            bottom: -83px;
+            bottom: -5px;
+            right: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            .scroll-down-btn {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .preview-section {
+        .preview-header {
+            > p:nth-child(1) {
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .preview-section {
+        .preview-header {
+            font-size: 64px;
         }
     }
 }

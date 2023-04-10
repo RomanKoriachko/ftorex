@@ -1,26 +1,18 @@
-import React, { useRef } from 'react'
-import './PageHeader.scss'
-import ScrollDownBtn from '../ScrollDownBtn/ScrollDownBtn'
-import { Animated } from 'react-animated-css'
+import React, { useRef } from "react"
+import "./PageHeader.scss"
+import ScrollDownBtn from "../ScrollDownBtn/ScrollDownBtn"
+import { Animated } from "react-animated-css"
 
-const PageHeader = ({ name }) => {
+const PageHeader = ({ name, subtitle }) => {
     const ref = useRef(null)
 
     const windowHeight = window.innerHeight - 122
-    const bgHeight = windowHeight - 180
 
     const scrollDownBtnClick = () => {
-        if (windowHeight <= 690) {
-            window.scrollTo({
-                top: windowHeight - 122,
-                behavior: 'smooth',
-            })
-        } else {
-            window.scrollTo({
-                top: 670,
-                behavior: 'smooth',
-            })
-        }
+        window.scrollTo({
+            top: windowHeight,
+            behavior: "smooth",
+        })
     }
 
     return (
@@ -32,26 +24,23 @@ const PageHeader = ({ name }) => {
                 }}
             >
                 <div className="container">
-                    <Animated
+                    {/* <Animated
                         animationIn="fadeIn"
                         isVisible={true}
                         animationInDuration={2000}
+                    > */}
+                    <div className="bg-filter"></div>
+                    <div className="preview-header">
+                        <p>{name}</p>
+                        <p>{subtitle}</p>
+                    </div>
+                    <div
+                        className="scroll-btn"
+                        onClick={() => scrollDownBtnClick()}
                     >
-                        <div
-                            className="preview-bg"
-                            style={{
-                                height: bgHeight,
-                            }}
-                        >
-                            <p className="preview-header">{name}</p>
-                            <div
-                                className="scroll-btn"
-                                onClick={() => scrollDownBtnClick()}
-                            >
-                                <ScrollDownBtn />
-                            </div>
-                        </div>
-                    </Animated>
+                        <ScrollDownBtn />
+                    </div>
+                    {/* </Animated> */}
                 </div>
             </section>
             <div className="ref" ref={ref}></div>

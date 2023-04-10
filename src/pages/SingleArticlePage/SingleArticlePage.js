@@ -98,30 +98,30 @@ const SingleArticlePage = () => {
                     }}
                 >
                     <div className="container">
-                        <Animated
+                        {/* <Animated
                             animationIn="fadeIn"
                             isVisible={true}
                             animationInDuration={2000}
+                        > */}
+                        <div
+                            className="preview-bg"
+                            style={{
+                                height: bgHeight,
+                                backgroundImage: `url(/${curretArticle[0].preview})`,
+                            }}
                         >
+                            <div className="bg-filter"></div>
+                            <p className="preview-header">
+                                {curretArticle[0].name}
+                            </p>
                             <div
-                                className="preview-bg"
-                                style={{
-                                    height: bgHeight,
-                                    backgroundImage: `url(/${curretArticle[0].preview})`,
-                                }}
+                                className="scroll-btn"
+                                onClick={() => scrollDownBtnClick()}
                             >
-                                <div className="bg-filter"></div>
-                                <p className="preview-header">
-                                    {curretArticle[0].name}
-                                </p>
-                                <div
-                                    className="scroll-btn"
-                                    onClick={() => scrollDownBtnClick()}
-                                >
-                                    <ScrollDownBtn />
-                                </div>
+                                <ScrollDownBtn />
                             </div>
-                        </Animated>
+                        </div>
+                        {/* </Animated> */}
                     </div>
                 </section>
             </div>

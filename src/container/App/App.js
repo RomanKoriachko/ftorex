@@ -9,6 +9,7 @@ import LayoutComponent from "../../components/LayoutComponent/LayoutComponent"
 import { useRef } from "react"
 import SingleArticlePage from "../../pages/SingleArticlePage/SingleArticlePage"
 import { Helmet } from "react-helmet"
+import SingleProductPage from "../../pages/SingleProductPage/SingleProductPage"
 
 function App() {
     const submitRef = useRef(null)
@@ -44,6 +45,10 @@ function App() {
                         element={<ServicePage messageRef={messageRef} />}
                     />
                     <Route path="products" element={<ProductsPage />} />
+                    <Route
+                        path="products/:productName"
+                        element={<SingleProductPage />}
+                    />
                     <Route
                         path="articles"
                         element={<ArticlesPage messageRef={messageRef} />}
