@@ -4,18 +4,18 @@ import PageHeader from "../../components/PageHeader/PageHeader"
 import MessageForm from "../../components/MessageForm/MessageForm"
 import { AnimationOnScroll } from "react-animation-on-scroll"
 import { Animated } from "react-animated-css"
-import { Helmet } from "react-helmet"
+// import { Helmet } from "react-helmet"
 
 const ServicePage = ({ messageRef }) => {
     return (
         <div className="service-page">
-            <Helmet>
+            {/* <Helmet>
                 <title>Service</title>
                 <meta
                     name="description"
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
-            </Helmet>
+            </Helmet> */}
             <PageHeader name={"Service"} />
             <section className="supplies-section">
                 <div className="container">

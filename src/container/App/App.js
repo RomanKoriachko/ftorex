@@ -8,7 +8,7 @@ import ContactUsPage from "../../pages/ContactUsPage/ContactUsPage"
 import LayoutComponent from "../../components/LayoutComponent/LayoutComponent"
 import { useRef } from "react"
 import SingleArticlePage from "../../pages/SingleArticlePage/SingleArticlePage"
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet-async"
 import CokingCoalPage from "../../pages/SingleProductPage/CokingCoalPage/CokingCoalPage"
 import ThermalCoalPage from "../../pages/SingleProductPage/ThermalCoalPage/ThermalCoalPage"
 import AnthracitePage from "../../pages/SingleProductPage/AnthracitePage/AnthracitePage"
@@ -27,10 +27,6 @@ function App() {
                 <title>Ftorex</title>
                 <meta
                     name="description"
-                    content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
-                />
-                <meta
-                    property="og:description"
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
                 <meta name="keywords" content="business, coal, coal mining" />

@@ -6,7 +6,7 @@ import ScrollDownBtn from "../../components/ScrollDownBtn/ScrollDownBtn"
 import ArticleItem from "../../components/ArticleItem/ArticleItem"
 import { Animated } from "react-animated-css"
 import { AnimationOnScroll } from "react-animation-on-scroll"
-import { Helmet } from "react-helmet"
+// import { Helmet } from "react-helmet"
 
 const SingleArticlePage = () => {
     const ref = useRef(null)
@@ -83,13 +83,13 @@ const SingleArticlePage = () => {
 
     return (
         <div className="single-article-page">
-            <Helmet>
+            {/* <Helmet>
                 <title>Article</title>
                 <meta
                     name="description"
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
-            </Helmet>
+            </Helmet> */}
             <div className="container">
                 <section
                     className={`preview-section`}

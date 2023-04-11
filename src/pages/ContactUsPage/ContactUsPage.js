@@ -4,18 +4,18 @@ import PageHeader from "../../components/PageHeader/PageHeader"
 import MessageForm from "../../components/MessageForm/MessageForm"
 import { Animated } from "react-animated-css"
 import { AnimationOnScroll } from "react-animation-on-scroll"
-import { Helmet } from "react-helmet"
+// import { Helmet } from "react-helmet"
 
 const ContactUsPage = ({ messageRef }) => {
     return (
         <div className="contacts-page">
-            <Helmet>
+            {/* <Helmet>
                 <title>Contact Us</title>
                 <meta
                     name="description"
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
-            </Helmet>
+            </Helmet> */}
             <PageHeader name={"Contact Us"} />
             <section className="contacts-section">
                 <div className="container">

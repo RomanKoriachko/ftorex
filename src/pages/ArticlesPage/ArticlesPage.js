@@ -23,7 +23,7 @@ import {
     setTag8,
     setTag9,
 } from "../../redux/tagsReducer"
-import { Helmet } from "react-helmet"
+// import { Helmet } from "react-helmet"
 
 const ArticlesPage = ({ messageRef }) => {
     // Tags
@@ -266,13 +266,13 @@ const ArticlesPage = ({ messageRef }) => {
 
     return (
         <div className="articles-page">
-            <Helmet>
+            {/* <Helmet>
                 <title>Articles</title>
                 <meta
                     name="description"
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
-            </Helmet>
+            </Helmet> */}
             <PageHeader name={"articles"} />
             <div className="container">
                 <p className="articles-header mobile-header">Popular Topics</p>
