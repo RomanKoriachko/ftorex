@@ -587,54 +587,208 @@ let articlesArray = [
         tag: "world coal",
         name: "Chinese power plants as the main consumer of energy coal on the planet.",
         paragraph1:
-            "China is known for its rapid economic growth over the past few decades. As the world's most populous country, it is also the largest energy consumer globally. Despite the efforts to move towards renewable energy sources, China remains heavily dependent on coal for its energy needs. In fact, Chinese power plants are the main consumers of energy coal on the planet, with a significant impact on the global coal market.",
-        subtitle2: "China's Coal Consumption",
+            "China holds the title for being the top coal consumer and producer worldwide. It predominantly depends on coal-fired power plants to cater to the surging energy needs of its industries, homes, and transportation sectors. In fact, the Chinese power plants are the principal consumers of energy coals, burning substantial quantities of coal to generate electricity. Unfortunately, this reliance on coal power plants has resulted in detrimental environmental outcomes, including air pollution and greenhouse gas emissions.",
+
+        subtitle2: "",
+        mediumText2: "",
         paragraph2:
-            "In 2020, China consumed around 4.05 billion metric tons of coal, making it the largest coal consumer in the world. China's coal consumption accounted for more than half of the world's total coal consumption, with the majority of it being used for power generation. Coal-fired power plants are responsible for around 70% of China's electricity production. As a result of the high dependence on coal, China is also the world's largest emitter of greenhouse gases, contributing to global climate change. Despite this, the country has made significant strides in transitioning towards cleaner energy sources, such as natural gas, renewables, and nuclear power.",
-        subtitle3: "Chinese Power Plants as Main Consumers of Energy Coal",
+            "Explore with us as we delve into the energy consumption trends in China and unravel everything you should know about the country's coal-dependent power plants.",
+        articleImg2: "",
+
+        subtitle3:
+            "Energy consumption and dependence on coal power plants in China",
+        mediumText3: "",
         paragraph3:
-            "China's heavy reliance on coal is reflected in the fact that its power plants are the main consumers of energy coal globally. The country's coal consumption for power generation was around 3.05 billion metric tons in 2020, which accounted for approximately 75% of the country's total coal consumption.",
+            "Over the past few decades, China has witnessed an unprecedented surge in its energy consumption, driven by rapid economic development and urbanization. The country's insatiable appetite for electricity has made it the largest consumer of energy in the world, with a whopping 157 exajoules consumed in 2021.",
+        articleImg3: "",
+
+        subtitle4: "",
+        mediumText4: "",
         paragraph4:
-            "The demand for coal by Chinese power plants has significant implications for the global coal market. The country is a major importer of coal, with around 20% of its coal consumption coming from imports. This makes China the world's largest coal importer, with Indonesia, Australia, Mongolia, and Russia being the main suppliers.Coal prices are heavily influenced by Chinese demand, as the country's power plants often have a significant impact on the global coal market. The price of coal can fluctuate significantly depending on changes in China's economic growth, energy policies, and other factors that impact its coal consumption.",
-        subtitle5: "Efforts to Reduce Coal Dependence",
+            "The manufacturing sector has played a pivotal role in fueling China's energy consumption, growing at an astounding pace in recent years. Additionally, the Chinese government's significant investments in infrastructure development, such as roads, railways, and airports, have further amplified energy demand.",
+        articleImg4: "",
+
+        subtitle5: "",
+        mediumText5: "",
         paragraph5:
-            "Despite its high dependence on coal, China has made significant strides in reducing its reliance on the fuel. In its 14th Five-Year Plan, China set targets to peak its carbon emissions by 2030 and achieve carbon neutrality by 2060. The country has also pledged to reduce its coal consumption and increase the share of renewables in its energy mix. In recent years, China has taken steps to reduce its coal consumption by implementing policies such as the coal-to-gas switching program, which aims to replace coal with natural gas in industrial and residential sectors. The country has also been investing heavily in renewable energy sources, such as solar and wind power, to meet its growing energy demand.",
-        subtitle6: "Conclusion",
+            "Coal has been China's primary energy source, accounting for over 57% of the country's total energy consumption. As both the world's largest producer and consumer of coal, China heavily relies on this fossil fuel to power its economy. However, this has also made China the largest greenhouse gas emitter globally, contributing significantly to climate change.",
+        articleImg5: "",
+
+        subtitle6: "",
+        mediumText6: "",
         paragraph6:
-            "China's power plants remain the main consumers of energy coal globally, with significant implications for the global coal market. Despite the efforts to transition towards cleaner energy sources, the country remains heavily dependent on coal for its energy needs. However, with its ambitious targets to reduce its carbon emissions and increase the share of renewables in its energy mix, China is expected to continue to make strides towards a cleaner energy future.",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+            "Despite the high levels of energy consumption, China still faces energy shortages and supply challenges, especially during peak demand periods. While the country has taken steps towards diversifying its energy mix by investing in renewable sources like solar and wind power, the transition has been slow. The nation's dependence on coal continues to pose a significant challenge for its sustainable development objectives.",
+        articleImg6: "",
+
+        subtitle7: "Environmental Impacts of Coal Power Plants in China",
+        mediumText7: "",
+        paragraph7:
+            "For decades, coal power plants have served as the primary source of electricity generation in China. However, with growing environmental concerns, the impact of these plants is becoming more pressing. Notable environmental impacts include: ",
+        articleImg7: "",
+
+        subtitle8: "",
+        mediumText8: "Air pollution",
+        paragraph8: "",
+        articleImg8: "/images/article-preview-20.jpg",
+
+        subtitle9: "",
+        mediumText9: "",
+        paragraph9:
+            "Did you know that China is among the countries with the most severe air pollution levels globally? Unfortunately, coal-fired power plants are the primary culprits for the toxic emissions that wreak havoc on the air quality. These plants emit a dangerous cocktail of pollutants, including sulfur dioxide, nitrogen oxides, particulate matter, and mercury. Sadly, these substances are notorious for causing respiratory illnesses, cardiovascular disease, and even premature death. To make matters worse, the smog resulting from these emissions also impacts visibility and poses economic risks such as decreased tourism.",
+        articleImg9: "",
+
+        subtitle10: "",
+        mediumText10: "Water pollution",
+        paragraph10:
+            "China's coal-fired power plants heavily rely on water for cooling, but the release of heated water into rivers and lakes poses a serious threat to aquatic life. This is due to the thermal pollution they cause. Furthermore, the disposal of coal ash, a residual product of coal combustion, can result in groundwater and surface water contamination by toxic heavy metals such as cadmium, arsenic, and lead.",
+        articleImg10: "",
+
+        subtitle11: "",
+        mediumText11: "Global warming and climate change ",
+        paragraph11:
+            "Carbon dioxide emissions from coal power plants contribute to global warming and climate change. China is the world's largest emitter of greenhouse gases, with coal power plants accounting for over half of the country's carbon dioxide emissions. These emissions have contributed to rising temperatures, sea-level rise, and extreme weather events, which have severe consequences for people, animals, and ecosystems worldwide.",
+        articleImg11: "",
+
+        subtitle12: "",
+        mediumText12: "Acid Rain",
+        paragraph12:
+            "China's coal power plants emit gases that combine with water vapor in the atmosphere to create sulfuric acid and nitric acid, which ultimately result in acid rain. This phenomenon causes damage to forests, crops, and aquatic life. Acid rain is a hazardous outcome of the interaction between sulfur dioxide, nitrogen oxides, and water vapor. These acids fall back to earth as rain, snow, or dry particles, impacting the environment adversely.",
+        articleImg12: "",
+
+        subtitle13:
+            "Alternative sources of energy and their potential for adoption in China",
+        mediumText13: "",
+        paragraph13:
+            "Alternative sources of energy have become increasingly popular in recent years as concerns over climate change and environmental pollution have grown. In China, alternative sources of energy offer a promising way to reduce dependence on coal and its negative impact on the environment. Here are some alternative sources of energy that have potential for adoption in China:",
+        articleImg13: "",
+
+        subtitle14: "",
+        mediumText14: "",
+        paragraph14:
+            "● Solar Energy: China is the world's largest producer and user of solar energy. The country boasts of an impressive solar capacity of more than 350GW. ",
+        articleImg14: "/images/article-preview-20.jpg",
+
+        subtitle15: "",
+        mediumText15: "",
+        paragraph15:
+            "With abundant sunlight and a favorable policy environment, solar energy has great potential to replace coal in China's energy mix.",
+        articleImg15: "",
+
+        subtitle16: "",
+        mediumText16: "",
+        paragraph16:
+            "● Wind Energy: China is also the world's largest producer and user of wind energy. In 2021, wind power generated 7.5% of China's total electricity. ",
+        articleImg16: "/images/article-preview-20.jpg",
+
+        subtitle17: "",
+        mediumText17: "",
+        paragraph17:
+            "With the government's goal of reaching 20% of electricity generation from non-fossil fuels by 2025, wind energy is expected to play an increasingly important role in China's energy supply.",
+        articleImg17: "",
+
+        subtitle18: "",
+        mediumText18: "",
+        paragraph18:
+            "● Hydro Power: China is also rich in hydropower resources, with the world's largest installed capacity. The country has been investing heavily in hydropower development, especially in the southwestern region. Hydropower has the advantages of being renewable, clean, and flexible, making it an ideal alternative to coal power plants. ",
+        articleImg18: "",
+
+        subtitle19: "",
+        mediumText19: "",
+        paragraph19:
+            "● Nuclear Power: Despite concerns over safety, nuclear power has become an increasingly popular alternative to coal power in China. The country has been investing heavily in nuclear power to meet its growing energy demands and it currently has 50 nuclear reactors in operation and under construction, with a total capacity of 53 GW. The Chinese government plans to increase the country's nuclear capacity to 70 GW by 2025.",
+        articleImg19: "",
+
+        subtitle20: "",
+        mediumText20: "",
+        paragraph20:
+            "● Biomass Energy: Biomass energy, such as biogas and biofuels, can be produced from agricultural and forestry waste. China has been promoting the use of biomass energy, especially in rural areas, as part of its efforts to improve energy access and reduce poverty. With the country’s large agricultural and forestry resources, biomass energy has great potential to replace coal in rural areas.",
+        articleImg20: "",
+
+        subtitle21: "Bottomline",
+        mediumText21: "",
+        paragraph21:
+            "The Chinese government has shown a growing commitment to reducing its dependence on coal power plants and transition towards cleaner sources of energy. While there are still significant challenges to overcome, the prospects for reducing coal dependency in Chinese power plants is promising. If China can successfully transition towards cleaner sources of energy, it could have a significant impact on global efforts to reduce carbon emissions and combat climate change.",
+        articleImg21: "",
+
+        // articleImg1: "images/article-preview-20.jpg",
+        // articleImg4: "images/article-preview-20.jpg",
     },
     // {
     //     id: 21,
     //     preview: "images/article-preview-3.png",
     //     tag: "landing",
     //     name: "Definitive Guide to Make a Daily More Productive Working Flow. ",
-    //     paragraph1: "",
-    //     subtitle2: "",
-    //     paragraph2: "",
-    //     subtitle3: "",
-    //     paragraph3: "",
-    //     subtitle4: "",
-    //     paragraph4: "",
-    //     subtitle5: "",
-    //     paragraph5: "",
-    //     subtitle6: "",
-    //     paragraph6: "",
-    //     subtitle7: "",
-    //     paragraph7: "",
-    //     subtitle8: "",
-    //     paragraph8: "",
-    //     subtitle9: "",
-    //     paragraph9: "",
-    //     subtitle10: "",
-    //     paragraph10: "",
-    //     subtitle11: "",
-    //     paragraph11: "",
-    //     subtitle12: "",
-    //     paragraph12: "",
-    //     subtitle13: "",
-    //     paragraph13: "",
+    // paragraph1: "",
+
+    // subtitle2: "",
+    // mediumText2: "",
+    // paragraph2: "",
+    // articleImg2: "",
+
+    // subtitle3: "",
+    // mediumText3: "",
+    // paragraph3: "",
+    // articleImg3: "",
+
+    // subtitle4: "",
+    // mediumText4: "",
+    // paragraph4: "",
+    // articleImg4: "",
+
+    // subtitle5: "",
+    // mediumText5: "",
+    // paragraph5: "",
+    // articleImg5: "",
+
+    // subtitle6: "",
+    // mediumText6: "",
+    // paragraph6: "",
+    // articleImg6: "",
+
+    // subtitle7: "",
+    // mediumText7: "",
+    // paragraph7: "",
+    // articleImg7: "",
+
+    // subtitle8: "",
+    // mediumText8: "",
+    // paragraph8: "",
+    // articleImg8: "",
+
+    // subtitle9: "",
+    // mediumText9: "",
+    // paragraph9: "",
+    // articleImg9: "",
+
+    // subtitle10: "",
+    // mediumText10: "",
+    // paragraph10: "",
+    // articleImg10: "",
+
+    // subtitle11: "",
+    // mediumText11: "",
+    // paragraph11: "",
+    // articleImg11: "",
+
+    // subtitle12: "",
+    // mediumText12: "",
+    // paragraph12: "",
+    // articleImg12: "",
+
+    // subtitle13: "",
+    // mediumText13: "",
+    // paragraph13: "",
+    // articleImg13: "",
+
+    // subtitle14: "",
+    // mediumText14: "",
+    // paragraph14: "",
+    // articleImg14: "",
+
+    // subtitle15: "",
+    // mediumText15: "",
+    // paragraph15: "",
+    // articleImg15: "",
     //     articleImg1: "images/article-img-2.png",
     //     articleImg2: "images/article-img-1.png",
     // },

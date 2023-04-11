@@ -4,7 +4,6 @@ import PageHeader from "../../components/PageHeader/PageHeader"
 import articlesArray from "./articlesArray"
 import MessageForm from "../../components/MessageForm/MessageForm"
 import ArticleItem from "../../components/ArticleItem/ArticleItem"
-import { Animated } from "react-animated-css"
 import { useAppSelector, useAppDispatch } from "../../redux/hooks"
 import {
     onFirstPage,
@@ -50,7 +49,7 @@ const ArticlesPage = ({ messageRef }) => {
             if (tagState.tag3 === "") {
                 dispatch(setTag3("active"))
             } else {
-                dispatch(setTag2(""))
+                dispatch(setTag3(""))
             }
         }
         if (Number(e.target.value) === 4) {
@@ -92,7 +91,7 @@ const ArticlesPage = ({ messageRef }) => {
             if (tagState.tag9 === "") {
                 dispatch(setTag9("active"))
             } else {
-                dispatch(setTag9("active"))
+                dispatch(setTag9(""))
             }
         }
         if (Number(e.target.value) === 10) {
@@ -274,173 +273,175 @@ const ArticlesPage = ({ messageRef }) => {
                 />
             </Helmet> */}
             <PageHeader name={"articles"} />
-            <div className="container">
-                <p className="articles-header mobile-header">Popular Topics</p>
-                <div className="row tags-row">
-                    <p className="articles-header desktop-header">
+            <div className="articles-content-wrapper">
+                <div className="container">
+                    <p className="articles-header mobile-header">
                         Popular Topics
                     </p>
-                    <div className="tags-buttons">
-                        <button
-                            className={`tag-btn ${tagState.tag1}`}
-                            value={1}
-                            onClick={(e) => onTagClick(e, "value")}
-                        >
-                            world coal
-                        </button>
-                        <button
-                            className={`tag-btn ${tagState.tag2}`}
-                            value={2}
-                            onClick={(e) => onTagClick(e, "value")}
-                        >
-                            statistics
-                        </button>
-                        <button
-                            className={`tag-btn ${tagState.tag3}`}
-                            value={3}
-                            onClick={(e) => onTagClick(e, "value")}
-                        >
-                            crisis
-                        </button>
-                        <button
-                            className={`tag-btn ${tagState.tag4}`}
-                            value={4}
-                            onClick={(e) => onTagClick(e, "value")}
-                        >
-                            reserves
-                        </button>
-                        <button
-                            className={`tag-btn ${tagState.tag5}`}
-                            value={5}
-                            onClick={(e) => onTagClick(e, "value")}
-                        >
-                            energy crisis
-                        </button>
-                        <button
-                            className={`tag-btn ${tagState.tag6}`}
-                            value={6}
-                            onClick={(e) => onTagClick(e, "value")}
-                        >
-                            top countries
-                        </button>
-                        <button
-                            className={`tag-btn ${tagState.tag7}`}
-                            value={7}
-                            onClick={(e) => onTagClick(e, "value")}
-                        >
-                            export of coal
-                        </button>
-                        <button
-                            className={`tag-btn ${tagState.tag8}`}
-                            value={8}
-                            onClick={(e) => onTagClick(e, "value")}
-                        >
-                            us coal
-                        </button>
-                        <button
-                            className={`tag-btn ${tagState.tag9}`}
-                            value={9}
-                            onClick={(e) => onTagClick(e, "value")}
-                        >
-                            analysis
-                        </button>
-                        <button
-                            className={`tag-btn ${tagState.tag10}`}
-                            value={10}
-                            onClick={(e) => onTagClick(e, "value")}
-                        >
-                            top companies
-                        </button>
+                    <div className="row tags-row">
+                        <p className="articles-header desktop-header">
+                            Popular Topics
+                        </p>
+                        <div className="tags-buttons">
+                            <button
+                                className={`tag-btn ${tagState.tag1}`}
+                                value={1}
+                                onClick={(e) => onTagClick(e, "value")}
+                            >
+                                world coal
+                            </button>
+                            <button
+                                className={`tag-btn ${tagState.tag2}`}
+                                value={2}
+                                onClick={(e) => onTagClick(e, "value")}
+                            >
+                                statistics
+                            </button>
+                            <button
+                                className={`tag-btn ${tagState.tag3}`}
+                                value={3}
+                                onClick={(e) => onTagClick(e, "value")}
+                            >
+                                crisis
+                            </button>
+                            <button
+                                className={`tag-btn ${tagState.tag4}`}
+                                value={4}
+                                onClick={(e) => onTagClick(e, "value")}
+                            >
+                                reserves
+                            </button>
+                            <button
+                                className={`tag-btn ${tagState.tag5}`}
+                                value={5}
+                                onClick={(e) => onTagClick(e, "value")}
+                            >
+                                energy crisis
+                            </button>
+                            <button
+                                className={`tag-btn ${tagState.tag6}`}
+                                value={6}
+                                onClick={(e) => onTagClick(e, "value")}
+                            >
+                                top countries
+                            </button>
+                            <button
+                                className={`tag-btn ${tagState.tag7}`}
+                                value={7}
+                                onClick={(e) => onTagClick(e, "value")}
+                            >
+                                export of coal
+                            </button>
+                            <button
+                                className={`tag-btn ${tagState.tag8}`}
+                                value={8}
+                                onClick={(e) => onTagClick(e, "value")}
+                            >
+                                us coal
+                            </button>
+                            <button
+                                className={`tag-btn ${tagState.tag9}`}
+                                value={9}
+                                onClick={(e) => onTagClick(e, "value")}
+                            >
+                                analysis
+                            </button>
+                            <button
+                                className={`tag-btn ${tagState.tag10}`}
+                                value={10}
+                                onClick={(e) => onTagClick(e, "value")}
+                            >
+                                top companies
+                            </button>
+                        </div>
                     </div>
-                </div>
-                {resArr.length < 1 ? (
-                    <div className="no-matches">No matches</div>
-                ) : (
-                    <div className="wrapper">
-                        {pageState.page1 === "active-page"
-                            ? filtredArr1.map(({ id, preview, tag, name }) => (
-                                  <div key={id} className="article-item">
-                                      <Animated
-                                          animationIn="fadeIn"
-                                          isVisible={true}
-                                          animationInDuration={1500}
-                                      >
-                                          <ArticleItem
-                                              id={id}
-                                              preview={preview}
-                                              tag={tag}
-                                              name={name}
-                                          />
-                                      </Animated>
-                                  </div>
-                              ))
-                            : pageState.page2 === "active-page"
-                            ? filtredArr2.map(({ id, preview, tag, name }) => (
-                                  <div key={id} className="article-item">
-                                      <Animated
-                                          animationIn="fadeIn"
-                                          isVisible={true}
-                                          animationInDuration={1500}
-                                      >
-                                          <ArticleItem
-                                              id={id}
-                                              preview={preview}
-                                              tag={tag}
-                                              name={name}
-                                          />
-                                      </Animated>
-                                  </div>
-                              ))
-                            : filtredArr3.map(({ id, preview, tag, name }) => (
-                                  <div key={id} className="article-item">
-                                      <Animated
-                                          animationIn="fadeIn"
-                                          isVisible={true}
-                                          animationInDuration={1500}
-                                      >
-                                          <ArticleItem
-                                              id={id}
-                                              preview={preview}
-                                              tag={tag}
-                                              name={name}
-                                          />
-                                      </Animated>
-                                  </div>
-                              ))}
-                    </div>
-                )}
-                <div className="pages">
-                    <div className="anchor" ref={messageRef}></div>
-                    <div className="row">
-                        <button
-                            className="page prev-page"
-                            onClick={() => onPrevClick()}
-                        ></button>
-                        <button
-                            className={`page ${pageState.page1}`}
-                            onClick={() => onFirstPageClick()}
-                        >
-                            1
-                        </button>
-                        <button
-                            className={`page ${pageState.page2} ${disable2Page}`}
-                            onClick={() => onSecondPageClick()}
-                        >
-                            2
-                        </button>
-                        <button
-                            className={`page ${pageState.page3} ${disable3Page}`}
-                            onClick={() => onThirdPageClick()}
-                        >
-                            3
-                        </button>
-                        <button
-                            className="page next-page"
-                            onClick={() => onNextClick()}
-                        ></button>
+                    {resArr.length < 1 ? (
+                        <div className="no-matches">No matches</div>
+                    ) : (
+                        <div className="wrapper">
+                            {pageState.page1 === "active-page"
+                                ? filtredArr1.map(
+                                      ({ id, preview, tag, name }) => (
+                                          <div
+                                              key={id}
+                                              className="article-item"
+                                          >
+                                              <ArticleItem
+                                                  id={id}
+                                                  preview={preview}
+                                                  tag={tag}
+                                                  name={name}
+                                              />
+                                          </div>
+                                      )
+                                  )
+                                : pageState.page2 === "active-page"
+                                ? filtredArr2.map(
+                                      ({ id, preview, tag, name }) => (
+                                          <div
+                                              key={id}
+                                              className="article-item"
+                                          >
+                                              <ArticleItem
+                                                  id={id}
+                                                  preview={preview}
+                                                  tag={tag}
+                                                  name={name}
+                                              />
+                                          </div>
+                                      )
+                                  )
+                                : filtredArr3.map(
+                                      ({ id, preview, tag, name }) => (
+                                          <div
+                                              key={id}
+                                              className="article-item"
+                                          >
+                                              <ArticleItem
+                                                  id={id}
+                                                  preview={preview}
+                                                  tag={tag}
+                                                  name={name}
+                                              />
+                                          </div>
+                                      )
+                                  )}
+                        </div>
+                    )}
+                    <div className="pages">
+                        <div className="anchor" ref={messageRef}></div>
+                        <div className="row">
+                            <button
+                                className="page prev-page"
+                                onClick={() => onPrevClick()}
+                            ></button>
+                            <button
+                                className={`page ${pageState.page1}`}
+                                onClick={() => onFirstPageClick()}
+                            >
+                                1
+                            </button>
+                            <button
+                                className={`page ${pageState.page2} ${disable2Page}`}
+                                onClick={() => onSecondPageClick()}
+                            >
+                                2
+                            </button>
+                            <button
+                                className={`page ${pageState.page3} ${disable3Page}`}
+                                onClick={() => onThirdPageClick()}
+                            >
+                                3
+                            </button>
+                            <button
+                                className="page next-page"
+                                onClick={() => onNextClick()}
+                            ></button>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <MessageForm />
         </div>
     )

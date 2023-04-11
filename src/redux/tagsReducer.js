@@ -14,7 +14,7 @@ const initialState = {
 }
 
 export const tagsReducer = createSlice({
-    name: "weatherData",
+    name: "tagReducer",
     initialState,
     reducers: {
         setTag1: (state, action) => {
