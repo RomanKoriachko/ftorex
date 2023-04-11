@@ -1,7 +1,6 @@
 import React, { useRef } from "react"
 import "./PageHeader.scss"
 import ScrollDownBtn from "../ScrollDownBtn/ScrollDownBtn"
-import { Animated } from "react-animated-css"
 
 const PageHeader = ({ name, subtitle }) => {
     const ref = useRef(null)

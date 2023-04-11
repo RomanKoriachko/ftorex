@@ -1,7 +1,6 @@
 import React from "react"
 import AnimatedNumbers from "react-animated-numbers"
 import "./IndicatorsSection.scss"
-import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const IndicatorsSection = () => {
     return (

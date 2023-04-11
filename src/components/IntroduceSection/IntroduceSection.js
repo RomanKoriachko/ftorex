@@ -1,7 +1,6 @@
 import React from "react"
 import "./IntroduceSection.scss"
 // import ScrollDownBtn from "../ScrollDownBtn/ScrollDownBtn"
-import { Animated } from "react-animated-css"
 
 const IntroduceSection = () => {
     const windowHeight = window.innerHeight - 122

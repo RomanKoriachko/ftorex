@@ -4,7 +4,7 @@ import SubscribeSection from "../../components/SubscribeSection/SubscribeSection
 import { Link, NavLink } from "react-router-dom"
 import { Animated } from "react-animated-css"
 import { useAppSelector, useAppDispatch } from "../../redux/hooks"
-import { fetchData } from "../../redux/getDataReducer"
+// import { fetchData } from "../../redux/getDataReducer"
 import {
     openCallbackForm,
     closeCallbackForm,

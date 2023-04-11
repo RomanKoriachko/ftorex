@@ -1,7 +1,6 @@
 import React from "react"
 import "./ServicesSection.scss"
 import { Link } from "react-router-dom"
-import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const ServicesSection = () => {
     return (

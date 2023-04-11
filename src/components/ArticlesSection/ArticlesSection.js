@@ -2,7 +2,6 @@ import React from "react"
 import "./ArticlesSection.scss"
 import { Link } from "react-router-dom"
 import articleArr from "../../pages/ArticlesPage/articlesArray"
-import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const ArticlesSection = () => {
     return (
