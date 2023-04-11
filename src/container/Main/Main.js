@@ -30,7 +30,7 @@ const Main = ({ submitRef }) => {
     })
 
     const scrollDown = () => {
-        if (ref0.current?.getBoundingClientRect().top > 0) {
+        if (ref0.current?.getBoundingClientRect().top > -530) {
             ref1.current?.scrollIntoView({
                 block: "center",
                 behavior: "smooth",
