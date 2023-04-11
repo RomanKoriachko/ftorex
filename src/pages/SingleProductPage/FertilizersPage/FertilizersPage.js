@@ -13,14 +13,65 @@ const FertilizersPage = () => {
             />
             <div className="content-wrapper"></div>
             <div className="container">
-                <div className="links-tablet">
-                    <div>Coking coal</div>
-                    <div>Thermal coal</div>
-                    <div>Anthracite</div>
-                    <div>PCI Coal</div>
-                    <div>Oil & gas equipment</div>
-                    <div>Fertilizer</div>
-                    <div>Mining equipment</div>
+                <div className="links-tablet-wrapper">
+                    <div className="links-tablet">
+                        <NavLink
+                            to="/products/coking_coal"
+                            className={({ isActive }) =>
+                                isActive ? "active" : "notActive"
+                            }
+                        >
+                            <div>Coking coal</div>
+                        </NavLink>
+                        <NavLink
+                            to="/products/thermal_coal"
+                            className={({ isActive }) =>
+                                isActive ? "active" : "notActive"
+                            }
+                        >
+                            <div>Thermal coal</div>
+                        </NavLink>
+                        <NavLink
+                            to="/products/anthracite"
+                            className={({ isActive }) =>
+                                isActive ? "active" : "notActive"
+                            }
+                        >
+                            <div>Anthracite</div>
+                        </NavLink>
+                        <NavLink
+                            to="/products/pci_coal"
+                            className={({ isActive }) =>
+                                isActive ? "active" : "notActive"
+                            }
+                        >
+                            <div>PCI Coal</div>
+                        </NavLink>
+                        <NavLink
+                            to="/products/oil_and_gas_equipment"
+                            className={({ isActive }) =>
+                                isActive ? "active" : "notActive"
+                            }
+                        >
+                            <div>Oil & gas equipment</div>
+                        </NavLink>
+                        <NavLink
+                            to="/products/fertilizers"
+                            className={({ isActive }) =>
+                                isActive ? "active" : "notActive"
+                            }
+                        >
+                            <div>Fertilizer</div>
+                        </NavLink>
+                        <NavLink
+                            to="/products/mining_equipment"
+                            className={({ isActive }) =>
+                                isActive ? "active" : "notActive"
+                            }
+                        >
+                            <div>Mining equipment</div>
+                        </NavLink>
+                    </div>
                 </div>
                 <div className="row links-row">
                     <StickyBox offsetTop={150} offsetBottom={20}>
