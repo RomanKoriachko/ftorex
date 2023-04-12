@@ -4,8 +4,6 @@ import { useParams } from "react-router-dom"
 import articlesArray from "../ArticlesPage/articlesArray"
 import ScrollDownBtn from "../../components/ScrollDownBtn/ScrollDownBtn"
 import ArticleItem from "../../components/ArticleItem/ArticleItem"
-import { Animated } from "react-animated-css"
-import { AnimationOnScroll } from "react-animation-on-scroll"
 // import { Helmet } from "react-helmet"
 
 const SingleArticlePage = () => {
@@ -73,6 +71,12 @@ const SingleArticlePage = () => {
             tag10 = "active"
         }
     }
+
+    // Random arr
+
+    // const randomArr = articlesArray.sort(function () {
+    //     return Math.random() - 0.5
+    // })
 
     return (
         <div className="single-article-page">
@@ -147,6 +151,326 @@ const SingleArticlePage = () => {
                             />
                         </div>
                     ) : undefined}
+                    {curretArticle[0]?.table3 ? (
+                        <div>
+                            <table className="article-table-desctop">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableHeader1}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableHeader2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem1}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem11}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem2}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem12}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem3}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem13}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem4}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem14}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem5}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem15}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem6}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem16}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem7}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem17}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem8}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem18}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem9}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem19}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem10}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table3.tableItem20}
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0]?.tableLarge3 ? (
+                        <div>
+                            <table className="article-table-desctop article-table-desctop-large">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableHeader1
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableHeader2
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableHeader3
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem1
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem11
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem21
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem2
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem12
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem22
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem3
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem13
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem23
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem4
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem14
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem24
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem5
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem15
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem25
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem6
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem16
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem26
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem7
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem17
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem27
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem8
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem18
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem28
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem9
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem19
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem29
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem10
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem20
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge3
+                                                .tableItem30
+                                        }
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    ) : undefined}
                     {curretArticle[0].subtitle4 ? (
                         <p className="subtitle">{curretArticle[0].subtitle4}</p>
                     ) : undefined}
@@ -205,6 +529,214 @@ const SingleArticlePage = () => {
                                 src={curretArticle[0].articleImg6}
                                 alt=""
                             />
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0]?.table6 ? (
+                        <div>
+                            <table className="article-table-desctop-hide">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableHeader1}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableHeader2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableItem1}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableItem3}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableItem2}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableItem4}
+                                    </td>
+                                </tr>
+                            </table>
+                            <table className="article-table-mobile">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableHeader1}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableItem1}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableItem2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableHeader2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableItem3}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table6.tableItem4}
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0]?.tableLarge6 ? (
+                        <div>
+                            <table className="article-table-desctop article-table-desctop-large">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableHeader1
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableHeader2
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableHeader3
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem1
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem7
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem13
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem2
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem8
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem14
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem3
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem9
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem15
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem4
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem10
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem16
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem5
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem11
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem17
+                                        }
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem6
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem12
+                                        }
+                                    </td>
+                                    <td className="article-table-item">
+                                        {
+                                            curretArticle[0]?.tableLarge6
+                                                .tableItem18
+                                        }
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     ) : undefined}
                     {curretArticle[0].subtitle7 ? (
@@ -267,6 +799,68 @@ const SingleArticlePage = () => {
                             />
                         </div>
                     ) : undefined}
+                    {curretArticle[0]?.table9 ? (
+                        <div>
+                            <table className="article-table-desctop-hide">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableHeader1}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableHeader2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableItem1}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableItem3}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableItem2}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableItem4}
+                                    </td>
+                                </tr>
+                            </table>
+                            <table className="article-table-mobile">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableHeader1}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableItem1}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableItem2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableHeader2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableItem3}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table9.tableItem4}
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    ) : undefined}
                     {curretArticle[0].subtitle10 ? (
                         <p className="subtitle">
                             {curretArticle[0].subtitle10}
@@ -309,6 +903,68 @@ const SingleArticlePage = () => {
                                 src={curretArticle[0].articleImg11}
                                 alt=""
                             />
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0]?.table11 ? (
+                        <div>
+                            <table className="article-table-desctop">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableHeader1}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableHeader2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableItem1}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableItem3}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableItem2}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableItem4}
+                                    </td>
+                                </tr>
+                            </table>
+                            <table className="article-table-mobile">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableHeader1}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableItem1}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableItem2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableHeader2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableItem3}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table11.tableItem4}
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     ) : undefined}
                     {curretArticle[0].subtitle12 ? (
@@ -355,6 +1011,68 @@ const SingleArticlePage = () => {
                             />
                         </div>
                     ) : undefined}
+                    {curretArticle[0]?.table13 ? (
+                        <div>
+                            <table className="article-table-desctop">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableHeader1}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableHeader2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableItem1}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableItem3}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableItem2}
+                                    </td>
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableItem4}
+                                    </td>
+                                </tr>
+                            </table>
+                            <table className="article-table-mobile">
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableHeader1}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableItem1}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableItem2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableHeader2}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableItem3}
+                                    </td>
+                                </tr>
+                                <tr className="article-table-row">
+                                    <td className="article-table-item">
+                                        {curretArticle[0]?.table13.tableItem4}
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    ) : undefined}
                     {curretArticle[0].subtitle14 ? (
                         <p className="subtitle">
                             {curretArticle[0].subtitle14}
@@ -375,6 +1093,20 @@ const SingleArticlePage = () => {
                                 src={curretArticle[0].articleImg14}
                                 alt=""
                             />
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0].list14 ? (
+                        <div className="list">
+                            <p>{curretArticle[0].list14.listItem1}</p>
+                            <p>{curretArticle[0].list14.listItem2}</p>
+                            <p>{curretArticle[0].list14.listItem3}</p>
+                            <p>{curretArticle[0].list14.listItem4}</p>
+                            <p>{curretArticle[0].list14.listItem5}</p>
+                            <p>{curretArticle[0].list14.listItem6}</p>
+                            <p>{curretArticle[0].list14.listItem7}</p>
+                            <p>{curretArticle[0].list14.listItem8}</p>
+                            <p>{curretArticle[0].list14.listItem9}</p>
+                            <p>{curretArticle[0].list14.listItem10}</p>
                         </div>
                     ) : undefined}
                     {curretArticle[0].subtitle15 ? (
@@ -441,6 +1173,14 @@ const SingleArticlePage = () => {
                                 src={curretArticle[0].articleImg17}
                                 alt=""
                             />
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0].list17 ? (
+                        <div className="list">
+                            <p>{curretArticle[0].list17.listItem1}</p>
+                            <p>{curretArticle[0].list17.listItem2}</p>
+                            <p>{curretArticle[0].list17.listItem3}</p>
+                            <p>{curretArticle[0].list17.listItem4}</p>
                         </div>
                     ) : undefined}
                     {curretArticle[0].subtitle18 ? (
@@ -531,6 +1271,138 @@ const SingleArticlePage = () => {
                             />
                         </div>
                     ) : undefined}
+                    {curretArticle[0].subtitle22 ? (
+                        <p className="subtitle">
+                            {curretArticle[0].subtitle22}
+                        </p>
+                    ) : undefined}
+                    {curretArticle[0].mediumText22 ? (
+                        <p className="medium-text">
+                            {curretArticle[0].mediumText22}
+                        </p>
+                    ) : undefined}
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph22}
+                    </p>
+                    {curretArticle[0].articleImg22 ? (
+                        <div className="img-wrapper">
+                            <img
+                                className="article-img"
+                                src={curretArticle[0].articleImg22}
+                                alt=""
+                            />
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0].subtitle23 ? (
+                        <p className="subtitle">
+                            {curretArticle[0].subtitle23}
+                        </p>
+                    ) : undefined}
+                    {curretArticle[0].mediumText23 ? (
+                        <p className="medium-text">
+                            {curretArticle[0].mediumText23}
+                        </p>
+                    ) : undefined}
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph23}
+                    </p>
+                    {curretArticle[0].articleImg23 ? (
+                        <div className="img-wrapper">
+                            <img
+                                className="article-img"
+                                src={curretArticle[0].articleImg23}
+                                alt=""
+                            />
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0].subtitle24 ? (
+                        <p className="subtitle">
+                            {curretArticle[0].subtitle24}
+                        </p>
+                    ) : undefined}
+                    {curretArticle[0].mediumText24 ? (
+                        <p className="medium-text">
+                            {curretArticle[0].mediumText24}
+                        </p>
+                    ) : undefined}
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph24}
+                    </p>
+                    {curretArticle[0].articleImg24 ? (
+                        <div className="img-wrapper">
+                            <img
+                                className="article-img"
+                                src={curretArticle[0].articleImg24}
+                                alt=""
+                            />
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0].subtitle25 ? (
+                        <p className="subtitle">
+                            {curretArticle[0].subtitle25}
+                        </p>
+                    ) : undefined}
+                    {curretArticle[0].mediumText25 ? (
+                        <p className="medium-text">
+                            {curretArticle[0].mediumText25}
+                        </p>
+                    ) : undefined}
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph25}
+                    </p>
+                    {curretArticle[0].articleImg25 ? (
+                        <div className="img-wrapper">
+                            <img
+                                className="article-img"
+                                src={curretArticle[0].articleImg25}
+                                alt=""
+                            />
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0].subtitle26 ? (
+                        <p className="subtitle">
+                            {curretArticle[0].subtitle26}
+                        </p>
+                    ) : undefined}
+                    {curretArticle[0].mediumText26 ? (
+                        <p className="medium-text">
+                            {curretArticle[0].mediumText26}
+                        </p>
+                    ) : undefined}
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph26}
+                    </p>
+                    {curretArticle[0].articleImg26 ? (
+                        <div className="img-wrapper">
+                            <img
+                                className="article-img"
+                                src={curretArticle[0].articleImg26}
+                                alt=""
+                            />
+                        </div>
+                    ) : undefined}
+                    {curretArticle[0].subtitle27 ? (
+                        <p className="subtitle">
+                            {curretArticle[0].subtitle27}
+                        </p>
+                    ) : undefined}
+                    {curretArticle[0].mediumText27 ? (
+                        <p className="medium-text">
+                            {curretArticle[0].mediumText27}
+                        </p>
+                    ) : undefined}
+                    <p className="article-paragraph">
+                        {curretArticle[0]?.paragraph27}
+                    </p>
+                    {curretArticle[0].articleImg27 ? (
+                        <div className="img-wrapper">
+                            <img
+                                className="article-img"
+                                src={curretArticle[0].articleImg27}
+                                alt=""
+                            />
+                        </div>
+                    ) : undefined}
                     <p className="recent-post-header tablet-header">
                         Tagged with:
                     </p>
@@ -576,21 +1448,15 @@ const SingleArticlePage = () => {
                         <p className="recent-post-header">Recent Post:</p>
                         <div className="wrapper">
                             {articlesArray
-                                .filter((element, index) => index > 16)
+                                .filter((element, index) => index < 3)
                                 .map(({ id, preview, tag, name }) => (
                                     <div key={id} className="recent-post-item">
-                                        <AnimationOnScroll
-                                            animateIn="animate__fadeInUp"
-                                            duration={1.5}
-                                            animateOnce={true}
-                                        >
-                                            <ArticleItem
-                                                id={id}
-                                                preview={preview}
-                                                tag={tag}
-                                                name={name}
-                                            />
-                                        </AnimationOnScroll>
+                                        <ArticleItem
+                                            id={id}
+                                            preview={preview}
+                                            tag={tag}
+                                            name={name}
+                                        />
                                     </div>
                                 ))}
                         </div>

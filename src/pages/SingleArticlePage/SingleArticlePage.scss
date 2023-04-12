@@ -77,6 +77,47 @@
                 object-fit: cover;
             }
         }
+        .article-table-desctop {
+            border: 1px solid black;
+            max-width: 680px;
+            margin-bottom: 20px;
+            .article-table-row {
+                border-bottom: 1px solid black;
+                .article-table-item {
+                    padding: 10px 20px;
+                    border-right: 1px solid black;
+                    width: 50%;
+                }
+                .article-table-item:last-child {
+                    border-right: none;
+                }
+            }
+        }
+        .article-table-desctop-large {
+            max-width: 800px;
+            .article-table-row {
+                .article-table-item {
+                    width: auto;
+                }
+            }
+        }
+        .list {
+            margin-left: 15px;
+        }
+        .article-table-mobile {
+            border: 1px solid black;
+            max-width: 680px;
+            display: none;
+            .article-table-row {
+                border-bottom: 1px solid black;
+                .article-table-item {
+                    padding: 10px 20px;
+                }
+            }
+            .article-table-row:last-child {
+                border-bottom: none;
+            }
+        }
         .border-left-paragraph {
             border-left: 3px solid #f1275b;
             padding-left: 15px;
@@ -253,6 +294,29 @@
             .images-wrapper {
                 flex-direction: column;
                 gap: 32px;
+            }
+            .article-table-desctop-hide {
+                display: none;
+            }
+            .article-table-desctop-large {
+                display: block;
+                .article-table-row {
+                    .article-table-item {
+                        padding: 3px 5px;
+                    }
+                }
+                .article-table-row:last-child {
+                    border-bottom: none;
+                }
+            }
+            .article-table-mobile {
+                display: block;
+            }
+            .img-wrapper {
+                min-height: auto;
+            }
+            .list {
+                margin-left: 0px;
             }
             .recent-post {
                 .wrapper {

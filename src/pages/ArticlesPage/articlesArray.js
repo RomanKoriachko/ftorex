@@ -102,23 +102,65 @@ let articlesArray = [
         tag: "crisis",
         name: "Energy crisis",
         paragraph1:
-            "Energy crisis refers to a situation where the demand for energy exceeds the available supply. This often leads to shortages, price increases, and even blackouts. The causes of energy crises can vary, ranging from natural disasters to geopolitical tensions to economic issues. Whatever the cause, the consequences of an energy crisis can be severe, impacting everything from industry to transportation to the everyday lives of people.",
+            "The fear with the energy crisis is that as the demand for the finite natural resources utilized to power modern society increases, supply will not keep up. There is a finite amount of these natural resources. Although they do naturally develop, it would still take a thousand ls of years for it to develop in large quantities. ",
         paragraph2:
-            "One of the most significant energy crises in recent history occurred in the 1970s, when the price of oil skyrocketed due to political tensions in the Middle East. The Organization of Petroleum Exporting Countries (OPEC) imposed an oil embargo on the United States and other countries that supported Israel in the Yom Kippur War, leading to severe shortages and high prices. The crisis had a profound impact on the global economy, causing recessions and inflation in many countries.",
+            "Governments and concerned citizens are collaborating to prioritize the use of renewable resources and to reduce the careless use of natural resources by practicing improved conservation.",
         paragraph3:
-            "Today, the world faces a new energy crisis due to a combination of factors. One of the primary causes is the increasing demand for energy, particularly in developing countries like China and India. As these countries continue to grow and modernize, their energy needs continue to increase, putting pressure on the global supply.",
+            "The energy crisis is a vast and intricate subject. Most people are not aware of its actuality till petrol prices increase or there are long queues at the gas station. Despite numerous efforts, the energy problem persists and only gets worse. ",
         paragraph4:
-            "Another factor contributing to the energy crisis is the shift away from traditional sources of energy, such as oil and coal, towards renewable sources like solar and wind power. While renewable energy is undoubtedly important in reducing greenhouse gas emissions and combating climate change, it still only accounts for a small fraction of the world's energy supply. As countries continue to transition to renewables, there is a risk that the supply of traditional energy sources will fall short, leading to shortages and price increases.",
+            "This is because efforts to address the complex causes and solutions of the energy problem cannot be made since there is not a widespread knowledge of them.",
+        subtitle5: "Energy crisis: How real is it?",
         paragraph5:
-            "The COVID-19 pandemic has also had a significant impact on the energy sector. The pandemic led to a sharp decline in energy demand as lockdowns and travel restrictions were put in place, causing prices to plummet. While prices have since rebounded, the pandemic has highlighted the vulnerability of the global energy system and the need for more resilient and diversified supply chains.",
+            "How real the energy crisis is, is best summed up by the proposition that increasing demands on finite resources will inevitably result in their depletion. ",
         paragraph6:
-            "In response to the energy crisis, governments around the world are taking steps to increase the supply of energy and reduce demand. Many countries are investing in renewable energy sources like solar and wind power, while others are exploring alternative sources of traditional energy like shale gas and nuclear power. Governments are also promoting energy efficiency measures to reduce demand and increase the efficiency of energy use in homes and businesses.",
+            "That makes complete sense. What is actually at stake in the debate over how real the energy crisis is has to do with how people feel about their future duty. If you aren't worried about what will happen after you leave this planet, there isn't really an energy crisis. If you care about leaving a better world for future generations, there is a real energy issue.",
+        subtitle7: "Causes of Energy Crisis ",
         paragraph7:
-            "However, addressing the energy crisis will require more than just government action. Individuals and businesses also have a role to play in reducing demand and increasing efficiency. Simple measures like turning off lights when not in use, using energy-efficient appliances, and taking public transportation can all help to reduce energy demand and promote a more sustainable energy future.",
+            "There are several causes of the global energy crisis. The mistake most people make is to point fingers at certain industries, however, that is a very naive thing to do. Here are some of the causes:",
+        mediumText8: "Overpopulation",
         paragraph8:
-            "In conclusion, the energy crisis is a significant challenge facing the world today. While there is no single solution to the problem, addressing it will require a combination of government action, investment in renewable energy sources, and individual and business efforts to reduce demand and increase efficiency. Only by working together can we create a more sustainable and secure energy future for all.",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+            "The world's population has been steadily growing along with its need for products and fuel, which has been a contributing factor in the dilemma. Whichever food or items you choose to consume, whether they are fair trade, organic, or made in a sweatshop using petroleum products, not one of them is produced or transported without having a substantial impact on our energy resources.",
+        mediumText9: "Overconsumption",
+        paragraph9:
+            "Many stresses on our natural resources, not just one, are to blame for the current energy crisis. Overuse of fossil fuels, such as oil, gas, and coal, is putting a pressure on these resources, which can subsequently result in pollution, which can have a negative impact on our water and oxygen supplies. ",
+        mediumText11: "Inadequate infrastructure ",
+        paragraph11:
+            "Another factor contributing to the energy deficit is the infrastructure of the power generation equipment. Most energy-producing companies continue to use out-of-date machinery, which limits the amount of energy that can be produced. Utilities are in charge of maintaining infrastructure upgrades and establishing high performance standards.",
+        mediumText12: "Unexplored Sources of Renewable Energy ",
+        paragraph12:
+            "In the majority of nations, renewable energy is currently underutilized. Coal is one of the main non-renewable energy sources. As a result, it continues to be the best option for producing energy. Until we start to tackle the issues and give serious thought to renewable energy, it’ll be impossible to solve the problem of energy crisis. More sources of renewable energy can allow us to reduce the consumption of fossil fuels and reduce gas emissions from the greenhouse. ",
+        mediumText13: "Energy wastage",
+        articleImg13: "/images/article-preview-4.jpg",
+        paragraph14:
+            "Most people around the world do not understand how important energy conservation is. Books, the Internet, newspaper ads, lip service, and seminars are the only sources that are available to bring awareness. Things won't change any time soon until we give it serious consideration. Things as simple as turning off electrical appliances when not in use, walking and not driving short distances, and repairing leakages can critically help.",
+        mediumText15: "Delay in Power Plant Commissioning ",
+        paragraph15:
+            "The opening of new power plants that can close the energy supply-demand imbalance are experiencing substantial delays in a few nations. Old plants are put under a lot of stress as a result of the everyday demand for electricity. Load-shedding and breakdown occur when supply and demand are out of balance.",
+        mediumText16: "Attacks and Wars",
+        paragraph16:
+            "Conflicts between nations can also disrupt the flow of energy, particularly if they take place in Middle Eastern nations like Saudi Arabia, Iraq, Iran, Kuwait, the United Arab Emirates, or Qatar. That is what occurred in 1990 during the Gulf War, when oil prices were at their highest, leading to global shortages and serious issues for energy consumers.",
+        subtitle17: "Effects of energy crisis ",
+        paragraph17:
+            "The development of human civilization has increased our reliance on conventional energy sources. The most basic energy source is priceless fossil fuels. All of these sources will inevitably result in specific outcomes when used. The following are some significant implications of the global energy crisis:",
+        mediumText18: "Impact on the environment ",
+        articleImg18: "/images/article-preview-4.jpg",
+        paragraph19:
+            "Fossil fuels that are not renewable are burned to provide energy. The environment is also impacted by this, in addition to the world's supply of fossil fuels. When fossil fuels are burned, greenhouse gases like carbon dioxide and others are released. ",
+        paragraph20:
+            "The earth's surface is covered by these gases, blocking the sun's brief nighttime rays from reaching the surface. Hence, through boosting global warming, the energy problem helps make the globe a warmer environment.",
+        mediumText21: "A rise in the cost of fuel resources",
+        paragraph21:
+            "The price of fossil fuels rises in tandem with their increased use. It is important to keep in mind that the supply of these fossil fuels is finite. These fossil fuels are becoming much more scarce as we continue to use them. ",
+        paragraph22:
+            "The demand for these fuels rises daily as time goes on, whereas the amount of supply falls everyday. This has a significant impact on the cost of fossil fuels, driving up the price continuously. This has a significant negative impact on the global economy.",
+        mediumText23: "Impact on the Travel and Tourism Sector ",
+        paragraph23:
+            "The peaks and troughs in fuel prices have a significant impact on the tourism sector. The tourism business is significantly impacted by the dramatic increase in fuel prices that results from the energy crisis. ",
+        paragraph24:
+            "Costs associated with tourism have increased as a result of the rise in fuel prices. Many people are unable to afford the same as a result of this. And as a result of everything, the tourism sector suffers.",
+        subtitle25: "Conclusion",
+        paragraph25:
+            "Energy crisis is a serious and important issue globally. It is very important that countries, governments, and even ordinary people start to be more deliberate about ways to prevent or at least reduce it. Energy crisis affects everyone no matter who you are, choosing to save yourself shouldn’t be a difficult decision. ",
     },
     {
         id: 5,
@@ -709,286 +751,901 @@ let articlesArray = [
         paragraph21:
             "The Chinese government has shown a growing commitment to reducing its dependence on coal power plants and transition towards cleaner sources of energy. While there are still significant challenges to overcome, the prospects for reducing coal dependency in Chinese power plants is promising. If China can successfully transition towards cleaner sources of energy, it could have a significant impact on global efforts to reduce carbon emissions and combat climate change.",
         articleImg21: "",
+    },
+    {
+        id: 21,
+        preview: "images/article-preview-10.jpg",
+        tag: "landing",
+        name: "Digging Deeper: An Exploration of Different Mining Methods",
+        paragraph1:
+            "Mining is a crucial activity that has been instrumental in the development of human civilizations for thousands of years. Over time, different mining methods have emerged, each with its unique advantages and disadvantages. From underground mining, which involves extracting minerals from beneath the earth's surface, to open surface mining, placer mining, and in-situ mining, each method offers distinct benefits and challenges. ",
 
-        // articleImg1: "images/article-preview-20.jpg",
-        // articleImg4: "images/article-preview-20.jpg",
+        subtitle2: "",
+        mediumText2: "",
+        paragraph2: "",
+        articleImg2: "",
+
+        subtitle3: "",
+        mediumText3: "",
+        paragraph3:
+            "In this article, we'll delve into each of these mining methods, their pros and cons, and factors to consider when choosing a mining method. So buckle up and get ready to explore the fascinating world of mining!",
+        articleImg3: "",
+
+        subtitle4: "1. Underground mining",
+        mediumText4: "",
+        paragraph4: "",
+        articleImg4: "/images/article-preview-10.jpg",
+
+        subtitle5: "",
+        mediumText5: "",
+        paragraph5:
+            "This is the first mining method we will consider, and it is one of the oldest and most traditional ways of extracting minerals from the earth's crust. Underground mining is a method of mineral extraction that involves the excavation of tunnels and shafts deep into the earth's crust to reach mineral deposits. Despite the inherent difficulties and hazards associated with this method, it remains a critical means of accessing mineral resources that are not readily available through open surface mining. ",
+        articleImg5: "",
+
+        subtitle6: "",
+        mediumText6: "",
+        paragraph6:
+            "This is due to the fact that the deposits are often located deep underground and require specialized equipment and techniques to extract. Moreover, in many cases, underground mining is the only viable option for extracting certain minerals. This is in areas where surface mining would have a devastating impact on the environment. As a result, this mining method is ideal for extracting minerals such as gold, coal, and diamonds, which are frequently found deep beneath the surface.",
+        articleImg6: "",
+        table6: {
+            tableHeader1: "Advantages ",
+            tableHeader2: "Disadvantages ",
+            tableItem1:
+                "it allows for extraction of minerals not accessible by open surface mining",
+            tableItem2:
+                "it minimizes  the impact of the mining process on the environment",
+            tableItem3: "it is a hazardous and costly process ",
+            tableItem4:
+                "it has a high risk of cave-Ins, explosions and exposure to harmful gases",
+        },
+        subtitle7: "2. Open surface mining",
+        mediumText7: "",
+        paragraph7: "",
+        articleImg7: "/images/article-preview-10.jpg",
+
+        subtitle8: "",
+        mediumText8: "",
+        paragraph8:
+            "Open surface mining, also known as open-pit mining, is a mining technique used to extract minerals that are located near the surface of the earth. This method involves the removal of overlying soil and rock, exposing the mineral deposits and making them accessible for extraction. Open surface mining is commonly used for minerals such as coal, copper, gold, iron, and other precious metals.",
+        articleImg8: "",
+
+        subtitle9: "",
+        mediumText9: "",
+        paragraph9:
+            "The process of open surface mining begins with the removal of vegetation and topsoil from the mining area. Once this is done, explosives are used to break up the rock and remove the overburden, which is the layer of soil and rock covering the mineral deposits. The extracted materials are then transported to a processing plant, where they are refined and prepared for sale.",
+        articleImg9: "",
+
+        table9: {
+            tableHeader1: "Advantages ",
+            tableHeader2: "Disadvantages ",
+            tableItem1: "It is a cost-effective method of mining ",
+            tableItem2: "it can be used to extract minerals from large areas ",
+            tableItem3:
+                "it may cause environmental damages like eruption and water pollution ",
+            tableItem4:
+                "it may affect the health and well-being of nearby communities",
+        },
+
+        subtitle10: "3. Placer mining",
+        mediumText10: "",
+        paragraph10:
+            "Placer mining is a method of extracting minerals that have been deposited in river beds and sedimentary deposits. This method involves the use of gravity to separate the valuable minerals from the sediment, sand, and gravel. Placer mining is commonly used for minerals such as gold, tin, and platinum.",
+        articleImg10: "",
+
+        subtitle11: "",
+        mediumText11: "",
+        paragraph11:
+            "The process of placer mining involves using water to wash the sediment and gravel to remove the minerals. This can be done using a pan, sluice box, or dredging equipment. The extracted minerals are then separated from the water and processed to remove impurities and prepare them for sale.",
+        articleImg11: "",
+
+        table11: {
+            tableHeader1: "Advantages ",
+            tableHeader2: "Disadvantages ",
+            tableItem1: "it is a simple and low-cost method ",
+            tableItem2:
+                "it is suitable for areas with rugged terrain and limited water supply ",
+            tableItem3:
+                "it causes erosions of riverbanks and disruption of aquatic ecosystem",
+            tableItem4:
+                "it may have negative impacts on nearby residential areas ",
+        },
+
+        subtitle12: "4. In-Situ mining ",
+        mediumText12: "",
+        paragraph12:
+            "In-situ mining is a complex and specialized mining technique that involves the dissolution of minerals in place, without the need for surface excavation. It is typically used for the extraction of uranium, copper, and other metals that are located deep underground. In-situ mining is an attractive option for mining companies since it requires fewer workers and less equipment compared to traditional mining methods, which can reduce the overall cost of mining.",
+        articleImg12: "",
+
+        subtitle13: "",
+        mediumText13: "",
+        paragraph13:
+            "The in-situ mining process involves the injection of a leaching solution into the ground, which dissolves the targeted minerals. The solution is then pumped back to the surface, where it is processed to extract the desired minerals. The dissolved minerals are left behind in the subsurface, and the mine site is typically reclaimed after the operation is completed.",
+        articleImg13: "",
+
+        table13: {
+            tableHeader1: "Advantages ",
+            tableHeader2: "Disadvantages ",
+            tableItem1: "it has low impact on the environment ",
+            tableItem2:
+                "it can access mineral deposits that are difficult to reach with traditional methods ",
+            tableItem3: "it can be slow and expensive ",
+            tableItem4: "it requires extensive planning and management ",
+        },
+
+        subtitle14: "Factors to consider before choosing a mining method",
+        mediumText14: "",
+        paragraph14:
+            "Before deciding on a mining method for extracting minerals from the earth, several factors must be considered. Some of the factors that mining companies typically consider when choosing a method include",
+        articleImg14: "",
+
+        list14: {
+            listItem1: "1. The type and quality of the ore",
+            listItem2: "2. The depth and location of the deposit",
+            listItem3: "3. The size and shape of the deposit",
+            listItem4: "4. The environmental impact of the mining method",
+            listItem5: "5. The cost and feasibility of the mining method",
+            listItem6:
+                "6. The safety and health risks associated with the mining method",
+            listItem7: "7. The availability and cost of labor and equipment",
+            listItem8: "8. The regulatory requirements and permitting process",
+            listItem9:
+                "9. The social and community impacts of the mining method",
+            listItem10:
+                "10. The potential for future development and expansion of the mine",
+        },
+
+        subtitle15: "Conclusion ",
+        mediumText15: "",
+        paragraph15:
+            "As technology and innovation continue to advance, the mining industry can look forward to new and innovative mining methods that are safer, more efficient, and more sustainable. From advances in automation and robotics to the use of renewable energy and green technologies, the future of mining is filled with possibilities. And as the rising demand for minerals resources increase, mining companies must balance economic development with environmental and community protection. Responsible mining practices should prioritize safety, minimize environmental impact, and respect local communities. This would contributed to the sustainability of the industry and the planet as a whole ",
+        articleImg15: "",
+    },
+    {
+        id: 22,
+        preview: "images/article-preview-7.jpg",
+        tag: "export of coal",
+        name: "Countries at the forefront of coal mining",
+        paragraph1: "",
+
+        subtitle2: "Introduction",
+        mediumText2: "",
+        paragraph2: "",
+        articleImg2: "/images/article-img-3.png",
+
+        subtitle3: "",
+        mediumText3: "",
+        paragraph3:
+            "Over the years, coal has become one of the most important natural resources in the world. It is used in various companies to generate thermal energy for manufacturing processes, such as steelmaking. Coal plays a significant role in powering industrialization in global and local markets. The world’s biggest coal-producing countries work tirelessly to ensure it is delivered consistently to different parts of the world. ",
+        articleImg3: "",
+
+        subtitle4: "",
+        mediumText4: "",
+        paragraph4:
+            "Recently, the decarbonization of the world energy system and climate unpredictability has reduced the production and supply of coal. However, it is still one of the most important sources of electricity in the world. According to The International Energy Agency (IEA), it contributes to about 38% of the global energy supply. For this reason, the importance of coal in powering industrialization cannot be overemphasized. ",
+        articleImg4: "",
+
+        subtitle5: "",
+        mediumText5: "",
+        paragraph5:
+            "According to studies, coal production and supply have increased yearly since 2016. The International Energy Agency measured a record of 7.9 billion tons in 2019. Studies showed that its production was growing at 1.5% per year. Lignite and thermal coal accounted for about 86%, while metallurgical coal accounted for 14%. The global coal reserve is said to contain over one trillion tons. In 2020, The International Energy Agency recorded a 6.5% reduction in global production. This decline was due to a fall in demand during the COVID-19 pandemic. In 2021, the annual coal production was increased to about 7.6 million tons.",
+        articleImg5: "",
+
+        subtitle6: "",
+        mediumText6: "",
+        paragraph6:
+            "The rate of coal production continues to increase in different countries worldwide. As a result, industrialization and manufacturing processes continue to flourish. Continue reading to learn about countries that contribute significantly to the production and supply of coal in the global market. ",
+        articleImg6: "",
+
+        tableLarge6: {
+            tableHeader1: "S/N",
+            tableHeader2: "Country",
+            tableHeader3: "Total Global Output",
+            tableItem1: "1.",
+            tableItem2: "2.",
+            tableItem3: "3.",
+            tableItem4: "4.",
+            tableItem5: "5.",
+            tableItem6: "6.",
+            tableItem7: "China",
+            tableItem8: "India",
+            tableItem9: "United States",
+            tableItem10: "Indonesia",
+            tableItem11: "Australia",
+            tableItem12: "Russia",
+            tableItem13: "3.9 billion tons",
+            tableItem14: "767 million tons",
+            tableItem15: "544 million tons",
+            tableItem16: "550 million tons",
+            tableItem17: "544 million tons",
+            tableItem18: "430 million tons",
+        },
+
+        subtitle7: "China",
+        mediumText7: "",
+        paragraph7:
+            "According to the International Energy Agency, China contributes about 3.7 billion tons of coal to the global market. It is an essential coal supplier, accounting for over 47% of the world's total production. According to studies, it is the world's largest consumer of coal. It consumes more than 53% of the world's total. In 2020, President Xi Jinping announced that China would work towards attaining carbon neutrality before 2060. As a result of this announcement, the country started reducing its dependence on coal for its local energy supply. However, the transition from a carbon-dependent energy source to a carbon-independent one can only happen after a period. The International Energy Agency predicts that the annual coal production rate will remain constant for at least two years before it begins to decline. ",
+        articleImg7: "",
+
+        subtitle8: "India ",
+        mediumText8: "",
+        paragraph8:
+            "India contributes over 783 million tons to the world's total output. It has the second-highest coal production rate in the world. It accounts for about 10% of the world's total output. The country is home to the largest coal-producing company in the world, State-owner Coal India, which produces over 80% of the country's coal. The company possesses about 360 mines. The Indian government took a bold step in 2020 to reduce the country's dependence on foreign companies. Over 40 coal mines were opened to the private sector for development. Studies showed that the initial interest in these sales could have been higher due to insufficient investors from the private sector. However, in recent years, records show that the interest and competition from renewables have significantly increased. ",
+        articleImg8: "",
+
+        subtitle9: "United States ",
+        mediumText9: "",
+        paragraph9:
+            "The United States contributes over 640 million tons of coal to the global market. While the nation's coal production rate experienced a severe decline in 2019, it remains one of the largest coal-producing countries in the world. Due to competition from cheaper renewables and natural gas, the coal demand rate in the country for energy supply has been reduced. The United States government continues to take vital steps to boost the demand rate in the country. ",
+        articleImg9: "",
+
+        subtitle10: "",
+        mediumText10: "",
+        paragraph10:
+            "According to the International Energy Agency, the country’s total output was reduced to about 491 million tons in 2020. In 2021, the whole production increased to 539 million tons. According to the IEA, five cities in the United States contribute 71% of the country's total production. These cities include; Kentucky (5%), Illinois (6.5%), Pennsylvania (7%), West Virginia (13%), and Wyoming (39%). ",
+        articleImg10: "",
+
+        subtitle11: "Indonesia ",
+        mediumText11: "",
+        paragraph11:
+            "According to the International Energy Agency, Indonesia accounts for over 616 million tons globally. It is one of the most significant thermal coal suppliers worldwide. Most of its trade occurs in India and China. The coronavirus pandemic caused a decrease in the coal demand rate in the country. The reduction in demand rate increased the price of domestic commodities and forced miners to reduce their production rate. Indonesia's total coal production was reduced to 529 million tons in 2020 and rose to 545 million tons in 2021. The government sets a yearly target for the coal-mining countries to maintain a productive coal output.",
+        articleImg11: "",
+
+        subtitle12: "Australia ",
+        mediumText12: "",
+        paragraph12:
+            "With over 550 million tons supplied to the global market, Australia is one of the largest coal-mining countries in the world. Coal is the second most profitable export in the country, after concentrates and iron ores. Thermal coal and metallurgical coal account for half and one-third, respectively. While the annual production rate was reduced by 9% in 2020, the country still records a 3.4% increase yearly. ",
+        articleImg12: "",
+
+        subtitle13: "",
+        mediumText13: "",
+        paragraph13:
+            "Australia is one of the most renowned suppliers of metallurgical coal globally. It makes most of its trade with China's steelmaking sector. According to the International Energy Agency, coal is mined consistently in every state in the country. However, New South Wales and Queensland are the most productive regions. ",
+        articleImg13: "",
+
+        subtitle14: "Russia",
+        mediumText14: "",
+        paragraph14:
+            "Russia contributes over 430 million tons of coal to the global market. It is the sixth-largest coal supplier in the world. It accounts for around 5% of the world's output. According to the International Energy Agency, the country experienced an 8% decline in coal production. This decline was due to a significant fall in demand locally and in major international markets, including Korea and Europe. ",
+        articleImg14: "",
+
+        subtitle15: "",
+        mediumText15: "",
+        paragraph15:
+            "Russia is home to the second-largest coal reserves in the world. It has basins in Siberia that contribute as much as 162 tons to the country's resources. Lawmakers continue to create laws to improve domestic coal production and put the country at the forefront of the global market. ",
+        articleImg15: "",
+
+        subtitle16: "Conclusion ",
+        mediumText16: "",
+        paragraph16:
+            "Coal is one of the most critical thermal energy sources in the world. Over the years, the demand for manufacturing processes has increased in different parts of the world. The countries listed above contribute significantly to coal production for sustainable industrialization and manufacturing processes.",
+        articleImg16: "",
+
+        subtitle17: "",
+        mediumText17: "",
+        paragraph17: "",
+        articleImg17: "",
+
+        subtitle18: "",
+        mediumText18: "",
+        paragraph18: "",
+        articleImg18: "",
+
+        subtitle19: "",
+        mediumText19: "",
+        paragraph19: "",
+        articleImg19: "",
+
+        subtitle20: "",
+        mediumText20: "",
+        paragraph20: "",
+        articleImg20: "",
+
+        subtitle21: "",
+        mediumText21: "",
+        paragraph21: "",
+        articleImg21: "",
+    },
+    {
+        id: 23,
+        preview: "images/article-preview-15.jpg",
+        tag: "reserves",
+        name: "The Top coal mining leaders in Russia and the key buyers for 2022-2023",
+        paragraph1:
+            "From the snow-capped mountains of Siberia to the sprawling open-pit mines in Kuzbass, Russia's coal mining industry has been a vital contributor to the country's economy for decades. As one of the world's largest producers of coal, Russia is responsible for a significant portion of the global supply chain. However, with increasing competition from renewable energy sources, growing concerns over climate change and Russia’s ongoing war with Ukraine, the  industry faces a number of challenges in the years ahead.",
+
+        subtitle2: "",
+        mediumText2: "",
+        paragraph2:
+            "In this article, we will explore the top coal mining leaders in Russia, key buyers of Russian coal, and the future outlook for the industry.",
+        articleImg2: "",
+
+        subtitle3: "Top Coal Mining Leaders in Russia",
+        mediumText3: "",
+        paragraph3:
+            "Russia's coal mining industry is dominated by several large companies that control a significant portion of the market. These companies are responsible for the production, processing, and distribution of coal throughout the country and beyond. Here are four of the top coal mining leaders in Russia:",
+        articleImg3: "",
+
+        subtitle4: "",
+        mediumText4: "Siberian Coal Energy Company (SUEK)",
+        paragraph4:
+            "SUEK is one of the largest coal mining companies in Russia and the world. The company operates coal mines and processing plants in Siberia and the Far East, producing high-quality coal for both domestic and international markets. SUEK also owns power plants and railway infrastructure, making it a vertically integrated company that can control the entire supply chain.",
+        articleImg4: "",
+
+        subtitle5: "",
+        mediumText5: "Kuzbassrazrezugol (KRU)",
+        paragraph5:
+            "KRU is a major coal mining company in Russia, operating in the Kemerovo region in Western Siberia. The company operates several large open-pit coal mines and a processing plant, producing a variety of coal grades for different markets. KRU is known for its efficient and environmentally responsible mining practices, which have helped it to become a leader in the industry.",
+        articleImg5: "",
+
+        subtitle6: "",
+        mediumText6: "SDS-Ugol",
+        paragraph6:
+            "SDS-Ugol is another major coal mining company in Russia, with operations in the Kuzbass region of Western Siberia. The company produces high-quality thermal coal for domestic and international markets, with a focus on energy efficiency and environmental sustainability. SDS-Ugol is also involved in coal transportation and logistics, ensuring that its products can reach customers efficiently and cost-effectively.",
+        articleImg6: "",
+
+        subtitle7: "",
+        mediumText7: "Russian Coal",
+        paragraph7:
+            "Russian Coal is a privately owned coal mining company with operations in several regions of Russia. The company produces thermal and coking coal for domestic and export markets, with a focus on quality and customer service. Russian Coal is also involved in coal trading and logistics, making it a one-stop-shop for customers looking to purchase Russian coal.",
+        articleImg7: "",
+
+        subtitle8: "",
+        mediumText8: "",
+        paragraph8:
+            "These four companies are at the forefront of Russia's coal mining industry, driving innovation and growth while maintaining a commitment to sustainability and efficiency. Other companies worthy of note include VostSibUgol, RUK (Novokuznetsk), Southern Kuzbass (Yuzhny Kuzbass, asset of Mechel), Vorkutaugol (part of Severstal Group), Kuzbasskaya Toplivnaya Company (KTK) and RUK (Mezhdurechevsk)",
+        articleImg8: "",
+
+        subtitle9: "Key Buyers of Russian Coal",
+        mediumText9: "",
+        paragraph9:
+            "Russia's coal industry plays a crucial role in the country's economy, contributing to more than 15% of its GDP. In recent years, however, political tensions between Russia and Ukraine have had a significant impact on the Russian fossil fuels industry. Despite this, the country remains a major supplier of coal to a number of key buyers. These major buyers include",
+        articleImg9: "",
+
+        subtitle10: "",
+        mediumText10: "China",
+        paragraph10: "",
+        articleImg10: "/images/article-preview-15.jpg",
+
+        subtitle11: "",
+        mediumText11: "",
+        paragraph11:
+            "China is the world's largest coal consumer, and it has a significant demand for high-quality coal to fuel its industries. Russia is one of the top suppliers of coal to China, with shipments reaching over 31 million metric tons in 2020. The two countries have signed a series of agreements to increase coal exports to China, and Russia is expected to continue to play a critical role in meeting China's energy demands in the future.",
+        articleImg11: "",
+
+        subtitle12: "",
+        mediumText12: "Japan",
+        paragraph12: "",
+        articleImg12: "/images/article-preview-15.jpg",
+
+        subtitle13: "",
+        mediumText13: "",
+        paragraph13:
+            "Japan is another significant buyer of Russian coal, with imports reaching over 18 million metric tons in 2020. The country's reliance on imported energy has increased since the Fukushima nuclear disaster in 2011. Russia has become a reliable supplier of coal to Japan, with its proximity to the country providing a strategic advantage.",
+        articleImg13: "",
+
+        subtitle14: "",
+        mediumText14: "South Korea",
+        paragraph14: "",
+        articleImg14: "/images/article-preview-15.jpg",
+
+        subtitle15: "",
+        mediumText15: "",
+        paragraph15:
+            "South Korea is a significant importer of fossil fuels, including coal, with imports reaching over 10 million metric tons in 2020. The country's energy mix is heavily reliant on imported coal, and Russia has become a reliable supplier in recent years. The two countries have signed a series of agreements to increase coal exports, and South Korea is expected to continue to rely on Russian coal in the future.",
+        articleImg15: "",
+
+        subtitle16: "",
+        mediumText16: "Turkey",
+        paragraph16: "",
+        articleImg16: "/images/article-preview-15.jpg",
+
+        subtitle17: "",
+        mediumText17: "",
+        paragraph17:
+            "Turkey is one of the fastest-growing economies in the world, and its energy demands are increasing rapidly. The country is one of the top buyers of Russian coal, with imports reaching over 8 million metric tons in 2020. Russia's proximity to Turkey and its large coal reserves make it an attractive supplier for the country's energy needs.",
+        articleImg17: "",
+
+        subtitle18: "",
+        mediumText18: "",
+        paragraph18:
+            "While these buyers are still actively buying, the imposition of economic sanctions on Russia by the United States and European Union has made it more difficult for Russian coal producers to access key markets. The sanctions have also limited the ability of Russian companies to obtain financing and access technology, and imposed restrictions on the sale of certain types of equipment to Russia. This has had a significant impact on the industry, and has forced many Russian companies to seek new markets for their coal.",
+        articleImg18: "",
+
+        subtitle19: "The Future of Russia's Coal Mining Industry",
+        mediumText19: "",
+        paragraph19:
+            "Sanctions from Western countries and declining demand have impacted the industry's growth. However, there are still opportunities for growth in the coming years, especially in the Asian markets. ",
+        articleImg19: "",
+
+        subtitle20: "",
+        mediumText20: "",
+        paragraph20:
+            "According to Statista, China and Japan are the top importers of Russian coal, followed by South Korea and Taiwan. These countries are expected to continue to be key buyers of Russian coal in 2022-2023. In addition, Russia is also exploring new export routes, including the Northern Sea Route, which could potentially boost the country's coal exports.",
+        articleImg20: "",
+
+        subtitle21: "",
+        mediumText21: "",
+        paragraph21:
+            "Now, the future of the industry depends on how well leaders can capitalize on these opportunities and adapt to alternative energy sources. So despite the uncertainties, the coal mining leaders in Russia have the potential to remain significant players in the global energy sector.",
+        articleImg21: "",
+    },
+    {
+        id: 24,
+        preview: "images/article-preview-18.jpg",
+        tag: "landing",
+        name: "World leaders in the production of coal mining equipment and machinery",
+        paragraph1:
+            "Mining has always been a vital industry, and the coal mining sector is no exception. Coal provides an essential source of energy for industries and homes worldwide, and the machinery and equipment used to extract it are just as crucial. ",
+
+        subtitle2: "",
+        mediumText2: "",
+        paragraph2:
+            "The world of coal mining equipment and machinery is a complex and fascinating one, filled with cutting-edge technology and state-of-the-art engineering. From massive draglines that can move millions of tons of earth to underground continuous miners that operate in cramped spaces, the equipment and machinery used in coal mining are as varied as they are impressive. ",
+        articleImg2: "",
+
+        subtitle3: "",
+        mediumText3: "",
+        paragraph3:
+            "In this article, we will explore the front runners in the production of coal mining equipment and machinery. ",
+        articleImg3: "",
+
+        table3: {
+            tableHeader1: "Name of Company ",
+            tableHeader2: "Country ",
+            tableItem1: "Caterpillar Inc.",
+            tableItem2: "United states ",
+            tableItem3: "Komatsu Ltd.",
+            tableItem4: "Japan",
+            tableItem5: "Sandvik AB",
+            tableItem6: "Sweden ",
+            tableItem7: "Epiroc AB",
+            tableItem8: "Sweden ",
+            tableItem9: "Joy Global Inc.",
+            tableItem10: "United states",
+            tableItem11: "Hitachi Construction Machinery Co., Ltd.",
+            tableItem12: "Japan ",
+            tableItem13: "Metso Outotec Corporation ",
+            tableItem14: "Finland ",
+            tableItem15: "Liebherr-International AG ",
+            tableItem16: "Switzerland",
+            tableItem17: "Zhengzhou Coal Mining Machinery Group Co., Ltd. ",
+            tableItem18: "China ",
+            tableItem19:
+                "Sany Heavy Equipment International Holdings Co. Ltd. ",
+            tableItem20: "China ",
+        },
+
+        subtitle4: "Caterpillar Inc. (United States) ",
+        mediumText4: "",
+        paragraph4: "",
+        articleImg4: "/images/article-preview-18.jpg",
+
+        subtitle5: "",
+        mediumText5: "",
+        paragraph5:
+            "Caterpillar Inc. is a global leader in the production of coal mining equipment and machinery, with a history that dates back over 90 years. The company offers a wide range of products designed for the mining industry, including draglines, electric rope shovels, mining trucks, and more. ",
+        articleImg5: "",
+
+        subtitle6: "",
+        mediumText6: "",
+        paragraph6:
+            "Caterpillar is known for its commitment to safety and efficiency, with a focus on developing innovative products that can help customers reduce costs and improve productivity. The company has a strong global presence, with operations in more than 190 countries.",
+        articleImg6: "",
+
+        subtitle7: "Komatsu Ltd. (Japan) ",
+        mediumText7: "",
+        paragraph7: "",
+        articleImg7: "/images/article-preview-18.jpg",
+
+        subtitle8: "",
+        mediumText8: "",
+        paragraph8:
+            "Komatsu Ltd. is a leading Japanese multinational corporation that specializes in the production of construction, mining, and military equipment. The company is a major producer of coal mining equipment and machinery, including hydraulic excavators, bulldozers, dump trucks, and more. ",
+        articleImg8: "",
+
+        subtitle9: "",
+        mediumText9: "",
+        paragraph9:
+            "With a focus on innovation, technology, and automation, Komatsu aims to improve safety, efficiency, and productivity in the mining industry. The company also places a strong emphasis on sustainability and environmental responsibility, working to reduce the impact of its operations on the planet.",
+        articleImg9: "",
+
+        subtitle10: "Sandvik AB (Sweden)",
+        mediumText10: "",
+        paragraph10:
+            "Sandvik AB is a Swedish engineering company that produces a wide range of products, including mining equipment and machinery. The company's coal mining equipment and machinery products are known for their high quality and reliability. ",
+        articleImg10: "",
+
+        subtitle11: "",
+        mediumText11: "",
+        paragraph11:
+            "Sandvik AB is committed to sustainable and responsible manufacturing practices, with a focus on reducing its environmental impact. The company invests heavily in research and development to create innovative products that meet the needs of its customers. Sandvik AB is also known for its excellent customer service, providing support and training to customers around the world.",
+        articleImg11: "",
+
+        subtitle12: "Epiroc AB (Sweden) ",
+        mediumText12: "",
+        paragraph12:
+            "Epiroc AB (Sweden) - Epiroc AB is a Swedish manufacturer of mining and infrastructure equipment, including coal mining equipment and machinery. The company was formed in 2018 as a spin-off from Atlas Copco, and has quickly become a leading player in the industry. ",
+        articleImg12: "",
+
+        subtitle13: "",
+        mediumText13: "",
+        paragraph13:
+            "Epiroc is known for its innovative products and services, including its SmartROC range of drilling rigs which use advanced automation technology to improve safety and efficiency. The company is also committed to sustainability, with a focus on reducing energy consumption and carbon emissions in its operations.",
+        articleImg13: "",
+
+        subtitle14: "Joy Global Inc. (United States)",
+        mediumText14: "",
+        paragraph14:
+            "Joy Global Inc. is a leading producer of coal mining equipment and machinery, with a focus on safety and productivity. The company offers a range of products, including underground mining machinery, surface mining equipment, and more. ",
+        articleImg14: "",
+
+        subtitle15: "",
+        mediumText15: "",
+        paragraph15:
+            "Joy Global is committed to using advanced technology and automation to improve safety and efficiency, and offers a range of products designed to help mining companies maximize their productivity while reducing their environmental impact. The company has a global presence, with operations in more than 20 countries around the world.",
+        articleImg15: "",
+
+        subtitle16: "Hitachi Construction Machinery Co., Ltd. (Japan)",
+        mediumText16: "",
+        paragraph16:
+            "Hitachi Construction Machinery Co. Ltd. is a Japanese multinational corporation that specializes in the production of construction and mining equipment, including coal mining equipment and machinery. The company offers a wide range of products designed to improve safety and productivity, with a focus on technological innovation and sustainability.",
+        articleImg16: "",
+
+        subtitle17: "",
+        mediumText17: "",
+        paragraph17:
+            "Hitachi Construction Machinery Co. Ltd. is known for its reliable and durable equipment, with a global presence in over 150 countries. The company has a commitment to environmental responsibility and offers products that minimize the impact of mining operations on the environment.",
+        articleImg17: "",
+
+        subtitle18: "Metso Outotec Corporation (Finland)",
+        mediumText18: "",
+        paragraph18:
+            "Metso Outotec Corporation is a Finnish multinational company that produces a range of mining and mineral processing equipment, including coal mining equipment and machinery. The company was formed in 2020 through a merger between Metso Corporation and Outotec Oyj, and has a global presence with operations in more than 50 countries. ",
+        articleImg18: "",
+
+        subtitle19: "",
+        mediumText19: "",
+        paragraph19:
+            "Metso Outotec is committed to sustainability and reducing its environmental impact, and offers a range of products designed to improve efficiency and productivity, including grinding mills, flotation machines, and more. The company also offers services and solutions to optimize its customers' operations.",
+        articleImg19: "",
+
+        subtitle20: "Liebherr-International AG (Switzerland) ",
+        mediumText20: "",
+        paragraph20:
+            "Liebherr-International AG is a Swiss multinational company that has a strong presence in the mining industry, including coal mining equipment and machinery. The company's products include excavators, haul trucks, and loaders, all of which are designed with a focus on safety, efficiency, and sustainability.",
+        articleImg20: "",
+
+        subtitle21: "",
+        mediumText21: "",
+        paragraph21:
+            "Liebherr's mining equipment is known for its reliability and durability, and the company has a reputation for developing innovative solutions to meet the changing needs of the industry. With operations around the world, Liebherr is a major player in the coal mining equipment and machinery market.",
+        articleImg21: "",
+
+        subtitle22: "Zhengzhou Coal Mining Machinery Group Co., Ltd. (China) ",
+        mediumText22: "",
+        paragraph22:
+            "Zhengzhou Coal Mining Machinery Group Co., Ltd. is a Chinese company that specializes in the design, manufacturing, and distribution of coal mining machinery and related parts. The company's products include a range of equipment for the coal mining industry, such as hydraulic support systems, armored face conveyors, and coal shearers. ",
+        articleImg22: "",
+
+        subtitle23: "",
+        mediumText23: "",
+        paragraph23:
+            "With a focus on technological innovation, the company aims to improve efficiency, productivity, and safety in the coal mining industry. It has a strong presence in the Chinese market, and has expanded its operations globally to meet the growing demand for coal mining equipment and machinery.",
+        articleImg23: "",
+
+        subtitle24:
+            "Sany Heavy Equipment International Holdings Co. Ltd. (China) ",
+        mediumText24: "",
+        paragraph24:
+            "Sany Heavy Equipment International Holdings Co., Ltd. is a Chinese manufacturer of heavy equipment, including coal mining equipment and machinery. The company has a global presence, with exports to more than 150 countries. It is committed to providing innovative and sustainable solutions to its customers. ",
+        articleImg24: "",
+
+        subtitle25: "",
+        mediumText25: "",
+        paragraph25:
+            "Sany Heavy Equipment International Holdings Co., Ltd. offers a range of products designed to improve safety and productivity, with a focus on quality and reliability. The company also provides excellent after-sales service and support to its customers around the world.",
+        articleImg25: "",
+
+        subtitle26: "Bottomline ",
+        mediumText26: "",
+        paragraph26:
+            "The coal mining equipment and machinery industry is expected to witness steady growth in the coming years due to the increasing demand for coal in various industries. However, the industry also faces challenges such as environmental concerns and the rise of alternative energy sources. ",
+        articleImg26: "",
+
+        subtitle27: "",
+        mediumText27: "",
+        paragraph27:
+            "The development of advanced technologies such as automation and AI could potentially address these challenges and drive further growth in the industry. As it stands, the future of coal mining equipment and machinery remains dynamic and exciting.",
+        articleImg27: "",
+    },
+    {
+        id: 25,
+        preview: "images/article-preview-19.jpg",
+        tag: "landing",
+        name: "LEADING EXPORTERS OF COAL IN THE WORLD",
+        paragraph1:
+            "The leading exporter of coal in the world is Australia. Close to 36% of total coal export in the world comes from Australia. Other countries like Russia, Indonesia, South Africa and the United States of America are also leading exporters. These countries, together with Australia, are responsible for about 85% of total coal exports in the world. Despite being the leading exporter of coal, Australia is not the largest producer of coal. ",
+
+        subtitle2: "",
+        mediumText2: "",
+        paragraph2:
+            "Exportation of coal is a major source of income. From 2020 to 2021, the cost of exportation of coal increased by 48%. In 2021, about $123 billion was the cost of coal exported all over the world. This comes with a lot of profits. ",
+        articleImg2: "",
+
+        subtitle3: "",
+        mediumText3: "",
+        paragraph3:
+            "The leading exporters of coal, together with the value of coal exported in 2021 are described in the table below",
+        articleImg3: "",
+
+        tableLarge3: {
+            tableHeader1: "Country",
+            tableHeader2: "Worth Of Coal Exported",
+            tableHeader3: "Percentage Of Coal Exported",
+            tableItem1: "Australia",
+            tableItem2: "Indonesia",
+            tableItem3: "Russia",
+            tableItem4: "United States of America",
+            tableItem5: "South Africa",
+            tableItem6: "Canada",
+            tableItem7: "Colombia",
+            tableItem8: "Mongolia",
+            tableItem9: "Mozambique",
+            tableItem10: "Kazakhstan",
+            tableItem11: "$44 Billion",
+            tableItem12: "$26.5 Billion",
+            tableItem13: "$17.7 Billion",
+            tableItem14: "$9.6 Billion",
+            tableItem15: "$6 Billion",
+            tableItem16: "$6 Billion",
+            tableItem17: "$4.5 Billion",
+            tableItem18: "$1.9 Billion",
+            tableItem19: "$1.1 Billion",
+            tableItem20: "$930 Million",
+            tableItem21: "35.6%",
+            tableItem22: "21.7%",
+            tableItem23: "14.5%",
+            tableItem24: "7.7%",
+            tableItem25: "4.8%",
+            tableItem26: "4.8%",
+            tableItem27: "3.6%",
+            tableItem28: "1.7%",
+            tableItem29: "1%",
+            tableItem30: "0.9%",
+        },
+
+        subtitle4: "",
+        mediumText4: "",
+        paragraph4:
+            "Other countries like Vietnam, Poland and Philippines account for a very little percentage of the world's total export. Some of these countries, in recent years, have become great exporters of coal compared to what they used to be. An example is Kazakhstan, who in 2021,  exported about 170% of what they did in 2020. ",
+        articleImg4: "",
+
+        subtitle5: "Top Producers Of Coal In The World",
+        mediumText5: "",
+        paragraph5:
+            "China and India are the leading producers of coal in the world. These two countries are however not great exporters of coal, because most of the coal produced are used to generate electricity. China is the largest consumer of coal in the world, followed by India.  Only little or no percentage is available for exportation in these two countries. ",
+        articleImg5: "",
+
+        subtitle6: "",
+        mediumText6: "",
+        paragraph6:
+            "Other countries like the United States of America, Australia and Indonesia, are also great producers of coal. These countries produce more coal than they actually need. The excess coal produced is then exported to countries who demand it. ",
+        articleImg6: "",
+
+        subtitle7: "",
+        mediumText7: "",
+        paragraph7:
+            "China and India, who are the leading producers of coal, are large importers of coal. Due to their consumption of coal for the generation of electricity, their need for coal rises every year. They therefore rely heavily on countries like Indonesia for their coal import despite being the best producers of coal in the world. ",
+        articleImg7: "",
+
+        subtitle8: "Exportation Of Coal In Australia",
+        mediumText8: "",
+        paragraph8:
+            "Australia leads the world in the exportation of coal. Of the total coal exported all over the world, Australia is responsible for about 36% as at 2021. The country is a great producer of coal but a poor consumer. Australia uses only about 15 to 16 percent of the total coal produced while the remaining are available for exportation. ",
+        articleImg8: "",
+
+        subtitle9: "",
+        mediumText9: "",
+        paragraph9:
+            "Over the last few years, Australia has increased its production of coal for the sake of exportation to countries who demand it. Because of its increased production, Australia has the third largest coal reserve in the world. Japan receives most of its coal imports from Australia.",
+        articleImg9: "",
+
+        subtitle10: "Exportation Of Coal In The United States",
+        mediumText10: "",
+        paragraph10:
+            "The United States of America has the largest coal reserve in the world. They are great producers of coal and only a little percentage of it is used to generate electricity. The United States exports both steam coal and metallurgical coal. The U.S is responsible for 7.7% of total coal exports in the world. The United States exports majorly to India, China, Japan and the Netherlands. ",
+        articleImg10: "",
+
+        subtitle11: "",
+        mediumText11: "",
+        paragraph11:
+            "Between 2012 and 2016, the exportation of coal in the United States dropped by a large percentage.  This occurred because the country wasn't producing much. From 2017, the production of coal rose followed by a decrease in the consumption of coal. This led to an exponential increase in the exportation of coal. ",
+        articleImg11: "",
+
+        subtitle12: "Exportation Of Coal In Indonesia",
+        mediumText12: "",
+        paragraph12:
+            "Indonesia is the second largest exporter of coal in the world after Australia. This country accounts for 21.7 percent of the total coal exported all over the world. The exportation of coal in Indonesia dropped by 12.4% in 2020. However, they are great producers of coal too and consume only about 20% of it. Indonesia is responsible for about 4% of total coal reserves in the world. ",
+        articleImg12: "",
+
+        subtitle13: "",
+        mediumText13: "",
+        paragraph13: "China receives most of its coal imports from Indonesia.",
+        articleImg13: "",
+
+        subtitle14: "Exportation Of Coal In Russia",
+        mediumText14: "",
+        paragraph14:
+            "Russia has the second largest coal reserve in the world after the United States of America. They mainly produce hard coal. Russia accounts for 14.5% of the total coal exports in the world and are great exporters of coal. They export over 50% of the total coal produced in the country while the rest are used domestically to generate electricity. ",
+        articleImg14: "",
+
+        subtitle15: "",
+        mediumText15: "",
+        paragraph15:
+            "Most of the coal coming from Russia is exported mainly to China and the European Union.  ",
+        articleImg15: "",
+
+        subtitle16: "Exportation Of Coal In South Africa",
+        mediumText16: "",
+        paragraph16:
+            "South Africa is also one of the biggest exporters of coal in the world. About 90% of the total coal used by African countries comes from South Africa. Over 50% of electricity generated in South Africa comes from the consumption of coal. South Africa is responsible for about 4.8% of the total coal exports in the world.",
+        articleImg16: "",
+
+        subtitle17: "Top Coal Exporting Companies In The World",
+        mediumText17: "",
+        paragraph17:
+            "Some of the best coal exporting companies in the world include:",
+        articleImg17: "",
+
+        list17: {
+            listItem1: "● Bumi Resources, Indonesia",
+            listItem2: "● Siberian Coal Energy Company, Russia",
+            listItem3: "● BHP Billiton Mitsubishi Alliance, Australia",
+            listItem4: "● Exxaro Resources, South Africa",
+        },
+
+        subtitle18: "Conclusion",
+        mediumText18: "",
+        paragraph18:
+            "The largest exporters of coal in the world are Australia, Indonesia, Russia, United States Of America and South Africa. They are also large producers of coal but the biggest producers of coal in the world are China and India. China and India consume most of the coal they produce and barely export coal. These exporters of coal are also consumers but they are poor consumers. Poor consumption leaves them with excess which they export to countries in need. Some countries like Australia even produce more to meet the demand in the market.",
+        articleImg18: "",
     },
     // {
-    //     id: 21,
-    //     preview: "images/article-preview-3.png",
-    //     tag: "landing",
-    //     name: "Definitive Guide to Make a Daily More Productive Working Flow. ",
-    // paragraph1: "",
-
-    // subtitle2: "",
-    // mediumText2: "",
-    // paragraph2: "",
-    // articleImg2: "",
-
-    // subtitle3: "",
-    // mediumText3: "",
-    // paragraph3: "",
-    // articleImg3: "",
-
-    // subtitle4: "",
-    // mediumText4: "",
-    // paragraph4: "",
-    // articleImg4: "",
-
-    // subtitle5: "",
-    // mediumText5: "",
-    // paragraph5: "",
-    // articleImg5: "",
-
-    // subtitle6: "",
-    // mediumText6: "",
-    // paragraph6: "",
-    // articleImg6: "",
-
-    // subtitle7: "",
-    // mediumText7: "",
-    // paragraph7: "",
-    // articleImg7: "",
-
-    // subtitle8: "",
-    // mediumText8: "",
-    // paragraph8: "",
-    // articleImg8: "",
-
-    // subtitle9: "",
-    // mediumText9: "",
-    // paragraph9: "",
-    // articleImg9: "",
-
-    // subtitle10: "",
-    // mediumText10: "",
-    // paragraph10: "",
-    // articleImg10: "",
-
-    // subtitle11: "",
-    // mediumText11: "",
-    // paragraph11: "",
-    // articleImg11: "",
-
-    // subtitle12: "",
-    // mediumText12: "",
-    // paragraph12: "",
-    // articleImg12: "",
-
-    // subtitle13: "",
-    // mediumText13: "",
-    // paragraph13: "",
-    // articleImg13: "",
-
-    // subtitle14: "",
-    // mediumText14: "",
-    // paragraph14: "",
-    // articleImg14: "",
-
-    // subtitle15: "",
-    // mediumText15: "",
-    // paragraph15: "",
-    // articleImg15: "",
-    //     articleImg1: "images/article-img-2.png",
-    //     articleImg2: "images/article-img-1.png",
-    // },
-    // {
-    //     id: 22,
-    //     preview: "images/article-preview-2.png",
-    //     tag: "design",
-    //     name: "Definitive Guide to Make a Daily More Productive Working Flow. ",
-    //     paragraph1: "",
-    //     subtitle2: "",
-    //     paragraph2: "",
-    //     subtitle3: "",
-    //     paragraph3: "",
-    //     subtitle4: "",
-    //     paragraph4: "",
-    //     subtitle5: "",
-    //     paragraph5: "",
-    //     subtitle6: "",
-    //     paragraph6: "",
-    //     subtitle7: "",
-    //     paragraph7: "",
-    //     subtitle8: "",
-    //     paragraph8: "",
-    //     subtitle9: "",
-    //     paragraph9: "",
-    //     subtitle10: "",
-    //     paragraph10: "",
-    //     subtitle11: "",
-    //     paragraph11: "",
-    //     subtitle12: "",
-    //     paragraph12: "",
-    //     subtitle13: "",
-    //     paragraph13: "",
-    //     articleImg1: "images/article-img-2.png",
-    //     articleImg2: "images/article-img-1.png",
-    // },
-    // {
-    //     id: 23,
-    //     preview: "images/article-preview-2.png",
-    //     tag: "charity",
-    //     name: "Definitive Guide to Make a Daily More Productive Working Flow. ",
-    //     paragraph1: "",
-    //     subtitle2: "",
-    //     paragraph2: "",
-    //     subtitle3: "",
-    //     paragraph3: "",
-    //     subtitle4: "",
-    //     paragraph4: "",
-    //     subtitle5: "",
-    //     paragraph5: "",
-    //     subtitle6: "",
-    //     paragraph6: "",
-    //     subtitle7: "",
-    //     paragraph7: "",
-    //     subtitle8: "",
-    //     paragraph8: "",
-    //     subtitle9: "",
-    //     paragraph9: "",
-    //     subtitle10: "",
-    //     paragraph10: "",
-    //     subtitle11: "",
-    //     paragraph11: "",
-    //     subtitle12: "",
-    //     paragraph12: "",
-    //     subtitle13: "",
-    //     paragraph13: "",
-    //     articleImg1: "images/article-img-1.png",
-    //     articleImg2: "images/article-img-2.png",
-    // },
-    // {
-    //     id: 24,
-    //     preview: "images/article-preview-2.png",
-    //     tag: "landing",
-    //     name: "Definitive Guide to Make a Daily More Productive Working Flow. ",
-    //     paragraph1: "",
-    //     subtitle2: "",
-    //     paragraph2: "",
-    //     subtitle3: "",
-    //     paragraph3: "",
-    //     subtitle4: "",
-    //     paragraph4: "",
-    //     subtitle5: "",
-    //     paragraph5: "",
-    //     subtitle6: "",
-    //     paragraph6: "",
-    //     subtitle7: "",
-    //     paragraph7: "",
-    //     subtitle8: "",
-    //     paragraph8: "",
-    //     subtitle9: "",
-    //     paragraph9: "",
-    //     subtitle10: "",
-    //     paragraph10: "",
-    //     subtitle11: "",
-    //     paragraph11: "",
-    //     subtitle12: "",
-    //     paragraph12: "",
-    //     subtitle13: "",
-    //     paragraph13: "",
-    //     articleImg1: "images/article-img-1.png",
-    //     articleImg2: "images/article-img-2.png",
-    // },
-    // {
-    //     id: 25,
-    //     preview: "images/article-preview-3.png",
-    //     tag: "charity",
-    //     name: "Definitive Guide to Make a Daily More Productive Working Flow. ",
-    //     paragraph1: "",
-    //     subtitle2: "",
-    //     paragraph2: "",
-    //     subtitle3: "",
-    //     paragraph3: "",
-    //     subtitle4: "",
-    //     paragraph4: "",
-    //     subtitle5: "",
-    //     paragraph5: "",
-    //     subtitle6: "",
-    //     paragraph6: "",
-    //     subtitle7: "",
-    //     paragraph7: "",
-    //     subtitle8: "",
-    //     paragraph8: "",
-    //     subtitle9: "",
-    //     paragraph9: "",
-    //     subtitle10: "",
-    //     paragraph10: "",
-    //     subtitle11: "",
-    //     paragraph11: "",
-    //     subtitle12: "",
-    //     paragraph12: "",
-    //     subtitle13: "",
-    //     paragraph13: "",
-    //     articleImg1: "images/article-img-1.png",
-    //     articleImg2: "images/article-img-2.png",
-    // },
-    // {
     //     id: 26,
-    //     preview: "images/article-preview-3.png",
-    //     tag: "book",
+    //     preview: "images/article-preview-10.jpg",
+    //     tag: "landing",
     //     name: "Definitive Guide to Make a Daily More Productive Working Flow. ",
     //     paragraph1: "",
+
     //     subtitle2: "",
+    //     mediumText2: "",
     //     paragraph2: "",
+    //     articleImg2: "",
+
     //     subtitle3: "",
+    //     mediumText3: "",
     //     paragraph3: "",
+    //     articleImg3: "",
+
     //     subtitle4: "",
+    //     mediumText4: "",
     //     paragraph4: "",
+    //     articleImg4: "",
+
     //     subtitle5: "",
+    //     mediumText5: "",
     //     paragraph5: "",
+    //     articleImg5: "",
+
     //     subtitle6: "",
+    //     mediumText6: "",
     //     paragraph6: "",
+    //     articleImg6: "",
+
     //     subtitle7: "",
+    //     mediumText7: "",
     //     paragraph7: "",
+    //     articleImg7: "",
+
     //     subtitle8: "",
+    //     mediumText8: "",
     //     paragraph8: "",
+    //     articleImg8: "",
+
     //     subtitle9: "",
+    //     mediumText9: "",
     //     paragraph9: "",
+    //     articleImg9: "",
+
     //     subtitle10: "",
+    //     mediumText10: "",
     //     paragraph10: "",
+    //     articleImg10: "",
+
     //     subtitle11: "",
+    //     mediumText11: "",
     //     paragraph11: "",
+    //     articleImg11: "",
+
     //     subtitle12: "",
+    //     mediumText12: "",
     //     paragraph12: "",
+    //     articleImg12: "",
+
     //     subtitle13: "",
+    //     mediumText13: "",
     //     paragraph13: "",
-    //     articleImg1: "images/article-img-1.png",
-    //     articleImg2: "images/article-img-2.png",
-    // },
-    // {
-    //     id: 27,
-    //     preview: "images/article-preview-3.png",
-    //     tag: "design",
-    //     name: "Definitive Guide to Make a Daily More Productive Working Flow. ",
-    //     paragraph1: "",
-    //     subtitle2: "",
-    //     paragraph2: "",
-    //     subtitle3: "",
-    //     paragraph3: "",
-    //     subtitle4: "",
-    //     paragraph4: "",
-    //     subtitle5: "",
-    //     paragraph5: "",
-    //     subtitle6: "",
-    //     paragraph6: "",
-    //     subtitle7: "",
-    //     paragraph7: "",
-    //     subtitle8: "",
-    //     paragraph8: "",
-    //     subtitle9: "",
-    //     paragraph9: "",
-    //     subtitle10: "",
-    //     paragraph10: "",
-    //     subtitle11: "",
-    //     paragraph11: "",
-    //     subtitle12: "",
-    //     paragraph12: "",
-    //     subtitle13: "",
-    //     paragraph13: "",
-    //     articleImg1: "images/article-img-1.png",
-    //     articleImg2: "images/article-img-2.png",
+    //     articleImg13: "",
+
+    //     subtitle14: "",
+    //     mediumText14: "",
+    //     paragraph14: "",
+    //     articleImg14: "",
+
+    //     subtitle15: "",
+    //     mediumText15: "",
+    //     paragraph15: "",
+    //     articleImg15: "",
+
+    //     subtitle16: "",
+    //     mediumText16: "",
+    //     paragraph16: "",
+    //     articleImg16: "",
+
+    //     subtitle17: "",
+    //     mediumText17: "",
+    //     paragraph17: "",
+    //     articleImg17: "",
+
+    //     subtitle18: "",
+    //     mediumText18: "",
+    //     paragraph18: "",
+    //     articleImg18: "",
+
+    //     subtitle19: "",
+    //     mediumText19: "",
+    //     paragraph19: "",
+    //     articleImg19: "",
+
+    //     subtitle20: "",
+    //     mediumText20: "",
+    //     paragraph20: "",
+    //     articleImg20: "",
+
+    //     subtitle21: "",
+    //     mediumText21: "",
+    //     paragraph21: "",
+    //     articleImg21: "",
+
+    //     subtitle22: "",
+    //     mediumText22: "",
+    //     paragraph22: "",
+    //     articleImg22: "",
+
+    //     subtitle23: "",
+    //     mediumText23: "",
+    //     paragraph23: "",
+    //     articleImg23: "",
+
+    //     subtitle24: "",
+    //     mediumText24: "",
+    //     paragraph24: "",
+    //     articleImg24: "",
+
+    //     subtitle25: "",
+    //     mediumText25: "",
+    //     paragraph25: "",
+    //     articleImg25: "",
+
+    //     subtitle26: "",
+    //     mediumText26: "",
+    //     paragraph26: "",
+    //     articleImg26: "",
+
+    //     subtitle27: "",
+    //     mediumText27: "",
+    //     paragraph27: "",
+    //     articleImg27: "",
     // },
 ]
 
