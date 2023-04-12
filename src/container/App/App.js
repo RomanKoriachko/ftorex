@@ -16,6 +16,12 @@ import PciCoalPage from "../../pages/SingleProductPage/PciCoalPage/PciCoalPage"
 import OilAndGasPage from "../../pages/SingleProductPage/OilAndGasPage/OilAndGasPage"
 import MiningEquipment from "../../pages/SingleProductPage/MiningEquipmentPage/MiningEquipmentPage"
 import FertilizersPage from "../../pages/SingleProductPage/FertilizersPage/FertilizersPage"
+import CoalSuppliesPage from "pages/SingleServicePage/CoalSuppliesPage/CoalSuppliesPage"
+import FertilizerSuppliesPage from "pages/SingleServicePage/FertilizerSuppliesPage/FertilizerSuppliesPage"
+import LogisticSolutionsPage from "pages/SingleServicePage/LogisticSolutionsPage/LogisticSolutionsPage"
+import CustomsClearancePage from "pages/SingleServicePage/CustomsClearancePage/CustomsClearancePage"
+import OceanFreightPage from "pages/SingleServicePage/OceanFreightPage/OceanFreightPage"
+import ConsultingPage from "pages/SingleServicePage/ConsultingPage/ConsultingPage"
 
 function App() {
     const submitRef = useRef(null)
@@ -43,8 +49,32 @@ function App() {
                 >
                     <Route index element={<Main submitRef={submitRef} />} />
                     <Route
-                        path="service"
+                        path="services"
                         element={<ServicePage messageRef={messageRef} />}
+                    />
+                    <Route
+                        path="services/coal_supplies"
+                        element={<CoalSuppliesPage />}
+                    />
+                    <Route
+                        path="services/fertilizer_supplies"
+                        element={<FertilizerSuppliesPage />}
+                    />
+                    <Route
+                        path="services/logistic_solutions"
+                        element={<LogisticSolutionsPage />}
+                    />
+                    <Route
+                        path="services/customs_clearance"
+                        element={<CustomsClearancePage />}
+                    />
+                    <Route
+                        path="services/ocean_freight"
+                        element={<OceanFreightPage />}
+                    />
+                    <Route
+                        path="services/consulting"
+                        element={<ConsultingPage />}
                     />
                     <Route path="products" element={<ProductsPage />} />
                     <Route

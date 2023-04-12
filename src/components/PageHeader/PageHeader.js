@@ -5,7 +5,7 @@ import ScrollDownBtn from "../ScrollDownBtn/ScrollDownBtn"
 const PageHeader = ({ name, subtitle }) => {
     const ref = useRef(null)
 
-    const windowHeight = window.screen.height - 122
+    const windowHeight = window.innerHeight - 122
 
     const scrollDownBtnClick = () => {
         window.scrollTo({
@@ -18,9 +18,9 @@ const PageHeader = ({ name, subtitle }) => {
         <>
             <section
                 className={`preview-section`}
-                style={{
-                    height: windowHeight,
-                }}
+                // style={{
+                //     height: windowHeight,
+                // }}
             >
                 <div className="container">
                     <div className="bg-filter"></div>

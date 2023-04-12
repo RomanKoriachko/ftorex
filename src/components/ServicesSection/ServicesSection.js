@@ -8,11 +8,6 @@ const ServicesSection = () => {
             <div className="container services-container">
                 <div className="services-row">
                     <div className="container-tablet">
-                        {/* <AnimationOnScroll
-                            animateIn="animate__backInLeft"
-                            duration={1.5}
-                            animateOnce={true}
-                        > */}
                         <div className="services-header-container">
                             <p className="big-header">
                                 what services we provide
@@ -26,25 +21,24 @@ const ServicesSection = () => {
                                 </button>
                             </Link>
                         </div>
-                        {/* </AnimationOnScroll> */}
                     </div>
                     <div className="services-items">
-                        <Link to="/service">
+                        <Link to="/services">
                             <div>Coal supplies</div>
                         </Link>
-                        <Link to="/service">
+                        <Link to="/services">
                             <div>Fertilizer supplies </div>
                         </Link>
-                        <Link to="/service">
+                        <Link to="/services">
                             <div>Ocean freight</div>
                         </Link>
-                        <Link to="/service">
+                        <Link to="/services">
                             <div>Logistic Solutions</div>
                         </Link>
-                        <Link to="/service">
+                        <Link to="/services">
                             <div>Customs Clearance</div>
                         </Link>
-                        <Link to="/service">
+                        <Link to="/services">
                             <div>Consulting</div>
                         </Link>
                     </div>

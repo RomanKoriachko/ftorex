@@ -180,7 +180,7 @@ const Header = ({ submitRef }) => {
                             Products
                         </NavLink>
                         <NavLink
-                            to="/service"
+                            to="/services"
                             className={({ isActive }) =>
                                 isActive ? "active" : "notActive"
                             }
@@ -307,7 +307,7 @@ const Header = ({ submitRef }) => {
                                     Products
                                 </NavLink>
                                 <NavLink
-                                    to="/service"
+                                    to="/services"
                                     className={({ isActive }) =>
                                         isActive ? "active" : "notActive"
                                     }

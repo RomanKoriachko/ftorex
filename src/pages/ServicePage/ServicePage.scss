@@ -1,46 +1,103 @@
+@import "../../style";
+
 .service-page {
     overflow: hidden;
     .preview-section {
-        background-image: url(../../../public/images/service-page-preview.jpg);
+        background-image: url(../../../public/images/service-page-preview.webp);
     }
-    .supplies-section {
-        .mobile-animation {
-            display: none;
-        }
-        .supplies-header {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 150%;
-            color: #595959;
-            text-align: center;
-            margin: 0px 310px 40px;
-        }
-        .paragraph-row {
-            gap: 24px;
-            margin-bottom: 60px;
-            .paragraph-img-wrapper {
-                min-width: 500px;
+    .service-section {
+        background-image: url(../../../public/images/about-us-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-position: 100% 0%;
+    }
+    .service-wrapper {
+        margin-top: 160px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        .service-item {
+            min-width: 306px;
+            .service-box {
+                background-color: white;
+                border: 1px solid #ededed;
+                padding: 32px 16px;
+                height: 286px;
+                min-width: 306px;
+                text-align: left;
+                .long-header {
+                    font-size: 28px !important;
+                }
+                > p:nth-child(1) {
+                    font-family: "Roboto";
+                    font-weight: 800;
+                    font-size: 28px;
+                    line-height: 120%;
+                    letter-spacing: -0.06em;
+                    text-transform: uppercase;
+                    color: #121212;
+                    margin-bottom: 16px;
+                }
+                > p:nth-child(2) {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #595959;
+                    margin-bottom: 48px;
+                }
             }
-            .paragraph-img {
-                height: 300px;
-                width: 100%;
-                object-fit: cover;
+            .info-btn {
+                @include buttonWithArrow();
+                color: #121212;
+                padding: 0px;
+                background-color: transparent;
+                .btn-arrow {
+                    background-image: url(../../assets/button-arr-red.svg);
+                }
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                }
             }
         }
-        .item-header {
-            color: #f1275b;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 32px;
-            text-transform: uppercase;
-            margin-bottom: 32px;
+        .service-item-contact {
+            .service-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #121212;
+                > p:nth-child(1) {
+                    font-family: "Plus Jakarta Sans";
+                    color: white;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-transform: none;
+                    letter-spacing: normal;
+                }
+                .contact-btn {
+                    @include buttonWithArrow();
+                    background-color: #f1275b;
+                    width: 100%;
+                    .btn-content-row {
+                        justify-content: center;
+                    }
+                }
+            }
         }
-        .item-text {
-            color: #121212;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 32px;
-            margin-bottom: 32px;
+    }
+    .message-section {
+        margin-top: 60px;
+        background-image: none;
+    }
+}
+
+@media (max-width: 1350px) {
+    .service-page {
+        .service-wrapper {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }
@@ -48,49 +105,37 @@
 /* Tablet */
 @media (max-width: 992px) {
     .service-page {
-        .supplies-section {
-            .supplies-header {
-                margin: 0px 100px 40px;
-            }
-            .paragraph-row {
-                flex-direction: column;
-                > img {
-                    max-width: 600px;
-                    margin: 0 auto;
+        .service-wrapper {
+            margin-top: 50px;
+            grid-template-columns: repeat(2, 1fr);
+            .service-item {
+                min-width: auto;
+                .service-box {
+                    min-width: auto;
+                    height: 100%;
                 }
             }
-            .paragraph-row:nth-child(1),
-            .paragraph-row:nth-child(3),
-            .paragraph-row:nth-child(5),
-            .paragraph-row:nth-child(7) {
-                flex-direction: column-reverse;
-            }
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .service-page {
+        .service-wrapper {
+            grid-template-columns: 1fr;
         }
     }
 }
 
 /* Mobile */
 @media (max-width: 576px) {
+}
+
+@media (max-width: 440px) {
     .service-page {
-        .supplies-section {
-            .desktop-animation {
-                display: none;
-            }
-            .mobile-animation {
-                display: flex;
-            }
-            .supplies-header {
-                margin: 0px 0px 24px;
-            }
-            .paragraph-row {
-                margin-bottom: 44px;
-                .paragraph-img-wrapper {
-                    min-width: auto;
-                }
-                > img {
-                    width: 100%;
-                    object-fit: cover;
-                }
+        .preview-section {
+            .preview-header {
+                font-size: 60px;
             }
         }
     }

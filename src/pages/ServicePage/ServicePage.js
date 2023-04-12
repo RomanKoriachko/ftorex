@@ -2,11 +2,17 @@ import React from "react"
 import "./ServicePage.scss"
 import PageHeader from "../../components/PageHeader/PageHeader"
 import MessageForm from "../../components/MessageForm/MessageForm"
-import { AnimationOnScroll } from "react-animation-on-scroll"
-import { Animated } from "react-animated-css"
+import { Link } from "react-router-dom"
+import { useAppDispatch } from "../../redux/hooks"
+import { openCallbackForm } from "redux/callbackFormReducer"
 // import { Helmet } from "react-helmet"
 
 const ServicePage = ({ messageRef }) => {
+    const dispatch = useAppDispatch()
+
+    const openForm = () => {
+        dispatch(openCallbackForm())
+    }
     return (
         <div className="service-page">
             {/* <Helmet>
@@ -16,267 +22,158 @@ const ServicePage = ({ messageRef }) => {
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
             </Helmet> */}
-            <PageHeader name={"Service"} />
-            <section className="supplies-section">
+            <PageHeader
+                name={"Services"}
+                subtitle={
+                    "Ftorex is a global coal industry company designed to establish and develop a Coal Business, Engineering & General Purpose"
+                }
+            />
+            <section className="service-section">
                 <div className="container">
-                    <p className="supplies-header">
-                        Ftorex is a global coal industry company designed to
-                        establish and develop a Coal Business, Engineering &
-                        General Purpose
-                    </p>
-                    <div className="row paragraph-row">
-                        <Animated
-                            animationIn="fadeInLeft"
-                            isVisible={true}
-                            animationInDuration={1500}
-                            className="desktop-animation"
-                        >
-                            <div className="paragraph-img-wrapper">
-                                <img
-                                    className="paragraph-img"
-                                    src="images/supplies-img-1.jpg"
-                                    alt=""
-                                />
-                            </div>
-                        </Animated>
-                        <Animated
-                            animationIn="fadeInRight"
-                            isVisible={true}
-                            animationInDuration={1500}
-                            className="desktop-animation"
-                        >
-                            <div className="paragraph-text">
-                                <p className="item-header">Coal supplies</p>
-                                <p className="item-text">
+                    <div className="service-wrapper">
+                        <div className="service-item">
+                            <div className="service-box">
+                                <p>Coal supplies</p>
+                                <p>
                                     Our company offers coal supplies for various
                                     industries that require this fossil fuel as
-                                    an energy source. We provide both thermal
-                                    and coking coal of different grades and
-                                    specifications to meet the needs of our
-                                    clients. We ensure the quality of the coal
-                                    we supply, and we source it from reliable
-                                    and trusted suppliers. We also offer
-                                    flexible delivery options and competitive
-                                    pricing.
+                                    an energy source We provide both thermal...
                                 </p>
+                                <div>
+                                    <Link to={`/services/coal_supplies`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
-                        </Animated>
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInLeft"
-                            duration={1}
-                            animateOnce={true}
-                            className="mobile-animation"
-                        >
-                            <div className="paragraph-img-wrapper">
-                                <img
-                                    className="paragraph-img"
-                                    src="images/supplies-img-1.jpg"
-                                    alt=""
-                                />
-                            </div>
-                        </AnimationOnScroll>
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInRight"
-                            duration={1}
-                            animateOnce={true}
-                            className="mobile-animation"
-                        >
-                            <div className="paragraph-text">
-                                <p className="item-header">Coal supplies</p>
-                                <p className="item-text">
-                                    Our company offers coal supplies for various
-                                    industries that require this fossil fuel as
-                                    an energy source. We provide both thermal
-                                    and coking coal of different grades and
-                                    specifications to meet the needs of our
-                                    clients. We ensure the quality of the coal
-                                    we supply, and we source it from reliable
-                                    and trusted suppliers. We also offer
-                                    flexible delivery options and competitive
-                                    pricing.
-                                </p>
-                            </div>
-                        </AnimationOnScroll>
-                    </div>
-                    <div className="row paragraph-row">
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInLeft"
-                            duration={1}
-                            animateOnce={true}
-                        >
-                            <div className="paragraph-text">
-                                <p className="item-header">
-                                    Fertilizer supplies
-                                </p>
-                                <p className="item-text">
+                        </div>
+                        <div className="service-item">
+                            <div className="service-box">
+                                <p>Fertilizer supplies</p>
+                                <p>
                                     Ftorex provides various types of fertilizers
                                     to meet the needs of agriculture and other
-                                    related industries. We offer a range of
-                                    fertilizers, including nitrogen, phosphate,
-                                    and potash-based fertilizers, as well as
-                                    micronutrients. We ensure the quality of the
-                                    fertilizers we supply, and we source them
-                                    from trusted suppliers. We also provide
-                                    flexible delivery options and competitive
-                                    pricing.
+                                    related industries. We offer a range...
                                 </p>
+                                <div>
+                                    <Link to={`/services/fertilizer_supplies`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
-                        </AnimationOnScroll>
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInRight"
-                            duration={1}
-                            animateOnce={true}
-                        >
-                            <div className="paragraph-img-wrapper">
-                                <img
-                                    className="paragraph-img"
-                                    src="images/supplies-img-2.jpg"
-                                    alt=""
-                                />
-                            </div>
-                        </AnimationOnScroll>
-                    </div>
-                    <div className="row paragraph-row">
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInLeft"
-                            duration={1}
-                            animateOnce={true}
-                        >
-                            <div className="paragraph-img-wrapper">
-                                <img
-                                    className="paragraph-img"
-                                    src="images/supplies-img-3.jpg"
-                                    alt=""
-                                />
-                            </div>
-                        </AnimationOnScroll>
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInRight"
-                            duration={1}
-                            animateOnce={true}
-                        >
-                            <div className="paragraph-text">
-                                <p className="item-header">
-                                    Logistic Solutions
-                                </p>
-                                <p className="item-text">
+                        </div>
+                        <div className="service-item">
+                            <div className="service-box">
+                                <p>Logistic Solutions</p>
+                                <p>
                                     We offer logistic solutions to facilitate
                                     the movement of goods from one place to
-                                    another. Our logistic solutions include
-                                    transportation, warehousing, inventory
-                                    management, and other value-added services.
-                                    We have a strong network of logistics
-                                    partners that enable us to provide efficient
-                                    and cost-effective solutions to our clients.
+                                    another. Our logistic solutions include ...
                                 </p>
+                                <div>
+                                    <Link to={`/services/logistic_solutions`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
-                        </AnimationOnScroll>
-                    </div>
-                    <div className="row paragraph-row">
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInLeft"
-                            duration={1}
-                            animateOnce={true}
-                        >
-                            <div className="paragraph-text">
-                                <p className="item-header">Customs Clearance</p>
-                                <p className="item-text">
+                        </div>
+                        <div className="service-item">
+                            <div className="service-box">
+                                <p>Customs Clearance</p>
+                                <p>
                                     Our company provides customs clearance
                                     services to facilitate the import and export
-                                    of goods. We have a team of experts who
-                                    handle all customs-related formalities and
-                                    ensure compliance with all regulations. We
-                                    provide hassle-free customs clearance
-                                    services to our clients.
+                                    of goods. We have a team of experts...
                                 </p>
+                                <div>
+                                    <Link to={`/services/customs_clearance`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
-                        </AnimationOnScroll>
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInRight"
-                            duration={1}
-                            animateOnce={true}
-                        >
-                            <div className="paragraph-img-wrapper">
-                                <img
-                                    className="paragraph-img"
-                                    src="images/supplies-img-4.jpg"
-                                    alt=""
-                                />
-                            </div>
-                        </AnimationOnScroll>
-                    </div>
-                    <div className="row paragraph-row">
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInLeft"
-                            duration={1}
-                            animateOnce={true}
-                        >
-                            <div className="paragraph-img-wrapper">
-                                <img
-                                    className="paragraph-img"
-                                    src="images/supplies-img-5.jpg"
-                                    alt=""
-                                />
-                            </div>
-                        </AnimationOnScroll>
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInRight"
-                            duration={1}
-                            animateOnce={true}
-                        >
-                            <div className="paragraph-text">
-                                <p className="item-header">Ocean freight</p>
-                                <p className="item-text">
+                        </div>
+                        <div className="service-item">
+                            <div className="service-box">
+                                <p>Ocean freight</p>
+                                <p>
                                     Our company offers ocean freight services to
                                     facilitate the movement of goods via sea. We
-                                    provide end-to-end ocean freight services,
-                                    including booking, documentation, loading,
-                                    and delivery. We have partnerships with
-                                    various shipping lines, which enable us to
-                                    provide cost-effective and reliable
-                                    services.
+                                    provide end-to-end ocean freight service...
                                 </p>
+                                <div>
+                                    <Link to={`/services/ocean_freight`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
-                        </AnimationOnScroll>
-                    </div>
-                    <div className="row paragraph-row">
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInLeft"
-                            duration={1}
-                            animateOnce={true}
-                        >
-                            <div className="paragraph-text">
-                                <p className="item-header">Consulting</p>
-                                <p className="item-text" ref={messageRef}>
+                        </div>
+                        <div className="service-item">
+                            <div className="service-box">
+                                <p className="long-header">Consulting</p>
+                                <p>
                                     We provide consulting services to help our
                                     clients make informed decisions related to
-                                    their businesses. Our consulting services
-                                    cover various areas, including market
-                                    research, feasibility studies, strategy
-                                    development, and business planning. We have
-                                    a team of experts who provide customized
-                                    solutions to our clients based on their
-                                    specific needs and requirements.
+                                    their businesses. Our consulting...
                                 </p>
+                                <div>
+                                    <Link to={`/services/consulting`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
-                        </AnimationOnScroll>
-                        <AnimationOnScroll
-                            animateIn="animate__fadeInRight"
-                            duration={1}
-                            animateOnce={true}
-                        >
-                            <div className="paragraph-img-wrapper">
-                                <img
-                                    className="paragraph-img"
-                                    src="images/supplies-img-6.jpg"
-                                    alt=""
-                                />
+                        </div>
+                        <div className="service-item service-item-contact">
+                            <div className="service-box">
+                                <p>
+                                    Contact us and we will offer you the best
+                                    cooperation option
+                                </p>
+                                <div>
+                                    <button
+                                        className="contact-btn"
+                                        onClick={() => openForm()}
+                                    >
+                                        <div className="row btn-content-row">
+                                            <p>CALL NOW</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
-                        </AnimationOnScroll>
+                        </div>
                     </div>
+                    <MessageForm />
                 </div>
             </section>
-            <MessageForm />
         </div>
     )
 }
