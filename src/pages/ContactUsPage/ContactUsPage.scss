@@ -34,6 +34,16 @@
             letter-spacing: -0.06em;
             margin-bottom: 16px;
         }
+        .flag-and-number {
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .usa-flag {
+            width: 12px;
+            height: 12px;
+            background-image: url(../../assets/us-flag.svg);
+        }
         .contact-item-text {
             font-weight: 400;
             font-size: 16px;
@@ -113,6 +123,9 @@
     .contacts-page {
         .preview-section {
             margin-bottom: 0px;
+        }
+        .contact-row-mobile {
+            margin-top: 80px;
         }
         .contact-item {
             max-width: 100%;

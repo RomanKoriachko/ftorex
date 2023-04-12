@@ -31,12 +31,12 @@ const ContactUsPage = ({ messageRef }) => {
                                     <p className="contact-item-header">
                                         Call Us
                                     </p>
-                                    <p className="contact-item-text">
-                                        +1 (786) 707-06-06
-                                    </p>
-                                    <p className="contact-item-text">
-                                        +7 (967) 388-48-88
-                                    </p>
+                                    <div className="row flag-and-number">
+                                        <div className="usa-flag"></div>
+                                        <p className="contact-item-text">
+                                            +1 (786) 707-06-06
+                                        </p>
+                                    </div>
                                 </div>
                             </Animated>
                         </div>
@@ -98,12 +98,12 @@ const ContactUsPage = ({ messageRef }) => {
                                     <p className="contact-item-header">
                                         Call Us
                                     </p>
-                                    <p className="contact-item-text">
-                                        +1 (786) 707-06-06
-                                    </p>
-                                    <p className="contact-item-text">
-                                        +7 (967) 388-48-88
-                                    </p>
+                                    <div className="row flag-and-number">
+                                        <div className="usa-flag"></div>
+                                        <p className="contact-item-text">
+                                            +1 (786) 707-06-06
+                                        </p>
+                                    </div>
                                 </div>
                             </AnimationOnScroll>
                         </div>
