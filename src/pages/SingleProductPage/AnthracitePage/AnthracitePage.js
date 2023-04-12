@@ -332,6 +332,7 @@ const AnthracitePage = () => {
                         </div>
                     </div>
                 </div>
+                <div className="margin-bottom"></div>
             </div>
         </div>
     )

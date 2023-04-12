@@ -73,7 +73,7 @@ const CokingCoalPage = () => {
                         </NavLink>
                     </div>
                 </div>
-                <div className="row links-row">
+                <div className="links-row">
                     <StickyBox offsetTop={150} offsetBottom={20}>
                         <div className="links-desktop">
                             <NavLink
@@ -458,6 +458,7 @@ const CokingCoalPage = () => {
                         </div>
                     </div>
                 </div>
+                <div className="margin-bottom"></div>
             </div>
         </div>
     )

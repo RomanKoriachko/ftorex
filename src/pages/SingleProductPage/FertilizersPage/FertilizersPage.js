@@ -289,6 +289,7 @@ const FertilizersPage = () => {
                         </div>
                     </div>
                 </div>
+                <div className="margin-bottom"></div>
             </div>
         </div>
     )
