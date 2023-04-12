@@ -33,11 +33,12 @@
             line-height: 150%;
         }
     }
-    .scroll-btn {
+    .scroll-btn-tablet {
         position: absolute;
-        bottom: 42px;
+        bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+        display: none;
     }
 }
 
@@ -56,6 +57,9 @@
                 }
             }
         }
+        .scroll-btn-tablet {
+            display: block;
+        }
     }
 }
 
@@ -67,10 +71,10 @@
                 padding: 35px 32px;
             }
         }
-        .scroll-btn {
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 20px;
-        }
+        // .scroll-btn {
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     bottom: 20px;
+        // }
     }
 }

@@ -1,6 +1,6 @@
 .main {
     background-color: #f9f9f9;
-    .scroll-down-btn {
+    .scroll-btn-fixed {
         position: fixed;
         right: 95px;
         bottom: 20px;
@@ -56,5 +56,10 @@
 @media (max-width: 576px) {
     .big-header {
         font-size: 36px;
+    }
+    .main {
+        .scroll-btn-fixed {
+            display: none;
+        }
     }
 }

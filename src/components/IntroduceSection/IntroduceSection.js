@@ -1,6 +1,6 @@
 import React from "react"
 import "./IntroduceSection.scss"
-// import ScrollDownBtn from "../ScrollDownBtn/ScrollDownBtn"
+import ScrollDownBtn from "../ScrollDownBtn/ScrollDownBtn"
 
 const IntroduceSection = () => {
     const windowHeight = window.innerHeight - 122
@@ -30,12 +30,12 @@ const IntroduceSection = () => {
                         </p>
                     </div>
                 </div>
-                {/* <div
-                    className="scroll-btn"
+                <div
+                    className="scroll-btn-tablet"
                     onClick={() => scrollDownBtnClick()}
                 >
                     <ScrollDownBtn />
-                </div> */}
+                </div>
             </div>
         </section>
     )

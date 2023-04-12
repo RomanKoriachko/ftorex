@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import { Link } from "react-router-dom"
-// import { AnimationOnScroll } from "react-animation-on-scroll"
 
 const ProductsSection = ({ ref1 }) => {
     const settings = {
@@ -57,25 +56,13 @@ const ProductsSection = ({ ref1 }) => {
     return (
         <section className="products-section">
             <div className="container">
-                {/* <AnimationOnScroll
-                    animateIn="animate__backInUp"
-                    duration={1.5}
-                    animateOnce={true}
-                > */}
                 <p className="products-header big-header">What We can offer</p>
-                {/* </AnimationOnScroll> */}
-                {/* <AnimationOnScroll
-                    animateIn="animate__backInUp"
-                    duration={1.5}
-                    animateOnce={true}
-                > */}
                 <p className="products-subtitle subtitle">
                     Our company offers a comprehensive range of services
                     including coal and fertilizer supplies, logistics solutions,
                     customs clearance, ocean freight, and consulting to meet the
                     diverse needs of our customers.
                 </p>
-                {/* </AnimationOnScroll> */}
                 <Slider {...settings}>
                     <div className="product-item">
                         <div className="product-box">

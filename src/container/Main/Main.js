@@ -22,13 +22,75 @@ const Main = ({ submitRef }) => {
     const [scrollBtnClass, setScrollBtnClass] = useState("show")
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY >= 4000) {
+        // console.log(window.scrollY)
+        if (window.scrollY >= 4000 || window.innerWidth < 992) {
             setScrollBtnClass("hide")
         } else {
             setScrollBtnClass("show")
         }
     })
+    // window.addEventListener("resize", function () {
+    //     if (window.innerWidth <= 992) {
+    //         setScrollBtnClass("hide")
+    //     } else {
+    //         setScrollBtnClass("show")
+    //     }
+    // })
 
+    // if (window.innerWidth <= 992) {
+    //     setScrollBtnClass("hide")
+    // } else {
+    //     setScrollBtnClass("show")
+    // }
+
+    // const scrollDown = () => {
+    //     if (window.scrollY + 122 < window.innerHeight) {
+    //         ref1.current?.scrollIntoView({
+    //             block: "nearest",
+    //             behavior: "smooth",
+    //         })
+    //     } else if (
+    //         window.scrollY + 122 <=
+    //         ref2.current.getBoundingClientRect().top + window.pageYOffset
+    //     ) {
+    //         ref2.current?.scrollIntoView({
+    //             block: "nearest",
+    //             behavior: "smooth",
+    //         })
+    //     } else if (
+    //         window.scrollY + 122 <=
+    //         ref3.current.getBoundingClientRect().top + window.pageYOffset
+    //     ) {
+    //         ref3.current?.scrollIntoView({
+    //             block: "nearest",
+    //             behavior: "smooth",
+    //         })
+    //     } else if (
+    //         window.scrollY + 122 <=
+    //         ref4.current.getBoundingClientRect().top + window.pageYOffset
+    //     ) {
+    //         ref4.current?.scrollIntoView({
+    //             block: "nearest",
+    //             behavior: "smooth",
+    //         })
+    //     } else if (
+    //         window.scrollY + 122 <=
+    //         ref5.current.getBoundingClientRect().top + window.pageYOffset
+    //     ) {
+    //         ref5.current?.scrollIntoView({
+    //             block: "nearest",
+    //             behavior: "smooth",
+    //         })
+    //     } else if (
+    //         window.scrollY + 122 <=
+    //         ref6.current.getBoundingClientRect().top + window.pageYOffset
+    //     ) {
+    //         ref6.current?.scrollIntoView({
+    //             block: "nearest",
+    //             behavior: "smooth",
+    //         })
+    //     }
+    // }
     const scrollDown = () => {
         if (ref0.current?.getBoundingClientRect().top > -530) {
             ref1.current?.scrollIntoView({
@@ -65,7 +127,10 @@ const Main = ({ submitRef }) => {
 
     return (
         <main className="main">
-            <div onClick={scrollDown} className={`${scrollBtnClass}`}>
+            <div
+                onClick={scrollDown}
+                className={`scroll-btn-fixed ${scrollBtnClass}`}
+            >
                 <ScrollDownBtn />
             </div>
             <div ref={ref0}>

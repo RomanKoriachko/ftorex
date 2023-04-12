@@ -20,7 +20,7 @@ const AboutUsSection = () => {
                 </AnimationOnScroll>
                 <div className="about-text-wrapper">
                     <AnimationOnScroll
-                        animateIn="animate__fadeInLeft"
+                        animateIn="animate__fadeInUp"
                         duration={1.5}
                         animateOnce={true}
                     >
@@ -47,7 +47,7 @@ const AboutUsSection = () => {
                         </div>
                     </AnimationOnScroll>
                     <AnimationOnScroll
-                        animateIn="animate__fadeInRight"
+                        animateIn="animate__fadeInUp"
                         duration={1.5}
                         animateOnce={true}
                     >
