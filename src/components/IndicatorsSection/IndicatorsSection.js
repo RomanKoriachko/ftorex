@@ -6,11 +6,6 @@ const IndicatorsSection = () => {
     return (
         <section className="indicators-section">
             <div className="container">
-                {/* <AnimationOnScroll
-                    animateIn="animate__backInUp"
-                    duration={1.5}
-                    animateOnce={true}
-                > */}
                 <div className="indicators-header-row">
                     <p className="big-header">
                         We established a coal mining business for you
@@ -21,21 +16,14 @@ const IndicatorsSection = () => {
                         General Purpose
                     </p>
                 </div>
-                {/* </AnimationOnScroll> */}
                 <div className="indicators-content-row">
-                    {/* <AnimationOnScroll
-                        animateIn="animate__fadeInUp"
-                        duration={1.5}
-                        animateOnce={true}
-                    > */}
                     <div className="indicators-img">
                         <img src="images/products-img-2.jpg" alt="" />
                     </div>
-                    {/* </AnimationOnScroll> */}
                     <div>
                         <div className="row indicators-numbers">
                             <div className="indicators-numbers-item">
-                                <p className="big-text">
+                                <div className="big-text">
                                     <div className="row">
                                         <AnimatedNumbers
                                             animateToNumber={138}
@@ -59,13 +47,13 @@ const IndicatorsSection = () => {
                                         />
                                         <p>+</p>
                                     </div>
-                                </p>
+                                </div>
                                 <p className="small-text">
                                     Clients all over the world
                                 </p>
                             </div>
                             <div className="indicators-numbers-item">
-                                <p className="big-text">
+                                <div className="big-text">
                                     <div className="row">
                                         <AnimatedNumbers
                                             animateToNumber={8}
@@ -89,13 +77,13 @@ const IndicatorsSection = () => {
                                         />
                                         <p>+</p>
                                     </div>
-                                </p>
+                                </div>
                                 <p className="small-text">Years Experience</p>
                             </div>
                         </div>
                         <div className="row indicators-numbers">
                             <div className="indicators-numbers-item">
-                                <p className="big-text">
+                                <div className="big-text">
                                     <div className="row">
                                         <AnimatedNumbers
                                             animateToNumber={12}
@@ -119,13 +107,13 @@ const IndicatorsSection = () => {
                                         />
                                         <p>+</p>
                                     </div>
-                                </p>
+                                </div>
                                 <p className="small-text">
                                     Countries we work with
                                 </p>
                             </div>
                             <div className="indicators-numbers-item">
-                                <p className="big-text">
+                                <div className="big-text">
                                     <div className="row">
                                         <AnimatedNumbers
                                             animateToNumber={6}
@@ -149,7 +137,7 @@ const IndicatorsSection = () => {
                                         />
                                         <p>+</p>
                                     </div>
-                                </p>
+                                </div>
                                 <p className="small-text">
                                     Million tons of coal supplies per year
                                 </p>

@@ -71,12 +71,16 @@
     .preview-section {
         .preview-header {
             padding: 0px 16px;
+            > p:nth-child(1) {
+                margin-bottom: 10px;
+                line-height: 69px;
+            }
             > p:nth-child(2) {
                 width: 100%;
             }
         }
         .scroll-btn {
-            bottom: -5px;
+            bottom: -85px;
             right: 0px;
             left: 50%;
             transform: translateX(-50%);
@@ -100,7 +104,9 @@
 @media (max-width: 350px) {
     .preview-section {
         .preview-header {
-            font-size: 64px;
+            > p:nth-child(1) {
+                font-size: 54px;
+            }
         }
     }
 }

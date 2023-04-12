@@ -19,11 +19,6 @@ const IntroduceSection = () => {
                     height: windowHeight,
                 }}
             >
-                {/* <Animated
-                    animationIn="fadeIn"
-                    isVisible={true}
-                    animationInDuration={2000}
-                > */}
                 <div className="introduce-text-wrapper">
                     <div className="introduce-content">
                         <p>Achieve a profitable business with us</p>
@@ -35,13 +30,12 @@ const IntroduceSection = () => {
                         </p>
                     </div>
                 </div>
-                {/* </Animated> */}
-                <div
+                {/* <div
                     className="scroll-btn"
                     onClick={() => scrollDownBtnClick()}
                 >
-                    {/* <ScrollDownBtn /> */}
-                </div>
+                    <ScrollDownBtn />
+                </div> */}
             </div>
         </section>
     )

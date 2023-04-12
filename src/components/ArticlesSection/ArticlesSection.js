@@ -9,15 +9,9 @@ const ArticlesSection = () => {
             <div className="container">
                 <div className="row articles-row">
                     <div className="articles-header">
-                        {/* <AnimationOnScroll
-                            animateIn="animate__backInUp"
-                            duration={1.5}
-                            animateOnce={true}
-                        > */}
                         <p className="big-header">
                             Interesting information about our field
                         </p>
-                        {/* </AnimationOnScroll> */}
                     </div>
                     <div className="more-articles-btn">
                         <Link to="/articles">
@@ -34,19 +28,12 @@ const ArticlesSection = () => {
                     {articleArr
                         .filter((element, index) => index < 4)
                         .map(({ id, preview, name }) => (
-                            // <AnimationOnScroll
-                            //     animateIn="animate__fadeInUp"
-                            //     duration={1.5}
-                            //     animateOnce={true}
-                            //     key={id}
-                            // >
-                            <div className="article-item">
+                            <div key={id} className="article-item">
                                 <Link to={`/articles/${id}`}>
                                     <img src={`/${preview}`} alt="" />
                                     <p>{name}</p>
                                 </Link>
                             </div>
-                            // </AnimationOnScroll>
                         ))}
                 </div>
             </div>

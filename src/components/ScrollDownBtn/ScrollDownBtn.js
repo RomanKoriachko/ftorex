@@ -1,5 +1,5 @@
-import React from 'react'
-import './ScrollDownBtn.scss'
+import React from "react"
+import "./ScrollDownBtn.scss"
 
 const ScrollDownBtn = () => {
     return (

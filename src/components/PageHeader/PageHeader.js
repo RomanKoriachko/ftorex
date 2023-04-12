@@ -5,7 +5,7 @@ import ScrollDownBtn from "../ScrollDownBtn/ScrollDownBtn"
 const PageHeader = ({ name, subtitle }) => {
     const ref = useRef(null)
 
-    const windowHeight = window.innerHeight - 122
+    const windowHeight = window.screen.height - 122
 
     const scrollDownBtnClick = () => {
         window.scrollTo({
@@ -23,11 +23,6 @@ const PageHeader = ({ name, subtitle }) => {
                 }}
             >
                 <div className="container">
-                    {/* <Animated
-                        animationIn="fadeIn"
-                        isVisible={true}
-                        animationInDuration={2000}
-                    > */}
                     <div className="bg-filter"></div>
                     <div className="preview-header">
                         <p>{name}</p>
@@ -39,7 +34,6 @@ const PageHeader = ({ name, subtitle }) => {
                     >
                         <ScrollDownBtn />
                     </div>
-                    {/* </Animated> */}
                 </div>
             </section>
             <div className="ref" ref={ref}></div>

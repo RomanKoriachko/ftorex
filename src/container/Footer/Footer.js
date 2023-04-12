@@ -53,44 +53,46 @@ const Footer = ({ messageRef }) => {
                     </div>
                     <div className="footer-links-row">
                         <div className="footer-item-text">
-                            <p className="footer-column-header">Company</p>
-                            <p className="footer-column-item">
+                            <div className="footer-column-header">Company</div>
+                            <div className="footer-column-item">
                                 <Link to="/">Home</Link>
-                            </p>
-                            <p className="footer-column-item">
+                            </div>
+                            <div className="footer-column-item">
                                 <Link to="/products">Products</Link>
-                            </p>
-                            <p className="footer-column-item">
+                            </div>
+                            <div className="footer-column-item">
                                 <Link to="/service">Service</Link>
-                            </p>
-                            <p className="footer-column-item">
-                                <Link to="/articles">Articles</Link>
-                            </p>
-                            <p className="footer-column-item">
+                            </div>
+                            <div className="footer-column-item">
+                                div<Link to="/articles">Articles</Link>
+                            </div>
+                            <div className="footer-column-item">
                                 <Link to="/contacts">Contact Us</Link>
-                            </p>
+                            </div>
                         </div>
                         <div className="footer-item-text">
-                            <p className="footer-column-header">Service</p>
-                            <p className="footer-column-item">
+                            <div className="footer-column-header">Service</div>
+                            <div className="footer-column-item">
                                 <Link to="/service">Coal supplies</Link>
-                            </p>
-                            <p className="footer-column-item">
+                            </div>
+                            <div className="footer-column-item">
                                 <Link to="/service">Fertilizer supplies</Link>
-                            </p>
-                            <p className="footer-column-item">
+                            </div>
+                            <div className="footer-column-item">
                                 <Link to="/service">Ocean freight</Link>
-                            </p>
-                            <p className="footer-column-item">
+                            </div>
+                            <div className="footer-column-item">
                                 <Link to="/service">Customs Clearance</Link>
-                            </p>
-                            <p className="footer-column-item">
+                            </div>
+                            <div className="footer-column-item">
                                 <Link to="/service">Consulting</Link>
-                            </p>
+                            </div>
                         </div>
                         <div className="footer-item-text">
-                            <p className="footer-column-header">Social Media</p>
-                            <p className="footer-column-item">
+                            <div className="footer-column-header">
+                                Social Media
+                            </div>
+                            <div className="footer-column-item">
                                 <a href="https://www.linkedin.com/in/ftorex-tm-3339b7239/">
                                     Linkedin
                                 </a>
@@ -102,7 +104,7 @@ const Footer = ({ messageRef }) => {
                                         </div>
                                     </button>
                                 </a>
-                            </p>
+                            </div>
                         </div>
                         <div className="footer-item-text">
                             <p className="footer-column-header">Contact</p>
@@ -115,11 +117,11 @@ const Footer = ({ messageRef }) => {
                                     <p className="footer-contacts-item-2">
                                         US OFFICE:
                                     </p>
-                                    <p className="footer-contacts-item-2">
+                                    <div className="footer-contacts-item-2">
                                         <p>3233 W Dallas St, Houston TX, USA</p>
                                         <p>+1 (786) 707-0607</p>
                                         <p>sales@ftorex.us</p>
-                                    </p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="adress-wrapper row">
@@ -128,7 +130,7 @@ const Footer = ({ messageRef }) => {
                                     <p className="footer-contacts-item-2">
                                         UAE OFFICE:
                                     </p>
-                                    <p className="footer-contacts-item-2">
+                                    <div className="footer-contacts-item-2">
                                         <p>
                                             M05-0190 Unique Adventure Business
                                             Centre, Building PR1005, Port Saeed,
@@ -136,7 +138,7 @@ const Footer = ({ messageRef }) => {
                                         </p>
                                         <p>+1 (786) 707-06-06</p>
                                         <p>sales@ftorex.ae</p>
-                                    </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
