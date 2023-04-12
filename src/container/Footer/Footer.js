@@ -61,10 +61,10 @@ const Footer = ({ messageRef }) => {
                                 <Link to="/products">Products</Link>
                             </div>
                             <div className="footer-column-item">
-                                <Link to="/service">Service</Link>
+                                <Link to="/services">Service</Link>
                             </div>
                             <div className="footer-column-item">
-                                div<Link to="/articles">Articles</Link>
+                                <Link to="/articles">Articles</Link>
                             </div>
                             <div className="footer-column-item">
                                 <Link to="/contacts">Contact Us</Link>
@@ -73,19 +73,29 @@ const Footer = ({ messageRef }) => {
                         <div className="footer-item-text">
                             <div className="footer-column-header">Service</div>
                             <div className="footer-column-item">
-                                <Link to="/service">Coal supplies</Link>
+                                <Link to="/services/coal_supplies">
+                                    Coal supplies
+                                </Link>
                             </div>
                             <div className="footer-column-item">
-                                <Link to="/service">Fertilizer supplies</Link>
+                                <Link to="/services/fertilizer_supplies">
+                                    Fertilizer supplies
+                                </Link>
                             </div>
                             <div className="footer-column-item">
-                                <Link to="/service">Ocean freight</Link>
+                                <Link to="/services/ocean_freight">
+                                    Ocean freight
+                                </Link>
                             </div>
                             <div className="footer-column-item">
-                                <Link to="/service">Customs Clearance</Link>
+                                <Link to="/services/customs_clearance">
+                                    Customs Clearance
+                                </Link>
                             </div>
                             <div className="footer-column-item">
-                                <Link to="/service">Consulting</Link>
+                                <Link to="/services/consulting">
+                                    Consulting
+                                </Link>
                             </div>
                         </div>
                         <div className="footer-item-text">
@@ -95,6 +105,9 @@ const Footer = ({ messageRef }) => {
                             <div className="footer-column-item">
                                 <a href="https://www.linkedin.com/in/ftorex-tm-3339b7239/">
                                     Linkedin
+                                </a>
+                                <a href="https://twitter.com/TFtorex">
+                                    Twitter
                                 </a>
                                 <a href="https://www.linkedin.com/in/ftorex-tm-3339b7239/">
                                     <button className="submit-btn">
@@ -121,6 +134,9 @@ const Footer = ({ messageRef }) => {
                                         <p>3233 W Dallas St, Houston TX, USA</p>
                                         <p>+1 (786) 707-0607</p>
                                         <p>sales@ftorex.us</p>
+                                        <p className="bold-text">
+                                            www.ftorex.us
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -138,6 +154,9 @@ const Footer = ({ messageRef }) => {
                                         </p>
                                         <p>+1 (786) 707-06-06</p>
                                         <p>sales@ftorex.ae</p>
+                                        <p className="bold-text">
+                                            www.ftorex.ae
+                                        </p>
                                     </div>
                                 </div>
                             </div>

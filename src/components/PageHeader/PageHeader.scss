@@ -92,7 +92,7 @@
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
     .preview-section {
         .preview-header {
             > p:nth-child(1) {
@@ -106,7 +106,7 @@
     .preview-section {
         .preview-header {
             > p:nth-child(1) {
-                font-size: 54px;
+                font-size: 50px;
             }
         }
     }
