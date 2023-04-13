@@ -2,7 +2,7 @@ import React from "react"
 import "./IntroduceSection.scss"
 import ScrollDownBtn from "../ScrollDownBtn/ScrollDownBtn"
 
-const IntroduceSection = () => {
+const IntroduceSection = ({ ref0 }) => {
     const windowHeight = window.innerHeight - 122
     const scrollDownBtnClick = () => {
         window.scrollTo({
@@ -13,6 +13,7 @@ const IntroduceSection = () => {
 
     return (
         <section className="introduce-section">
+            <div className="section-anker-element" ref={ref0}></div>
             <div
                 className="container introduce-wrapper"
                 style={{

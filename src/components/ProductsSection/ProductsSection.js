@@ -55,6 +55,7 @@ const ProductsSection = ({ ref1 }) => {
 
     return (
         <section className="products-section">
+            <div className="section-anker-element" ref={ref1}></div>
             <div className="container">
                 <p className="products-header big-header">What We can offer</p>
                 <p className="products-subtitle subtitle">

@@ -28,7 +28,7 @@ function App() {
     const messageRef = useRef(null)
 
     return (
-        <div className="App">
+        <div className="app">
             <Helmet>
                 <title>Ftorex</title>
                 <meta

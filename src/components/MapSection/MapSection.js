@@ -1,21 +1,22 @@
-import React, { useState } from 'react'
-import './MapSection.scss'
+import React, { useState } from "react"
+import "./MapSection.scss"
 
-const MapSection = () => {
-    const [showMapState, setShowMapState] = useState('')
+const MapSection = ({ ref5 }) => {
+    const [showMapState, setShowMapState] = useState("")
 
     const showMap = () => {
-        if (showMapState === '' && window.innerWidth > 992) {
-            setShowMapState('active')
-        } else if (showMapState === '' && window.innerWidth <= 992) {
-            setShowMapState('tablet-active')
+        if (showMapState === "" && window.innerWidth > 992) {
+            setShowMapState("active")
+        } else if (showMapState === "" && window.innerWidth <= 992) {
+            setShowMapState("tablet-active")
         } else {
-            setShowMapState('')
+            setShowMapState("")
         }
     }
 
     return (
         <section className="map-section">
+            <div className="section-anker-element" ref={ref5}></div>
             <div className={`map-wrapper ${showMapState}`}>
                 <div className="map-content">
                     <div className="map-text">

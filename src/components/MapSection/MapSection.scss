@@ -1,6 +1,7 @@
-@import '../../style';
+@import "../../style";
 
 .map-section {
+    position: relative;
     .map-wrapper {
         display: grid;
         grid-template-columns: 0.92fr 1fr;

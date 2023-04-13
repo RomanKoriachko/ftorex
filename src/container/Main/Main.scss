@@ -19,6 +19,16 @@
         z-index: -1;
         transition: 0.3s all;
     }
+    .bg-color {
+        padding-top: 0;
+    }
+    .section-anker-element {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: -122px;
+        z-index: 5000;
+    }
 }
 
 .small-header {

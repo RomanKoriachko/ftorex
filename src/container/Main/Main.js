@@ -19,109 +19,100 @@ const Main = ({ submitRef }) => {
     const ref5 = useRef(null)
     const ref6 = useRef(null)
 
+    const ref7 = useRef(null)
+    const ref8 = useRef(null)
+    const ref9 = useRef(null)
+    const ref10 = useRef(null)
+    const ref11 = useRef(null)
+    const ref12 = useRef(null)
+
     const [scrollBtnClass, setScrollBtnClass] = useState("show")
 
     window.addEventListener("scroll", function () {
-        // console.log(window.scrollY)
-        if (window.scrollY >= 4000 || window.innerWidth < 992) {
+        if (window.scrollY >= 3800 || window.innerWidth < 992) {
             setScrollBtnClass("hide")
         } else {
             setScrollBtnClass("show")
         }
     })
-    // window.addEventListener("resize", function () {
-    //     if (window.innerWidth <= 992) {
-    //         setScrollBtnClass("hide")
-    //     } else {
-    //         setScrollBtnClass("show")
-    //     }
-    // })
 
-    // if (window.innerWidth <= 992) {
-    //     setScrollBtnClass("hide")
-    // } else {
-    //     setScrollBtnClass("show")
-    // }
-
-    // const scrollDown = () => {
-    //     if (window.scrollY + 122 < window.innerHeight) {
-    //         ref1.current?.scrollIntoView({
-    //             block: "nearest",
-    //             behavior: "smooth",
-    //         })
-    //     } else if (
-    //         window.scrollY + 122 <=
-    //         ref2.current.getBoundingClientRect().top + window.pageYOffset
-    //     ) {
-    //         ref2.current?.scrollIntoView({
-    //             block: "nearest",
-    //             behavior: "smooth",
-    //         })
-    //     } else if (
-    //         window.scrollY + 122 <=
-    //         ref3.current.getBoundingClientRect().top + window.pageYOffset
-    //     ) {
-    //         ref3.current?.scrollIntoView({
-    //             block: "nearest",
-    //             behavior: "smooth",
-    //         })
-    //     } else if (
-    //         window.scrollY + 122 <=
-    //         ref4.current.getBoundingClientRect().top + window.pageYOffset
-    //     ) {
-    //         ref4.current?.scrollIntoView({
-    //             block: "nearest",
-    //             behavior: "smooth",
-    //         })
-    //     } else if (
-    //         window.scrollY + 122 <=
-    //         ref5.current.getBoundingClientRect().top + window.pageYOffset
-    //     ) {
-    //         ref5.current?.scrollIntoView({
-    //             block: "nearest",
-    //             behavior: "smooth",
-    //         })
-    //     } else if (
-    //         window.scrollY + 122 <=
-    //         ref6.current.getBoundingClientRect().top + window.pageYOffset
-    //     ) {
-    //         ref6.current?.scrollIntoView({
-    //             block: "nearest",
-    //             behavior: "smooth",
-    //         })
-    //     }
-    // }
     const scrollDown = () => {
-        if (ref0.current?.getBoundingClientRect().top > -530) {
-            ref1.current?.scrollIntoView({
-                block: "center",
+        if (
+            window.scrollY <
+            ref7.current?.getBoundingClientRect().height - 50
+        ) {
+            window.scrollTo({
+                top: window.innerHeight - 122,
                 behavior: "smooth",
             })
-        } else if (window.scrollY >= 750 && window.scrollY < 1408) {
+            console.log("ref0")
+        } else if (
+            window.scrollY <=
+            ref7.current?.getBoundingClientRect().height +
+                ref8.current?.getBoundingClientRect().height -
+                1
+        ) {
             ref2.current?.scrollIntoView({
-                block: "center",
+                block: "start",
                 behavior: "smooth",
             })
-        } else if (window.scrollY >= 1408 && window.scrollY < 1940) {
+            console.log("ref1")
+        } else if (
+            window.scrollY <=
+            ref7.current?.getBoundingClientRect().height +
+                ref8.current?.getBoundingClientRect().height +
+                ref9.current?.getBoundingClientRect().height -
+                1
+        ) {
             ref3.current?.scrollIntoView({
-                block: "center",
+                block: "start",
                 behavior: "smooth",
             })
-        } else if (window.scrollY >= 1940 && window.scrollY < 2643) {
+            console.log("ref2")
+        } else if (
+            window.scrollY <=
+            ref7.current?.getBoundingClientRect().height +
+                ref8.current?.getBoundingClientRect().height +
+                ref9.current?.getBoundingClientRect().height +
+                ref10.current?.getBoundingClientRect().height -
+                1
+        ) {
             ref4.current?.scrollIntoView({
-                block: "center",
+                block: "start",
                 behavior: "smooth",
             })
-        } else if (window.scrollY >= 2643 && window.scrollY < 3200) {
+            console.log("ref3")
+        } else if (
+            window.scrollY <=
+            ref7.current?.getBoundingClientRect().height +
+                ref8.current?.getBoundingClientRect().height +
+                ref9.current?.getBoundingClientRect().height +
+                ref10.current?.getBoundingClientRect().height +
+                ref11.current?.getBoundingClientRect().height -
+                1
+        ) {
             ref5.current?.scrollIntoView({
-                block: "center",
+                block: "start",
                 behavior: "smooth",
             })
-        } else if (window.scrollY >= 3200 && window.scrollY < 4148) {
+            console.log("ref4")
+        } else if (
+            window.scrollY <=
+            ref7.current?.getBoundingClientRect().height +
+                ref8.current?.getBoundingClientRect().height +
+                ref9.current?.getBoundingClientRect().height +
+                ref10.current?.getBoundingClientRect().height +
+                ref11.current?.getBoundingClientRect().height +
+                ref12.current?.getBoundingClientRect().height -
+                1
+        ) {
             ref6.current?.scrollIntoView({
-                block: "nearest",
+                block: "start",
                 behavior: "smooth",
             })
+            console.log("ref5")
+        } else {
+            console.log("else")
         }
     }
 
@@ -133,26 +124,26 @@ const Main = ({ submitRef }) => {
             >
                 <ScrollDownBtn />
             </div>
-            <div ref={ref0}>
-                <IntroduceSection />
+            <div ref={ref7}>
+                <IntroduceSection ref0={ref0} />
             </div>
-            <div className="anker-element" ref={ref1}>
-                <ProductsSection />
+            <div className="anker-element" ref={ref8}>
+                <ProductsSection ref1={ref1} />
             </div>
-            <div className="anker-element" ref={ref2}>
-                <IndicatorsSection />
+            <div className="anker-element" ref={ref9}>
+                <IndicatorsSection ref2={ref2} />
             </div>
-            <div className="anker-element" ref={ref3}>
-                <ServicesSection />
+            <div className="anker-element" ref={ref10}>
+                <ServicesSection ref3={ref3} />
             </div>
-            <div className="anker-element" ref={ref4}>
-                <AboutUsSection />
+            <div className="anker-element" ref={ref11}>
+                <AboutUsSection ref4={ref4} />
             </div>
-            <div className="anker-element" ref={ref5}>
-                <MapSection />
+            <div className="anker-element bg-color" ref={ref12}>
+                <MapSection ref5={ref5} />
             </div>
-            <div className="anker-element" ref={ref6}>
-                <ArticlesSection />
+            <div className="anker-element">
+                <ArticlesSection ref6={ref6} />
             </div>
             <SubscribeSection submitRef={submitRef} />
         </main>

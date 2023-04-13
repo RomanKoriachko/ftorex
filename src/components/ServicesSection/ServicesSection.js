@@ -2,9 +2,10 @@ import React from "react"
 import "./ServicesSection.scss"
 import { Link } from "react-router-dom"
 
-const ServicesSection = () => {
+const ServicesSection = ({ ref3 }) => {
     return (
         <section className="services-section">
+            <div className="section-anker-element" ref={ref3}></div>
             <div className="container services-container">
                 <div className="services-row">
                     <div className="container-tablet">
