@@ -191,7 +191,10 @@ const CoalSuppliesPage = () => {
                             <div className="download-button-wrapper">
                                 <button className="download-btn">
                                     <div className="row btn-content-row">
-                                        <a href="/files//FTOREX.pdf" download>
+                                        <a
+                                            href="/files//FTOREX COAL OFFER.docx"
+                                            download
+                                        >
                                             download document
                                         </a>
                                         <div className="btn-arrow"></div>

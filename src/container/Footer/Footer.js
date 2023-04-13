@@ -103,10 +103,10 @@ const Footer = ({ messageRef }) => {
                                 Social Media
                             </div>
                             <div className="footer-column-item">
-                                <a href="https://www.linkedin.com/in/ftorex-tm-3339b7239/">
+                                <a href="https://www.linkedin.com/in/ftorex/">
                                     Linkedin
                                 </a>
-                                <a href="https://twitter.com/TFtorex">
+                                <a href="https://twitter.com/ftorex_tm">
                                     Twitter
                                 </a>
                                 <a href="https://www.linkedin.com/in/ftorex-tm-3339b7239/">
