@@ -22,8 +22,8 @@ let articlesArray = [
             "South Africa is the seventh-largest producer of coal, with an estimated production of over 250 million tonnes in 2020. The country's coal industry is mainly centered in the Mpumalanga province. The South African government has implemented policies to promote the use of clean coal technologies.",
         paragraph9:
             "These countries, along with others, play a significant role in the global coal market, both as producers and consumers. While coal remains an important source of energy for many, there is a growing push towards cleaner energy sources and the use of clean coal technologies to reduce the environmental impact of coal mining and use.",
-        articleImg1: "images/article-img-1.png",
-        articleImg2: "images/article-img-2.png",
+        articleImg2: "/images/article-img-1.png",
+        articleImg3: "/images/article-img-2.png",
     },
     {
         id: 2,
@@ -66,8 +66,8 @@ let articlesArray = [
             "Indonesia has an estimated 28 billion tons of coal reserves, making it the tenth-largest coal reserve holder in the world. The country is a significant coal producer and exporter, with the majority of its reserves located in Sumatra and Kalimantan.",
         paragraph13:
             "In conclusion, coal reserves are distributed unevenly around the world, with just a few countries holding the majority of the resources. The availability of coal reserves is an essential factor in determining the energy security of a country.",
-        articleImg1: "images/article-img-1.png",
-        articleImg2: "images/article-img-2.png",
+        articleImg1: "/images/article-img-1.png",
+        articleImg2: "/images/article-img-2.png",
     },
     {
         id: 3,
@@ -93,8 +93,8 @@ let articlesArray = [
             "Colombia is the fifth-largest exporter of coal globally, with a total export value of over $5 billion in 2020. The country has significant coal reserves, and the industry is mainly centered in the departments of La Guajira and Cesar. The majority of Colombia's coal is exported to countries in Europe, with the Netherlands and the United Kingdom being the largest buyers.",
         paragraph7:
             "In conclusion, these are the leading countries in the export of coal. Australia is by far the largest exporter, followed by Indonesia, Russia, the United States, and Colombia. The majority of these countries' coal is exported to countries in Asia and Europe, with China, Japan, South Korea, and the Netherlands being the largest buyers. The coal industry is critical to these countries' economies, and it is expected to remain a vital energy source for many years to come.",
-        articleImg1: "images/article-img-1.png",
-        articleImg2: "images/article-img-2.png",
+        articleImg1: "/images/article-img-1.png",
+        articleImg2: "/images/article-img-2.png",
     },
     {
         id: 4,
@@ -187,8 +187,8 @@ let articlesArray = [
         subtitle7: "Conclusion",
         paragraph7:
             "Coking coal is a valuable commodity in the global economy, and several countries are competing for dominance in its production and export. Australia is the world's largest exporter of coking coal, followed by Canada, the United States, Russia, and China. These countries have established robust coking coal industries, and the industry is regulated by their respective governments, which have introduced policies to promote the use of clean coal technologies. As the world transitions to cleaner energy sources, coking coal remains a critical component in the production of steel and will continue to play a vital role in the global economy.",
-        articleImg1: "images/article-img-1.png",
-        articleImg2: "images/article-img-2.png",
+        articleImg1: "/images/article-img-1.png",
+        articleImg2: "/images/article-img-2.png",
     },
     {
         id: 6,
@@ -216,8 +216,8 @@ let articlesArray = [
         subtitle9: "Conclusion",
         paragraph9:
             "The Chinese coal market is a complex and dynamic market, shaped by a range of economic, political, and environmental factors. While the country's coal consumption has declined in recent years, the Chinese coal industry remains a significant player in the global coal market. Looking to the future, the Chinese government is likely to continue to support the development of the country's coal industry, while also promoting the use of cleaner energy sources.",
-        articleImg1: "images/article-img-1.png",
-        articleImg2: "images/article-img-2.png",
+        articleImg1: "/images/article-img-1.png",
+        articleImg2: "/images/article-img-2.png",
     },
     {
         id: 7,
@@ -244,8 +244,8 @@ let articlesArray = [
             "Another trend in the Australian coal market is the increasing demand for metallurgical coal, particularly in Asia. This has been driven by the growth of the steel industry in countries such as China and India, which are major consumers of Australian metallurgical coal.",
         paragraph9:
             "In conclusion, the Australian coal market is facing several challenges, including declining demand for thermal coal and increasing competition from other energy sources. However, the industry remains a significant contributor to the country's economy and is an important source of employment. The increasing demand for metallurgical coal in Asia provides an opportunity for the industry to diversify and adapt to changing market conditions.",
-        articleImg1: "images/article-img-1.png",
-        articleImg2: "images/article-img-2.png",
+        articleImg1: "/images/article-img-1.png",
+        articleImg2: "/images/article-img-2.png",
     },
     {
         id: 8,
@@ -272,8 +272,8 @@ let articlesArray = [
         subtitle8: "Conclusion",
         paragraph8:
             "While the U.S. coal market has faced significant challenges in recent years, it remains a significant player in the global energy market. The decline in production and consumption is expected to continue, but there are still opportunities for growth and investment in areas like exports, industrial applications, and advanced coal technologies. The U.S. coal industry must navigate these challenges while also addressing environmental concerns and working towards a more sustainable future.",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+        articleImg1: "/images/article-img-2.png",
+        articleImg2: "/images/article-img-1.png",
     },
     {
         id: 9,
@@ -314,8 +314,8 @@ let articlesArray = [
             "Teck Resources Limited is a Canadian mining company that produces a range of commodities, including coal. The company has significant coal mining operations in Canada and the United States and also operates coal trading businesses around the world.",
         paragraph12:
             "In conclusion, the global coal industry is dominated by a few major players who are responsible for a significant portion of the world's coal production and exports.",
-        articleImg1: "images/article-img-1.png",
-        articleImg2: "images/article-img-2.png",
+        articleImg1: "/images/article-img-1.png",
+        articleImg2: "/images/article-img-2.png",
     },
     {
         id: 10,
@@ -356,8 +356,8 @@ let articlesArray = [
             "The Port of Huanghua is a major coal-handling port in China, located on the Bohai Sea. The port has several coal terminals with a combined capacity of over 100 million tons per year, making it an important transshipment point for coal.",
         paragraph12:
             "In conclusion, coal transshipment is a crucial part of the global coal supply chain, and the ports mentioned above play a significant role in the efficient transportation of coal from production centers to end-users. The location, capacity, and efficiency of these ports are critical",
-        articleImg1: "images/article-img-1.png",
-        articleImg2: "images/article-img-2.png",
+        articleImg1: "/images/article-img-1.png",
+        articleImg2: "/images/article-img-2.png",
     },
     {
         id: 11,
@@ -396,8 +396,8 @@ let articlesArray = [
         subtitle11: "10. Gujarat State Fertilizers & Chemicals Ltd. ",
         paragraph11:
             "Gujarat State Fertilizers & Chemicals Ltd. is an Indian company that produces potash and other fertilizers. It operates mines in the Indian state of Gujarat and has an annual production capacity of approximately 1.1 million metric tons of potash.",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+        articleImg1: "/images/article-img-2.png",
+        articleImg2: "/images/article-img-1.png",
     },
     {
         id: 12,
@@ -426,8 +426,8 @@ let articlesArray = [
             "Mexico is the ninth-largest consumer of potash, accounting for approximately 1.5% of the total global consumption. The country has a significant agricultural sector, and the government has been promoting the use of fertilizers to improve crop yields. The demand for potash in Mexico is expected to continue to grow due to the increasing",
         paragraph11:
             "Canada is the eighth-largest consumer of potash in the world, accounting for around 2% of global consumption. The country is a significant producer of potash and is home to some of the world’s largest potash mines. In 2021, Canada imported over 1 million tonnes of potash.",
-        articleImg1: "images/article-img-1.png",
-        articleImg2: "images/article-img-2.png",
+        articleImg1: "/images/article-img-1.png",
+        articleImg2: "/images/article-img-2.png",
     },
     {
         id: 13,
@@ -468,8 +468,8 @@ let articlesArray = [
             "Russia is the tenth-largest consumer of carbamide globally. The country's agriculture industry is highly developed, and it is a significant producer of wheat, barley, and other crops. Urea consumption in the country has been increasing steadily over the years.",
         paragraph12:
             "In conclusion, carbamide is a critical component of modern agriculture, and its consumption is widespread globally. The top 10 countries of consumers of carbamide are India, China, the United States, Brazil, Pakistan, Indonesia, Mexico, France, Turkey, and Russia. The demand for urea is likely to continue to grow, particularly in",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+        articleImg1: "/images/article-img-2.png",
+        articleImg2: "/images/article-img-1.png",
     },
     {
         id: 14,
@@ -490,8 +490,8 @@ let articlesArray = [
             "Drummond's success in the Colombian coal market has not gone unnoticed by the international community. In 2020, the company was recognized by the Colombian government for its contributions to the country's economy and for its commitment to social responsibility. The company has implemented several programs aimed at supporting local communities, including education and healthcare initiatives, as well as environmental conservation projects.",
         paragraph7:
             "In conclusion, the Drummond Company is a significant player in the Colombian coal market, with a long history of mining operations in the country. Despite the challenges it has faced over the years, including environmental violations and its involvement in a paramilitary scandal, Drummond has remained a major contributor to the Colombian economy. The company's success can be attributed to its focus on quality control, investment in infrastructure, and commitment to social responsibility. As long as there is demand for coal around the world, Drummond is likely to remain an important player in the Colombian coal market.",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+        articleImg1: "/images/article-img-2.png",
+        articleImg2: "/images/article-img-1.png",
     },
     {
         id: 15,
@@ -514,8 +514,8 @@ let articlesArray = [
             "Tanzania is another country that has seen an increase in coal mining activities in recent years, with an estimated 4.4 million tonnes produced in 2019. The country's coal reserves are estimated to be over 1.5 billion tonnes, with the majority located in the Rukwa coalfield. The Ngaka Coal Mine, owned by Tancoal Energy Limited, is the country's largest coal mine.",
         paragraph8:
             "In conclusion, coal mining has been an important industry in Africa for many years, providing energy and fuel for various industries and households. South Africa remains the largest producer and exporter of coal in Africa, followed by Botswana and Mozambique. However, the industry faces various challenges, including declining demand for coal, concerns over environmental impact, and social issues related to mining",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+        articleImg1: "/images/article-img-2.png",
+        articleImg2: "/images/article-img-1.png",
     },
     {
         id: 16,
@@ -547,8 +547,8 @@ let articlesArray = [
         subtitle10: "Conclusion",
         paragraph10:
             "The coal industry is a major contributor to Kazakhstan's economy, and the country's vast coal reserves and expanding infrastructure have made it one of the world's largest producers and exporters of coal. While the industry faces challenges such as environmental concerns and price volatility, the government's focus on promoting investment and modernization of the sector is expected to continue driving growth and development in the industry.",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+        articleImg1: "/images/article-img-2.png",
+        articleImg2: "/images/article-img-1.png",
     },
     {
         id: 17,
@@ -580,8 +580,8 @@ let articlesArray = [
         subtitle9: "7. Evraz",
         paragraph9:
             "Evraz is a mining and metals company that produces iron ore, steel, and coal. The company operates several coal mines in Russia, including the Raspadskaya mine, which is one of the largest underground coal mines in the world. Evraz also has coal mining operations in the US and Canada, and it exports coal to Asia, Europe, and the Americas.",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+        articleImg1: "/images/article-img-2.png",
+        articleImg2: "/images/article-img-1.png",
     },
     {
         id: 18,
@@ -604,8 +604,8 @@ let articlesArray = [
             "However, there are concerns over the environmental impact of coal mining and the burning of coal for energy generation, as coal is a major contributor to greenhouse gas emissions and air pollution. In recent years, there has been a growing shift towards renewable energy sources, and it remains to be seen how this will impact the demand for coal in the long term.",
         paragraph8:
             "In conclusion, Indonesia is a major player in the global coal market, with the majority of its coal exports being sold to China, India, and Japan. The demand for Indonesian coal is expected to remain strong in the coming years, driven by the countries' reliance on coal as a key source of energy. However, the environmental impact of coal mining and the burning of coal for energy generation is a concern, and there is a growing shift towards renewable energy sources.",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+        articleImg1: "/images/article-img-2.png",
+        articleImg2: "/images/article-img-1.png",
     },
     {
         id: 19,
@@ -620,8 +620,8 @@ let articlesArray = [
             "Underground mining is used to extract coal that is buried deep beneath the Earth's surface. This method is used when the coal seams are too deep to be accessed by surface mining methods. The two main types of underground mining are longwall mining and room and pillar mining. Longwall mining involves using a machine called a shearer to extract coal from long, rectangular blocks of coal known as 'longwall panels.' The machine moves back and forth across the panel, cutting the coal and dropping it onto a conveyor belt for transport to the surface. Longwall mining is more efficient than room and pillar mining, as it allows for the extraction of larger quantities of coal. Room and pillar mining involves digging a series of tunnels or 'rooms' into the coal seam and leaving 'pillars' of coal to support the roof. This method is used in mines where the coal seams are not very thick, as it allows for the extraction of coal while minimizing the risk of collapse.",
         paragraph4:
             "Mountaintop removal mining is a controversial method of coal mining used mainly in the Appalachian Mountains of the United States. This method involves removing the top of a mountain and exposing the coal seams underneath. The overlying material is dumped into nearby valleys, burying streams and other water sources. This method is highly destructive to the environment and has been the subject of much controversy. In conclusion, coal mining is an essential industry that provides the energy needs of many countries worldwide. There are several methods of coal mining, each with its own advantages and disadvantages. The choice of method depends on the depth and thickness of the coal seams, as well as the environmental impact and efficiency of the mining method. It is important for the coal mining industry to prioritize sustainable and environmentally responsible practices in order to ensure the long-term availability of this valuable resource.",
-        articleImg1: "images/article-img-2.png",
-        articleImg2: "images/article-img-1.png",
+        articleImg1: "/images/article-img-2.png",
+        articleImg2: "/images/article-img-1.png",
     },
     {
         id: 20,
