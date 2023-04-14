@@ -4,6 +4,19 @@ import { Link } from "react-router-dom"
 import articleArr from "../../pages/ArticlesPage/articlesArray"
 
 const ArticlesSection = ({ ref6 }) => {
+    function kitcut(text, limit) {
+        text = text.trim()
+        if (text.length <= limit) {
+            return text
+        }
+        text = text.slice(0, limit)
+        let lastSpace = text.lastIndexOf(" ")
+        if (lastSpace > 0) {
+            text = text.substr(0, lastSpace)
+        }
+        return text + "..."
+    }
+
     return (
         <section className="articles-section">
             <div className="section-anker-element" ref={ref6}></div>
@@ -28,14 +41,16 @@ const ArticlesSection = ({ ref6 }) => {
                 <div className="articles-items-row">
                     {articleArr
                         .filter((element, index) => index < 4)
-                        .map(({ id, preview, name }) => (
+                        .map(({ id, preview, name, paragraph1 }) => (
                             <div key={id} className="article-item">
                                 <Link to={`/articles/${id}`}>
                                     <div className="article-item-img">
                                         <img src={`/${preview}`} alt="" />
                                     </div>
-
-                                    <p>{name}</p>
+                                    <p className="article-name">{name}</p>
+                                    <p className="article-text">
+                                        {kitcut(paragraph1, 80)}
+                                    </p>
                                 </Link>
                             </div>
                         ))}
