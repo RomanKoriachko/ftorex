@@ -15,6 +15,20 @@
             background-image: url(../../assets/arrow-right-red.svg);
         }
     }
+    .tablet-close-map-btn {
+        display: none;
+        @include buttonWithArrow();
+        position: absolute;
+        bottom: 60px;
+        left: 20px;
+        z-index: 1000;
+        color: #121212;
+        background-color: #ffffff;
+        text-transform: uppercase;
+        .btn-arrow {
+            background-image: url(../../assets/arrow-right-red.svg);
+        }
+    }
     .close-map-btn.not-active {
         transition: 1s all;
         transform: translateX(-300%);
@@ -23,11 +37,22 @@
         transition: 1s all;
         transform: translateX(0%);
     }
+    .tablet-close-map-btn.show-map {
+        transition: 1s all;
+        transform: translateX(0%);
+    }
+    .tablet-close-map-btn.hide-map {
+        transition: 1s all;
+        transform: translateX(-300%);
+    }
     .map-wrapper {
         display: grid;
         grid-template-columns: 0.92fr 1fr;
         height: 600px;
         background-color: #c74869;
+    }
+    .tablet-map-wrapper {
+        display: none;
     }
     .map-content {
         background-color: #c74869;
@@ -130,26 +155,77 @@
 /* Tablet */
 @media (max-width: 992px) {
     .map-section {
+        .map-content {
+            .map-text {
+                top: 15px;
+                width: 100%;
+                padding: 35px 16px;
+            }
+        }
         .map-wrapper {
             grid-template-columns: 1fr;
             grid-template-rows: 0.8fr 1.2fr;
             transition: 1s all;
             height: auto;
         }
+        .tablet-close-map-btn {
+            display: block;
+        }
+        .desktop-map-wrapper {
+            display: none;
+        }
+        .tablet-map-wrapper {
+            display: grid;
+            grid-template-rows: 1fr;
+            overflow: hidden;
+            .map-content {
+                transition: 1.3s all;
+            }
+        }
+        .tablet-map-wrapper.show-map {
+            grid-template-columns: 0fr 1fr;
+            .map-content {
+                // transform: translateX(-200%);
+                right: 200%;
+                z-index: -1;
+                opacity: 0;
+                .map-text {
+                    transition: 0.5s all;
+                    opacity: 0;
+                }
+            }
+        }
+        .tablet-map-wrapper.hide-map {
+            grid-template-columns: 1fr 0fr;
+            .map-content {
+                // transform: translateX(0%);
+                z-index: 1;
+                opacity: 1;
+                right: 0px;
+                .map-text {
+                    transition: 0.5s all;
+                    opacity: 1;
+                }
+            }
+        }
         .tablet-row {
             display: flex;
             gap: 10px;
-        }
-        .map-content {
-            .map-text {
-                position: static;
-                width: auto;
-                padding: 35px 16px;
-            }
         }
     }
 }
 
 /* Mobile */
 @media (max-width: 576px) {
+    .map-section {
+        .tablet-map-wrapper {
+            min-height: 520px;
+            .map-content {
+                .map-text {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
 }
