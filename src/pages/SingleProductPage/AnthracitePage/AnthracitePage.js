@@ -189,7 +189,7 @@ const AnthracitePage = () => {
                             </p>
                             <img
                                 className="product-content-img"
-                                src="/images/products-img-3.jpg"
+                                src="/images/anthracite-page-img-1.webp"
                                 alt=""
                             />
                             <p className="product-content-text">
@@ -249,6 +249,12 @@ const AnthracitePage = () => {
                                 types and is graded into anthracite fines (less
                                 than 10mm) and anthracite lumps (10mm to 40mm).
                             </p>
+                            <img
+                                className="product-content-img"
+                                src="/images/anthracite-page-img-2.webp"
+                                alt=""
+                            />
+
                             <p className="product-content-text">
                                 Anthracite coal is categorized into three
                                 grades: semi-anthracite or standard grade,

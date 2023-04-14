@@ -6,7 +6,7 @@ import StickyBox from "react-sticky-box"
 
 const PciCoalPage = () => {
     return (
-        <div className="thermal-coal-page single-product-page">
+        <div className="pci-coal-page single-product-page">
             <PageHeader
                 name="PCI Coal"
                 subtitle="Our company offers a comprehensive range of services including coal and fertilizer supplies, logistics solutions, customs clearance, ocean freight, and consulting to meet the diverse needs of our customers."
@@ -158,7 +158,7 @@ const PciCoalPage = () => {
                             </p>
                             <img
                                 className="product-content-img"
-                                src="/images/products-img-4.jpg"
+                                src="/images/pci-page-img-1.webp"
                                 alt=""
                             />
                             <p className="product-content-text">
@@ -255,6 +255,11 @@ const PciCoalPage = () => {
                                 different ranks requires care when applying the
                                 additivity rule for ash content.
                             </p>
+                            <img
+                                className="product-content-img"
+                                src="/images/pci-page-img-2.webp"
+                                alt=""
+                            />
                             <p className="product-content-text">
                                 The quality of hot metal can be influenced by
                                 the constituents present in injection coal ash,
@@ -358,14 +363,12 @@ const PciCoalPage = () => {
                                 of IDT for high IDT coals. IDT is a reflection
                                 of the coal ash composition. The presence of
                                 alkaline oxides acts as fluxes, lowering melting
-                                temperatures.{" "}
-                            </p>
-                            <p className="product-content-text">
-                                High S (from pyrite) can lower IDT. HV coal ash
-                                is often highly alkaline, and hence melting
-                                temperature is lower, making it more likely to
-                                cause ash deposition problems than higher rank
-                                LV coals. IDTs are not additive for coal blends.
+                                temperatures. High S (from pyrite) can lower
+                                IDT. HV coal ash is often highly alkaline, and
+                                hence melting temperature is lower, making it
+                                more likely to cause ash deposition problems
+                                than higher rank LV coals. IDTs are not additive
+                                for coal blends.
                             </p>
                             <p className="product-content-text">
                                 Grindability is measured by Hardgrove Grinding

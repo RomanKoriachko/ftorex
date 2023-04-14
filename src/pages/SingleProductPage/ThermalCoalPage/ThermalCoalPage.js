@@ -170,10 +170,9 @@ const ThermalCoalPage = () => {
                             </p>
                             <img
                                 className="product-content-img"
-                                src="/images/products-img-2.jpg"
+                                src="/images/thermal-coal-img-1.webp"
                                 alt=""
                             />
-
                             <p className="product-content-text">
                                 The performance of thermal coal in a furnace is
                                 influenced by its properties, including mineral
@@ -283,6 +282,11 @@ const ThermalCoalPage = () => {
                                 or air-dried moisture. Both NCV and GCV are
                                 measured in kilocalories per kilogram (kcal/kg).
                             </p>
+                            <img
+                                className="product-content-img"
+                                src="/images/thermal-coal-img-2.webp"
+                                alt=""
+                            />
                             <p className="product-content-text">
                                 The relationship between GCV and NCV based on
                                 ultimate analysis is given by the equation ‘NCV
