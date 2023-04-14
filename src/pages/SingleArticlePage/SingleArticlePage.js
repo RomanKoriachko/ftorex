@@ -155,10 +155,10 @@ const SingleArticlePage = () => {
                         <div>
                             <table className="article-table-desctop">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table3.tableHeader1}
                                     </td>
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table3.tableHeader2}
                                     </td>
                                 </tr>
@@ -249,19 +249,19 @@ const SingleArticlePage = () => {
                         <div>
                             <table className="article-table-desctop article-table-desctop-large">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {
                                             curretArticle[0]?.tableLarge3
                                                 .tableHeader1
                                         }
                                     </td>
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {
                                             curretArticle[0]?.tableLarge3
                                                 .tableHeader2
                                         }
                                     </td>
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {
                                             curretArticle[0]?.tableLarge3
                                                 .tableHeader3
@@ -535,10 +535,10 @@ const SingleArticlePage = () => {
                         <div>
                             <table className="article-table-desctop-hide">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table6.tableHeader1}
                                     </td>
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table6.tableHeader2}
                                     </td>
                                 </tr>
@@ -561,7 +561,7 @@ const SingleArticlePage = () => {
                             </table>
                             <table className="article-table-mobile">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table6.tableHeader1}
                                     </td>
                                 </tr>
@@ -576,7 +576,7 @@ const SingleArticlePage = () => {
                                     </td>
                                 </tr>
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table6.tableHeader2}
                                     </td>
                                 </tr>
@@ -597,19 +597,19 @@ const SingleArticlePage = () => {
                         <div>
                             <table className="article-table-desctop article-table-desctop-large">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {
                                             curretArticle[0]?.tableLarge6
                                                 .tableHeader1
                                         }
                                     </td>
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {
                                             curretArticle[0]?.tableLarge6
                                                 .tableHeader2
                                         }
                                     </td>
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {
                                             curretArticle[0]?.tableLarge6
                                                 .tableHeader3
@@ -803,10 +803,10 @@ const SingleArticlePage = () => {
                         <div>
                             <table className="article-table-desctop-hide">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table9.tableHeader1}
                                     </td>
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table9.tableHeader2}
                                     </td>
                                 </tr>
@@ -829,7 +829,7 @@ const SingleArticlePage = () => {
                             </table>
                             <table className="article-table-mobile">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table9.tableHeader1}
                                     </td>
                                 </tr>
@@ -844,7 +844,7 @@ const SingleArticlePage = () => {
                                     </td>
                                 </tr>
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table9.tableHeader2}
                                     </td>
                                 </tr>
@@ -909,10 +909,10 @@ const SingleArticlePage = () => {
                         <div>
                             <table className="article-table-desctop">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table11.tableHeader1}
                                     </td>
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table11.tableHeader2}
                                     </td>
                                 </tr>
@@ -935,7 +935,7 @@ const SingleArticlePage = () => {
                             </table>
                             <table className="article-table-mobile">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table11.tableHeader1}
                                     </td>
                                 </tr>
@@ -950,7 +950,7 @@ const SingleArticlePage = () => {
                                     </td>
                                 </tr>
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table11.tableHeader2}
                                     </td>
                                 </tr>
@@ -1015,10 +1015,10 @@ const SingleArticlePage = () => {
                         <div>
                             <table className="article-table-desctop">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table13.tableHeader1}
                                     </td>
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table13.tableHeader2}
                                     </td>
                                 </tr>
@@ -1041,7 +1041,7 @@ const SingleArticlePage = () => {
                             </table>
                             <table className="article-table-mobile">
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table13.tableHeader1}
                                     </td>
                                 </tr>
@@ -1056,7 +1056,7 @@ const SingleArticlePage = () => {
                                     </td>
                                 </tr>
                                 <tr className="article-table-row">
-                                    <td className="article-table-item">
+                                    <td className="article-table-item article-table-header">
                                         {curretArticle[0]?.table13.tableHeader2}
                                     </td>
                                 </tr>

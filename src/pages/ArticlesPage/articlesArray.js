@@ -624,7 +624,7 @@ let articlesArray = [
     // },
     {
         id: 20,
-        preview: "images/article-preview-20.jpg",
+        preview: "images/article-preview-20.webp",
         tag: "world coal",
         name: "Chinese power plants as the main consumer of energy coal on the planet.",
         paragraph1:
@@ -670,8 +670,7 @@ let articlesArray = [
         subtitle8: "",
         mediumText8: "Air pollution",
         paragraph8: "",
-        articleImg8: "/images/article-preview-20.jpg",
-
+        articleImg8: "/images/article-20-img-1.webp",
         subtitle9: "",
         mediumText9: "",
         paragraph9:
@@ -699,62 +698,67 @@ let articlesArray = [
         subtitle13:
             "Alternative sources of energy and their potential for adoption in China",
         mediumText13: "",
-        paragraph13:
-            "Alternative sources of energy have become increasingly popular in recent years as concerns over climate change and environmental pollution have grown. In China, alternative sources of energy offer a promising way to reduce dependence on coal and its negative impact on the environment. Here are some alternative sources of energy that have potential for adoption in China:",
+        paragraph13: "",
         articleImg13: "",
+        articleImg13: "/images/article-20-img-2.webp",
 
         subtitle14: "",
         mediumText14: "",
         paragraph14:
-            "● Solar Energy: China is the world's largest producer and user of solar energy. The country boasts of an impressive solar capacity of more than 350GW. ",
-        articleImg14: "/images/article-preview-20.jpg",
+            "Alternative sources of energy have become increasingly popular in recent years as concerns over climate change and environmental pollution have grown. In China, alternative sources of energy offer a promising way to reduce dependence on coal and its negative impact on the environment. Here are some alternative sources of energy that have potential for adoption in China:",
+        articleImg14: "",
+        articleImg14: "",
 
         subtitle15: "",
         mediumText15: "",
         paragraph15:
-            "With abundant sunlight and a favorable policy environment, solar energy has great potential to replace coal in China's energy mix.",
-        articleImg15: "",
+            "● Solar Energy: China is the world's largest producer and user of solar energy. The country boasts of an impressive solar capacity of more than 350GW. ",
 
         subtitle16: "",
         mediumText16: "",
         paragraph16:
-            "● Wind Energy: China is also the world's largest producer and user of wind energy. In 2021, wind power generated 7.5% of China's total electricity. ",
-        articleImg16: "/images/article-preview-20.jpg",
+            "With abundant sunlight and a favorable policy environment, solar energy has great potential to replace coal in China's energy mix.",
+        articleImg16: "",
 
         subtitle17: "",
         mediumText17: "",
         paragraph17:
-            "With the government's goal of reaching 20% of electricity generation from non-fossil fuels by 2025, wind energy is expected to play an increasingly important role in China's energy supply.",
-        articleImg17: "",
+            "● Wind Energy: China is also the world's largest producer and user of wind energy. In 2021, wind power generated 7.5% of China's total electricity. ",
 
         subtitle18: "",
         mediumText18: "",
         paragraph18:
-            "● Hydro Power: China is also rich in hydropower resources, with the world's largest installed capacity. The country has been investing heavily in hydropower development, especially in the southwestern region. Hydropower has the advantages of being renewable, clean, and flexible, making it an ideal alternative to coal power plants. ",
+            "With the government's goal of reaching 20% of electricity generation from non-fossil fuels by 2025, wind energy is expected to play an increasingly important role in China's energy supply.",
         articleImg18: "",
 
         subtitle19: "",
         mediumText19: "",
         paragraph19:
-            "● Nuclear Power: Despite concerns over safety, nuclear power has become an increasingly popular alternative to coal power in China. The country has been investing heavily in nuclear power to meet its growing energy demands and it currently has 50 nuclear reactors in operation and under construction, with a total capacity of 53 GW. The Chinese government plans to increase the country's nuclear capacity to 70 GW by 2025.",
+            "● Hydro Power: China is also rich in hydropower resources, with the world's largest installed capacity. The country has been investing heavily in hydropower development, especially in the southwestern region. Hydropower has the advantages of being renewable, clean, and flexible, making it an ideal alternative to coal power plants. ",
         articleImg19: "",
 
         subtitle20: "",
         mediumText20: "",
         paragraph20:
-            "● Biomass Energy: Biomass energy, such as biogas and biofuels, can be produced from agricultural and forestry waste. China has been promoting the use of biomass energy, especially in rural areas, as part of its efforts to improve energy access and reduce poverty. With the country’s large agricultural and forestry resources, biomass energy has great potential to replace coal in rural areas.",
+            "● Nuclear Power: Despite concerns over safety, nuclear power has become an increasingly popular alternative to coal power in China. The country has been investing heavily in nuclear power to meet its growing energy demands and it currently has 50 nuclear reactors in operation and under construction, with a total capacity of 53 GW. The Chinese government plans to increase the country's nuclear capacity to 70 GW by 2025.",
         articleImg20: "",
 
-        subtitle21: "Bottomline",
+        subtitle21: "",
         mediumText21: "",
         paragraph21:
-            "The Chinese government has shown a growing commitment to reducing its dependence on coal power plants and transition towards cleaner sources of energy. While there are still significant challenges to overcome, the prospects for reducing coal dependency in Chinese power plants is promising. If China can successfully transition towards cleaner sources of energy, it could have a significant impact on global efforts to reduce carbon emissions and combat climate change.",
+            "● Biomass Energy: Biomass energy, such as biogas and biofuels, can be produced from agricultural and forestry waste. China has been promoting the use of biomass energy, especially in rural areas, as part of its efforts to improve energy access and reduce poverty. With the country’s large agricultural and forestry resources, biomass energy has great potential to replace coal in rural areas.",
         articleImg21: "",
+
+        subtitle22: "Bottomline",
+        mediumText22: "",
+        paragraph22:
+            "The Chinese government has shown a growing commitment to reducing its dependence on coal power plants and transition towards cleaner sources of energy. While there are still significant challenges to overcome, the prospects for reducing coal dependency in Chinese power plants is promising. If China can successfully transition towards cleaner sources of energy, it could have a significant impact on global efforts to reduce carbon emissions and combat climate change.",
+        articleImg22: "",
     },
     {
         id: 21,
-        preview: "images/article-preview-10.jpg",
-        tag: "landing",
+        preview: "images/article-preview-21.webp",
+        tag: "world coal",
         name: "Digging Deeper: An Exploration of Different Mining Methods",
         paragraph1:
             "Mining is a crucial activity that has been instrumental in the development of human civilizations for thousands of years. Over time, different mining methods have emerged, each with its unique advantages and disadvantages. From underground mining, which involves extracting minerals from beneath the earth's surface, to open surface mining, placer mining, and in-situ mining, each method offers distinct benefits and challenges. ",
@@ -773,7 +777,7 @@ let articlesArray = [
         subtitle4: "1. Underground mining",
         mediumText4: "",
         paragraph4: "",
-        articleImg4: "/images/article-preview-10.jpg",
+        articleImg4: "/images/article-21-img-1.jpeg",
 
         subtitle5: "",
         mediumText5: "",
@@ -800,7 +804,7 @@ let articlesArray = [
         subtitle7: "2. Open surface mining",
         mediumText7: "",
         paragraph7: "",
-        articleImg7: "/images/article-preview-10.jpg",
+        articleImg7: "/images/article-21-img-2.jpeg",
 
         subtitle8: "",
         mediumText8: "",
@@ -901,7 +905,7 @@ let articlesArray = [
     },
     {
         id: 22,
-        preview: "images/article-preview-7.jpg",
+        preview: "images/article-preview-22.jpeg",
         tag: "export of coal",
         name: "Countries at the forefront of coal mining",
         paragraph1:
@@ -910,7 +914,7 @@ let articlesArray = [
         subtitle2: "Introduction",
         mediumText2: "",
         paragraph2: "",
-        articleImg2: "/images/article-img-3.png",
+        articleImg2: "/images/article-22-img-1.png",
 
         subtitle3: "",
         mediumText3: "",
@@ -1046,8 +1050,8 @@ let articlesArray = [
     },
     {
         id: 23,
-        preview: "images/article-preview-15.jpg",
-        tag: "reserves",
+        preview: "images/article-preview-23.webp",
+        tag: "top countries",
         name: "The Top coal mining leaders in Russia and the key buyers for 2022-2023",
         paragraph1:
             "From the snow-capped mountains of Siberia to the sprawling open-pit mines in Kuzbass, Russia's coal mining industry has been a vital contributor to the country's economy for decades. As one of the world's largest producers of coal, Russia is responsible for a significant portion of the global supply chain. However, with increasing competition from renewable energy sources, growing concerns over climate change and Russia’s ongoing war with Ukraine, the  industry faces a number of challenges in the years ahead.",
@@ -1103,7 +1107,7 @@ let articlesArray = [
         subtitle10: "",
         mediumText10: "China",
         paragraph10: "",
-        articleImg10: "/images/article-preview-15.jpg",
+        articleImg10: "/images/article-23-img-1.webp",
 
         subtitle11: "",
         mediumText11: "",
@@ -1114,7 +1118,7 @@ let articlesArray = [
         subtitle12: "",
         mediumText12: "Japan",
         paragraph12: "",
-        articleImg12: "/images/article-preview-15.jpg",
+        articleImg12: "",
 
         subtitle13: "",
         mediumText13: "",
@@ -1125,7 +1129,7 @@ let articlesArray = [
         subtitle14: "",
         mediumText14: "South Korea",
         paragraph14: "",
-        articleImg14: "/images/article-preview-15.jpg",
+        articleImg14: "",
 
         subtitle15: "",
         mediumText15: "",
@@ -1136,7 +1140,7 @@ let articlesArray = [
         subtitle16: "",
         mediumText16: "Turkey",
         paragraph16: "",
-        articleImg16: "/images/article-preview-15.jpg",
+        articleImg16: "",
 
         subtitle17: "",
         mediumText17: "",
@@ -1170,8 +1174,8 @@ let articlesArray = [
     },
     {
         id: 24,
-        preview: "images/article-preview-18.jpg",
-        tag: "landing",
+        preview: "images/article-preview-24.webp",
+        tag: "top companies",
         name: "World leaders in the production of coal mining equipment and machinery",
         paragraph1:
             "Mining has always been a vital industry, and the coal mining sector is no exception. Coal provides an essential source of energy for industries and homes worldwide, and the machinery and equipment used to extract it are just as crucial. ",
@@ -1217,7 +1221,7 @@ let articlesArray = [
         subtitle4: "Caterpillar Inc. (United States) ",
         mediumText4: "",
         paragraph4: "",
-        articleImg4: "/images/article-preview-18.jpg",
+        articleImg4: "",
 
         subtitle5: "",
         mediumText5: "",
@@ -1234,7 +1238,7 @@ let articlesArray = [
         subtitle7: "Komatsu Ltd. (Japan) ",
         mediumText7: "",
         paragraph7: "",
-        articleImg7: "/images/article-preview-18.jpg",
+        articleImg7: "",
 
         subtitle8: "",
         mediumText8: "",
@@ -1265,12 +1269,11 @@ let articlesArray = [
         paragraph12:
             "Epiroc AB (Sweden) - Epiroc AB is a Swedish manufacturer of mining and infrastructure equipment, including coal mining equipment and machinery. The company was formed in 2018 as a spin-off from Atlas Copco, and has quickly become a leading player in the industry. ",
         articleImg12: "",
-
         subtitle13: "",
         mediumText13: "",
         paragraph13:
             "Epiroc is known for its innovative products and services, including its SmartROC range of drilling rigs which use advanced automation technology to improve safety and efficiency. The company is also committed to sustainability, with a focus on reducing energy consumption and carbon emissions in its operations.",
-        articleImg13: "",
+        articleImg13: "/images/article-24-img-1.webp",
 
         subtitle14: "Joy Global Inc. (United States)",
         mediumText14: "",
@@ -1359,8 +1362,8 @@ let articlesArray = [
     },
     {
         id: 25,
-        preview: "images/article-preview-19.jpg",
-        tag: "landing",
+        preview: "images/article-preview-25.webp",
+        tag: "top companies",
         name: "LEADING EXPORTERS OF COAL IN THE WORLD",
         paragraph1:
             "The leading exporter of coal in the world is Australia. Close to 36% of total coal export in the world comes from Australia. Other countries like Russia, Indonesia, South Africa and the United States of America are also leading exporters. These countries, together with Australia, are responsible for about 85% of total coal exports in the world. Despite being the leading exporter of coal, Australia is not the largest producer of coal. ",
