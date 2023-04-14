@@ -2,21 +2,34 @@ import React, { useState } from "react"
 import "./MapSection.scss"
 
 const MapSection = ({ ref5 }) => {
-    const [showMapState, setShowMapState] = useState("")
+    const [showMapState, setShowMapState] = useState("not-active")
 
     const showMap = () => {
-        if (showMapState === "" && window.innerWidth > 992) {
+        if (showMapState === "not-active" && window.innerWidth > 992) {
             setShowMapState("active")
-        } else if (showMapState === "" && window.innerWidth <= 992) {
+        } else if (showMapState === "not-active" && window.innerWidth <= 992) {
             setShowMapState("tablet-active")
         } else {
-            setShowMapState("")
+            setShowMapState("not-active")
         }
+    }
+
+    const closeMap = () => {
+        setShowMapState("not-active")
     }
 
     return (
         <section className="map-section">
             <div className="section-anker-element" ref={ref5}></div>
+            <button
+                className={`close-map-btn ${showMapState}`}
+                onClick={() => closeMap()}
+            >
+                <div className="row btn-content-row">
+                    <p>show less</p>
+                    <div className="btn-arrow"></div>
+                </div>
+            </button>
             <div className={`map-wrapper ${showMapState}`}>
                 <div className="map-content">
                     <div className="map-text">

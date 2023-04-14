@@ -2,10 +2,28 @@
 
 .map-section {
     position: relative;
+    .close-map-btn {
+        @include buttonWithArrow();
+        position: absolute;
+        bottom: 50px;
+        left: 20px;
+        z-index: 1000;
+        color: white;
+        background-color: #121212;
+        text-transform: uppercase;
+    }
+    .close-map-btn.not-active {
+        transition: 1s all;
+        transform: translateX(-300%);
+    }
+    .close-map-btn.active {
+        transition: 1s all;
+        transform: translateX(0%);
+    }
     .map-wrapper {
         display: grid;
         grid-template-columns: 0.92fr 1fr;
-        height: 710px;
+        height: 600px;
         background-color: #c74869;
     }
     .map-content {
@@ -15,7 +33,7 @@
         .map-text {
             position: absolute;
             width: 530px;
-            top: 140px;
+            top: 85px;
             right: 70px;
             .big-header {
                 color: white;
@@ -47,6 +65,10 @@
     .map {
         width: 100%;
         height: 100%;
+    }
+    .not-active {
+        grid-template-columns: 0.92fr 1fr;
+        transition: 1s all;
     }
     .active {
         grid-template-columns: 0fr 1fr;
