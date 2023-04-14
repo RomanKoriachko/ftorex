@@ -699,14 +699,12 @@ let articlesArray = [
             "Alternative sources of energy and their potential for adoption in China",
         mediumText13: "",
         paragraph13: "",
-        articleImg13: "",
         articleImg13: "/images/article-20-img-2.webp",
 
         subtitle14: "",
         mediumText14: "",
         paragraph14:
             "Alternative sources of energy have become increasingly popular in recent years as concerns over climate change and environmental pollution have grown. In China, alternative sources of energy offer a promising way to reduce dependence on coal and its negative impact on the environment. Here are some alternative sources of energy that have potential for adoption in China:",
-        articleImg14: "",
         articleImg14: "",
 
         subtitle15: "",
