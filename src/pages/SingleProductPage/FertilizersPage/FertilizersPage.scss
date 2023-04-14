@@ -1,0 +1,23 @@
+.fertilizers-page {
+    .preview-section {
+        background-image: url(../../../../public/images/fertilizers-page-bg.webp);
+    }
+    .product-content-table-name {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+    .product-content-table-img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .fertilizers-page {
+        .product-content-table-name {
+            font-size: 17px;
+        }
+    }
+}

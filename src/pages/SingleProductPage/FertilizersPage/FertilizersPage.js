@@ -6,7 +6,7 @@ import StickyBox from "react-sticky-box"
 
 const FertilizersPage = () => {
     return (
-        <div className="mining-page single-product-page">
+        <div className="fertilizers-page single-product-page">
             <PageHeader
                 name="Fertilizers"
                 subtitle="Our company offers a comprehensive range of services including coal and fertilizer supplies, logistics solutions, customs clearance, ocean freight, and consulting to meet the diverse needs of our customers."
@@ -202,8 +202,8 @@ const FertilizersPage = () => {
                                 fertilizers.
                             </p>
                             <img
-                                className="product-content-table-img"
-                                src="/images/products-img-8.jpg"
+                                className="product-content-img"
+                                src="/images/fertilizers-page-img-1.webp"
                                 alt=""
                             />
                             <p className="product-content-table-name">
@@ -211,7 +211,7 @@ const FertilizersPage = () => {
                             </p>
                             <img
                                 className="product-content-table-img"
-                                src="/images/fertilizers-img-1.jpg"
+                                src="/images/mop-pink-granular-60.png"
                                 alt=""
                             />
                             <p className="product-content-table-name">
@@ -219,7 +219,7 @@ const FertilizersPage = () => {
                             </p>
                             <img
                                 className="product-content-table-img"
-                                src="/images/fertilizers-img-2.jpg"
+                                src="/images/mop-pink-standard-60.png"
                                 alt=""
                             />
                             <p className="product-content-table-name">
@@ -227,7 +227,7 @@ const FertilizersPage = () => {
                             </p>
                             <img
                                 className="product-content-table-img"
-                                src="/images/fertilizers-img-3.jpg"
+                                src="/images/mop-white-standard-60.png"
                                 alt=""
                             />
                             <p className="product-content-table-name">
@@ -235,7 +235,7 @@ const FertilizersPage = () => {
                             </p>
                             <img
                                 className="product-content-table-img"
-                                src="/images/fertilizers-img-4.jpg"
+                                src="/images/mop-white-standard-62.png"
                                 alt=""
                             />
                             <p className="product-content-table-name">
@@ -243,7 +243,7 @@ const FertilizersPage = () => {
                             </p>
                             <img
                                 className="product-content-table-img"
-                                src="/images/fertilizers-img-5.jpg"
+                                src="/images/mop-white-fine-62-Grade-a.png"
                                 alt=""
                             />
                             <p className="product-content-table-name">
@@ -251,7 +251,7 @@ const FertilizersPage = () => {
                             </p>
                             <img
                                 className="product-content-table-img"
-                                src="/images/fertilizers-img-6.jpg"
+                                src="/images/mop-white-fine-60.png"
                                 alt=""
                             />
                             <p className="product-content-table-name">
@@ -259,7 +259,7 @@ const FertilizersPage = () => {
                             </p>
                             <img
                                 className="product-content-table-img"
-                                src="/images/fertilizers-img-7.jpg"
+                                src="/images/mop-white-fine-62-Grade-b.png"
                                 alt=""
                             />
                             <p className="product-content-table-name">
@@ -267,13 +267,13 @@ const FertilizersPage = () => {
                             </p>
                             <img
                                 className="product-content-table-img"
-                                src="/images/fertilizers-img-8.jpg"
+                                src="/images/potassium-chloride-pellets.png"
                                 alt=""
                             />
                             <p className="product-content-table-name">urea</p>
                             <img
-                                className="product-content-table-img"
-                                src="/images/fertilizers-img-9.jpg"
+                                className="product-content-img"
+                                src="/images/urea.png"
                                 alt=""
                             />
                         </div>
