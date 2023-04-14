@@ -755,7 +755,7 @@ let articlesArray = [
     },
     {
         id: 21,
-        preview: "images/article-preview-21.webp",
+        preview: "images/article-preview-21.jpeg",
         tag: "world coal",
         name: "Digging Deeper: An Exploration of Different Mining Methods",
         paragraph1:
@@ -802,7 +802,7 @@ let articlesArray = [
         subtitle7: "2. Open surface mining",
         mediumText7: "",
         paragraph7: "",
-        articleImg7: "/images/article-21-img-2.jpeg",
+        articleImg7: "/images/article-21-img-2.webp",
 
         subtitle8: "",
         mediumText8: "",
@@ -1362,7 +1362,8 @@ let articlesArray = [
         id: 25,
         preview: "images/article-preview-25.webp",
         tag: "top companies",
-        name: "LEADING EXPORTERS OF COAL IN THE WORLD",
+
+        name: "Leading exporters of coal in the world",
         paragraph1:
             "The leading exporter of coal in the world is Australia. Close to 36% of total coal export in the world comes from Australia. Other countries like Russia, Indonesia, South Africa and the United States of America are also leading exporters. These countries, together with Australia, are responsible for about 85% of total coal exports in the world. Despite being the leading exporter of coal, Australia is not the largest producer of coal. ",
 
