@@ -1,7 +1,7 @@
 import React from "react"
 import "./ProductsPage.scss"
 import PageHeader from "../../components/PageHeader/PageHeader"
-// import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet"
 import MessageForm from "../../components/MessageForm/MessageForm"
 import { Link } from "react-router-dom"
 import { useAppDispatch } from "../../redux/hooks"
@@ -16,13 +16,13 @@ const ProductsPage = () => {
 
     return (
         <div className="products-page">
-            {/* <Helmet>
+            <Helmet>
                 <title>Products</title>
                 <meta
                     name="description"
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
-            </Helmet> */}
+            </Helmet>
             <PageHeader
                 name={"Products"}
                 subtitle={

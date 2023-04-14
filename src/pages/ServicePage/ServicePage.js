@@ -5,7 +5,7 @@ import MessageForm from "../../components/MessageForm/MessageForm"
 import { Link } from "react-router-dom"
 import { useAppDispatch } from "../../redux/hooks"
 import { openCallbackForm } from "redux/callbackFormReducer"
-// import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet"
 
 const ServicePage = ({ messageRef }) => {
     const dispatch = useAppDispatch()
@@ -15,13 +15,13 @@ const ServicePage = ({ messageRef }) => {
     }
     return (
         <div className="service-page">
-            {/* <Helmet>
+            <Helmet>
                 <title>Service</title>
                 <meta
                     name="description"
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
-            </Helmet> */}
+            </Helmet>
             <PageHeader
                 name={"Services"}
                 subtitle={
