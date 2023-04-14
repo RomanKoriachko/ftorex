@@ -135,6 +135,7 @@ const Main = ({ submitRef }) => {
             </div>
             <div className="anker-element" ref={ref10}>
                 <ServicesSection ref3={ref3} />
+                <SubscribeSection submitRef={submitRef} />
             </div>
             <div className="anker-element" ref={ref11}>
                 <AboutUsSection ref4={ref4} />
@@ -145,7 +146,6 @@ const Main = ({ submitRef }) => {
             <div className="anker-element">
                 <ArticlesSection ref6={ref6} />
             </div>
-            <SubscribeSection submitRef={submitRef} />
         </main>
     )
 }

@@ -1,110 +1,97 @@
 @import "../../style";
 
 .services-section {
-    background: #ffffff;
-    border: 1px solid #000000;
     position: relative;
-    height: 493px;
-    .services-row {
-        display: grid;
-        grid-template-columns: 1.2fr 2fr;
+    background: #f9f9f9;
+    .services-header-row {
+        gap: 55px;
+        align-items: center;
     }
-    .small-header {
-        margin-top: 35px;
-        margin-bottom: 24px;
+    .services-header {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 120%;
+        letter-spacing: -0.06em;
+        text-transform: uppercase;
     }
-    .big-header {
-        margin-top: 86px;
-        margin-bottom: 48px;
-    }
-    .sevices-btn {
+    .info-btn {
         @include buttonWithArrow();
-        color: #121212;
-        padding: 0px;
+        border: 1px solid #f1275b;
         background-color: transparent;
-        .btn-arrow {
-            background-image: url(../../assets/button-arr-red.svg);
-        }
-        p {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 150%;
-        }
-    }
-    .services-items {
-        font-family: "Plus Jakarta Sans";
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 150%;
         color: #f1275b;
-        position: absolute;
-        top: 0px;
-        left: 45%;
-        width: 55%;
-        > a {
-            text-decoration: none;
-            color: #f1275b;
-            > div {
-                padding: 27px 38px;
-                border-top: 1px solid #000000;
-                border-left: 1px solid #000000;
-                &:hover {
-                    background: #5b5b5b;
-                    color: white;
-                }
-            }
+        min-width: 151px;
+        .btn-arrow {
+            background-image: url(../../assets/arrow-right-red.svg);
         }
-        > a:nth-child(1) {
-            > div {
-                border-top: none;
+    }
+    .services-links-row {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        justify-content: space-between;
+        > a {
+            color: #5b5b5b;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            text-transform: uppercase;
+            transition: 0.3s all;
+            &:hover {
+                color: #f1275b;
             }
         }
     }
-    .tablet-container {
-        max-width: auto;
+}
+
+// Laptop
+@media (max-width: 1200px) {
+    .services-section {
+        .links-wrapper {
+            overflow-x: auto;
+        }
+        .services-links-row {
+            min-width: 1130px;
+        }
     }
 }
 
 /* Tablet */
 @media (max-width: 992px) {
     .services-section {
-        height: auto;
-        .services-container {
-            padding-left: 0;
-            padding-right: 0;
+        .services-header-row {
+            flex-direction: column;
+            align-items: start;
+            gap: 30px;
         }
-        .container-tablet {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-        .services-row {
-            grid-template-columns: 1fr;
-        }
-        .services-items {
-            position: static;
-            width: 100%;
-            > a:nth-child(1) {
-                > div {
-                    border-top: 1px solid #000000;
-                }
-            }
-            > a {
-                > div {
-                    border-left: none;
-                    border-right: none;
-                }
-            }
-        }
-        .big-header {
-            margin-top: 48px;
-            margin-bottom: 16px;
-        }
-        .sevices-btn {
-            margin-bottom: 28px;
+        .services-header {
+            font-size: 46px;
         }
     }
 }
 
 /* Mobile */
 @media (max-width: 576px) {
+    .services-section {
+        .services-header-row {
+            gap: 20px;
+            > a {
+                width: 100%;
+            }
+        }
+        .services-header {
+            font-size: 36px;
+        }
+        .info-btn {
+            width: 100%;
+            .btn-content-row {
+                justify-content: center;
+            }
+        }
+        .services-links-row {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
 }

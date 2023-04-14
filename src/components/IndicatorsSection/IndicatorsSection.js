@@ -19,7 +19,7 @@ const IndicatorsSection = ({ ref2 }) => {
                 </div>
                 <div className="indicators-content-row">
                     <div className="indicators-img">
-                        <img src="images/products-img-2.jpg" alt="" />
+                        <img src="images/indicators-section-img.webp" alt="" />
                     </div>
                     <div>
                         <div className="row indicators-numbers">
