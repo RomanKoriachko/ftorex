@@ -13,7 +13,7 @@ const ServicesSection = ({ ref3 }) => {
                             <p className="big-header">
                                 what services we provide
                             </p>
-                            <Link to="/service">
+                            <Link to="/services">
                                 <button className="sevices-btn">
                                     <div className="row btn-content-row">
                                         <p>View info</p>
@@ -24,22 +24,22 @@ const ServicesSection = ({ ref3 }) => {
                         </div>
                     </div>
                     <div className="services-items">
-                        <Link to="/services">
+                        <Link to="/services/coal_supplies">
                             <div>Coal supplies</div>
                         </Link>
-                        <Link to="/services">
+                        <Link to="/services/fertilizer_supplies">
                             <div>Fertilizer supplies </div>
                         </Link>
-                        <Link to="/services">
+                        <Link to="/services/ocean_freight">
                             <div>Ocean freight</div>
                         </Link>
-                        <Link to="/services">
+                        <Link to="/services/logistic_solutions">
                             <div>Logistic Solutions</div>
                         </Link>
-                        <Link to="/services">
+                        <Link to="/services/customs_clearance">
                             <div>Customs Clearance</div>
                         </Link>
-                        <Link to="/services">
+                        <Link to="/services/consulting">
                             <div>Consulting</div>
                         </Link>
                     </div>
