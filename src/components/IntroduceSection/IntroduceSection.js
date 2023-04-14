@@ -14,6 +14,7 @@ const IntroduceSection = ({ ref0 }) => {
     return (
         <section className="introduce-section">
             <div className="section-anker-element" ref={ref0}></div>
+            <div className="bg-fixed"></div>
             <div
                 className="container introduce-wrapper"
                 style={{

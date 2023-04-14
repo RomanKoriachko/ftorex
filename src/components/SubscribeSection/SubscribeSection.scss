@@ -3,6 +3,7 @@
     padding-bottom: 55px;
     background-color: #c74869;
     color: white;
+    position: relative;
     .close-popup-btn {
         display: none;
         transition: 0.3s all;
@@ -15,7 +16,7 @@
         gap: 32px;
     }
     .subscribe-header {
-        font-family: 'Anton';
+        font-family: "Anton";
         font-weight: 400;
         font-size: 32px;
         line-height: 120%;
@@ -27,14 +28,14 @@
         width: 290px;
         margin-right: 25px;
         padding: 12px;
-        font-family: 'Plus Jakarta Sans';
+        font-family: "Plus Jakarta Sans";
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         color: #505050;
         border: 1px solid white;
         &::placeholder {
-            font-family: 'Plus Jakarta Sans';
+            font-family: "Plus Jakarta Sans";
             font-weight: 400;
             font-size: 16px;
             line-height: 150%;

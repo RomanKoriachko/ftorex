@@ -1,10 +1,17 @@
 @import "../../style";
 
 .introduce-section {
-    background-image: url(../../assets/introduce-section-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+    background-color: transparent;
+    .bg-fixed {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../assets/introduce-section-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        // z-index: -1;
+    }
     .introduce-wrapper {
         position: relative;
         min-height: 600px;
