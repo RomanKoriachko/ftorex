@@ -47,7 +47,9 @@ const ArticlesSection = ({ ref6 }) => {
                                     <div className="article-item-img">
                                         <img src={`/${preview}`} alt="" />
                                     </div>
-                                    <p className="article-name">{name}</p>
+                                    <p className="article-name">
+                                        {kitcut(name, 23)}
+                                    </p>
                                     <p className="article-text">
                                         {kitcut(paragraph1, 80)}
                                     </p>

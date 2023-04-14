@@ -98,7 +98,7 @@ let articlesArray = [
     // },
     {
         id: 4,
-        preview: "images/article-preview-4.jpg",
+        preview: "images/article-preview-4.webp",
         tag: "crisis",
         name: "Energy crisis",
         paragraph1:
@@ -130,7 +130,6 @@ let articlesArray = [
         paragraph12:
             "In the majority of nations, renewable energy is currently underutilized. Coal is one of the main non-renewable energy sources. As a result, it continues to be the best option for producing energy. Until we start to tackle the issues and give serious thought to renewable energy, it’ll be impossible to solve the problem of energy crisis. More sources of renewable energy can allow us to reduce the consumption of fossil fuels and reduce gas emissions from the greenhouse. ",
         mediumText13: "Energy wastage",
-        articleImg13: "/images/article-preview-4.jpg",
         paragraph14:
             "Most people around the world do not understand how important energy conservation is. Books, the Internet, newspaper ads, lip service, and seminars are the only sources that are available to bring awareness. Things won't change any time soon until we give it serious consideration. Things as simple as turning off electrical appliances when not in use, walking and not driving short distances, and repairing leakages can critically help.",
         mediumText15: "Delay in Power Plant Commissioning ",
@@ -143,7 +142,7 @@ let articlesArray = [
         paragraph17:
             "The development of human civilization has increased our reliance on conventional energy sources. The most basic energy source is priceless fossil fuels. All of these sources will inevitably result in specific outcomes when used. The following are some significant implications of the global energy crisis:",
         mediumText18: "Impact on the environment ",
-        articleImg18: "/images/article-preview-4.jpg",
+        articleImg18: "/images/article-4-img-1.webp",
         paragraph19:
             "Fossil fuels that are not renewable are burned to provide energy. The environment is also impacted by this, in addition to the world's supply of fossil fuels. When fossil fuels are burned, greenhouse gases like carbon dioxide and others are released. ",
         paragraph20:
