@@ -8,9 +8,12 @@
         bottom: 50px;
         left: 20px;
         z-index: 1000;
-        color: white;
-        background-color: #121212;
+        color: #121212;
+        background-color: #ffffff;
         text-transform: uppercase;
+        .btn-arrow {
+            background-image: url(../../assets/arrow-right-red.svg);
+        }
     }
     .close-map-btn.not-active {
         transition: 1s all;
