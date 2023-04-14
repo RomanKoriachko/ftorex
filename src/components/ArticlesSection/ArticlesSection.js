@@ -31,7 +31,10 @@ const ArticlesSection = ({ ref6 }) => {
                         .map(({ id, preview, name }) => (
                             <div key={id} className="article-item">
                                 <Link to={`/articles/${id}`}>
-                                    <img src={`/${preview}`} alt="" />
+                                    <div className="article-item-img">
+                                        <img src={`/${preview}`} alt="" />
+                                    </div>
+
                                     <p>{name}</p>
                                 </Link>
                             </div>

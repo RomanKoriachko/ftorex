@@ -319,17 +319,23 @@ const AnthracitePage = () => {
                                 materials. It is also added in ground form to
                                 plastics and polymers as an additive.
                             </p>
-                            <div className="download-button-wrapper">
-                                <button className="download-btn">
-                                    <div className="row btn-content-row">
-                                        <a href="/files//FTOREX.pdf" download>
-                                            download document
-                                        </a>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
-                            </div>
                         </div>
+                    </div>
+                </div>
+                <div className="download-button-wrapper">
+                    <div className="left-side-space"></div>
+                    <div>
+                        <button className="download-btn">
+                            <div className="row btn-content-row">
+                                <a
+                                    href="/files//FTOREX COAL OFFER.docx"
+                                    download
+                                >
+                                    download document
+                                </a>
+                                <div className="btn-arrow"></div>
+                            </div>
+                        </button>
                     </div>
                 </div>
                 <div className="margin-bottom"></div>

@@ -2,29 +2,28 @@ import React from "react"
 import "./ContactUsPage.scss"
 import PageHeader from "../../components/PageHeader/PageHeader"
 import MessageForm from "../../components/MessageForm/MessageForm"
-import { Animated } from "react-animated-css"
 import { AnimationOnScroll } from "react-animation-on-scroll"
-// import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet"
 
 const ContactUsPage = ({ messageRef }) => {
     return (
         <div className="contacts-page">
-            {/* <Helmet>
+            <Helmet>
                 <title>Contact Us</title>
                 <meta
                     name="description"
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
                 />
-            </Helmet> */}
+            </Helmet>
             <PageHeader name={"Contact Us"} />
             <section className="contacts-section">
                 <div className="container">
                     <div className="row contacts-row contact-row-desktop">
                         <div className="contact-item contact-item-1">
-                            <Animated
-                                animationIn="fadeInLeft"
-                                isVisible={true}
-                                animationInDuration={2000}
+                            <AnimationOnScroll
+                                animateIn="animate__backInLeft"
+                                duration={1.5}
+                                animateOnce={true}
                             >
                                 <div className="contact-content">
                                     <div className="contact-img"></div>
@@ -38,13 +37,13 @@ const ContactUsPage = ({ messageRef }) => {
                                         </p>
                                     </div>
                                 </div>
-                            </Animated>
+                            </AnimationOnScroll>
                         </div>
                         <div className="contact-item contact-item-2">
-                            <Animated
-                                animationIn="fadeInUp"
-                                isVisible={true}
-                                animationInDuration={2000}
+                            <AnimationOnScroll
+                                animateIn="animate__backInUp"
+                                duration={1.5}
+                                animateOnce={true}
                             >
                                 <div className="contact-content">
                                     <div className="contact-img"></div>
@@ -60,13 +59,13 @@ const ContactUsPage = ({ messageRef }) => {
                                         Houston TX 77019
                                     </p>
                                 </div>
-                            </Animated>
+                            </AnimationOnScroll>
                         </div>
                         <div className="contact-item contact-item-3">
-                            <Animated
-                                animationIn="fadeInRight"
-                                isVisible={true}
-                                animationInDuration={2000}
+                            <AnimationOnScroll
+                                animateIn="animate__backInRight"
+                                duration={1.5}
+                                animateOnce={true}
                             >
                                 <div className="contact-content">
                                     <div className="contact-img"></div>
@@ -83,7 +82,7 @@ const ContactUsPage = ({ messageRef }) => {
                                         Main office: office@ftorex.ae 
                                     </p>
                                 </div>
-                            </Animated>
+                            </AnimationOnScroll>
                         </div>
                     </div>
                     <div className="row contacts-row contact-row-mobile">

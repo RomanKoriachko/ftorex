@@ -6,7 +6,7 @@ import StickyBox from "react-sticky-box"
 
 const FertilizerSuppliesPage = () => {
     return (
-        <div className="single-service-page">
+        <div className="single-service-page fertilizer-supplies-page">
             <PageHeader
                 name="Fertilizer supplies "
                 subtitle="Ftorex is a global coal industry company designed to establish and develop a Coal Business, Engineering & General Purpose"
@@ -188,17 +188,23 @@ const FertilizerSuppliesPage = () => {
                                 procurement and delivery service to whom it may
                                 concern, as FOB, CFR, DAP basis.
                             </p>
-                            <div className="download-button-wrapper">
-                                <button className="download-btn">
-                                    <div className="row btn-content-row">
-                                        <a href="/files//FTOREX.pdf" download>
-                                            download document
-                                        </a>
-                                        <div className="btn-arrow"></div>
-                                    </div>
-                                </button>
-                            </div>
                         </div>
+                    </div>
+                </div>
+                <div className="download-button-wrapper">
+                    <div className="left-side-space"></div>
+                    <div>
+                        <button className="download-btn">
+                            <div className="row btn-content-row">
+                                <a
+                                    href="/files//FTOREX COAL OFFER.docx"
+                                    download
+                                >
+                                    download document
+                                </a>
+                                <div className="btn-arrow"></div>
+                            </div>
+                        </button>
                     </div>
                 </div>
                 <div className="margin-bottom"></div>

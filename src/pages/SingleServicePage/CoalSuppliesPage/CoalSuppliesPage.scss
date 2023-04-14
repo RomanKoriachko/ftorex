@@ -131,42 +131,46 @@
             width: 100%;
         }
     }
-    .download-btn {
-        padding: 16px 24px;
-        border: none;
-        color: white;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
-        cursor: pointer;
+}
+.download-button-wrapper {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.download-btn {
+    padding: 16px 24px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s all;
+    .btn-content-row {
+        gap: 8px;
+        align-items: center;
+    }
+    .btn-arrow {
         transition: 0.3s all;
-        .btn-content-row {
-            gap: 8px;
-            align-items: center;
-        }
-        .btn-arrow {
-            transition: 0.3s all;
-            height: 20px;
-            width: 20px;
-            background-image: url(../../../assets/button-arr-gray.svg);
-            transform: rotate(90deg);
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        p {
-            font-family: "Plus Jakarta Sans";
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-        }
-        margin-top: 23px;
-        background-color: transparent;
-        border: 1px solid #5b5b5b;
-        text-transform: uppercase;
-        a {
-            text-decoration: none;
-            color: #5b5b5b;
-        }
+        height: 20px;
+        width: 20px;
+        background-image: url(../../../assets/button-arr-gray.svg);
+        transform: rotate(90deg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    p {
+        font-family: "Plus Jakarta Sans";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    margin-top: 23px;
+    background-color: transparent;
+    border: 1px solid #5b5b5b;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        color: #5b5b5b;
     }
 }
 .margin-bottom {
@@ -184,11 +188,9 @@
 }
 
 @media (hover: hover) {
-    .service-container {
-        .download-btn {
-            &:hover {
-                background-color: #bebebe;
-            }
+    .download-btn {
+        &:hover {
+            background-color: #bebebe;
         }
     }
 }
@@ -210,11 +212,21 @@
     .service-container {
         margin: 0px 0px;
     }
+    .download-button-wrapper {
+        display: grid;
+        grid-template-columns: 0% 100%;
+    }
 }
 
 /* Mobile */
 @media (max-width: 576px) {
     .service-container {
         margin: 0px;
+    }
+    .download-btn {
+        width: 100%;
+        .btn-content-row {
+            justify-content: center;
+        }
     }
 }
