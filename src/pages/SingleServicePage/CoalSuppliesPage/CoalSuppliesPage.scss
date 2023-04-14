@@ -9,7 +9,7 @@
     }
     .links-row {
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 25% 67%;
         align-items: flex-start;
     }
     .links-tablet-wrapper {
@@ -90,6 +90,9 @@
             line-height: 32px;
             color: #7a8085;
             margin-bottom: 20px;
+            span {
+                color: #121212;
+            }
         }
         .service-content-text:last-child {
             margin-bottom: 0;

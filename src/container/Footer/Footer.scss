@@ -73,6 +73,10 @@
                 text-decoration: none;
                 color: white;
                 margin-bottom: 16px;
+                transition: 0.3s all;
+                &:hover {
+                    color: #f1275b;
+                }
             }
             .submit-btn {
                 @include buttonWithArrow();

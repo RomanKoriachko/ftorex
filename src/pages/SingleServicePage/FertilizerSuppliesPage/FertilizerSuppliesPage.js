@@ -8,7 +8,7 @@ const FertilizerSuppliesPage = () => {
     return (
         <div className="single-service-page fertilizer-supplies-page">
             <PageHeader
-                name="Fertilizer supplies "
+                name="Fertilizer supplies"
                 subtitle="Ftorex is a global coal industry company designed to establish and develop a Coal Business, Engineering & General Purpose"
             />
             <div className="content-wrapper"></div>
@@ -133,60 +133,77 @@ const FertilizerSuppliesPage = () => {
                             <p className="service-content-header">
                                 Fertilizer supplies
                             </p>
+
                             <p className="service-content-text">
-                                FTOREX COMMERCIAL BROKER LLC is the
-                                International progressive and dynamic developing
-                                company incorporated in Houston, TX USA as well
-                                as Dubai, UAE. The major goal of our business is
-                                the Coking Coal overseas supplying to our
-                                customers with the direct contract and price
-                                provided by Major Manufacturers. Our partners
-                                widely represented by countries of Southeast
-                                Asia as well the Middle East. We offer several
-                                grades of high colorific value coal with
-                                different specifications. We carefully analyze
-                                requirements of our customers in order, to
-                                supply with suitable coals:
-                            </p>
-                            <p className="service-page-subtitle">
-                                METALLURGICAL COAL (COKING COAL)
+                                FTOREX an International progressive and dynamic
+                                developing company incorporated in Houston, TX
+                                USA as well as Dubai, UAE.
                             </p>
                             <p className="service-content-text">
-                                Used in the process of creating coke necessary
-                                for iron and steel-making. We supply
-                                Metallurgical Coal to vast industries across
-                                geographies.
-                            </p>
-                            <p className="service-page-subtitle">
-                                THERMAL COAL
-                            </p>
-                            <p className="service-content-text">
-                                Also known as steam coal, is used for power and
-                                heat generation. We supply Thermal Coal ranging
-                                from 5000 NAR to 6500 NAR
-                            </p>
-                            <p className="service-page-subtitle">ANTHRACITE</p>
-                            <p className="service-content-text">
-                                A hard, compact variety of coal that has a sub
-                                metallic lustre. It bears the highest carbon
-                                content and least impurities among all major
-                                types of coal.
-                            </p>
-                            <p className="service-page-subtitle">
-                                PETROLEUM COKE
+                                One of the major goals of our business is the
+                                Fertilizer overseas supplying to our customers
+                                with the direct contract and price provided by
+                                Major Manufacturers. Our partners widely
+                                represented by countries of Southeast Asia as
+                                well the Middle East and South America.
                             </p>
                             <p className="service-content-text">
-                                The solid non-volatile carbon residue left after
-                                the refinement of petroleum. It is used as a
-                                source of energy, or as a source of carbon for
-                                industrial usage.
+                                We partner with companies across the world to
+                                establish and maintain strong relationships that
+                                allow us to source the highest quality
+                                fertilizer available.
                             </p>
-                            <p className="service-content-text">
-                                The payment method such as an Irrevocable,
-                                Non-transferable DLC is a subject to
-                                negotiation. Our company able to provide the
-                                procurement and delivery service to whom it may
-                                concern, as FOB, CFR, DAP basis.
+                            <p className="service-content-text-less-margin">
+                                <span>MAP</span> - Monoammonium Phosphate
+                                (Universal granular phosphate-nitrogen
+                                fertilizer)
+                            </p>
+                            <p className="service-content-text-less-margin">
+                                <span>ASN</span> - Ammonium sulphate nitrate
+                                (With 26% of nitrogen and 13% of sulfur)
+                            </p>
+                            <p className="service-content-text-less-margin">
+                                <span>UREA</span> - With a nitrogen content of
+                                46,2%, urea has the highest concentration of
+                                nutrients of all nitrogen fertilizers
+                            </p>
+                            <p className="service-content-text-less-margin">
+                                <span>AN</span> - Concentrated nitrogen source
+                                (34,4% N) for agricultural and industrial use
+                            </p>
+                            <p className="service-content-text-less-margin">
+                                <span>CAN</span> - Calcium ammonium nitrate
+                                (Highly efficient granular fertilizer with 27%
+                                of nitrogen)
+                            </p>
+                            <p className="service-content-text-less-margin">
+                                <span>UAN</span> - Urea Ammonium Nitrate (With
+                                32% of nitrogen equally split between nitrate,
+                                ammonium and ureic forms of N)
+                            </p>
+                            <p className="service-content-text-less-margin">
+                                <span>AS</span> - Source of ammonium nitrogen
+                                (21%) and sulfate sulfur (24%) for universal use
+                            </p>
+                            <p className="service-content-text-less-margin">
+                                <span>NP</span> - Universal granular
+                                nitrogen-phosphoric fertilizer (20-20) with
+                                additional sulfur for higher efficiency
+                            </p>
+                            <p className="service-content-text-less-margin">
+                                <span>DP</span> - Di-ammonium Phosphate (Light
+                                brown, granular phosphate-nitrogen fertilizer
+                                for broad P application)
+                            </p>
+                            <p className="service-content-text-less-margin">
+                                <span>MOP</span> - Muriate of potash (The most
+                                popular source of potassium globally, offered in
+                                both granular and standard forms)
+                            </p>
+                            <p className="service-content-text-less-margin">
+                                <span>NPK</span> (nitrogen, phosphorus, and
+                                potassium) are the main ingredients in most
+                                fertilizers.
                             </p>
                         </div>
                     </div>

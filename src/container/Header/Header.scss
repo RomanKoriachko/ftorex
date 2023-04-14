@@ -219,6 +219,10 @@
         color: #121212;
         font-weight: 400;
         text-transform: uppercase;
+        transition: 0.3s all;
+        &:hover {
+            color: #f1275b;
+        }
     }
     .active {
         font-weight: 700;

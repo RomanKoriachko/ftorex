@@ -132,13 +132,14 @@ const ConsultingPage = () => {
                         <div>
                             <p className="service-content-header">Consulting</p>
                             <p className="service-content-text">
-                                Our company provides customs clearance services
-                                to facilitate the import and export of goods. We
-                                have a team of experts who handle all
-                                customs-related formalities and ensure
-                                compliance with all regulations. We provide
-                                hassle-free customs clearance services to our
-                                clients.
+                                We provide consulting services to help our
+                                clients make informed decisions related to their
+                                businesses. Our consulting services cover
+                                various areas, including market research,
+                                feasibility studies, strategy development, and
+                                business planning. We have a team of experts who
+                                provide customized solutions to our clients
+                                based on their specific needs and requirements.
                             </p>
                         </div>
                     </div>

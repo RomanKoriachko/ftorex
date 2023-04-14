@@ -165,21 +165,21 @@ const CokingCoalPage = () => {
                                 used for its heat value and to reduce the
                                 consumption of coke per ton of hot metal.
                             </p>
-                            <p className="product-content-text">
+                            <p className="product-content-text-less-margin">
                                 Hard coking coals (HCC)
                             </p>
-                            <p className="product-content-text">
+                            <p className="product-content-text-less-margin">
                                 Medium coking coal (MCC)
                             </p>
-                            <p className="product-content-text">
-                                Semi-soft coking coal (SSCC) Pulverized coal for
+                            <p className="product-content-text-less-margin">
+                                Semi-soft coking coal (SSCC)
                             </p>
-                            <p className="product-content-text">
-                                injection (PCI) coal
+                            <p className="product-content-text-less-margin">
+                                Pulverized coal for injection (PCI) coal
                             </p>
                             <img
                                 className="product-content-img"
-                                src="/images/products-img-1.jpg"
+                                src="/images/coking-coal-page-img-1.webp"
                                 alt=""
                             />
                             <p className="product-content-text">
@@ -207,10 +207,13 @@ const CokingCoalPage = () => {
                                 requirement. The size distribution of the coal
                                 is also important as it can impact on the coal's
                                 handleability in the bins/silos and transfer
-                                conveyors. Petrographic analysis is a useful
-                                tool for predicting coking coal properties. This
-                                analysis involves identifying macerals, which
-                                are microscopically distinct organic entities in
+                                conveyors.
+                            </p>
+                            <p className="product-content-text">
+                                Petrographic analysis is a useful tool for
+                                predicting coking coal properties. This analysis
+                                involves identifying macerals, which are
+                                microscopically distinct organic entities in
                                 coal. The macerals are then grouped into
                                 reactive, semi-inert, and inert categories based
                                 on their behavior during carbonization. The
@@ -270,6 +273,11 @@ const CokingCoalPage = () => {
                                 500) under a microscope to record the observed
                                 maceral species as a percentage.
                             </p>
+                            <img
+                                className="product-content-img"
+                                src="/images/coking-coal-page-img-2.webp"
+                                alt=""
+                            />
                             <p className="product-content-text">
                                 Vitrinite reflectance, also known as mean
                                 maximum reflectance (MMR), is used to determine
