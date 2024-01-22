@@ -10,7 +10,6 @@
         background-image: url(../../assets/introduce-section-bg.webp);
         background-repeat: no-repeat;
         background-size: cover;
-        // z-index: -1;
     }
     .introduce-wrapper {
         position: relative;
@@ -29,7 +28,7 @@
         > p:nth-child(1) {
             font-family: "Roboto", sans-serif;
             font-weight: 800;
-            font-size: 80px;
+            font-size: 60px;
             line-height: 110%;
             text-transform: uppercase;
             letter-spacing: -0.06em;
@@ -75,14 +74,16 @@
 @media (max-width: 576px) {
     .introduce-section {
         .introduce-text-wrapper {
+            margin-bottom: 85px;
             .introduce-content {
                 padding: 35px 32px;
+                > p:nth-child(1) {
+                    font-size: 24px;
+                }
             }
         }
-        // .scroll-btn {
-        //     left: 50%;
-        //     transform: translateX(-50%);
-        //     bottom: 20px;
-        // }
+        .scroll-btn-tablet {
+            display: none;
+        }
     }
 }

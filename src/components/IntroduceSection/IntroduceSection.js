@@ -17,18 +17,33 @@ const IntroduceSection = ({ ref0 }) => {
             <div className="bg-fixed"></div>
             <div
                 className="container introduce-wrapper"
-                style={{
-                    height: windowHeight,
-                }}
+                style={
+                    window.innerWidth > 560
+                        ? {
+                              height: windowHeight,
+                          }
+                        : {
+                              height: "auto",
+                          }
+                }
             >
                 <div className="introduce-text-wrapper">
                     <div className="introduce-content">
-                        <p>Achieve a profitable business with us</p>
                         <p>
-                            We are proffesional team, specialized in providing
-                            procurement and supply of minerals, materials,
-                            equipment and specialized services for all kinds of
-                            manufacturing and commercial companies worldwide
+                            WELCOME TO FTOREX - YOUR TRUSTED PARTNER FOR
+                            RELIABLE SUPPLIES AND EFFICIENT SOLUTIONS!
+                        </p>
+                        <p>
+                            At Ftorex, we specialize in providing top-notch coal
+                            and fertilizer supplies, logistics solutions,
+                            customs clearance, ocean freight services, and
+                            expert consulting to various industries. With our
+                            wide range of services and commitment to quality, we
+                            strive to be your go-to partner for all your
+                            business needs. Whether you're in agriculture,
+                            energy, manufacturing, transportation, or trading,
+                            Ftorex is here to cater to your requirements.
+                            Contact us today and experience the Ftorex advantage
                         </p>
                     </div>
                 </div>

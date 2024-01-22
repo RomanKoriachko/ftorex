@@ -58,8 +58,6 @@ const Header = ({ submitRef }) => {
 
     // get data from api
 
-    // const dataState = useAppSelector((state) => state.dataState)
-
     useEffect(() => {
         dispatch(fetchData())
     }, [dispatch])

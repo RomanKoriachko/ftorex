@@ -60,16 +60,16 @@
     .big-header {
         font-size: 46px;
     }
+    .main {
+        .scroll-btn-fixed {
+            display: none;
+        }
+    }
 }
 
 /* Mobile */
 @media (max-width: 576px) {
     .big-header {
         font-size: 36px;
-    }
-    .main {
-        .scroll-btn-fixed {
-            display: none;
-        }
     }
 }

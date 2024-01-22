@@ -45,7 +45,7 @@ const Main = ({ submitRef }) => {
                 top: window.innerHeight - 122,
                 behavior: "smooth",
             })
-            console.log("ref0")
+            // console.log("ref0")
         } else if (
             window.scrollY <=
             ref7.current?.getBoundingClientRect().height +
@@ -56,7 +56,7 @@ const Main = ({ submitRef }) => {
                 block: "start",
                 behavior: "smooth",
             })
-            console.log("ref1")
+            // console.log("ref1")
         } else if (
             window.scrollY <=
             ref7.current?.getBoundingClientRect().height +
@@ -68,7 +68,7 @@ const Main = ({ submitRef }) => {
                 block: "start",
                 behavior: "smooth",
             })
-            console.log("ref2")
+            // console.log("ref2")
         } else if (
             window.scrollY <=
             ref7.current?.getBoundingClientRect().height +
@@ -81,7 +81,7 @@ const Main = ({ submitRef }) => {
                 block: "start",
                 behavior: "smooth",
             })
-            console.log("ref3")
+            // console.log("ref3")
         } else if (
             window.scrollY <=
             ref7.current?.getBoundingClientRect().height +
@@ -95,7 +95,7 @@ const Main = ({ submitRef }) => {
                 block: "start",
                 behavior: "smooth",
             })
-            console.log("ref4")
+            // console.log("ref4")
         } else if (
             window.scrollY <=
             ref7.current?.getBoundingClientRect().height +
@@ -110,9 +110,7 @@ const Main = ({ submitRef }) => {
                 block: "start",
                 behavior: "smooth",
             })
-            console.log("ref5")
-        } else {
-            console.log("else")
+            // console.log("ref5")
         }
     }
 

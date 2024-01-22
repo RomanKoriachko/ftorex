@@ -263,11 +263,15 @@
     }
 }
 
-/* Tablet */
-@media (max-width: 992px) {
+/* Disable buttons */
+@media (max-width: 1060px) {
     .header-btns {
         display: none;
     }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
     .header-menu {
         gap: 21px;
     }
@@ -330,6 +334,9 @@
 
 /* Mobile */
 @media (max-width: 576px) {
+    .header-overlay {
+        height: 151px;
+    }
     .header {
         .subscribe-section {
             .subscribe-header {
