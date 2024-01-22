@@ -1,0 +1,101 @@
+@import "../../style";
+
+.petroleum-section {
+    position: relative;
+    padding: 48px 0px 68px;
+    background-color: #c74869;
+    text-align: center;
+    .petroleum-section-title {
+        font-family: "Roboto", sans-serif;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -0.06em;
+        color: white;
+        text-transform: uppercase;
+    }
+    .petroleum-section-subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        color: #121212;
+        padding: 24px 0px 32px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .petroleum-section-row {
+        gap: 55px;
+        .petroleum-section-row-text {
+            color: white;
+            text-align: left;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 35%;
+        }
+        .petroleum-section-row-img {
+            > img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+    }
+    .petroleum-btn {
+        @include buttonWithArrow();
+        margin-top: 20px;
+        color: #ffffff;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        text-transform: uppercase;
+        .btn-arrow {
+            background-image: url(../../assets/button-arr.svg);
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .petroleum-section {
+        .petroleum-section-subtitle {
+            width: 100%;
+        }
+        .petroleum-section-row {
+            flex-direction: column-reverse;
+            .petroleum-section-row-img {
+                margin: 0px -16px;
+            }
+            .petroleum-section-row-text {
+                width: 100%;
+            }
+        }
+        .petroleum-btn {
+            margin: 40px auto 0px;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .petroleum-section {
+        padding: 35px 0px;
+        .petroleum-section-title {
+            font-size: 36px;
+            line-height: 120%;
+        }
+        .petroleum-section-row {
+            gap: 35px;
+            .petroleum-section-row-img {
+                > img {
+                    height: 360px;
+                }
+            }
+        }
+    }
+}

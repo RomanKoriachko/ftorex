@@ -1,0 +1,90 @@
+.press-section {
+    position: relative;
+    padding: 68px 0px 48px;
+    background-color: white;
+    .press-section-title {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 72px;
+        letter-spacing: -0.06em;
+    }
+    .press-section-row {
+        padding: 48px 0px;
+        gap: 25px;
+        > a {
+            height: 46px;
+            width: 20%;
+        }
+        .press-row-item {
+            height: 46px;
+            width: 100%;
+            background-position: 0% 50%;
+            background-repeat: no-repeat;
+            background-size: 80%;
+            transition: 0.3s all;
+        }
+        .press-row-item-1 {
+            background-image: url(../../assets/khaleej-times-logo.svg);
+            &:hover {
+                background-image: url(../../assets/press-link-img-hovered-1.svg);
+            }
+        }
+        .press-row-item-2 {
+            background-image: url(../../assets/benzinga-logo.svg);
+            &:hover {
+                background-image: url(../../assets/press-link-img-hovered-2.svg);
+            }
+        }
+        .press-row-item-3 {
+            background-image: url(../../assets/fl-logo.svg);
+            &:hover {
+                background-image: url(../../assets/press-link-img-hovered-3.svg);
+            }
+        }
+        .press-row-item-4 {
+            background-image: url(../../assets/nasdaq-logo.svg);
+            &:hover {
+                background-image: url(../../assets/press-link-img-hovered-4.svg);
+            }
+        }
+    }
+    .rfm-marquee,
+    .rfm-initial-child-container {
+        align-items: flex-start;
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .press-section {
+        .press-section-title {
+            font-size: 46px;
+        }
+        .press-section-row {
+            padding-top: 20px;
+            > a {
+                width: 25%;
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .press-section {
+        padding: 60px 0px;
+        .press-section-title {
+            font-size: 36px;
+            line-height: 120%;
+        }
+        .press-section-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            > a {
+                width: 100%;
+            }
+        }
+    }
+}

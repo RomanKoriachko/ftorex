@@ -9,6 +9,9 @@ import MapSection from "../../components/MapSection/MapSection"
 import ArticlesSection from "../../components/ArticlesSection/ArticlesSection"
 import SubscribeSection from "../../components/SubscribeSection/SubscribeSection"
 import ScrollDownBtn from "../../components/ScrollDownBtn/ScrollDownBtn"
+import { Helmet } from "react-helmet-async"
+import PetroleumSection from "components/PetroleumSection/PetroleumSection"
+import PressSection from "components/PressSection/PressSection"
 
 const Main = ({ submitRef }) => {
     const ref0 = useRef(null)
@@ -18,18 +21,24 @@ const Main = ({ submitRef }) => {
     const ref4 = useRef(null)
     const ref5 = useRef(null)
     const ref6 = useRef(null)
-
     const ref7 = useRef(null)
     const ref8 = useRef(null)
     const ref9 = useRef(null)
-    const ref10 = useRef(null)
-    const ref11 = useRef(null)
-    const ref12 = useRef(null)
+
+    const refWrapper1 = useRef(null)
+    const refWrapper2 = useRef(null)
+    const refWrapper3 = useRef(null)
+    const refWrapper4 = useRef(null)
+    const refWrapper5 = useRef(null)
+    const refWrapper6 = useRef(null)
+    const refWrapper7 = useRef(null)
+    const refWrapper8 = useRef(null)
+    const refWrapper9 = useRef(null)
 
     const [scrollBtnClass, setScrollBtnClass] = useState("show")
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY >= 3800 || window.innerWidth < 992) {
+        if (window.scrollY >= 5400 || window.innerWidth < 992) {
             setScrollBtnClass("hide")
         } else {
             setScrollBtnClass("show")
@@ -39,110 +48,179 @@ const Main = ({ submitRef }) => {
     const scrollDown = () => {
         if (
             window.scrollY <
-            ref7.current?.getBoundingClientRect().height - 50
+            refWrapper1.current?.getBoundingClientRect().height - 50
         ) {
             window.scrollTo({
                 top: window.innerHeight - 122,
                 behavior: "smooth",
             })
-            // console.log("ref0")
+            console.log("ref0")
         } else if (
             window.scrollY <=
-            ref7.current?.getBoundingClientRect().height +
-                ref8.current?.getBoundingClientRect().height -
+            refWrapper1.current?.getBoundingClientRect().height +
+                refWrapper2.current?.getBoundingClientRect().height -
                 1
         ) {
             ref2.current?.scrollIntoView({
                 block: "start",
                 behavior: "smooth",
             })
-            // console.log("ref1")
+            console.log("ref1")
         } else if (
             window.scrollY <=
-            ref7.current?.getBoundingClientRect().height +
-                ref8.current?.getBoundingClientRect().height +
-                ref9.current?.getBoundingClientRect().height -
+            refWrapper1.current?.getBoundingClientRect().height +
+                refWrapper2.current?.getBoundingClientRect().height +
+                refWrapper3.current?.getBoundingClientRect().height -
                 1
         ) {
             ref3.current?.scrollIntoView({
                 block: "start",
                 behavior: "smooth",
             })
-            // console.log("ref2")
+            console.log("ref2")
         } else if (
             window.scrollY <=
-            ref7.current?.getBoundingClientRect().height +
-                ref8.current?.getBoundingClientRect().height +
-                ref9.current?.getBoundingClientRect().height +
-                ref10.current?.getBoundingClientRect().height -
+            refWrapper1.current?.getBoundingClientRect().height +
+                refWrapper2.current?.getBoundingClientRect().height +
+                refWrapper3.current?.getBoundingClientRect().height +
+                refWrapper4.current?.getBoundingClientRect().height -
                 1
         ) {
             ref4.current?.scrollIntoView({
                 block: "start",
                 behavior: "smooth",
             })
-            // console.log("ref3")
+            console.log("ref3")
         } else if (
             window.scrollY <=
-            ref7.current?.getBoundingClientRect().height +
-                ref8.current?.getBoundingClientRect().height +
-                ref9.current?.getBoundingClientRect().height +
-                ref10.current?.getBoundingClientRect().height +
-                ref11.current?.getBoundingClientRect().height -
+            refWrapper1.current?.getBoundingClientRect().height +
+                refWrapper2.current?.getBoundingClientRect().height +
+                refWrapper3.current?.getBoundingClientRect().height +
+                refWrapper4.current?.getBoundingClientRect().height +
+                refWrapper5.current?.getBoundingClientRect().height -
                 1
         ) {
             ref5.current?.scrollIntoView({
                 block: "start",
                 behavior: "smooth",
             })
-            // console.log("ref4")
+            console.log("ref4")
         } else if (
             window.scrollY <=
-            ref7.current?.getBoundingClientRect().height +
-                ref8.current?.getBoundingClientRect().height +
-                ref9.current?.getBoundingClientRect().height +
-                ref10.current?.getBoundingClientRect().height +
-                ref11.current?.getBoundingClientRect().height +
-                ref12.current?.getBoundingClientRect().height -
+            refWrapper1.current?.getBoundingClientRect().height +
+                refWrapper2.current?.getBoundingClientRect().height +
+                refWrapper3.current?.getBoundingClientRect().height +
+                refWrapper4.current?.getBoundingClientRect().height +
+                refWrapper5.current?.getBoundingClientRect().height +
+                refWrapper6.current?.getBoundingClientRect().height -
                 1
         ) {
             ref6.current?.scrollIntoView({
                 block: "start",
                 behavior: "smooth",
             })
-            // console.log("ref5")
+            console.log("ref5")
+        } else if (
+            window.scrollY <=
+            refWrapper1.current?.getBoundingClientRect().height +
+                refWrapper2.current?.getBoundingClientRect().height +
+                refWrapper3.current?.getBoundingClientRect().height +
+                refWrapper4.current?.getBoundingClientRect().height +
+                refWrapper5.current?.getBoundingClientRect().height +
+                refWrapper6.current?.getBoundingClientRect().height +
+                refWrapper7.current?.getBoundingClientRect().height -
+                1
+        ) {
+            ref7.current?.scrollIntoView({
+                block: "start",
+                behavior: "smooth",
+            })
+            console.log("ref6")
+        } else if (
+            window.scrollY <=
+            refWrapper1.current?.getBoundingClientRect().height +
+                refWrapper2.current?.getBoundingClientRect().height +
+                refWrapper3.current?.getBoundingClientRect().height +
+                refWrapper4.current?.getBoundingClientRect().height +
+                refWrapper5.current?.getBoundingClientRect().height +
+                refWrapper6.current?.getBoundingClientRect().height +
+                refWrapper7.current?.getBoundingClientRect().height +
+                refWrapper8.current?.getBoundingClientRect().height -
+                1
+        ) {
+            ref8.current?.scrollIntoView({
+                block: "start",
+                behavior: "smooth",
+            })
+            console.log("ref7")
+        } else if (
+            window.scrollY <=
+            refWrapper1.current?.getBoundingClientRect().height +
+                refWrapper2.current?.getBoundingClientRect().height +
+                refWrapper3.current?.getBoundingClientRect().height +
+                refWrapper4.current?.getBoundingClientRect().height +
+                refWrapper5.current?.getBoundingClientRect().height +
+                refWrapper6.current?.getBoundingClientRect().height +
+                refWrapper7.current?.getBoundingClientRect().height +
+                refWrapper8.current?.getBoundingClientRect().height +
+                refWrapper9.current?.getBoundingClientRect().height -
+                1
+        ) {
+            ref9.current?.scrollIntoView({
+                block: "start",
+                behavior: "smooth",
+            })
+            console.log("ref8")
+        } else {
+            console.log("else")
         }
     }
 
     return (
         <main className="main">
+            <Helmet>
+                <title>FTOREX | HOME</title>
+                <meta
+                    name="description"
+                    content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
+                />
+            </Helmet>
             <div
                 onClick={scrollDown}
                 className={`scroll-btn-fixed ${scrollBtnClass}`}
             >
                 <ScrollDownBtn />
             </div>
-            <div ref={ref7}>
+            <div ref={refWrapper1}>
                 <IntroduceSection ref0={ref0} />
             </div>
-            <div className="anker-element" ref={ref8}>
+            <div className="anker-element" ref={refWrapper2}>
                 <ProductsSection ref1={ref1} />
             </div>
-            <div className="anker-element" ref={ref9}>
-                <IndicatorsSection ref2={ref2} />
+            <div className="anker-element" ref={refWrapper3}>
+                <PetroleumSection ref2={ref2} />
             </div>
-            <div className="anker-element" ref={ref10}>
-                <ServicesSection ref3={ref3} />
+            <div className="anker-element" ref={refWrapper4}>
+                <IndicatorsSection ref3={ref3} />
+            </div>
+            <div className="anker-element" ref={refWrapper5}>
+                <ServicesSection ref4={ref4} />
                 <SubscribeSection submitRef={submitRef} />
             </div>
-            <div className="anker-element" ref={ref11}>
-                <AboutUsSection ref4={ref4} />
+            <div className="anker-element" ref={refWrapper6}>
+                <AboutUsSection ref5={ref5} />
             </div>
-            <div className="anker-element bg-color" ref={ref12}>
-                <MapSection ref5={ref5} />
+            <div className="anker-element" ref={refWrapper7}>
+                <PressSection ref6={ref6} />
             </div>
-            <div className="anker-element">
-                <ArticlesSection ref6={ref6} />
+            <div className="anker-element bg-color" ref={refWrapper8}>
+                <MapSection
+                    ref7={ref7}
+                    map="https://greeninfo-network.github.io/mine-tracker/"
+                />
+            </div>
+            <div className="anker-element" ref={refWrapper9}>
+                <ArticlesSection ref8={ref8} />
             </div>
         </main>
     )
