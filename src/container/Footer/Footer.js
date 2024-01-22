@@ -8,12 +8,8 @@ const Footer = ({ messageRef }) => {
     const [messageState, setMessageState] = useState("hide")
 
     const writeToUsBtn = () => {
-        if (messageRef.current) {
-            messageRef.current?.scrollIntoView({ behavior: "smooth" })
-        } else {
-            setMessageState("show")
-            document.body.style.overflow = "hidden"
-        }
+        setMessageState("show")
+        document.body.style.overflow = "hidden"
     }
     const closeWriteToUsForm = () => {
         setMessageState("hide")
@@ -103,19 +99,50 @@ const Footer = ({ messageRef }) => {
                                 Social Media
                             </div>
                             <div className="footer-column-item">
-                                <a href="https://www.linkedin.com/in/ftorex/">
+                                <a
+                                    href="https://www.linkedin.com/company/ftorex/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     Linkedin
                                 </a>
-                                <a href="https://twitter.com/ftorex_tm">
+                                <a
+                                    href="https://twitter.com/ftorex_tm"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     Twitter
                                 </a>
-                                <a href="https://www.linkedin.com/in/ftorex-tm-3339b7239/">
-                                    <button className="submit-btn">
-                                        <div className="row btn-content-row">
-                                            <p>THE press about us</p>
-                                            <div className="btn-arrow"></div>
-                                        </div>
-                                    </button>
+                                <p className="press-links-title">
+                                    press about us
+                                </p>
+                                <a
+                                    href="https://www.khaleejtimes.com/kt-network/fueling-the-future-how-anthracite-is-taking-over-the-energy-industry"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <div className="press-link press-link-1"></div>
+                                </a>
+                                <a
+                                    href="https://www.benzinga.com/23/07/33137165/chinas-rising-coal-consumption-consequences-for-global-markets"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <div className="press-link press-link-2"></div>
+                                </a>
+                                <a
+                                    href="https://www.forexlive.com/Education/coal-goes-digital-harnessing-online-technologies-to-streamline-trading-20230613/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <div className="press-link press-link-3"></div>
+                                </a>
+                                <a
+                                    href="https://www.nasdaq.com/articles/ais-potential-role-in-the-coal-industry"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <div className="press-link press-link-4"></div>
                                 </a>
                             </div>
                         </div>
@@ -131,8 +158,11 @@ const Footer = ({ messageRef }) => {
                                         US OFFICE:
                                     </p>
                                     <div className="footer-contacts-item-2">
-                                        <p>3233 W Dallas St, Houston TX, USA</p>
-                                        <p>+1 (786) 707-0607</p>
+                                        <p>
+                                            1916 W Gray St, #318, Houston, TX
+                                            USA 77019
+                                        </p>
+                                        <p>+1 (786) 707-0606</p>
                                         <p>sales@ftorex.us</p>
                                         <p className="bold-text">
                                             www.ftorex.us
@@ -152,7 +182,7 @@ const Footer = ({ messageRef }) => {
                                             Centre, Building PR1005, Port Saeed,
                                             Dubai, UAE
                                         </p>
-                                        <p>+1 (786) 707-06-06</p>
+                                        <p>+971 58 304 4155</p>
                                         <p>sales@ftorex.ae</p>
                                         <p className="bold-text">
                                             www.ftorex.ae

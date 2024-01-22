@@ -3,7 +3,7 @@ import "./ArticlesSection.scss"
 import { Link } from "react-router-dom"
 import articleArr from "../../pages/ArticlesPage/articlesArray"
 
-const ArticlesSection = ({ ref6 }) => {
+const ArticlesSection = ({ ref8 }) => {
     function kitcut(text, limit) {
         text = text.trim()
         if (text.length <= limit) {
@@ -19,7 +19,7 @@ const ArticlesSection = ({ ref6 }) => {
 
     return (
         <section className="articles-section">
-            <div className="section-anker-element" ref={ref6}></div>
+            <div className="section-anker-element" ref={ref8}></div>
             <div className="container">
                 <div className="row articles-row">
                     <div className="articles-header">

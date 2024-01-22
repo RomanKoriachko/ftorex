@@ -2,10 +2,10 @@ import React from "react"
 import AnimatedNumbers from "react-animated-numbers"
 import "./IndicatorsSection.scss"
 
-const IndicatorsSection = ({ ref2 }) => {
+const IndicatorsSection = ({ ref3 }) => {
     return (
         <section className="indicators-section">
-            <div className="section-anker-element" ref={ref2}></div>
+            <div className="section-anker-element" ref={ref3}></div>
             <div className="container">
                 <div className="indicators-header-row">
                     <p className="big-header">

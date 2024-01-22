@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./MapSection.scss"
 
-const MapSection = ({ ref5 }) => {
+const MapSection = ({ ref7 }) => {
     const [showMapState, setShowMapState] = useState("not-active")
 
     const showMap = () => {
@@ -32,7 +32,7 @@ const MapSection = ({ ref5 }) => {
 
     return (
         <section className="map-section">
-            <div className="section-anker-element" ref={ref5}></div>
+            <div className="section-anker-element" ref={ref7}></div>
             <button
                 className={`close-map-btn ${showMapState}`}
                 onClick={() => closeMap()}

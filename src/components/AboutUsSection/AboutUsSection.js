@@ -2,10 +2,10 @@ import React from "react"
 import "./AboutUsSection.scss"
 import { AnimationOnScroll } from "react-animation-on-scroll"
 
-const AboutUsSection = ({ ref4 }) => {
+const AboutUsSection = ({ ref5 }) => {
     return (
         <section className="about-section">
-            <div className="section-anker-element" ref={ref4}></div>
+            <div className="section-anker-element" ref={ref5}></div>
             <div className="container">
                 <AnimationOnScroll
                     animateIn="animate__fadeInUp"
