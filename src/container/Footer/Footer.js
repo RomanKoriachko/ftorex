@@ -194,7 +194,7 @@ const Footer = ({ messageRef }) => {
                     </div>
                 </div>
                 <p className="copyright">
-                    FTOREX © 2015-2023, All Rights Reserved
+                    FTOREX © 2015-2024, All Rights Reserved
                 </p>
             </div>
         </footer>
