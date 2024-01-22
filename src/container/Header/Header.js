@@ -58,6 +58,8 @@ const Header = ({ submitRef }) => {
 
     // get data from api
 
+    // const dataState = useAppSelector((state) => state.dataState)
+
     useEffect(() => {
         dispatch(fetchData())
     }, [dispatch])
@@ -65,7 +67,9 @@ const Header = ({ submitRef }) => {
     return (
         <>
             <header id="header" className="header">
-                <TradingComponent />
+                <div className="quotation">
+                    <TradingComponent />
+                </div>
                 <div className={`burger-menu ${burgerState}`}>
                     <div
                         className="close-burger-img"

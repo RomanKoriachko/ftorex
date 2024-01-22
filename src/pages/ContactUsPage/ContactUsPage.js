@@ -55,8 +55,8 @@ const ContactUsPage = ({ messageRef }) => {
                                         Saeed, Dubai
                                     </p>
                                     <p className="contact-item-text">
-                                        <span>USA:</span> 3233 W Dallas St,
-                                        Houston TX 77019
+                                        <span>USA:</span> 1916 W Gray St, #318,
+                                        Houston, TX USA 77019
                                     </p>
                                 </div>
                             </AnimationOnScroll>

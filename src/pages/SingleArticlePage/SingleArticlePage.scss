@@ -66,10 +66,11 @@
             font-size: 21px;
             line-height: 30px;
             color: #121212;
+            margin-bottom: 10px;
         }
         .img-wrapper {
             min-height: 300px;
-            max-height: 800px;
+            // max-height: 800px;
             overflow: hidden;
             margin-bottom: 20px;
             .article-img {
@@ -79,7 +80,7 @@
         }
         .article-table-desctop {
             border: 1px solid black;
-            max-width: 680px;
+            max-width: 905px;
             margin-bottom: 20px;
             .article-table-row {
                 border-bottom: 1px solid black;
@@ -107,6 +108,9 @@
         }
         .list {
             margin-left: 15px;
+            > p {
+                margin-bottom: 15px;
+            }
         }
         .article-table-mobile {
             border: 1px solid black;
@@ -302,8 +306,14 @@
             .article-table-desctop-hide {
                 display: none;
             }
+            .article-table-desctop {
+                .article-table-row {
+                    .article-table-item {
+                        padding: 3px 5px;
+                    }
+                }
+            }
             .article-table-desctop-large {
-                display: block;
                 .article-table-row {
                     .article-table-item {
                         padding: 3px 5px;
