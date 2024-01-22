@@ -1,23 +1,23 @@
 import React from "react"
 import "./ProductsPage.scss"
 import PageHeader from "../../components/PageHeader/PageHeader"
-import { Helmet } from "react-helmet"
 import MessageForm from "../../components/MessageForm/MessageForm"
 import { Link } from "react-router-dom"
-import { useAppDispatch } from "../../redux/hooks"
-import { openCallbackForm } from "redux/callbackFormReducer"
+// import { useAppDispatch } from "../../redux/hooks"
+// import { openCallbackForm } from "redux/callbackFormReducer"
+import { Helmet } from "react-helmet-async"
 
 const ProductsPage = () => {
-    const dispatch = useAppDispatch()
+    // const dispatch = useAppDispatch()
 
-    const openForm = () => {
-        dispatch(openCallbackForm())
-    }
+    // const openForm = () => {
+    //     dispatch(openCallbackForm())
+    // }
 
     return (
         <div className="products-page">
             <Helmet>
-                <title>Products</title>
+                <title>FTOREX | PRODUCTS</title>
                 <meta
                     name="description"
                     content="FTOREX International trading company focused in procurement of coking, thermal, anthracite, PCI coals, as well as fertilizer worldwide. The major goal is to provide the price directly from manufacturers."
@@ -169,7 +169,7 @@ const ProductsPage = () => {
                                     Mining equipment refers to various types of
                                     machinery used in the extraction of
                                     minerals, metals, and other geological
-                                    materials...{" "}
+                                    materials...
                                 </p>
                                 <div>
                                     <Link to={`/products/mining_equipment`}>
@@ -183,7 +183,26 @@ const ProductsPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="product-item product-item-contact">
+                        <div className="product-item">
+                            <div className="product-box">
+                                <p>Oil & petroleum products</p>
+                                <p>
+                                    Mining equipment refers to various types of
+                                    machinery used in the...
+                                </p>
+                                <div>
+                                    <Link to={`/products/oil_and_petroleum`}>
+                                        <button className="info-btn">
+                                            <div className="row btn-content-row">
+                                                <p>View info</p>
+                                                <div className="btn-arrow"></div>
+                                            </div>
+                                        </button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className="product-item product-item-contact">
                             <div className="product-box">
                                 <p>
                                     Contact us and we will offer you the best
@@ -201,7 +220,7 @@ const ProductsPage = () => {
                                     </button>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <MessageForm />
                 </div>

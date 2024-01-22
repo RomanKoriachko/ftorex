@@ -5,7 +5,7 @@
         background-image: url(../../../public/images/products-bg.webp);
     }
     .products-page-section {
-        background-image: url(../../../public/images/about-us-bg.png);
+        background-image: url(../../../public/images/message-bg.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
@@ -29,7 +29,7 @@
                     font-size: 28px !important;
                 }
                 > p:nth-child(1) {
-                    font-family: "Roboto";
+                    font-family: "Roboto", sans-serif;
                     font-weight: 800;
                     font-size: 32px;
                     line-height: 120%;

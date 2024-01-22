@@ -2,4 +2,13 @@
     .preview-section {
         background-image: url(../../../../public/images/mining-equipment-bg.webp);
     }
+    .product-container {
+        .product-content-table {
+            .product-content-table-row {
+                .product-content-table-cell:first-child {
+                    width: auto;
+                }
+            }
+        }
+    }
 }

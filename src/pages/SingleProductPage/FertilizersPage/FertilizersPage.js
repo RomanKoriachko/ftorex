@@ -71,6 +71,14 @@ const FertilizersPage = () => {
                         >
                             <div>Mining equipment</div>
                         </NavLink>
+                        <NavLink
+                            to="/products/oil_and_petroleum"
+                            className={({ isActive }) =>
+                                isActive ? "active" : "notActive"
+                            }
+                        >
+                            <div>Oil & petroleum products</div>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="row links-row">
@@ -135,6 +143,14 @@ const FertilizersPage = () => {
                                 <div className="product-link">
                                     Mining equipment
                                 </div>
+                            </NavLink>
+                            <NavLink
+                                to="/products/oil_and_petroleum"
+                                className={({ isActive }) =>
+                                    isActive ? "active" : "notActive"
+                                }
+                            >
+                                <div>Oil & petroleum products</div>
                             </NavLink>
                         </div>
                     </StickyBox>
@@ -284,10 +300,7 @@ const FertilizersPage = () => {
                     <div>
                         <button className="download-btn">
                             <div className="row btn-content-row">
-                                <a
-                                    href="/files//FTOREX COAL OFFER.docx"
-                                    download
-                                >
+                                <a href="/files/FTOREX FERTILIZER.pdf" download>
                                     download document
                                 </a>
                                 <div className="btn-arrow"></div>

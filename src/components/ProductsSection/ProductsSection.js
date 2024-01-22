@@ -208,6 +208,25 @@ const ProductsSection = ({ ref1 }) => {
                             </div>
                         </div>
                     </div>
+                    <div className="product-item">
+                        <div className="product-box">
+                            <p>Oil & petroleum products</p>
+                            <p>
+                                Mining equipment refers to various types of
+                                machinery used in the...
+                            </p>
+                            <div>
+                                <Link to="/products/oil_and_petroleum">
+                                    <button className="info-btn">
+                                        <div className="row btn-content-row">
+                                            <p>View info</p>
+                                            <div className="btn-arrow"></div>
+                                        </div>
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </Slider>
                 <Link to="/products">
                     <button className="products-btn">

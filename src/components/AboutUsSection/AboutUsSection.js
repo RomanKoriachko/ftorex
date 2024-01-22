@@ -12,7 +12,7 @@ const AboutUsSection = ({ ref5 }) => {
                     duration={1.5}
                     animateOnce={true}
                 >
-                    <p className="big-header">our team's experience</p>
+                    <p className="big-header">ABOUT US</p>
                     <p className="subtitle">
                         Our company specializes in the supply of coking coal to
                         customers worldwide, with a focus on Southeast Asia and
@@ -27,23 +27,25 @@ const AboutUsSection = ({ ref5 }) => {
                     >
                         <div className="about-text">
                             <p className="about-text-paragraph">
-                                FTOREX Commercial Broker LLC is a rapidly
-                                growing international company with headquarters
-                                in both Houston, TX, USA, and Dubai, UAE. Our
-                                goal is to provide our customers with direct
-                                contracts and competitive pricing directly from
-                                the manufacturers.
+                                We are a leading global provider of coal
+                                supplies, fertilizer supplies, logistics
+                                solutions, customs clearance, ocean freight, and
+                                consulting services. Our mission is to be your
+                                trusted partner for all of your business needs
+                                while we provide top-notch products and
+                                services, and help you achieve your goals.
                             </p>
                             <p>
-                                We understand that coal is a crucial raw
-                                material for steel production, and as such, we
-                                strive to maintain long-term partnerships with
-                                reputable manufacturers to ensure a consistent
-                                and reliable supply for our clients. Our
-                                experienced team is committed to providing
-                                exceptional customer service, and we work
-                                closely with our clients to meet their specific
-                                needs and requirements.
+                                At Ftorex, we take pride in our commitment to
+                                excellence and our customer-centric approach.
+                                With years of experience in the industry, we
+                                have built a strong reputation for delivering
+                                reliable and efficient services to our valued
+                                clients around the world. Our team of experts
+                                works tirelessly to ensure that your
+                                requirements are met with precision and
+                                competence. This makes us the preferred choice
+                                for companies across a range of industries.
                             </p>
                         </div>
                     </AnimationOnScroll>
@@ -54,22 +56,24 @@ const AboutUsSection = ({ ref5 }) => {
                     >
                         <div className="about-text">
                             <p className="about-text-paragraph">
-                                At FTOREX, we prioritize quality and
-                                sustainability, and we work with manufacturers
-                                who share our commitment to these values. We
-                                believe that responsible sourcing and ethical
-                                business practices are essential for building
-                                long-term relationships with our customers and
-                                ensuring the continued success of our business.
+                                Also, we understand that your success is our
+                                success, and we go the extra mile to exceed your
+                                expectations. We carefully select our suppliers
+                                and partners to ensure that we offer only the
+                                best products and services to our clients.
+                            </p>
+                            <p className="about-text-paragraph">
+                                But we are not just about business; we are also
+                                about building meaningful relationships with our
+                                clients. We believe in open communication,
+                                trust, and transparency. And our team is always
+                                ready to listen to your needs, answer your
+                                questions, and provide personalized solutions.
                             </p>
                             <p>
-                                Overall, FTOREX Commercial Broker LLC is a
-                                reliable and reputable supplier of coal to
-                                customers worldwide. Our dedication to quality,
-                                sustainability, and customer service sets us
-                                apart from the competition, and we are committed
-                                to providing our clients with the best possible
-                                experience.
+                                As you continue to explore our services, we are
+                                thrilled at the prospect of working with you and
+                                earning your trust.
                             </p>
                         </div>
                     </AnimationOnScroll>

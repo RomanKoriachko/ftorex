@@ -71,6 +71,14 @@ const ThermalCoalPage = () => {
                         >
                             <div>Mining equipment</div>
                         </NavLink>
+                        <NavLink
+                            to="/products/oil_and_petroleum"
+                            className={({ isActive }) =>
+                                isActive ? "active" : "notActive"
+                            }
+                        >
+                            <div>Oil & petroleum products</div>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="row links-row">
@@ -136,6 +144,14 @@ const ThermalCoalPage = () => {
                                     Mining equipment
                                 </div>
                             </NavLink>
+                            <NavLink
+                                to="/products/oil_and_petroleum"
+                                className={({ isActive }) =>
+                                    isActive ? "active" : "notActive"
+                                }
+                            >
+                                <div>Oil & petroleum products</div>
+                            </NavLink>
                         </div>
                     </StickyBox>
                     <div className="product-container">
@@ -144,29 +160,39 @@ const ThermalCoalPage = () => {
                                 Thermal coal
                             </p>
                             <p className="product-content-text">
-                                Thermal coal, also known as non-coking coal,
-                                steam coal, or boiler coal, is a type of
-                                bituminous coal used for combustion in furnaces
-                                to generate heat energy due to its high
-                                calorific value. Unlike coking coal, it is not
-                                used in the production of coke. Thermal coal is
-                                characterized by higher volatile matter and
-                                lower carbon content, and its gross calorific
-                                value is greater than 5700 kcal/kg on an
-                                ash-free but moist basis.
+                                Thermal coal, also commonly referred to as steam
+                                coal, is a type of coal that is used as a source
+                                of fuel for the generation of electricity in
+                                thermal power plants. However, due to the high
+                                levels of carbon and sulfur, it also plays a
+                                significant role in greenhouse gas emissions and
+                                global warming. Before being delivered to power
+                                plants, thermal coal is treated to remove
+                                impurities after being extracted from
+                                underground or surface mines.
+                            </p>
+                            <p className="product-content-subtitle">
+                                Formation and Geology of Thermal Coal
                             </p>
                             <p className="product-content-text">
-                                The primary use of thermal coal is to generate
-                                steam for electricity production in boilers. It
-                                is also used in some ironmaking processes, such
-                                as the production of direct reduced iron and hot
-                                metal. However, the quality of thermal coal
-                                varies widely, with no fixed chemical formula
-                                due to its complex, heterogeneous nature. Its
-                                constituents include carbon, oxygen, hydrogen,
-                                sulphur, nitrogen, ash, chlorine, and sodium,
-                                and the organic molecule's chemical structure
-                                depends on the coal's rank.
+                                Thermal coal is a sedimentary rock that forms
+                                from the remains of ancient plants and trees
+                                that were buried and subjected to high
+                                temperatures and pressure for a long period of
+                                time. The whole process of formation begins with
+                                the accumulation of organic matter in a swampy
+                                environment, where the dead plant materials
+                                settle and are then covered with various layers
+                                of sediment, including clay and sand.
+                            </p>
+                            <p className="product-content-text">
+                                As time passes, the weight of the overlying
+                                sediments compresses and heats these materials,
+                                taking away water and other volatile compounds
+                                and increasing the carbon concentration. The
+                                entire process of coalification is quite
+                                gradual, and the resulting coal can range in
+                                quality from lignite to anthracite.
                             </p>
                             <img
                                 className="product-content-img"
@@ -174,210 +200,230 @@ const ThermalCoalPage = () => {
                                 alt=""
                             />
                             <p className="product-content-text">
-                                The performance of thermal coal in a furnace is
-                                influenced by its properties, including mineral
-                                matter, impurities, and reactivity, all of which
-                                affect combustion efficiency, reliability, and
-                                availability. The ash-forming material can cause
-                                slagging and fouling deposits, and coal
-                                properties affect furnace operating and
-                                maintenance costs, as well as waste disposal
-                                costs. Thus, the value of thermal coal is
-                                largely dependent on its various properties,
-                                with beneficial properties resulting in cost
-                                savings and detrimental properties resulting in
-                                cost increases.
+                                Geologically, deposits for this material are
+                                discovered in sedimentary basins that are known
+                                to be hundreds of meters deep and can span
+                                thousands of square kilometers. These basins are
+                                mostly formed due to tectonic activity, which
+                                includes the subsidence of a continental shelf
+                                or the formation of a rift valley in which a
+                                depression is created where sediment can then
+                                accumulate.
+                            </p>
+                            <p className="product-content-subtitle">
+                                Properties and Characteristics of Thermal Coal
                             </p>
                             <p className="product-content-text">
-                                The cost of thermal coal is linked to its
-                                heating value, which is determined by the
-                                combustible matter, mainly carbon and hydrogen,
-                                and how they react during combustion. The ash,
-                                volatile matter, and moisture contents also
-                                affect furnace efficiency. Therefore,
-                                determining the correct heating value is crucial
-                                for the economical operation of the furnace.
+                                It has been established above that the primary
+                                use of steam coal is for power generation at
+                                thermal plants. Some of its properties include:
+                            </p>
+                            <table className="product-content-table">
+                                <tbody>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            Carbon Content
+                                        </td>
+                                        <td className="product-content-table-cell">
+                                            Thermal coal is known to have a high
+                                            CC, which can range from 60 to 90
+                                            percent, making it an effective
+                                            source for electricity.
+                                        </td>
+                                    </tr>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            Heating Value
+                                        </td>
+                                        <td className="product-content-table-cell">
+                                            It has a relatively high heating
+                                            value. This simply means that it has
+                                            the ability to produce a massive
+                                            amount of energy when burned, and
+                                            this value can range from between 24
+                                            and 29 megajoules.
+                                        </td>
+                                    </tr>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            Moisture Content
+                                        </td>
+                                        <td className="product-content-table-cell">
+                                            It comes with a low moisture content
+                                            of about 5 to 15%. This makes it
+                                            convenient for transport and
+                                            storage.
+                                        </td>
+                                    </tr>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            Volatile Matter
+                                        </td>
+                                        <td className="product-content-table-cell">
+                                            This refers to the total gases and
+                                            other compounds that are released
+                                            upon heating it. The volatile matter
+                                            content of steam coal can range from
+                                            20 to 40 percent.
+                                        </td>
+                                    </tr>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            Ash Content
+                                        </td>
+                                        <td className="product-content-table-cell">
+                                            It has a high ash content, which
+                                            ranges from 5 to 25%. This can be a
+                                            major challenge when combusting, as
+                                            the ash can come together and block
+                                            the power plant equipment.
+                                        </td>
+                                    </tr>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            Sulfur Content
+                                        </td>
+                                        <td className="product-content-table-cell">
+                                            The sulfur present in this material
+                                            can be emitted as SO2 (sulfur
+                                            dioxide) when burned. When the
+                                            environment is exposed to a high
+                                            level of sulfur content, there is a
+                                            risk of environmental issues such as
+                                            air pollution and acid rain.
+                                        </td>
+                                    </tr>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            Density
+                                        </td>
+                                        <td className="product-content-table-cell">
+                                            Steam coal has a high energy content
+                                            per unit volume, making it an
+                                            efficient and cost-effective source
+                                            of energy production.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p className="product-content-subtitle">
+                                How FTOREX Comply with Regulations and Policies
+                                Related to Thermal Coal
                             </p>
                             <p className="product-content-text">
-                                The analysis of thermal coal can be classified
-                                into two types: ultimate and proximate. The
-                                ultimate analysis provides information on the
-                                elemental chemical constituents of thermal coal,
-                                including C, H2, O2, S, N2, and Cl. This
-                                information is essential for calculating the
-                                amount of air needed for combustion, the
-                                composition of combustion gases, and the design
-                                of flue gas ducts. The different constituents of
-                                thermal coal have varying effects on coal
-                                combustion, so it is crucial to understand them
-                                in detail. For example, high sulfur content can
-                                cause clinkering and slagging tendencies,
-                                corrode equipment, and limit flue gas exit
-                                temperature.
+                                There are various ways in which FTOREX complies
+                                with regulations and policies that have to do
+                                with thermal coal, and these include:
+                            </p>
+                            <ul className="product-content-list">
+                                <li>
+                                    Monitoring and Reporting: Here at FTOREX, we
+                                    tend to monitor our operations and emissions
+                                    to ensure compliance with the necessary
+                                    regulations and policies and equally report
+                                    regularly on our safety performance as well
+                                    as various other key indicators.
+                                </li>
+                                <li>
+                                    Technology Investment: In order to improve
+                                    energy efficiency, minimize environmental
+                                    impacts, and reduce emissions, FTOREX
+                                    invests in new technologies and equipment,
+                                    such as the installation of scrubbers used
+                                    in the removal of pollutants, the use of
+                                    efficient turbines and boilers, and lots
+                                    more.
+                                </li>
+                                <li>
+                                    Stakeholder Engagement: Also, FTOREX engages
+                                    with various stakeholders, including locam
+                                    communities, regulators, and environmental
+                                    organizations, to have a better knowledge of
+                                    the concerns and priorities to look into and
+                                    to develop strategies for mitigating these
+                                    concerns.
+                                </li>
+                                <li>
+                                    Supply Chain Management: We work with
+                                    suppliers and clients to ensure that
+                                    everything is put in place when it comes to
+                                    the demand and supply of thermal coal, and
+                                    to promote sustainability throughout the
+                                    supply chain.
+                                </li>
+                                <li>
+                                    Risk Management: FTOREX conducts risk
+                                    assessments in order to identify and
+                                    mitigate risks related to all that has to do
+                                    with steam coal, making it easier for
+                                    clients to get the most out of their
+                                    resources.
+                                </li>
+                            </ul>
+                            <p className="product-content-subtitle">
+                                Market Trend and Prices of Steam Coal
                             </p>
                             <p className="product-content-text">
-                                The proximate analysis of thermal coal
-                                determines the percentages of fixed carbon,
-                                volatile matter, moisture, and ash in the coal.
-                                Fixed carbon is the main heat generator during
-                                burning and provides a rough estimate of the
-                                coal's heating value. Volatile matter
-                                contributes to the heating value of coal and
-                                affects flame length and ease of ignition. Ash
-                                is an impurity that does not burn and affects
-                                the design of furnace grates, combustion volume,
-                                pollution control devices, and ash handling
-                                plants. Moisture increases transportation,
-                                handling, and storage costs and decreases the
-                                heat content per kilogram of coal. It can also
-                                cause heat loss due to evaporation and
-                                superheating of vapor.
+                                The market for thermal coal has undergone
+                                considerable changes recently as a result of the
+                                industry's increased competition from natural
+                                gas and renewable energy sources, as well as
+                                growing worries about the effects of climate
+                                change on the environment. The following are
+                                some of the major developments and prices in the
+                                thermal coal market:
+                            </p>
+                            <ul className="product-content-list">
+                                <li>
+                                    Increasing Competition: Natural gas, which
+                                    is frequently more adaptable and more
+                                    cost-effective, as well as renewable energy
+                                    sources, which are more cost-competitive
+                                    with thermal coal, are both putting pressure
+                                    on the thermal coal business.
+                                </li>
+                                <li>
+                                    Price Volatility: Over the past couple of
+                                    years, the price of this type of coal has
+                                    been quite volatile, as it reflects the
+                                    changes occurring in its supply and demand,
+                                    along with the political and economic
+                                    factors that affect it.
+                                </li>
+                                <li>
+                                    Shift in Production: The thermal coal
+                                    industry is undergoing a shift in its
+                                    production, with a declining production rate
+                                    in certain regions, such as the USA, while
+                                    there is an increased production rate in
+                                    regions such as Russia, Australia, and
+                                    Indonesia.
+                                </li>
+                                <li>
+                                    Focus on Higher-Quality Coal: Higher-quality
+                                    thermal coal is increasingly in demand due
+                                    to its rising efficiency and reduced
+                                    emissions compared to lower-quality coal. As
+                                    a result, FTOREX is competing more fiercely
+                                    to offer coal of greater quality, and
+                                    investments are being made to upgrade and
+                                    modernize existing mines and infrastructure.
+                                </li>
+                            </ul>
+                            <p className="product-content-subtitle">
+                                Conclusion
                             </p>
                             <p className="product-content-text">
-                                The moisture content of coal can be divided into
-                                inherent moisture, which is trapped within the
-                                coal's structure, and exogenous moisture, which
-                                is external to the coal. The amount of moisture
-                                in coal affects the heating required to dry it
-                                before use, and changes in moisture content can
-                                alter the proportion of other coal constituents
-                                and the coal's calorific value.
-                            </p>
-                            <p className="product-content-text">
-                                The volatile matter content of thermal coal is
-                                critical for both furnace and ironmaking use, as
-                                it determines the burn rate of the coal. Coals
-                                with high volatile matter content are easy to
-                                ignite but may not be as preferred as those with
-                                moderately high volatile matter content. Coal
-                                with low volatile matter content may be
-                                difficult to ignite, although it contains more
-                                energy per unit volume.
-                            </p>
-                            <p className="product-content-text">
-                                Ash is the residue left after coal combustion,
-                                and its percentage is measured as a percentage
-                                of the air-dried coal sample. Higher ash content
-                                implies higher transportation and handling costs
-                                per unit of energy, and it is typically disposed
-                                of as waste.
-                            </p>
-                            <p className="product-content-text">
-                                The calorific value, or CV, of thermal coal is
-                                the measure of its potential energy that can be
-                                converted into heat energy upon combustion. This
-                                value varies depending on factors such as the
-                                coal's geological age, formation, ranking, and
-                                source. The CV is expressed in two ways, gross
-                                CV (GCV) and net CV (NCV), to account for the
-                                presence of moisture in the coal. GCV is also
-                                known as high heating value (HHV), while NCV is
-                                also known as low heating value (LHV). The
-                                relationship between NCV and GCV at a constant
-                                volume is expressed by the equation NCV = (GCV –
-                                0.206H)*[(100-TM)/(100-IM)] – 0.023TM, where H
-                                represents the percentage of H2, TM represents
-                                the percentage of total moisture, and IM
-                                represents the percentage of inherent moisture
-                                or air-dried moisture. Both NCV and GCV are
-                                measured in kilocalories per kilogram (kcal/kg).
-                            </p>
-                            <img
-                                className="product-content-img"
-                                src="/images/thermal-coal-img-2.webp"
-                                alt=""
-                            />
-                            <p className="product-content-text">
-                                The relationship between GCV and NCV based on
-                                ultimate analysis is given by the equation ‘NCV
-                                in kcal/kg = GCV – 50.6*%H – 5.85*%M – 0.191*%O
-                                where H, M, O represent the values of H2,
-                                moisture, and O2 in the coal. The CV of coal can
-                                be determined either by calculating from
-                                chemical analysis or by burning a sample in a
-                                calorimeter. The CV obtained by a calorimeter is
-                                the GCV. Calculation of the CV of coal based on
-                                proximate analysis gives a rough estimate and is
-                                generally used to determine the grade of coal.
-                                The formula adopted for this is ‘useful heat
-                                value of coal in kcal/kg = 8900 – 138*(M + A)’
-                                where M represents the percentage of moisture
-                                content and A represents the percentage of ash
-                                content.
-                            </p>
-                            <p className="product-content-text">
-                                The ultimate analysis gives a more accurate CV
-                                of thermal coal. The formula used for this is
-                                ‘GCV of coal in kcal/kg = (355*% C + 1148*%H +
-                                95*% S – 145*% O)/4.1868’. Here, C, H, S, O
-                                represent the percentage figures obtained in the
-                                ultimate analysis of coal for C, H2, S, and O2.
-                                When coal burns, the moisture in the coal
-                                evaporates and takes away some heat of
-                                combustion, which is not available to the
-                                furnace for heating. The CV determined by
-                                calorimeter is higher than that obtainable under
-                                most working conditions in a furnace by an
-                                amount equal to the latent heat of vaporization
-                                of water. In general, higher CV coal requires
-                                less coal in the furnace but generally comes at
-                                a higher cost due to greater washing and
-                                processing by the producer. This cost is offset
-                                by lower logistics, storage, and ash disposal
-                                costs.
-                            </p>
-                            <p className="product-content-text">
-                                The grindability, ignition temperature, and ash
-                                fusion temperature (AFT) are other important
-                                properties of thermal coal.
-                            </p>
-                            <p className="product-content-text">
-                                Prior to being fired into a furnace, thermal
-                                coal undergoes grinding, which can be a costly
-                                process. The behaviour of the coal during
-                                grinding is known as its grindability, measured
-                                by the Hardgrove Grinding Index (HGI). HGI is an
-                                index that predicts the capacity, performance,
-                                energy requirement of pulverizers, and
-                                determines the particle size of the grind
-                                produced. A higher HGI indicates easier
-                                grinding, lower power consumption, and higher
-                                throughput of coal in the pulverizer, whereas a
-                                lower HGI indicates a harder coal texture and
-                                increased operating and maintenance costs. The
-                                size distribution of the coal resulting from
-                                grinding can affect its combustibility and
-                                handleability in the bins and transfer lines.
-                            </p>
-                            <p className="product-content-text">
-                                The ignition temperature of coal is the
-                                temperature at which it combusts. Coals with low
-                                ignition points are unsafe for long storage and
-                                pulverizing.
-                            </p>
-                            <p className="product-content-text">
-                                The ash fusion temperature (AFT) is used to
-                                evaluate the slagging tendency during coal
-                                combustion. The ash fusion test is performed in
-                                a reducing atmosphere and helps assess the
-                                combined effect the ash forming minerals have on
-                                ash softening properties at different
-                                temperature levels. Higher levels of AFT prevent
-                                ash from depositing on the furnace floor and
-                                walls.
-                            </p>
-                            <p className="product-content-text">
-                                Pollutants emitted from thermal coal combustion
-                                depend on various factors including the fuel's
-                                rank and composition, the type and size of the
-                                furnace, firing conditions, load, type of
-                                control technologies, and level of equipment
-                                maintenance. The major pollutants of concern are
-                                particulate matter (PM), sulphur oxides (SOx),
-                                and nitrogen oxides (NOx), while some unburned
-                                combustibles such as carbon monoxide (CO) and
-                                numerous organic compounds are generally emitted
-                                even under proper furnace operating conditions.
+                                In conclusion, thermal coal remains an important
+                                source of energy for many countries around the
+                                world. However, it is crucial that you source
+                                your thermal coal from FTOREX, as we prioritize
+                                safety, environmental responsibility, and
+                                compliance with regulations and policies. By
+                                choosing to work with FTOREX, you can be sure
+                                that your energy needs are met in a sustainable
+                                and responsible manner and that you contribute
+                                to a cleaner and healthier future for all.
                             </p>
                         </div>
                     </div>
@@ -387,10 +433,7 @@ const ThermalCoalPage = () => {
                     <div>
                         <button className="download-btn">
                             <div className="row btn-content-row">
-                                <a
-                                    href="/files//FTOREX COAL OFFER.docx"
-                                    download
-                                >
+                                <a href="/files/FTOREX COAL.pdf" download>
                                     download document
                                 </a>
                                 <div className="btn-arrow"></div>

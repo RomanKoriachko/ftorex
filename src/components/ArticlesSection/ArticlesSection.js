@@ -24,7 +24,8 @@ const ArticlesSection = ({ ref8 }) => {
                 <div className="row articles-row">
                     <div className="articles-header">
                         <p className="big-header">
-                            Interesting information about our field
+                            Ftorex Blog: Stay Ahead with Industry News, Expert
+                            Tips, and Success Stories!
                         </p>
                     </div>
                     <div className="more-articles-btn">
@@ -38,6 +39,21 @@ const ArticlesSection = ({ ref8 }) => {
                         </Link>
                     </div>
                 </div>
+                <p className="articles-text">
+                    Stay informed and empowered with Ftorex Blog, your go-to
+                    source for the latest updates, insights, and inspiration.
+                    Our team of industry experts regularly share valuable
+                    information, trends, and best practices to help you stay
+                    ahead in your industry. Also, you would discover tips on on
+                    how to streamline your supply chain, deal with regulatory
+                    changes, increase profits, and more. 
+                </p>
+                <p className="articles-text">
+                    Explore real-life case studies and success stories to gain
+                    valuable knowledge from our satisfied customers. Join our
+                    community today and discover the secrets to success in your
+                    industry!
+                </p>
                 <div className="articles-items-row">
                     {articleArr
                         .filter((element, index) => index < 4)

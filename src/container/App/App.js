@@ -22,6 +22,7 @@ import LogisticSolutionsPage from "pages/SingleServicePage/LogisticSolutionsPage
 import CustomsClearancePage from "pages/SingleServicePage/CustomsClearancePage/CustomsClearancePage"
 import OceanFreightPage from "pages/SingleServicePage/OceanFreightPage/OceanFreightPage"
 import ConsultingPage from "pages/SingleServicePage/ConsultingPage/ConsultingPage"
+import OilAndPetroleumPage from "pages/SingleProductPage/OilAndPetroleumPage/OilAndPetroleumPage"
 
 function App() {
     const submitRef = useRef(null)
@@ -101,6 +102,10 @@ function App() {
                     <Route
                         path="products/fertilizers"
                         element={<FertilizersPage />}
+                    />
+                    <Route
+                        path="products/oil_and_petroleum"
+                        element={<OilAndPetroleumPage />}
                     />
                     <Route
                         path="articles"

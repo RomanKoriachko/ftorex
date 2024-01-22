@@ -1,0 +1,259 @@
+@import "../../../style";
+
+.oil-and-petroleum-page {
+    .preview-section {
+        background-image: url(../../../../public/images/oil_and_petroleum-bg.jpg);
+    }
+    .oil-and-petroleum-offers {
+        .oil-and-petroleum-offers-title {
+            font-family: "Roboto", sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: -0.04em;
+            color: #c74869;
+            text-transform: uppercase;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .oil-and-petroleum-offers-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 24px;
+            .oil-and-petroleum-offers-item {
+                background-color: white;
+                border: 1px solid #ededed;
+                font-family: "Roboto", sans-serif;
+                font-size: 30px;
+                font-weight: 800;
+                line-height: 38px;
+                letter-spacing: -0.06em;
+                text-transform: uppercase;
+                padding: 32px 16px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .oil-and-petroleum-map-title {
+        font-family: "Roboto", sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 48px;
+        letter-spacing: -0.06em;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    .map-section {
+        overflow: hidden;
+        margin-bottom: 40px;
+        .map-wrapper {
+            background-color: transparent;
+            min-height: 500px;
+            height: auto;
+        }
+        .map-content {
+            background-color: transparent;
+            .map-text {
+                top: 15px;
+                padding: 0px 24px 0px 0px;
+                .big-header,
+                .subtitle {
+                    color: #121212;
+                }
+            }
+        }
+        .tracker__header {
+            display: none;
+        }
+        .map {
+            width: 102%;
+        }
+    }
+    .map-section .not-active {
+        grid-template-columns: -0.5fr 1fr;
+    }
+    .map-section .active {
+        .map {
+            width: 101%;
+        }
+    }
+    .products-bg {
+        padding-top: 60px;
+        padding-bottom: 120px;
+        background-image: url(../../../../public/images/message-bg.webp);
+    }
+    .products-title {
+        font-family: "Roboto", sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 40px;
+        letter-spacing: -0.06em;
+        text-transform: uppercase;
+    }
+    .products-wrapper {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        .product-item {
+            min-width: 306px;
+            .product-box {
+                background-color: white;
+                border: 1px solid #ededed;
+                padding: 32px 16px;
+                height: 286px;
+                min-width: 306px;
+                text-align: left;
+                .long-header {
+                    font-size: 28px !important;
+                }
+                > p:nth-child(1) {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 800;
+                    font-size: 32px;
+                    line-height: 120%;
+                    letter-spacing: -0.06em;
+                    text-transform: uppercase;
+                    color: #121212;
+                    margin-bottom: 16px;
+                }
+                > p:nth-child(2) {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #595959;
+                    margin-bottom: 48px;
+                }
+            }
+            .info-btn {
+                @include buttonWithArrow();
+                color: #121212;
+                padding: 0px;
+                background-color: transparent;
+                .btn-arrow {
+                    background-image: url(../../../assets/button-arr-red.svg);
+                }
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+            }
+        }
+        .product-item-contact {
+            .product-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #121212;
+                > p:nth-child(1) {
+                    font-family: "Plus Jakarta Sans";
+                    color: white;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-transform: none;
+                    letter-spacing: normal;
+                }
+                .contact-btn {
+                    @include buttonWithArrow();
+                    background-color: #f1275b;
+                    width: 100%;
+                    .btn-content-row {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+    .oil-and-petroleum-page {
+        .products-wrapper {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .oil-and-petroleum-page {
+        .oil-and-petroleum-offers {
+            .oil-and-petroleum-offers-title {
+                font-size: 26px;
+            }
+            .oil-and-petroleum-offers-items {
+                .oil-and-petroleum-offers-item {
+                    font-size: 26px;
+                    padding: 16px;
+                }
+            }
+        }
+        .map-section {
+            .map-wrapper {
+                min-height: auto;
+            }
+            .map-content {
+                .map-text {
+                    padding: 0px 16px 0px 16px;
+                }
+            }
+            .tablet-close-map-btn {
+                bottom: 15px;
+            }
+        }
+        .products-wrapper {
+            margin-top: 50px;
+            grid-template-columns: repeat(2, 1fr);
+            .product-item {
+                min-width: auto;
+                .product-box {
+                    min-width: auto;
+                    height: 100%;
+                }
+            }
+        }
+        .oil-and-petroleum-map-title {
+            margin-top: 26px;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+        .margin-bottom {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .oil-and-petroleum-page {
+        .products-wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .oil-and-petroleum-page {
+        .oil-and-petroleum-offers {
+            .oil-and-petroleum-offers-items {
+                grid-template-columns: 1fr;
+                gap: 0px;
+            }
+        }
+        .oil-and-petroleum-map-title {
+            line-height: 30px;
+        }
+        .map-section {
+            .map-wrapper {
+                min-height: 450px;
+            }
+            .map-content {
+                .map-text {
+                    top: 210px;
+                }
+            }
+        }
+    }
+}

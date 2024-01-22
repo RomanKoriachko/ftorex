@@ -71,6 +71,14 @@ const AnthracitePage = () => {
                         >
                             <div>Mining equipment</div>
                         </NavLink>
+                        <NavLink
+                            to="/products/oil_and_petroleum"
+                            className={({ isActive }) =>
+                                isActive ? "active" : "notActive"
+                            }
+                        >
+                            <div>Oil & petroleum products</div>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="row links-row">
@@ -136,56 +144,49 @@ const AnthracitePage = () => {
                                     Mining equipment
                                 </div>
                             </NavLink>
+                            <NavLink
+                                to="/products/oil_and_petroleum"
+                                className={({ isActive }) =>
+                                    isActive ? "active" : "notActive"
+                                }
+                            >
+                                <div>Oil & petroleum products</div>
+                            </NavLink>
                         </div>
                     </StickyBox>
                     <div className="product-container">
                         <div>
                             <p className="product-content-header">Anthracite</p>
                             <p className="product-content-text">
-                                Anthracite coal, also known as hard coal, is a
-                                type of coal that derives its name from the
-                                Greek word ‘anthrakíts’ meaning ‘coal-like’. It
-                                is one of the four types of coals along with
-                                lignite coal, sub-bituminous coal, and
-                                bituminous coal. Anthracite coal is the most
-                                compressed and hardest coal available due to the
-                                intense pressure and heat it has been subjected
-                                to. Its hardness and compressed nature make it
-                                an excellent source of heat energy compared to
-                                softer, geologically ‘newer’ coal.
+                                Anthracite coal is considered a special type of
+                                coal that has a low ash content, a high carbon
+                                content, and a top-notch burning property. It is
+                                formed from the remains of ancient plants and
+                                trees that grew in swampy areas a long time ago.
+                                Anthracite is then produced from the
+                                metamorphosis of bituminous coal under high
+                                temperatures and pressure. It is characterized
+                                by its high carbon content, which ranges between
+                                86% and 98%, making it a very efficient fuel as
+                                it produces more energy per ton when compared to
+                                various other types of coal.
+                            </p>
+                            <p className="product-content-subtitle">
+                                Where Can I Buy Anthracite Cole and What is it
+                                Used For?
                             </p>
                             <p className="product-content-text">
-                                According to ISO 11760:2005, anthracite coal is
-                                defined as the coal having a mean random
-                                vitrinite reflectance equal to or greater than
-                                2.0 % but less than 6.0 %, or a mean maximum
-                                reflectance less than 8.0 % for geologically
-                                unaltered coal.
-                            </p>
-                            <p className="product-content-text">
-                                Anthracite coal was formed from bituminous coal
-                                when great pressures developed in the folded
-                                rock, a process called ‘Anthracitization’. It
-                                was formed during the Carboniferous Age when
-                                dense green vegetation that thrived during the
-                                tropical climate of the time fossilized. It is
-                                the oldest and cleanest type of coal, the rarest
-                                and most mature coal, and a hard, compact
-                                variety of coal. It has the highest ranking
-                                among all four types of coals and has undergone
-                                the most metamorphosis. It also has the highest
-                                fixed carbon content and the least impurities
-                                and the highest energy density among all types
-                                of coal.
-                            </p>
-                            <p className="product-content-text">
-                                Anthracite coal typically occurs in old
-                                geological formations that have spent the
-                                longest time underground, and it accounts for
-                                only around 1% of the world’s total coal
-                                reserves. The major reserves of anthracite coal
-                                are located mainly in China, Vietnam, North
-                                Korea, Russia, Ukraine, and the USA.
+                                At FTOREX, our mission is to provide our clients
+                                with top-quality products and also deliver the
+                                best value for their money. Here, you will see
+                                that we offer you the best selection of
+                                anthracite coal and, at the same time, provide
+                                you with the best price for a high-quality
+                                product. At FTOREX, we have various anthracite
+                                coals available, and they will be delivered
+                                straight to your doorstep. No matter your
+                                location, you can be sure to trust us with your
+                                anthracite coal purchase.
                             </p>
                             <img
                                 className="product-content-img"
@@ -193,137 +194,218 @@ const AnthracitePage = () => {
                                 alt=""
                             />
                             <p className="product-content-text">
-                                Anthracite coal is associated with strongly
-                                deformed sedimentary rocks which were subjected
-                                to higher pressures and temperatures, but short
-                                of metamorphic conditions, just as bituminous
-                                coal is generally associated with less deformed
-                                or flat-lying sedimentary rocks. Underground
-                                mining techniques are commonly used to extract
-                                anthracite coal from deep within the earth.
+                                In the world today, anthracite coal can be used
+                                for various purposes, mainly for heating and
+                                energy production. Below are some of the common
+                                uses of anthracite:
+                            </p>
+                            <ul className="product-content-list">
+                                <li>
+                                    Home Heating: It is used as a major source
+                                    of heat in both commercial and residential
+                                    heating systems. Considering the fact that
+                                    it burns longer and hotter than other
+                                    varieties of coal, it is a great choice to
+                                    consider as it produces a steady heat output
+                                    with a considerably low ash content. This
+                                    type of coal is used in boilers, stoves,
+                                    furnaces, and various other heating
+                                    appliances.
+                                </li>
+                                <li>
+                                    Electrical Generation: This type of coal is
+                                    also used in the generation of electricity
+                                    in power plants. It is burned in boilers to
+                                    produce steam, which drives turbines that
+                                    produce electricity. Thanks to its massive
+                                    energy and low ash content, it is quite
+                                    reliable when it comes to power generation.
+                                </li>
+                                <li>
+                                    Industrial Processes: It is known to be
+                                    quite useful in industrial processes
+                                    including cement production, steelmaking,
+                                    and lots more. This coal can be used as
+                                    either a raw material for the production of
+                                    carbon-based products or as fuel.
+                                </li>
+                                <li>
+                                    Water Filtration: It is also used as a
+                                    filter medium in large water treatment
+                                    plants. Due to its porous structure, it is
+                                    quite effective as a filter for the removal
+                                    of water impurities.
+                                </li>
+                            </ul>
+                            <p className="product-content-subtitle">
+                                History of Anthracite Coal Mining
                             </p>
                             <p className="product-content-text">
-                                Inferior coal rejected from anthracite coal
-                                mines is called culm, which has less than half
-                                the heat value of mined anthracite and higher
-                                ash and moisture content. It is often used in
-                                fluidized bed combustion (FBC) boilers.
+                                In order for you to have a better understanding
+                                of anthracite, here at FTOREX, we have performed
+                                in-depth research on this type of coal.
+                                Anthracite coal mining has since been part of
+                                the northeastern part of the United States,
+                                where it is mostly mined. The first mining site
+                                in the region was established in 1790, after
+                                which it became quite popular in the region as a
+                                source of fuel.
                             </p>
                             <p className="product-content-text">
-                                In summary, anthracite coal is a hard and
-                                compressed type of coal that is known for its
-                                high potential to produce heat energy. Its
-                                formation from bituminous coal involves intense
-                                pressure and heat, resulting in the highest
-                                fixed carbon content and the least impurities
-                                among all types of coal. Anthracite coal is the
-                                rarest and most mature coal and is mainly found
-                                in old geological formations in countries like
-                                China, Vietnam, North Korea, Russia, Ukraine,
-                                and the USA. Underground mining techniques are
-                                used to extract it from deep within the earth.
-                                Culm, an inferior coal rejected from anthracite
-                                coal mines, is often used in fluidized bed
-                                combustion boilers.
+                                Generally, the mining process for anthracite is
+                                done through certain methods, including
+                                room-and-pillar or longwall mining. These
+                                techniques involve the excavation of coal seams
+                                that are located far below the earth's surface,
+                                after which the coal is extracted with the use
+                                of special equipment. In the past, the mining of
+                                anthracite coal has held significant economic
+                                importance for the region, as it has helped
+                                provide job opportunities for locals in the
+                                area. However, it has also had a negative impact
+                                on the environmental aspect of the region, which
+                                includes dangerous working conditions as well as
+                                social and economic inequality.
+                            </p>
+                            <p className="product-content-subtitle">
+                                Types of Anthracite Coal
                             </p>
                             <p className="product-content-text">
-                                Anthracite coal is a hard, dense rock with a
-                                jet-black color that is clean to the touch. It
-                                is free-burning and non-agglomerating, meaning
-                                it does not coke or expand and fuse together
-                                when ignited. Anthracite coal has a low ash
-                                content and a high ash fusion temperature, and
-                                its ignition temperature is typically around 480
-                                to 500 degrees Celsius. The moisture content of
-                                freshly mined anthracite is usually less than
-                                15%.
+                                In order to know which coal to get from FTOREX,
+                                it is important to be familiar with some of the
+                                various types of anthracite coal available on
+                                the market. Generally, there are 3 major types
+                                of coal: semi-anthracite (standard grade),
+                                anthracite (high grade), and meta-anthracite
+                                (ultra-high grade). Let’s take a closer look at
+                                each of them:
+                            </p>
+                            <ul className="product-content-list">
+                                <li>
+                                    Standard Grade: This is known to be the most
+                                    common variant of anthracite coal, and it
+                                    has an approximate carbon content of between
+                                    86 and 88 percent. It is mostly used as fuel
+                                    industrially and also for home heating.
+                                </li>
+                                <li>
+                                    High Grade: The carbon content for this
+                                    variant is between 89 percent and 93
+                                    percent. The high-grade type is used for
+                                    industrial applications that need a higher
+                                    heat rate as well as a longer burning time.
+                                </li>
+                                <li>
+                                    Ultra-High Grade: This variant comes with
+                                    the highest quality anthracite coal and a CC
+                                    of more than 94 percent. It is used in
+                                    special applications, including steelmaking
+                                    and various other processes that require the
+                                    use of high temperatures.
+                                </li>
+                            </ul>
+                            <p className="product-content-subtitle">
+                                Advantages and Disadvantages of Anthracite Coal
                             </p>
                             <p className="product-content-text">
-                                Compared to bituminous coal, anthracite coal is
-                                harder (2.75-3 on the Mohs scale) and has a
-                                higher relative density of 1.3-1.4. It also has
-                                a semi-metallic luster with a mildly brown
-                                reflection and a low Hardgrove grinding index
-                                (HGI), requiring less energy for grinding.
-                                Anthracite coal is the most brittle of all coal
-                                types and is graded into anthracite fines (less
-                                than 10mm) and anthracite lumps (10mm to 40mm).
+                                When it comes to anthracite coal, most people
+                                don’t seem to be conversant with some of the
+                                pros and cons associated with it. FTOREX has
+                                helped put together some of the advantages and
+                                disadvantages of using it.
                             </p>
-                            <img
-                                className="product-content-img"
-                                src="/images/anthracite-page-img-2.webp"
-                                alt=""
-                            />
-
-                            <p className="product-content-text">
-                                Anthracite coal is categorized into three
-                                grades: semi-anthracite or standard grade,
-                                anthracite or high grade, and meta-anthracite or
-                                ultra-high grade. Anthracite and meta-anthracite
-                                are the purest forms of coal, with the highest
-                                degree of coalification, the highest carbon and
-                                energy content, and the least impurities.
-                                Anthracite and meta-anthracite grades are harder
-                                than semi-anthracite grade coal and have a
-                                higher relative density. The chemical formula
-                                for anthracite grade representing 94% carbon is
-                                C240H90O4NS. The hydrogen, nitrogen, and oxygen
-                                contents in anthracite coal are around 2%,
-                                1%-2%, and 1%, respectively. The sulphur content
-                                in anthracite coal is typically very low at
-                                around 0.6%.
-                            </p>
-                            <p className="product-content-text">
-                                Anthracite coal is the most metamorphosed type
-                                of coal, but still represents a low-grade of
-                                metamorphism. It ignites with difficulty and
-                                burns with a short, blue, and smokeless flame.
-                                Typical porosity for anthracite coal is in the
-                                range of 5% to 10%. The surface area of
-                                anthracite coal is normally greater than 100 sq
-                                m per gram of coal.
-                            </p>
-                            <p className="product-content-text">
-                                Anthracite coal produces more heat than many
-                                other coals and has a high calorific value on a
-                                moist, mineral matter free basis, ranging from
-                                6200 kcal/kg to 7900 kcal/kg depending on its
-                                carbon content and VM. It is considered
-                                ‘non-clinkering’ and free-burning. Anthracite
-                                coal produces virtually no smoke or particulate
-                                emissions, making it the cleanest burning coal
-                                available.
-                            </p>
-                            <p className="product-content-text">
-                                Anthracite coal possesses several qualities that
-                                distinguish it from ordinary bituminous coal,
-                                making it a superior product. Its pure form of
-                                carbon, high calorific value, and clean-burning
-                                properties determine its various uses.
+                            <table className="product-content-table">
+                                <thead>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell table-header">
+                                            Advantages
+                                        </td>
+                                        <td className="product-content-table-cell table-header">
+                                            Disadvantages
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            High energy content
+                                        </td>
+                                        <td className="product-content-table-cell">
+                                            Higher cost
+                                        </td>
+                                    </tr>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            Low ash content
+                                        </td>
+                                        <td className="product-content-table-cell">
+                                            Risk of environmental population
+                                        </td>
+                                    </tr>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            Abundant supply
+                                        </td>
+                                        <td className="product-content-table-cell">
+                                            Risk of accident and injuries to
+                                            miners
+                                        </td>
+                                    </tr>
+                                    <tr className="product-content-table-row">
+                                        <td className="product-content-table-cell">
+                                            Low emission rate
+                                        </td>
+                                        <td className="product-content-table-cell"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p className="product-content-subtitle">
+                                What to Look Forward to in Anthracite
                             </p>
                             <p className="product-content-text">
-                                In metallurgical coal applications, anthracite
-                                coal is used as a cost-effective substitute for
-                                coke or coal, especially in processes like
-                                sintering, pelletizing, and pulverized coal
-                                injection (PCI) in the blast furnace. It serves
-                                as a significant factor in cost reduction for
-                                steelmaking processes, where it acts as a
-                                reducing agent, carburizer, slag foaming, and
-                                ladle additions. Additionally, it is used in the
-                                production of ferro-alloys, silicon-manganese,
-                                calcium-carbide, and silicon-carbide.
-                                Standard-grade anthracite is primarily utilized
-                                for power generation. It can also be used as a
-                                smokeless fuel for domestic purposes and in
-                                water purification.
+                                You must have been wondering what FTOREX sees in
+                                this unique type of coal that has made us
+                                provide it to you at your demand. Although its
+                                future is quite uncertain, there are certain
+                                areas where we hope to see its positive impact.
+                            </p>
+                            <ul className="product-content-list">
+                                <li>Advancement in Clean Coal Technology:</li>
+                            </ul>
+                            <p className="product-content-text">
+                                Considering the recent increase in concern
+                                regarding climatic changes, there is an urgent
+                                need to focus on clean coal technology that
+                                could help lower the impact of burning coal on
+                                the environment. In order to lower greenhouse
+                                gas emissions, this could entail creating power
+                                plants that are more effective and burn cleaner
+                                and developing carbon capture and storage
+                                technology.
+                            </p>
+                            <ul className="product-content-list">
+                                <li>Shift in Market Demand</li>
+                            </ul>
+                            <p className="product-content-text">
+                                In subsequent years, following the diversion of
+                                various countries from fossil fuels to renewable
+                                sources of energy, the need for anthracite coal
+                                might shift. However, there is the possibility
+                                of it finding a market, especially in industries
+                                that deal with the production of steel.
+                            </p>
+                            <p className="product-content-subtitle">
+                                Conclusion
                             </p>
                             <p className="product-content-text">
-                                Anthracite coal is also used in various
-                                industrial applications, such as charcoal
-                                briquettes, glass carbon, and friction
-                                materials. It is also added in ground form to
-                                plastics and polymers as an additive.
+                                In conclusion, the major benefit of anthracite
+                                coal in this present environmental state is the
+                                fact that it is smokeless. By getting your coal
+                                from FTOREX, you are helping to reduce the
+                                number of harmful substances that are being
+                                released into the atmosphere. Therefore, go
+                                ahead and contact us for your next anthracite
+                                coal purchase.
                             </p>
                         </div>
                     </div>
@@ -333,10 +415,7 @@ const AnthracitePage = () => {
                     <div>
                         <button className="download-btn">
                             <div className="row btn-content-row">
-                                <a
-                                    href="/files//FTOREX COAL OFFER.docx"
-                                    download
-                                >
+                                <a href="/files/FTOREX COAL.pdf" download>
                                     download document
                                 </a>
                                 <div className="btn-arrow"></div>
