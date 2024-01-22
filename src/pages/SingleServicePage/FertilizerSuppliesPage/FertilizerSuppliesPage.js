@@ -133,77 +133,264 @@ const FertilizerSuppliesPage = () => {
                             <p className="service-content-header">
                                 Fertilizer supplies
                             </p>
-
                             <p className="service-content-text">
-                                FTOREX an International progressive and dynamic
-                                developing company incorporated in Houston, TX
-                                USA as well as Dubai, UAE.
+                                Are you ready to take your crops to the next
+                                level? Look no further than Ftorex's fertilizer
+                                supplies! Fertilizer is like a superfood for
+                                plants, providing the essential nutrients they
+                                need to thrive and produce impressive yields. At
+                                Ftorex, we understand the critical role that
+                                fertilizer plays in agriculture and related
+                                industries, which is why we provide a wide range
+                                of high-quality fertilizers.
+                            </p>
+                            <p className="service-content-subtitle">
+                                What type of fertilizers do we supply?
                             </p>
                             <p className="service-content-text">
-                                One of the major goals of our business is the
-                                Fertilizer overseas supplying to our customers
-                                with the direct contract and price provided by
-                                Major Manufacturers. Our partners widely
-                                represented by countries of Southeast Asia as
-                                well the Middle East and South America.
+                                Ftorex provides a wide range of fertilizers that
+                                are tailored to meet the specific needs of
+                                different crops. The types of fertilizers
+                                offered by Ftorex include nitrogen, phosphate,
+                                and potash-based fertilizers, as well as
+                                micronutrients.
+                            </p>
+                            <table className="service-content-table">
+                                <thead>
+                                    <tr className="service-content-table-row">
+                                        <td className="service-content-table-cell table-header">
+                                            Fertile
+                                        </td>
+                                        <td className="service-content-table-cell table-header">
+                                            Target Crops
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="service-content-table-row">
+                                        <td className="service-content-table-cell">
+                                            Nitrogen fertilizers
+                                        </td>
+                                        <td className="service-content-table-cell">
+                                            Corn, wheat, vegetables, fruits ,
+                                            grains, blueberries, potatoes,
+                                            tomatoes
+                                        </td>
+                                    </tr>
+                                    <tr className="service-content-table-row">
+                                        <td className="service-content-table-cell">
+                                            Phosphate fertilizers
+                                        </td>
+                                        <td className="service-content-table-cell">
+                                            Vegetables, fruits, grains, corn,
+                                            soybeans, wheat, sugar beets
+                                        </td>
+                                    </tr>
+                                    <tr className="service-content-table-row">
+                                        <td className="service-content-table-cell">
+                                            Potash Fertilizers
+                                        </td>
+                                        <td className="service-content-table-cell">
+                                            Corn, cotton, soybeans, fruits,
+                                            vegetables, tobacco, flowers
+                                        </td>
+                                    </tr>
+                                    <tr className="service-content-table-row">
+                                        <td className="service-content-table-cell">
+                                            Mironutrient
+                                        </td>
+                                        <td className="service-content-table-cell">
+                                            Citrus fruits, grapes, corn, wheat,
+                                            soybeans
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul className="service-content-list">
+                                <li>Nitrogen Fertilizers</li>
+                            </ul>
+                            <p className="service-content-text">
+                                Nitrogen is essential for plant growth as it is
+                                a component of chlorophyll, which is necessary
+                                for photosynthesis. Nitrogen fertilizers are
+                                used to provide plants with the necessary
+                                nitrogen for healthy growth. There are different
+                                types of nitrogen fertilizers, including
+                                ammonium nitrate, urea, and ammonium sulfate.
                             </p>
                             <p className="service-content-text">
-                                We partner with companies across the world to
-                                establish and maintain strong relationships that
-                                allow us to source the highest quality
-                                fertilizer available.
+                                Ammonium nitrate is a popular nitrogen
+                                fertilizer that is used for crops such as corn
+                                and wheat. Urea is another common nitrogen
+                                fertilizer that is used for a wide range of
+                                crops, including vegetables, fruits, and grains.
+                                Ammonium sulfate is often used for crops that
+                                require acid soils, such as blueberries,
+                                potatoes, and tomatoes. All these are available
+                                at Ftorex
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>MAP</span> - Monoammonium Phosphate
-                                (Universal granular phosphate-nitrogen
-                                fertilizer)
+                            <ul className="service-content-list">
+                                <li>Phosphate Fertilizers</li>
+                            </ul>
+                            <p className="service-content-text">
+                                Phosphorus is essential for root development and
+                                seedling growth. Phosphate fertilizers are used
+                                to provide plants with the necessary phosphorus
+                                for healthy growth. There are different types of
+                                phosphate fertilizers supplied by Ftorex. They
+                                include monoammonium phosphate, diammonium
+                                phosphate, and triple superphosphate.
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>ASN</span> - Ammonium sulphate nitrate
-                                (With 26% of nitrogen and 13% of sulfur)
+                            <p className="service-content-text">
+                                Monoammonium phosphate is a popular phosphate
+                                fertilizer that is used for a wide range of
+                                crops, including vegetables, fruits, and grains.
+                                Diammonium phosphate is often used for crops
+                                such as corn, soybeans, and wheat. Triple
+                                superphosphate is a high-phosphate fertilizer
+                                that is used for crops that require a lot of
+                                phosphorus, such as citrus fruits and sugar
+                                beets.
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>UREA</span> - With a nitrogen content of
-                                46,2%, urea has the highest concentration of
-                                nutrients of all nitrogen fertilizers
+                            <ul className="service-content-list">
+                                <li>Potash Fertilizers</li>
+                            </ul>
+                            <p className="service-content-text">
+                                Potassium is essential for plant stress
+                                tolerance and fruit quality. Potash fertilizers
+                                are used to provide plants with the necessary
+                                potassium for healthy growth. There are
+                                different types of potash fertilizers, including
+                                potassium chloride, potassium sulfate, and
+                                potassium nitrate.
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>AN</span> - Concentrated nitrogen source
-                                (34,4% N) for agricultural and industrial use
+                            <p className="service-content-text">
+                                Potassium chloride is a common potash fertilizer
+                                that is used for a wide range of crops,
+                                including corn, cotton, and soybeans. Potassium
+                                sulfate is often used for crops such as fruits,
+                                vegetables, and tobacco. Potassium nitrate is a
+                                high-potassium fertilizer that is used for crops
+                                such as fruits, vegetables, and flowers.
+                                Fortunately, Ftorex supplies all this at a
+                                competitive price.
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>CAN</span> - Calcium ammonium nitrate
-                                (Highly efficient granular fertilizer with 27%
-                                of nitrogen)
+                            <ul className="service-content-list">
+                                <li>Micronutrient Fertilizers</li>
+                            </ul>
+                            <p className="service-content-text">
+                                Micronutrients are trace elements that are
+                                required in small quantities, but they are
+                                essential for plant growth and development.
+                                Micronutrient fertilizers supplied by Ftorex ca
+                                used to provide plants with the necessary
+                                micronutrients for healthy growth. There are
+                                different types of micronutrient fertilizers,
+                                including iron, zinc, and copper.
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>UAN</span> - Urea Ammonium Nitrate (With
-                                32% of nitrogen equally split between nitrate,
-                                ammonium and ureic forms of N)
+                            <p className="service-content-text">
+                                Iron is essential for plant growth as it is a
+                                component of chlorophyll. Iron fertilizers are
+                                used for crops such as citrus fruits and grapes.
+                                Zinc is necessary for plant growth as it is
+                                involved in enzyme activity. Zinc fertilizers
+                                are used for crops such as corn, wheat, and
+                                soybeans. Copper is necessary for plant growth
+                                as it is involved in photosynthesis. Copper
+                                fertilizers are used for crops such as citrus
+                                fruits and grapes
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>AS</span> - Source of ammonium nitrogen
-                                (21%) and sulfate sulfur (24%) for universal use
+                            <p className="service-content-subtitle">
+                                Why should you buy Ftorex Fertilizers?
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>NP</span> - Universal granular
-                                nitrogen-phosphoric fertilizer (20-20) with
-                                additional sulfur for higher efficiency
+                            <ul className="service-content-list">
+                                <li>Quality Assurance</li>
+                            </ul>
+                            <p className="service-content-text">
+                                At Ftorex, quality assurance is a top priority.
+                                We ensure that the fertilizers supplied are of
+                                the highest quality and are sourced from trusted
+                                suppliers. The fertilizers undergo rigorous
+                                testing to ensure that they meet the required
+                                standards and are free from impurities. The
+                                quality assurance team at Ftorex ensures that
+                                the fertilizers are properly labeled, and the
+                                information provided is accurate. This ensures
+                                that farmers can trust the fertilizers they
+                                purchase from Ftorex to provide the necessary
+                                nutrients required for plant growth and
+                                development.
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>DP</span> - Di-ammonium Phosphate (Light
-                                brown, granular phosphate-nitrogen fertilizer
-                                for broad P application)
+                            <ul className="service-content-list">
+                                <li>Flexible Delivery Options</li>
+                            </ul>
+                            <p className="service-content-text">
+                                Ftorex offers flexible delivery options to
+                                ensure that farmers can access the fertilizers
+                                they need when they need them. We have a
+                                well-established distribution network that
+                                ensures that the fertilizers are delivered to
+                                the farmers promptly. Ftorex also provides
+                                customized delivery options to meet the specific
+                                needs of different customers. This ensures that
+                                farmers can access fertilizers even in remote
+                                locations or areas that are difficult to access.
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>MOP</span> - Muriate of potash (The most
-                                popular source of potassium globally, offered in
-                                both granular and standard forms)
+                            <ul className="service-content-list">
+                                <li>Competitive Pricing</li>
+                            </ul>
+                            <p className="service-content-text">
+                                Ftorex provides competitive pricing for the
+                                fertilizers it supplies. We work closely with
+                                our suppliers to ensure that we can offer the
+                                fertilizers at competitive prices without
+                                compromising on quality. This ensures that
+                                farmers can access high-quality fertilizers at
+                                affordable prices, which is critical to their
+                                success. We also provide discounts for bulk
+                                purchases, which further reduces the cost of
+                                purchasing fertilizers for farmers.
                             </p>
-                            <p className="service-content-text-less-margin">
-                                <span>NPK</span> (nitrogen, phosphorus, and
-                                potassium) are the main ingredients in most
-                                fertilizers.
+                            <ul className="service-content-list">
+                                <li>Environmental Sustainability</li>
+                            </ul>
+                            <p className="service-content-text">
+                                At Ftorex, environmental sustainability is a
+                                critical consideration in the production and
+                                supply of fertilizers. We are committed to
+                                reducing the environmental impact of fertilizer
+                                production and use. Ftorex works closely with
+                                its suppliers to ensure that the fertilizers are
+                                produced using sustainable practices. We also
+                                provide guidance to farmers on the proper use of
+                                fertilizers to minimize the environmental
+                                impact. This ensures that farmers can produce
+                                healthy crops without negatively impacting the
+                                environment.
+                            </p>
+                            <p className="service-content-subtitle">
+                                Bottomline
+                            </p>
+                            <p className="service-content-text">
+                                Ftorex is a reliable supplier of fertilizers
+                                that farmers can count on to provide
+                                high-quality fertilizers tailored to meet their
+                                specific needs. Our commitment to quality
+                                assurance, flexible delivery options,
+                                competitive pricing, and environmental
+                                sustainability sets us apart from other
+                                fertilizer suppliers.
+                            </p>
+                            <p className="service-content-text">
+                                By working closely with our suppliers and
+                                customers, Ftorex ensures that the use of
+                                fertilizers is sustainable and has a minimal
+                                impact on the environment. Choosing Ftorex for
+                                your fertilizer needs is not only a smart
+                                business decision but also an environmentally
+                                conscious choice. So, next time you need
+                                fertilizers, choose Ftorex and take a step
+                                towards sustainable farming practices.
                             </p>
                         </div>
                     </div>
@@ -213,10 +400,7 @@ const FertilizerSuppliesPage = () => {
                     <div>
                         <button className="download-btn">
                             <div className="row btn-content-row">
-                                <a
-                                    href="/files//FTOREX COAL OFFER.docx"
-                                    download
-                                >
+                                <a href="/files/FTOREX FERTILIZER.pdf" download>
                                     download document
                                 </a>
                                 <div className="btn-arrow"></div>

@@ -38,7 +38,7 @@ const Main = ({ submitRef }) => {
     const [scrollBtnClass, setScrollBtnClass] = useState("show")
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY >= 5400 || window.innerWidth < 992) {
+        if (window.scrollY >= 5200 || window.innerWidth < 992) {
             setScrollBtnClass("hide")
         } else {
             setScrollBtnClass("show")

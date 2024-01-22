@@ -97,13 +97,36 @@
         .service-content-text:last-child {
             margin-bottom: 0;
         }
-        .service-page-subtitle {
-            font-family: "Plus Jakarta Sans";
+        .service-content-subtitle {
+            font-family: "Roboto";
+            font-weight: 800;
+            font-size: 21px;
+            line-height: 30px;
+            color: #121212;
+            margin-bottom: 20px;
+        }
+        .service-content-list {
             font-weight: 400;
             font-size: 16px;
             line-height: 32px;
-            text-transform: uppercase;
-            color: #121212;
+            color: #7a8085;
+            margin-bottom: 20px;
+            li {
+                list-style: disc;
+                margin-bottom: 10px;
+            }
+        }
+        .service-content-numbered-list {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #7a8085;
+            margin-bottom: 20px;
+            li {
+                list-style: decimal;
+                margin-bottom: 10px;
+                margin-left: 40px;
+            }
         }
         .service-content-text-less-margin {
             font-weight: 400;
@@ -115,19 +138,34 @@
                 color: #121212;
             }
         }
+        .service-content-table {
+            border: 1px solid black;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #7a8085;
+            margin-bottom: 20px;
+            .service-content-table-row {
+                border-bottom: 1px solid black;
+                .table-header {
+                    font-weight: 700;
+                    color: #121212;
+                }
+                .service-content-table-cell {
+                    border-right: 1px solid black;
+                    padding: 10px 15px;
+                }
+                .service-content-table-cell:first-child {
+                    width: 50%;
+                }
+            }
+        }
         .service-content-table-name {
             text-transform: uppercase;
         }
         .service-content-table-img {
             margin-top: 20px;
             margin-bottom: 40px;
-        }
-        .service-content-subtitle {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            color: #7a8085;
-            margin-bottom: 20px;
         }
         .service-images-row {
             gap: 10px;
@@ -195,6 +233,18 @@
     }
 }
 
+.coal-supplies-page {
+    .service-container {
+        .service-content-table {
+            .service-content-table-row {
+                .service-content-table-cell:first-child {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
 @media (hover: hover) {
     .single-service-page {
         .download-btn {
@@ -235,6 +285,13 @@
     .single-service-page {
         .service-container {
             margin: 0px;
+            .service-content-table {
+                .service-content-table-row {
+                    .service-content-table-cell:first-child {
+                        width: auto;
+                    }
+                }
+            }
         }
         .download-btn {
             width: 100%;

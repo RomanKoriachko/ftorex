@@ -424,7 +424,7 @@ const OilAndGasPage = () => {
                 </div>
                 <div className="download-button-wrapper">
                     <div className="left-side-space"></div>
-                    <div>
+                    {/* <div>
                         <button className="download-btn">
                             <div className="row btn-content-row">
                                 <a
@@ -436,7 +436,7 @@ const OilAndGasPage = () => {
                                 <div className="btn-arrow"></div>
                             </div>
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="margin-bottom"></div>
             </div>
